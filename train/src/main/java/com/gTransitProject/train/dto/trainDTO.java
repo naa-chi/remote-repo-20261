@@ -1,5 +1,5 @@
 package com.gTransitProject.train.dto;
-
+import com.gTransitProject.train.model.typeTrain;
 import lombok.Data;
 
 @Data

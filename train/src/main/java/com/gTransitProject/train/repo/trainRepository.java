@@ -7,4 +7,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 // This 'extends' gives you save(), findAll(), findById() for free!
 public interface trainRepository extends JpaRepository<train, Integer> {
+    //implement update method here too SOMEWHERE
+    
 }

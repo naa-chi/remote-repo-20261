@@ -9,6 +9,8 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface maintenanceRepo extends JpaRepository<maintenanceModel, Integer>{
+    List<maintenanceModel> findByVehicleId(Integer vehicleId);
+    Optional<maintenanceModel> findById(Integer id);
     
 
 }

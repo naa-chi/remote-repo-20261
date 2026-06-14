@@ -37,6 +37,9 @@ public class maintenanceModel {
     private Integer maintenance_price;
 
     @Column(nullable = false, unique = false)
+    private Integer vehicleId; //linked to the actual train/engine, not the type of it y'know.
+
+    @Column(nullable = false, unique = false)
     private String model; 
     /*
 
