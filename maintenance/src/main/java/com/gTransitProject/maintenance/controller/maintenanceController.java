@@ -34,4 +34,11 @@ public class maintenanceController {
         log.info("Received request to create maintenance record: {}", model);
         return service.createMaintenance(model);
     }
+
+    // --- NEW UPDATE ENDPOINT ---
+    @PutMapping("/{id}")
+    public ResponseEntity<maintenanceModel> update(@PathVariable Integer id, @RequestBody maintenanceModel model) {
+        log.info("Received request to update maintenance record with id: {}", id);
+        return ResponseEntity.ok(service.updateMaintenance(id, model));
+    }
 }
