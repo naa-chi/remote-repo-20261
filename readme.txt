@@ -10,7 +10,7 @@ Reminder of what ports are which
 - Driver = 7778
 - Client = 7779
 - Auth = 7780
-- Supervisor = 7781
+- Supervisor = 7781 N/A
 - Review = 7782
 
 Docs go ***somwehere*** 

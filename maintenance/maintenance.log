@@ -1,0 +1,51 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.6)
+
+2026-06-14T20:53:43.495-04:00  INFO 39900 --- [maintenance] [           main] c.g.maintenance.MaintenanceApplication   : Starting MaintenanceApplication v0.0.1-SNAPSHOT using Java 24.0.1 with PID 39900 (C:\Users\XznRh\Downloads\GProjectTransport-0.2.Rollback.zip-zip.zip.Ballrock.trgz-7z.zip.php.py.zip-sql\GProjectTransport-0.2.5\GProjectTransport-0.2.5\maintenance\target\maintenance-0.0.1-SNAPSHOT.jar started by XznRh in C:\Users\XznRh\Downloads\GProjectTransport-0.2.Rollback.zip-zip.zip.Ballrock.trgz-7z.zip.php.py.zip-sql\GProjectTransport-0.2.5\GProjectTransport-0.2.5)
+2026-06-14T20:53:43.500-04:00  INFO 39900 --- [maintenance] [           main] c.g.maintenance.MaintenanceApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-06-14T20:53:44.652-04:00  INFO 39900 --- [maintenance] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-14T20:53:44.784-04:00  INFO 39900 --- [maintenance] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 121 ms. Found 1 JPA repository interface.
+2026-06-14T20:53:45.509-04:00  INFO 39900 --- [maintenance] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 7775 (http)
+2026-06-14T20:53:45.530-04:00  INFO 39900 --- [maintenance] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-14T20:53:45.531-04:00  INFO 39900 --- [maintenance] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-14T20:53:45.578-04:00  INFO 39900 --- [maintenance] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2015 ms
+2026-06-14T20:53:45.948-04:00  INFO 39900 --- [maintenance] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-14T20:53:46.109-04:00  INFO 39900 --- [maintenance] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-14T20:53:46.623-04:00  INFO 39900 --- [maintenance] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-14T20:53:46.654-04:00  INFO 39900 --- [maintenance] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-14T20:53:46.829-04:00  INFO 39900 --- [maintenance] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6ffbf0ac
+2026-06-14T20:53:46.831-04:00  INFO 39900 --- [maintenance] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-14T20:53:46.867-04:00  WARN 39900 --- [maintenance] [           main] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-14T20:53:46.870-04:00  WARN 39900 --- [maintenance] [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-14T20:53:46.887-04:00  INFO 39900 --- [maintenance] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/transport_db_maintenance?createDatabaseIfNotExists=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: transport_db_maintenance/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-14T20:53:47.685-04:00  INFO 39900 --- [maintenance] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-14T20:53:47.734-04:00  INFO 39900 --- [maintenance] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-14T20:53:47.809-04:00  INFO 39900 --- [maintenance] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-14T20:53:48.248-04:00  WARN 39900 --- [maintenance] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-14T20:53:49.002-04:00  INFO 39900 --- [maintenance] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 7775 (http) with context path '/'
+2026-06-14T20:53:49.026-04:00  INFO 39900 --- [maintenance] [           main] c.g.maintenance.MaintenanceApplication   : Started MaintenanceApplication in 6.156 seconds (process running for 6.957)
+2026-06-14T20:53:49.030-04:00  WARN 39900 --- [maintenance] [           main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-14T20:53:49.030-04:00  WARN 39900 --- [maintenance] [           main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-14T21:07:01.727-04:00  INFO 39900 --- [maintenance] [ionShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-14T21:07:01.838-04:00  INFO 39900 --- [maintenance] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-14T21:07:01.863-04:00  INFO 39900 --- [maintenance] [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-14T21:07:01.895-04:00  INFO 39900 --- [maintenance] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-14T21:07:01.968-04:00  INFO 39900 --- [maintenance] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
