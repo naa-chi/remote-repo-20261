@@ -2,7 +2,7 @@ package com.gTransitProject.city.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -19,18 +19,20 @@ public class City {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer cityId;
 
-    @NotBlank
+    @NotNull(message = "Can't be null")
     @Column(length = 60, nullable = false)
     private String cityName;
 
-    @NotBlank
+    @NotNull(message = "Can't be null")
     @Column(unique = true, length = 4, nullable = false)
     private String cityCode;
 
+    @NotNull(message = "Can't be null")
     @Column(nullable = false)
     private Integer lineNumber;
 
     @Min(value = 1)
+    @NotNull(message = "Why would there be a place with 0 people?")
     @Column(name = "inhabitants", nullable = false)
     private Integer population;
 }
