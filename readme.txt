@@ -1,3 +1,5 @@
+Dev'd by naa-chi and bartolomeo123-bot
+
 Reminder of what ports are which 
 - Manufacturer = 7770
 - Train = 7771
@@ -10,7 +12,7 @@ Reminder of what ports are which
 - Driver = 7778
 - Client = 7779
 - Auth = 7780
-- Supervisor = 7781 N/A
+- Supervisor = 7781
 - Review = 7782
 
 
@@ -21,4 +23,28 @@ Run pip install pymysql to run it properly
 Then run python OpenAllMicroservices.py on the root folder of the microservices
 
 
-Docs go ***somwehere*** 
+Docs use swagger and there is logging enabled on every service
+We are currently debatably missing hateoas??? I'm not sure.
+This readme isn't really packed with information as much as it is one dev's ramblings.
+
+Help.
+
+naa-chi made the following contributions:
+    - typeEngine
+    - train
+    - maintenance
+    - manufacturer
+    - ticket
+    - review 
+    - Added swagger and liquibase on EVERY microservice
+    - Fixed issues on exceptions
+
+bartolomeo123 made the following contributions:
+    - line
+    - city
+    - client
+    - driver
+    - station
+    - supervisor
+    - Figured out authentication
+    - Retrofitted older code for modern exam requierements (Exceptions, update methods)
