@@ -26,25 +26,24 @@ STARTUP_ORDER = [
     "typeengine"
 ]
 
-BOOT_DELAY = 12 #If it's too low you can have multiple microservices trying to run at the same time which may be resource intensive
+BOOT_DELAY = 15 #If it's too low you can have multiple microservices trying to run at the same time which may be resource intensive
+
+# Changed to 15, former was 12, there was some issues with that
 
 IS_WINDOWS = platform.system() == "Windows"
 
 
 def create_database_for_service(service_name):
-    """
-    Creates database 'transport_db_<service_name>' if it does not exist.
-    Uses PyMySQL (pure Python MySQL client).
-    """
+    #Creates database transport_db_[service_name]
     db_name = f"transport_db_{service_name}"
     try:
-        import pymysql
+        import pymysql #run this before executing this in college during the exam
     except ImportError:
-        print("ERROR: PyMySQL is not installed. Run 'pip install pymysql' and try again.")
+        print("Run 'pip install pymysql' as you're missing it")
         sys.exit(1)
 
     try:
-        # Connect without selecting a database
+        #connect. Remember MVC in OOP? 
         conn = pymysql.connect(
             host=DB_HOST,
             port=DB_PORT,
@@ -60,26 +59,21 @@ def create_database_for_service(service_name):
         return True
     except Exception as e:
         print(f"Db '{db_name}' has not been lifted: {e}")
-        print("Make sure your MySQL server is running and user/pswd are correct.")
+        print("Make SURE your MySQL server is running and user/pswd are correct.")
         return False
 
 
 def setup_all_databases(services):
-    """Creates a database for every microservice."""
-    print("\n--- Phase 0: Ensuring databases exist ---")
+    print("\nDB scanning")
     all_ok = True
     for service in services:
         if not create_database_for_service(service['name']):
             all_ok = False
     if not all_ok:
-        print("Database setup failed. Aborting.")
+        print("Aborting.")
         sys.exit(1)
     print("All databases are ready.\n")
 
-
-# -------------------------------------------------------------------
-# Microservice discovery & build (cross‑platform, as before)
-# -------------------------------------------------------------------
 def find_microservices(root_path):
     services = []
     for item in os.listdir(root_path):
@@ -144,9 +138,7 @@ def run_service(service):
     return process
 
 
-# -------------------------------------------------------------------
-# Main
-# -------------------------------------------------------------------
+
 def main():
     print("Scanning for Spring Microservices...")
     all_services = find_microservices(ROOT_DIR)
