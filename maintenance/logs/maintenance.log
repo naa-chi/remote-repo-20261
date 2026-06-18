@@ -1,0 +1,576 @@
+12:43:22 INFO  Starting MaintenanceApplication using Java 24.0.1 with PID 46204 (C:\Users\XznRh\Downloads\GProjectTransport-0.2.Rollback.zip-zip.zip.Ballrock.trgz-7z.zip.php.py.zip-sql\GProjectTransport-0.2.5\GProjectTransport-0.2.5\maintenance\target\classes started by XznRh in C:\Users\XznRh\Downloads\GProjectTransport-0.2.Rollback.zip-zip.zip.Ballrock.trgz-7z.zip.php.py.zip-sql\GProjectTransport-0.2.5\GProjectTransport-0.2.5\maintenance)
+12:43:22 INFO  No active profile set, falling back to 1 default profile: "default"
+12:43:22 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+12:43:22 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+12:43:23 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12:43:23 INFO  Finished Spring Data repository scanning in 159 ms. Found 1 JPA repository interface.
+12:43:23 INFO  Tomcat initialized with port 7775 (http)
+12:43:23 INFO  Starting service [Tomcat]
+12:43:23 INFO  Starting Servlet engine: [Apache Tomcat/11.0.21]
+12:43:23 INFO  Root WebApplicationContext: initialization completed in 1677 ms
+12:43:24 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
+12:43:24 INFO  HHH000001: Hibernate ORM core version 7.2.12.Final
+12:43:24 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+12:43:24 INFO  HikariPool-1 - Starting...
+12:43:24 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5298efa0
+12:43:24 INFO  HikariPool-1 - Start completed.
+12:43:24 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+12:43:24 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+12:43:24 INFO  HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/transport_db_maintenance?createDatabaseIfNotExists=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: transport_db_maintenance/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+12:43:25 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+12:43:25 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+12:43:25 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+12:43:28 INFO  Logging exception.
+12:43:28 INFO  ERROR: Exception Details
+12:43:28 INFO  ERROR: Exception Primary Class:  FileNotFoundException
+12:43:28 INFO  ERROR: Exception Primary Reason:  ERROR: The file 'classpath:db/changelog/db.changelog.sql' was not found.
+The file property cannot be configured with a fully qualified path, but must be a relative path on the property,
+and any local or remote base of the path set on the search path.
+12:43:28 INFO  ERROR: Exception Primary Source:  MySQL 5.5.5-10.4.32-MariaDB
+12:43:28 INFO  Command execution complete
+12:43:28 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [com/gTransitProject/maintenance/config/liquibaseConfig.class]: liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: java.io.FileNotFoundException: ERROR: The file 'classpath:db/changelog/db.changelog.sql' was not found.
+The file property cannot be configured with a fully qualified path, but must be a relative path on the property,
+and any local or remote base of the path set on the search path.
+12:43:28 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+12:43:28 INFO  HikariPool-1 - Shutdown initiated...
+12:43:28 INFO  HikariPool-1 - Shutdown completed.
+12:43:28 INFO  Stopping service [Tomcat]
+12:43:28 INFO  
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+12:43:28 ERROR Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [com/gTransitProject/maintenance/config/liquibaseConfig.class]: liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: java.io.FileNotFoundException: ERROR: The file 'classpath:db/changelog/db.changelog.sql' was not found.
+The file property cannot be configured with a fully qualified path, but must be a relative path on the property,
+and any local or remote base of the path set on the search path.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1817)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1218)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1184)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1121)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:994)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.gTransitProject.maintenance.MaintenanceApplication.main(MaintenanceApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52)
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: java.io.FileNotFoundException: ERROR: The file 'classpath:db/changelog/db.changelog.sql' was not found.
+The file property cannot be configured with a fully qualified path, but must be a relative path on the property,
+and any local or remote base of the path set on the search path.
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:289)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1864)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1813)
+	... 21 common frames omitted
+Caused by: liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: java.io.FileNotFoundException: ERROR: The file 'classpath:db/changelog/db.changelog.sql' was not found.
+The file property cannot be configured with a fully qualified path, but must be a relative path on the property,
+and any local or remote base of the path set on the search path.
+	at liquibase.command.CommandScope.lambda$execute$5(CommandScope.java:325)
+	at liquibase.Scope.child(Scope.java:250)
+	at liquibase.Scope.child(Scope.java:226)
+	at liquibase.command.CommandScope.execute(CommandScope.java:257)
+	at liquibase.Liquibase.lambda$update$0(Liquibase.java:216)
+	at liquibase.Scope.lambda$child$0(Scope.java:241)
+	at liquibase.Scope.child(Scope.java:250)
+	at liquibase.Scope.child(Scope.java:240)
+	at liquibase.Scope.child(Scope.java:219)
+	at liquibase.Liquibase.runInScope(Liquibase.java:1366)
+	at liquibase.Liquibase.update(Liquibase.java:205)
+	at liquibase.Liquibase.update(Liquibase.java:188)
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:327)
+	at liquibase.integration.spring.SpringLiquibase.lambda$afterPropertiesSet$0(SpringLiquibase.java:279)
+	at liquibase.Scope.lambda$child$0(Scope.java:241)
+	at liquibase.Scope.child(Scope.java:250)
+	at liquibase.Scope.child(Scope.java:240)
+	at liquibase.Scope.child(Scope.java:219)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:272)
+	... 23 common frames omitted
+Caused by: liquibase.exception.ChangeLogParseException: java.io.FileNotFoundException: ERROR: The file 'classpath:db/changelog/db.changelog.sql' was not found.
+The file property cannot be configured with a fully qualified path, but must be a relative path on the property,
+and any local or remote base of the path set on the search path.
+	at liquibase.parser.core.sql.SqlChangeLogParser.parse(SqlChangeLogParser.java:71)
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.lambda$getDatabaseChangeLog$0(DatabaseChangelogCommandStep.java:143)
+	at liquibase.Scope.lambda$child$0(Scope.java:241)
+	at liquibase.Scope.child(Scope.java:250)
+	at liquibase.Scope.child(Scope.java:240)
+	at liquibase.Scope.child(Scope.java:219)
+	at liquibase.Scope.child(Scope.java:307)
+	at liquibase.Scope.child(Scope.java:311)
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.getDatabaseChangeLog(DatabaseChangelogCommandStep.java:138)
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.run(DatabaseChangelogCommandStep.java:84)
+	at liquibase.command.CommandScope.lambda$execute$5(CommandScope.java:269)
+	... 41 common frames omitted
+Caused by: java.io.FileNotFoundException: ERROR: The file 'classpath:db/changelog/db.changelog.sql' was not found.
+The file property cannot be configured with a fully qualified path, but must be a relative path on the property,
+and any local or remote base of the path set on the search path.
+	at liquibase.resource.ResourceAccessor.getExisting(ResourceAccessor.java:222)
+	at liquibase.parser.core.sql.SqlChangeLogParser.parse(SqlChangeLogParser.java:59)
+	... 51 common frames omitted
+12:48:35 INFO  Starting MaintenanceApplication using Java 24.0.1 with PID 19000 (C:\Users\XznRh\Downloads\GProjectTransport-0.2.Rollback.zip-zip.zip.Ballrock.trgz-7z.zip.php.py.zip-sql\GProjectTransport-0.2.5\GProjectTransport-0.2.5\maintenance\target\classes started by XznRh in C:\Users\XznRh\Downloads\GProjectTransport-0.2.Rollback.zip-zip.zip.Ballrock.trgz-7z.zip.php.py.zip-sql\GProjectTransport-0.2.5\GProjectTransport-0.2.5\maintenance)
+12:48:35 INFO  No active profile set, falling back to 1 default profile: "default"
+12:48:35 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+12:48:35 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+12:48:36 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12:48:36 INFO  Finished Spring Data repository scanning in 122 ms. Found 1 JPA repository interface.
+12:48:37 INFO  Tomcat initialized with port 7775 (http)
+12:48:37 INFO  Starting service [Tomcat]
+12:48:37 INFO  Starting Servlet engine: [Apache Tomcat/11.0.21]
+12:48:37 INFO  Root WebApplicationContext: initialization completed in 1477 ms
+12:48:37 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
+12:48:37 INFO  HHH000001: Hibernate ORM core version 7.2.12.Final
+12:48:38 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+12:48:38 INFO  HikariPool-1 - Starting...
+12:48:38 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@25cda69f
+12:48:38 INFO  HikariPool-1 - Start completed.
+12:48:38 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+12:48:38 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+12:48:38 INFO  HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/transport_db_maintenance?createDatabaseIfNotExists=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: transport_db_maintenance/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+12:48:39 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+12:48:39 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+12:48:40 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+12:48:41 WARN  Skipping empty file 'classpath:db/changelog/db.changelog.sql'
+12:48:41 WARN  Unable to parse empty file: 'classpath:db/changelog/db.changelog.sql'
+12:48:41 INFO  Logging exception.
+12:48:41 INFO  ERROR: Exception Details
+12:48:41 INFO  ERROR: Exception Primary Class:  ChangeLogParseException
+12:48:41 INFO  ERROR: Exception Primary Reason:  Unable to parse empty file: 'classpath:db/changelog/db.changelog.sql'
+12:48:41 INFO  ERROR: Exception Primary Source:  5.0.2
+12:48:41 INFO  Command execution complete
+12:48:41 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [com/gTransitProject/maintenance/config/liquibaseConfig.class]: liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: Unable to parse empty file: 'classpath:db/changelog/db.changelog.sql'
+12:48:41 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+12:48:41 INFO  HikariPool-1 - Shutdown initiated...
+12:48:42 INFO  HikariPool-1 - Shutdown completed.
+12:48:42 INFO  Stopping service [Tomcat]
+12:48:42 INFO  
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+12:48:42 ERROR Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [com/gTransitProject/maintenance/config/liquibaseConfig.class]: liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: Unable to parse empty file: 'classpath:db/changelog/db.changelog.sql'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1817)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1218)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1184)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1121)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:994)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.gTransitProject.maintenance.MaintenanceApplication.main(MaintenanceApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52)
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: Unable to parse empty file: 'classpath:db/changelog/db.changelog.sql'
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:289)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1864)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1813)
+	... 21 common frames omitted
+Caused by: liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: Unable to parse empty file: 'classpath:db/changelog/db.changelog.sql'
+	at liquibase.command.CommandScope.lambda$execute$5(CommandScope.java:325)
+	at liquibase.Scope.child(Scope.java:250)
+	at liquibase.Scope.child(Scope.java:226)
+	at liquibase.command.CommandScope.execute(CommandScope.java:257)
+	at liquibase.Liquibase.lambda$update$0(Liquibase.java:216)
+	at liquibase.Scope.lambda$child$0(Scope.java:241)
+	at liquibase.Scope.child(Scope.java:250)
+	at liquibase.Scope.child(Scope.java:240)
+	at liquibase.Scope.child(Scope.java:219)
+	at liquibase.Liquibase.runInScope(Liquibase.java:1366)
+	at liquibase.Liquibase.update(Liquibase.java:205)
+	at liquibase.Liquibase.update(Liquibase.java:188)
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:327)
+	at liquibase.integration.spring.SpringLiquibase.lambda$afterPropertiesSet$0(SpringLiquibase.java:279)
+	at liquibase.Scope.lambda$child$0(Scope.java:241)
+	at liquibase.Scope.child(Scope.java:250)
+	at liquibase.Scope.child(Scope.java:240)
+	at liquibase.Scope.child(Scope.java:219)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:272)
+	... 23 common frames omitted
+Caused by: liquibase.exception.ChangeLogParseException: Unable to parse empty file: 'classpath:db/changelog/db.changelog.sql'
+	at liquibase.parser.core.sql.SqlChangeLogParser.parse(SqlChangeLogParser.java:67)
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.lambda$getDatabaseChangeLog$0(DatabaseChangelogCommandStep.java:143)
+	at liquibase.Scope.lambda$child$0(Scope.java:241)
+	at liquibase.Scope.child(Scope.java:250)
+	at liquibase.Scope.child(Scope.java:240)
+	at liquibase.Scope.child(Scope.java:219)
+	at liquibase.Scope.child(Scope.java:307)
+	at liquibase.Scope.child(Scope.java:311)
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.getDatabaseChangeLog(DatabaseChangelogCommandStep.java:138)
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.run(DatabaseChangelogCommandStep.java:84)
+	at liquibase.command.CommandScope.lambda$execute$5(CommandScope.java:269)
+	... 41 common frames omitted
+12:50:31 INFO  Starting MaintenanceApplication using Java 24.0.1 with PID 28376 (C:\Users\XznRh\Downloads\GProjectTransport-0.2.Rollback.zip-zip.zip.Ballrock.trgz-7z.zip.php.py.zip-sql\GProjectTransport-0.2.5\GProjectTransport-0.2.5\maintenance\target\classes started by XznRh in C:\Users\XznRh\Downloads\GProjectTransport-0.2.Rollback.zip-zip.zip.Ballrock.trgz-7z.zip.php.py.zip-sql\GProjectTransport-0.2.5\GProjectTransport-0.2.5\maintenance)
+12:50:31 INFO  No active profile set, falling back to 1 default profile: "default"
+12:50:31 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+12:50:31 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+12:50:32 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12:50:32 INFO  Finished Spring Data repository scanning in 129 ms. Found 1 JPA repository interface.
+12:50:33 INFO  Tomcat initialized with port 7775 (http)
+12:50:33 INFO  Starting service [Tomcat]
+12:50:33 INFO  Starting Servlet engine: [Apache Tomcat/11.0.21]
+12:50:33 INFO  Root WebApplicationContext: initialization completed in 1526 ms
+12:50:33 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
+12:50:33 INFO  HHH000001: Hibernate ORM core version 7.2.12.Final
+12:50:33 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+12:50:33 INFO  HikariPool-1 - Starting...
+12:50:34 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@25cda69f
+12:50:34 INFO  HikariPool-1 - Start completed.
+12:50:34 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+12:50:34 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+12:50:34 INFO  HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/transport_db_maintenance?createDatabaseIfNotExists=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: transport_db_maintenance/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+12:50:34 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+12:50:35 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+12:50:35 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+12:50:36 WARN  Skipping empty file 'classpath:db/changelog/db.changelog.sql'
+12:50:36 WARN  Unable to parse empty file: 'classpath:db/changelog/db.changelog.sql'
+12:50:36 INFO  Logging exception.
+12:50:36 INFO  ERROR: Exception Details
+12:50:36 INFO  ERROR: Exception Primary Class:  ChangeLogParseException
+12:50:36 INFO  ERROR: Exception Primary Reason:  Unable to parse empty file: 'classpath:db/changelog/db.changelog.sql'
+12:50:36 INFO  ERROR: Exception Primary Source:  5.0.2
+12:50:36 INFO  Command execution complete
+12:50:36 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [com/gTransitProject/maintenance/config/liquibaseConfig.class]: liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: Unable to parse empty file: 'classpath:db/changelog/db.changelog.sql'
+12:50:36 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+12:50:36 INFO  HikariPool-1 - Shutdown initiated...
+12:50:36 INFO  HikariPool-1 - Shutdown completed.
+12:50:36 INFO  Stopping service [Tomcat]
+12:50:36 INFO  
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+12:50:36 ERROR Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [com/gTransitProject/maintenance/config/liquibaseConfig.class]: liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: Unable to parse empty file: 'classpath:db/changelog/db.changelog.sql'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1817)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1218)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1184)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1121)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:994)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.gTransitProject.maintenance.MaintenanceApplication.main(MaintenanceApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52)
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: Unable to parse empty file: 'classpath:db/changelog/db.changelog.sql'
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:289)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1864)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1813)
+	... 21 common frames omitted
+Caused by: liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: Unable to parse empty file: 'classpath:db/changelog/db.changelog.sql'
+	at liquibase.command.CommandScope.lambda$execute$5(CommandScope.java:325)
+	at liquibase.Scope.child(Scope.java:250)
+	at liquibase.Scope.child(Scope.java:226)
+	at liquibase.command.CommandScope.execute(CommandScope.java:257)
+	at liquibase.Liquibase.lambda$update$0(Liquibase.java:216)
+	at liquibase.Scope.lambda$child$0(Scope.java:241)
+	at liquibase.Scope.child(Scope.java:250)
+	at liquibase.Scope.child(Scope.java:240)
+	at liquibase.Scope.child(Scope.java:219)
+	at liquibase.Liquibase.runInScope(Liquibase.java:1366)
+	at liquibase.Liquibase.update(Liquibase.java:205)
+	at liquibase.Liquibase.update(Liquibase.java:188)
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:327)
+	at liquibase.integration.spring.SpringLiquibase.lambda$afterPropertiesSet$0(SpringLiquibase.java:279)
+	at liquibase.Scope.lambda$child$0(Scope.java:241)
+	at liquibase.Scope.child(Scope.java:250)
+	at liquibase.Scope.child(Scope.java:240)
+	at liquibase.Scope.child(Scope.java:219)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:272)
+	... 23 common frames omitted
+Caused by: liquibase.exception.ChangeLogParseException: Unable to parse empty file: 'classpath:db/changelog/db.changelog.sql'
+	at liquibase.parser.core.sql.SqlChangeLogParser.parse(SqlChangeLogParser.java:67)
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.lambda$getDatabaseChangeLog$0(DatabaseChangelogCommandStep.java:143)
+	at liquibase.Scope.lambda$child$0(Scope.java:241)
+	at liquibase.Scope.child(Scope.java:250)
+	at liquibase.Scope.child(Scope.java:240)
+	at liquibase.Scope.child(Scope.java:219)
+	at liquibase.Scope.child(Scope.java:307)
+	at liquibase.Scope.child(Scope.java:311)
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.getDatabaseChangeLog(DatabaseChangelogCommandStep.java:138)
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.run(DatabaseChangelogCommandStep.java:84)
+	at liquibase.command.CommandScope.lambda$execute$5(CommandScope.java:269)
+	... 41 common frames omitted
+12:54:01 INFO  Starting MaintenanceApplication using Java 24.0.1 with PID 12692 (C:\Users\XznRh\Downloads\GProjectTransport-0.2.Rollback.zip-zip.zip.Ballrock.trgz-7z.zip.php.py.zip-sql\GProjectTransport-0.2.5\GProjectTransport-0.2.5\maintenance\target\classes started by XznRh in C:\Users\XznRh\Downloads\GProjectTransport-0.2.Rollback.zip-zip.zip.Ballrock.trgz-7z.zip.php.py.zip-sql\GProjectTransport-0.2.5\GProjectTransport-0.2.5\maintenance)
+12:54:01 INFO  No active profile set, falling back to 1 default profile: "default"
+12:54:01 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+12:54:01 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+12:54:02 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12:54:02 INFO  Finished Spring Data repository scanning in 130 ms. Found 1 JPA repository interface.
+12:54:03 INFO  Tomcat initialized with port 7775 (http)
+12:54:03 INFO  Starting service [Tomcat]
+12:54:03 INFO  Starting Servlet engine: [Apache Tomcat/11.0.21]
+12:54:03 INFO  Root WebApplicationContext: initialization completed in 1636 ms
+12:54:03 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
+12:54:03 INFO  HHH000001: Hibernate ORM core version 7.2.12.Final
+12:54:03 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+12:54:03 INFO  HikariPool-1 - Starting...
+12:54:03 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@25cda69f
+12:54:03 INFO  HikariPool-1 - Start completed.
+12:54:03 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+12:54:03 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+12:54:03 INFO  HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/transport_db_maintenance?createDatabaseIfNotExists=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: transport_db_maintenance/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+12:54:04 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+12:54:04 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+12:54:04 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+12:54:06 WARN  Skipping empty file 'db/changelog/db.changelog.sql'
+12:54:06 WARN  Unable to parse empty file: 'db/changelog/db.changelog.sql'
+12:54:06 INFO  Logging exception.
+12:54:06 INFO  ERROR: Exception Details
+12:54:06 INFO  ERROR: Exception Primary Class:  ChangeLogParseException
+12:54:06 INFO  ERROR: Exception Primary Reason:  Unable to parse empty file: 'db/changelog/db.changelog.sql'
+12:54:06 INFO  ERROR: Exception Primary Source:  5.0.2
+12:54:06 INFO  Command execution complete
+12:54:06 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [com/gTransitProject/maintenance/config/liquibaseConfig.class]: liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: Unable to parse empty file: 'db/changelog/db.changelog.sql'
+12:54:06 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+12:54:06 INFO  HikariPool-1 - Shutdown initiated...
+12:54:06 INFO  HikariPool-1 - Shutdown completed.
+12:54:06 INFO  Stopping service [Tomcat]
+12:54:06 INFO  
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+12:54:06 ERROR Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [com/gTransitProject/maintenance/config/liquibaseConfig.class]: liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: Unable to parse empty file: 'db/changelog/db.changelog.sql'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1817)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1218)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1184)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1121)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:994)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.gTransitProject.maintenance.MaintenanceApplication.main(MaintenanceApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52)
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: Unable to parse empty file: 'db/changelog/db.changelog.sql'
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:289)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1864)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1813)
+	... 21 common frames omitted
+Caused by: liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: Unable to parse empty file: 'db/changelog/db.changelog.sql'
+	at liquibase.command.CommandScope.lambda$execute$5(CommandScope.java:325)
+	at liquibase.Scope.child(Scope.java:250)
+	at liquibase.Scope.child(Scope.java:226)
+	at liquibase.command.CommandScope.execute(CommandScope.java:257)
+	at liquibase.Liquibase.lambda$update$0(Liquibase.java:216)
+	at liquibase.Scope.lambda$child$0(Scope.java:241)
+	at liquibase.Scope.child(Scope.java:250)
+	at liquibase.Scope.child(Scope.java:240)
+	at liquibase.Scope.child(Scope.java:219)
+	at liquibase.Liquibase.runInScope(Liquibase.java:1366)
+	at liquibase.Liquibase.update(Liquibase.java:205)
+	at liquibase.Liquibase.update(Liquibase.java:188)
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:327)
+	at liquibase.integration.spring.SpringLiquibase.lambda$afterPropertiesSet$0(SpringLiquibase.java:279)
+	at liquibase.Scope.lambda$child$0(Scope.java:241)
+	at liquibase.Scope.child(Scope.java:250)
+	at liquibase.Scope.child(Scope.java:240)
+	at liquibase.Scope.child(Scope.java:219)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:272)
+	... 23 common frames omitted
+Caused by: liquibase.exception.ChangeLogParseException: Unable to parse empty file: 'db/changelog/db.changelog.sql'
+	at liquibase.parser.core.sql.SqlChangeLogParser.parse(SqlChangeLogParser.java:67)
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.lambda$getDatabaseChangeLog$0(DatabaseChangelogCommandStep.java:143)
+	at liquibase.Scope.lambda$child$0(Scope.java:241)
+	at liquibase.Scope.child(Scope.java:250)
+	at liquibase.Scope.child(Scope.java:240)
+	at liquibase.Scope.child(Scope.java:219)
+	at liquibase.Scope.child(Scope.java:307)
+	at liquibase.Scope.child(Scope.java:311)
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.getDatabaseChangeLog(DatabaseChangelogCommandStep.java:138)
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.run(DatabaseChangelogCommandStep.java:84)
+	at liquibase.command.CommandScope.lambda$execute$5(CommandScope.java:269)
+	... 41 common frames omitted
+12:56:20 INFO  Starting MaintenanceApplication using Java 24.0.1 with PID 27724 (C:\Users\XznRh\Downloads\GProjectTransport-0.2.Rollback.zip-zip.zip.Ballrock.trgz-7z.zip.php.py.zip-sql\GProjectTransport-0.2.5\GProjectTransport-0.2.5\maintenance\target\classes started by XznRh in C:\Users\XznRh\Downloads\GProjectTransport-0.2.Rollback.zip-zip.zip.Ballrock.trgz-7z.zip.php.py.zip-sql\GProjectTransport-0.2.5\GProjectTransport-0.2.5\maintenance)
+12:56:20 INFO  No active profile set, falling back to 1 default profile: "default"
+12:56:20 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+12:56:20 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+12:56:21 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12:56:21 INFO  Finished Spring Data repository scanning in 122 ms. Found 1 JPA repository interface.
+12:56:22 INFO  Tomcat initialized with port 7775 (http)
+12:56:22 INFO  Starting service [Tomcat]
+12:56:22 INFO  Starting Servlet engine: [Apache Tomcat/11.0.21]
+12:56:22 INFO  Root WebApplicationContext: initialization completed in 1628 ms
+12:56:22 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
+12:56:22 INFO  HHH000001: Hibernate ORM core version 7.2.12.Final
+12:56:22 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+12:56:22 INFO  HikariPool-1 - Starting...
+12:56:22 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@25cda69f
+12:56:22 INFO  HikariPool-1 - Start completed.
+12:56:23 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+12:56:23 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+12:56:23 INFO  HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/transport_db_maintenance?createDatabaseIfNotExists=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: transport_db_maintenance/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+12:56:24 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+12:56:24 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+12:56:24 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+12:56:26 INFO  Creating database changelog table with name: transport_db_maintenance.databasechangelog
+12:56:26 INFO  Reading from transport_db_maintenance.databasechangelog
+12:56:26 INFO  Creating snapshot
+12:56:26 INFO  Name 'PK_DATABASECHANGELOGLOCK' ignored for PRIMARY key.
+12:56:26 INFO  Successfully acquired change log lock
+12:56:26 INFO  Using deploymentId: 1542584403
+12:56:26 INFO  Reading from transport_db_maintenance.databasechangelog
+12:56:26 INFO  Running Changeset: db/changelog/db.changelog.sql::1::yourname
+12:56:26 INFO  Custom SQL executed
+12:56:26 INFO  ChangeSet db/changelog/db.changelog.sql::1::yourname ran successfully in 18ms
+12:56:26 INFO  UPDATE SUMMARY
+12:56:26 INFO  Run:                          1
+12:56:26 INFO  Previously run:               0
+12:56:26 INFO  Filtered out:                 0
+12:56:26 INFO  -------------------------------
+12:56:26 INFO  Total change sets:            1
+12:56:26 INFO  Update summary generated
+12:56:26 INFO  Update command completed successfully.
+12:56:26 INFO  Liquibase: Update has been successful. Rows affected: 0
+12:56:26 INFO  Successfully released change log lock
+12:56:26 INFO  Command execution complete
+12:56:26 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+12:56:27 INFO  Tomcat started on port 7775 (http) with context path '/'
+12:56:27 INFO  Started MaintenanceApplication in 7.568 seconds (process running for 8.159)
+12:57:13 INFO  Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+12:57:13 INFO  Commencing graceful shutdown. Waiting for active requests to complete
+12:57:13 INFO  Graceful shutdown complete
+12:57:13 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+12:57:13 INFO  HikariPool-1 - Shutdown initiated...
+12:57:13 INFO  HikariPool-1 - Shutdown completed.
+12:57:13 INFO  Starting MaintenanceApplication using Java 24.0.1 with PID 27724 (C:\Users\XznRh\Downloads\GProjectTransport-0.2.Rollback.zip-zip.zip.Ballrock.trgz-7z.zip.php.py.zip-sql\GProjectTransport-0.2.5\GProjectTransport-0.2.5\maintenance\target\classes started by XznRh in C:\Users\XznRh\Downloads\GProjectTransport-0.2.Rollback.zip-zip.zip.Ballrock.trgz-7z.zip.php.py.zip-sql\GProjectTransport-0.2.5\GProjectTransport-0.2.5\maintenance)
+12:57:13 INFO  No active profile set, falling back to 1 default profile: "default"
+12:57:13 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12:57:13 INFO  Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interface.
+12:57:14 INFO  Tomcat initialized with port 7775 (http)
+12:57:14 INFO  Starting service [Tomcat]
+12:57:14 INFO  Starting Servlet engine: [Apache Tomcat/11.0.21]
+12:57:14 INFO  Root WebApplicationContext: initialization completed in 515 ms
+12:57:14 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
+12:57:14 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+12:57:14 INFO  HikariPool-2 - Starting...
+12:57:14 INFO  HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@135ca7f4
+12:57:14 INFO  HikariPool-2 - Start completed.
+12:57:14 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+12:57:14 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+12:57:14 INFO  HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/transport_db_maintenance?createDatabaseIfNotExists=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: transport_db_maintenance/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+12:57:14 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+12:57:14 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+12:57:14 INFO  Reading from transport_db_maintenance.databasechangelog
+12:57:14 INFO  Database is up to date, no changesets to execute
+12:57:14 INFO  Reading from transport_db_maintenance.databasechangelog
+12:57:14 INFO  UPDATE SUMMARY
+12:57:14 INFO  Run:                          0
+12:57:14 INFO  Previously run:               0
+12:57:14 INFO  Filtered out:                 0
+12:57:14 INFO  -------------------------------
+12:57:14 INFO  Total change sets:            0
+12:57:14 INFO  Update summary generated
+12:57:14 INFO  Command execution complete
+12:57:14 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+12:57:14 INFO  Tomcat started on port 7775 (http) with context path '/'
+12:57:14 INFO  Started MaintenanceApplication in 1.068 seconds (process running for 55.267)
+12:57:14 INFO  Condition evaluation unchanged
+13:51:03 INFO  Commencing graceful shutdown. Waiting for active requests to complete
+13:51:03 INFO  Graceful shutdown complete
+13:51:03 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+13:51:03 INFO  HikariPool-2 - Shutdown initiated...
+13:51:03 INFO  HikariPool-2 - Shutdown completed.
