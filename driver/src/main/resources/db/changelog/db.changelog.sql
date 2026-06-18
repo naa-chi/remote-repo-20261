@@ -1,0 +1,2 @@
+--liquibase formatted sql
+-- DONT BE EMPTY YOU'LL BREAK EVERYTHING
