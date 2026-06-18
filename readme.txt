@@ -16,11 +16,11 @@ Reminder of what ports are which
 - Review = 7782
 
 
-OpenAllMicroservices.py automatically opens every microservice so it's no longer needed to be done manually ¿
+CreateAllDatabases.py automatically opens every db so it's no longer needed to be done manually.
 Doesn't need to open individual terminals either. It does take a while, though.
 
 Run pip install pymysql to run it properly
-Then run python OpenAllMicroservices.py on the root folder of the microservices
+Then run python CreateAllDatabases.py on the root folder of the microservices
 
 
 Docs use swagger and there is logging enabled on every service
