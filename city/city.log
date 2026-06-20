@@ -8,23 +8,23 @@
 
  :: Spring Boot ::                (v4.0.6)
 
-2026-06-14T20:52:55.437-04:00  INFO 24884 --- [city] [           main] c.gTransitProject.city.CityApplication   : Starting CityApplication v0.0.1-SNAPSHOT using Java 24.0.1 with PID 24884 (C:\Users\XznRh\Downloads\GProjectTransport-0.2.Rollback.zip-zip.zip.Ballrock.trgz-7z.zip.php.py.zip-sql\GProjectTransport-0.2.5\GProjectTransport-0.2.5\city\target\city-0.0.1-SNAPSHOT.jar started by XznRh in C:\Users\XznRh\Downloads\GProjectTransport-0.2.Rollback.zip-zip.zip.Ballrock.trgz-7z.zip.php.py.zip-sql\GProjectTransport-0.2.5\GProjectTransport-0.2.5)
-2026-06-14T20:52:55.446-04:00  INFO 24884 --- [city] [           main] c.gTransitProject.city.CityApplication   : No active profile set, falling back to 1 default profile: "default"
-2026-06-14T20:52:56.587-04:00  INFO 24884 --- [city] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-14T20:52:56.722-04:00  INFO 24884 --- [city] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 123 ms. Found 1 JPA repository interface.
-2026-06-14T20:52:57.447-04:00  INFO 24884 --- [city] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 7777 (http)
-2026-06-14T20:52:57.468-04:00  INFO 24884 --- [city] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-14T20:52:57.469-04:00  INFO 24884 --- [city] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-06-14T20:52:57.521-04:00  INFO 24884 --- [city] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2002 ms
-2026-06-14T20:52:57.919-04:00  INFO 24884 --- [city] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-06-14T20:52:58.168-04:00  INFO 24884 --- [city] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-06-14T20:52:58.861-04:00  INFO 24884 --- [city] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-14T20:52:58.894-04:00  INFO 24884 --- [city] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-14T20:52:59.112-04:00  INFO 24884 --- [city] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7544260a
-2026-06-14T20:52:59.113-04:00  INFO 24884 --- [city] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-14T20:52:59.183-04:00  WARN 24884 --- [city] [           main] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
-2026-06-14T20:52:59.187-04:00  WARN 24884 --- [city] [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-06-14T20:52:59.211-04:00  INFO 24884 --- [city] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+16:31:47 INFO  Starting CityApplication v0.0.1-SNAPSHOT using Java 24.0.1 with PID 39480 (C:\Users\XznRh\Downloads\remote-repo-20261-main\remote-repo-20261-main\city\target\city-0.0.1-SNAPSHOT.jar started by XznRh in C:\Users\XznRh\Downloads\remote-repo-20261-main\remote-repo-20261-main)
+16:31:47 INFO  No active profile set, falling back to 1 default profile: "default"
+16:31:48 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:31:48 INFO  Finished Spring Data repository scanning in 122 ms. Found 1 JPA repository interface.
+16:31:49 INFO  Tomcat initialized with port 7777 (http)
+16:31:49 INFO  Starting service [Tomcat]
+16:31:49 INFO  Starting Servlet engine: [Apache Tomcat/11.0.21]
+16:31:49 INFO  Root WebApplicationContext: initialization completed in 2204 ms
+16:31:50 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
+16:31:50 INFO  HHH000001: Hibernate ORM core version 7.2.12.Final
+16:31:50 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+16:31:50 INFO  HikariPool-1 - Starting...
+16:31:51 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6866e740
+16:31:51 INFO  HikariPool-1 - Start completed.
+16:31:51 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+16:31:51 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+16:31:51 INFO  HHH10001005: Database info:
 	Database JDBC URL [jdbc:mysql://localhost:3306/transport_db_city?createDatabaseIfNotExists=true]
 	Database driver: MySQL Connector/J
 	Database dialect: MySQLDialect
@@ -36,29 +36,221 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-06-14T20:53:00.149-04:00  INFO 24884 --- [city] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-06-14T20:53:00.236-04:00  INFO 24884 --- [city] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-14T20:53:00.331-04:00  INFO 24884 --- [city] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-06-14T20:53:00.801-04:00  WARN 24884 --- [city] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-14T20:53:01.693-04:00  INFO 24884 --- [city] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 7777 (http) with context path '/'
-2026-06-14T20:53:01.721-04:00  INFO 24884 --- [city] [           main] c.gTransitProject.city.CityApplication   : Started CityApplication in 6.899 seconds (process running for 7.68)
-2026-06-14T20:53:01.726-04:00  WARN 24884 --- [city] [           main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
-2026-06-14T20:53:01.726-04:00  WARN 24884 --- [city] [           main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
-2026-06-14T20:57:29.259-04:00  INFO 24884 --- [city] [nio-7777-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-06-14T20:57:29.259-04:00  INFO 24884 --- [city] [nio-7777-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-06-14T20:57:29.261-04:00  INFO 24884 --- [city] [nio-7777-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2026-06-14T20:57:29.316-04:00  INFO 24884 --- [city] [nio-7777-exec-2] c.g.city.service.CityService             : Obteniendo todas las ciudades
-Hibernate: 
-    select
-        c1_0.city_id,
-        c1_0.city_code,
-        c1_0.city_name,
-        c1_0.line_number,
-        c1_0.inhabitants 
-    from
-        cities c1_0
-2026-06-14T21:07:01.620-04:00  INFO 24884 --- [city] [ionShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-06-14T21:07:01.740-04:00  INFO 24884 --- [city] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-06-14T21:07:01.749-04:00  INFO 24884 --- [city] [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-06-14T21:07:01.757-04:00  INFO 24884 --- [city] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-06-14T21:07:01.784-04:00  INFO 24884 --- [city] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+16:31:51 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+16:31:52 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:31:52 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+16:31:54 INFO  Reading from transport_db_city.databasechangelog
+16:31:54 INFO  Successfully acquired change log lock
+16:31:54 INFO  Using deploymentId: 1987512312
+16:31:54 INFO  Reading from transport_db_city.databasechangelog
+16:31:54 INFO  Running Changeset: db/changelog/db.changelog.sql::1::bart
+16:31:55 ERROR ChangeSet db/changelog/db.changelog.sql::1::bart encountered an exception.
+liquibase.exception.DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '>>>>>>> 14c34d1 (Agrega configuracion inicial de Liquibase en city)' at line 1 [Failed SQL: (1064) >>>>>>> 14c34d1 (Agrega configuracion inicial de Liquibase en city)]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:525)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:85)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:188)
+	at liquibase.executor.AbstractExecutor.execute(AbstractExecutor.java:148)
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(AbstractJdbcDatabase.java:1198)
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:860)
+	at liquibase.changelog.visitor.UpdateVisitor.executeAcceptedChange(UpdateVisitor.java:127)
+	at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:71)
+	at liquibase.changelog.ChangeLogIterator.lambda$run$0(ChangeLogIterator.java:133)
+	at liquibase.Scope.lambda$child$0(Scope.java:241)
+	at liquibase.Scope.child(Scope.java:250)
+	at liquibase.Scope.child(Scope.java:240)
+	at liquibase.Scope.child(Scope.java:219)
+	at liquibase.changelog.ChangeLogIterator.lambda$run$1(ChangeLogIterator.java:122)
+	at liquibase.Scope.lambda$child$0(Scope.java:241)
+	at liquibase.Scope.child(Scope.java:250)
+	at liquibase.Scope.child(Scope.java:240)
+	at liquibase.Scope.child(Scope.java:219)
+	at liquibase.Scope.child(Scope.java:307)
+	at liquibase.Scope.child(Scope.java:311)
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:91)
+	at liquibase.command.core.AbstractUpdateCommandStep.lambda$run$1(AbstractUpdateCommandStep.java:122)
+	at liquibase.Scope.lambda$child$0(Scope.java:241)
+	at liquibase.Scope.child(Scope.java:250)
+	at liquibase.Scope.child(Scope.java:240)
+	at liquibase.Scope.child(Scope.java:219)
+	at liquibase.command.core.AbstractUpdateCommandStep.run(AbstractUpdateCommandStep.java:120)
+	at liquibase.command.core.UpdateCommandStep.run(UpdateCommandStep.java:100)
+	at liquibase.command.CommandScope.lambda$execute$5(CommandScope.java:269)
+	at liquibase.Scope.child(Scope.java:250)
+	at liquibase.Scope.child(Scope.java:226)
+	at liquibase.command.CommandScope.execute(CommandScope.java:257)
+	at liquibase.Liquibase.lambda$update$0(Liquibase.java:216)
+	at liquibase.Scope.lambda$child$0(Scope.java:241)
+	at liquibase.Scope.child(Scope.java:250)
+	at liquibase.Scope.child(Scope.java:240)
+	at liquibase.Scope.child(Scope.java:219)
+	at liquibase.Liquibase.runInScope(Liquibase.java:1366)
+	at liquibase.Liquibase.update(Liquibase.java:205)
+	at liquibase.Liquibase.update(Liquibase.java:188)
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:327)
+	at liquibase.integration.spring.SpringLiquibase.lambda$afterPropertiesSet$0(SpringLiquibase.java:279)
+	at liquibase.Scope.lambda$child$0(Scope.java:241)
+	at liquibase.Scope.child(Scope.java:250)
+	at liquibase.Scope.child(Scope.java:240)
+	at liquibase.Scope.child(Scope.java:219)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:272)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1864)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1813)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1218)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1184)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1121)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:994)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.gTransitProject.city.CityApplication.main(CityApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:106)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:40)
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '>>>>>>> 14c34d1 (Agrega configuracion inicial de Liquibase en city)' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:839)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:687)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:517)
+	... 71 common frames omitted
+16:31:55 INFO  UPDATE SUMMARY
+16:31:55 INFO  Run:                          0
+16:31:55 INFO  Previously run:               0
+16:31:55 INFO  Filtered out:                 0
+16:31:55 INFO  -------------------------------
+16:31:55 INFO  Total change sets:            1
+16:31:55 INFO  Update summary generated
+16:31:55 INFO  Update command encountered an exception.
+16:31:55 INFO  Successfully released change log lock
+16:31:55 INFO  Logging exception.
+16:31:55 INFO  ERROR: Exception Details
+16:31:55 INFO  ERROR: Exception Primary Class:  SQLSyntaxErrorException
+16:31:55 INFO  ERROR: Exception Primary Reason:  You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '>>>>>>> 14c34d1 (Agrega configuracion inicial de Liquibase en city)' at line 1
+16:31:55 INFO  ERROR: Exception Primary Source:  MySQL 5.5.5-10.4.32-MariaDB
+16:31:55 INFO  Command execution complete
+16:31:55 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [com/gTransitProject/city/config/liquibaseConfig.class]: liquibase.exception.CommandExecutionException: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/db.changelog.sql::1::bart:
+     Reason: liquibase.exception.DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '>>>>>>> 14c34d1 (Agrega configuracion inicial de Liquibase en city)' at line 1 [Failed SQL: (1064) >>>>>>> 14c34d1 (Agrega configuracion inicial de Liquibase en city)]
+16:31:55 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+16:31:55 INFO  HikariPool-1 - Shutdown initiated...
+16:31:55 INFO  HikariPool-1 - Shutdown completed.
+16:31:55 INFO  Stopping service [Tomcat]
+16:31:55 INFO  
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+16:31:55 ERROR Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [com/gTransitProject/city/config/liquibaseConfig.class]: liquibase.exception.CommandExecutionException: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/db.changelog.sql::1::bart:
+     Reason: liquibase.exception.DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '>>>>>>> 14c34d1 (Agrega configuracion inicial de Liquibase en city)' at line 1 [Failed SQL: (1064) >>>>>>> 14c34d1 (Agrega configuracion inicial de Liquibase en city)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1817)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1218)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1184)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1121)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:994)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.gTransitProject.city.CityApplication.main(CityApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:106)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:40)
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.CommandExecutionException: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/db.changelog.sql::1::bart:
+     Reason: liquibase.exception.DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '>>>>>>> 14c34d1 (Agrega configuracion inicial de Liquibase en city)' at line 1 [Failed SQL: (1064) >>>>>>> 14c34d1 (Agrega configuracion inicial de Liquibase en city)]
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:289)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1864)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1813)
+	... 23 common frames omitted
+Caused by: liquibase.exception.CommandExecutionException: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/db.changelog.sql::1::bart:
+     Reason: liquibase.exception.DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '>>>>>>> 14c34d1 (Agrega configuracion inicial de Liquibase en city)' at line 1 [Failed SQL: (1064) >>>>>>> 14c34d1 (Agrega configuracion inicial de Liquibase en city)]
+	at liquibase.command.CommandScope.lambda$execute$5(CommandScope.java:325)
+	at liquibase.Scope.child(Scope.java:250)
+	at liquibase.Scope.child(Scope.java:226)
+	at liquibase.command.CommandScope.execute(CommandScope.java:257)
+	at liquibase.Liquibase.lambda$update$0(Liquibase.java:216)
+	at liquibase.Scope.lambda$child$0(Scope.java:241)
+	at liquibase.Scope.child(Scope.java:250)
+	at liquibase.Scope.child(Scope.java:240)
+	at liquibase.Scope.child(Scope.java:219)
+	at liquibase.Liquibase.runInScope(Liquibase.java:1366)
+	at liquibase.Liquibase.update(Liquibase.java:205)
+	at liquibase.Liquibase.update(Liquibase.java:188)
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:327)
+	at liquibase.integration.spring.SpringLiquibase.lambda$afterPropertiesSet$0(SpringLiquibase.java:279)
+	at liquibase.Scope.lambda$child$0(Scope.java:241)
+	at liquibase.Scope.child(Scope.java:250)
+	at liquibase.Scope.child(Scope.java:240)
+	at liquibase.Scope.child(Scope.java:219)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:272)
+	... 25 common frames omitted
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/db.changelog.sql::1::bart:
+     Reason: liquibase.exception.DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '>>>>>>> 14c34d1 (Agrega configuracion inicial de Liquibase en city)' at line 1 [Failed SQL: (1064) >>>>>>> 14c34d1 (Agrega configuracion inicial de Liquibase en city)]
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:155)
+	at liquibase.command.core.AbstractUpdateCommandStep.lambda$run$1(AbstractUpdateCommandStep.java:122)
+	at liquibase.Scope.lambda$child$0(Scope.java:241)
+	at liquibase.Scope.child(Scope.java:250)
+	at liquibase.Scope.child(Scope.java:240)
+	at liquibase.Scope.child(Scope.java:219)
+	at liquibase.command.core.AbstractUpdateCommandStep.run(AbstractUpdateCommandStep.java:120)
+	at liquibase.command.core.UpdateCommandStep.run(UpdateCommandStep.java:100)
+	at liquibase.command.CommandScope.lambda$execute$5(CommandScope.java:269)
+	... 43 common frames omitted
+Caused by: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/db.changelog.sql::1::bart:
+     Reason: liquibase.exception.DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '>>>>>>> 14c34d1 (Agrega configuracion inicial de Liquibase en city)' at line 1 [Failed SQL: (1064) >>>>>>> 14c34d1 (Agrega configuracion inicial de Liquibase en city)]
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:918)
+	at liquibase.changelog.visitor.UpdateVisitor.executeAcceptedChange(UpdateVisitor.java:127)
+	at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:71)
+	at liquibase.changelog.ChangeLogIterator.lambda$run$0(ChangeLogIterator.java:133)
+	at liquibase.Scope.lambda$child$0(Scope.java:241)
+	at liquibase.Scope.child(Scope.java:250)
+	at liquibase.Scope.child(Scope.java:240)
+	at liquibase.Scope.child(Scope.java:219)
+	at liquibase.changelog.ChangeLogIterator.lambda$run$1(ChangeLogIterator.java:122)
+	at liquibase.Scope.lambda$child$0(Scope.java:241)
+	at liquibase.Scope.child(Scope.java:250)
+	at liquibase.Scope.child(Scope.java:240)
+	at liquibase.Scope.child(Scope.java:219)
+	at liquibase.Scope.child(Scope.java:307)
+	at liquibase.Scope.child(Scope.java:311)
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:91)
+	... 51 common frames omitted
+Caused by: liquibase.exception.DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '>>>>>>> 14c34d1 (Agrega configuracion inicial de Liquibase en city)' at line 1 [Failed SQL: (1064) >>>>>>> 14c34d1 (Agrega configuracion inicial de Liquibase en city)]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:525)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:85)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:188)
+	at liquibase.executor.AbstractExecutor.execute(AbstractExecutor.java:148)
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(AbstractJdbcDatabase.java:1198)
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:860)
+	... 66 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '>>>>>>> 14c34d1 (Agrega configuracion inicial de Liquibase en city)' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:839)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:687)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:517)
+	... 71 common frames omitted
