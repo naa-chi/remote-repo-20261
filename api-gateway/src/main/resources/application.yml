@@ -1,0 +1,81 @@
+server:
+  port: 7769
+
+spring:
+  main:
+    web-application-type: reactive
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          secret-key: esta_es_mi_compleja_clave_secreta
+
+  cloud:
+    gateway:
+      routes:
+
+        - id: manufacturer
+          uri: http://manufacturer-service:7770
+          predicates:
+            - Path=/manufacturer/**
+
+        - id: train
+          uri: http://train-service:7771
+          predicates:
+            - Path=/train/**
+
+        - id: typeengine
+          uri: http://typeengine-service:7772
+          predicates:
+            - Path=/typeengine/**
+
+        - id: station
+          uri: http://station-service:7773
+          predicates:
+            - Path=/station/**
+
+        - id: line
+          uri: http://line-service:7774
+          predicates:
+            - Path=/line/**
+
+        - id: maintenance
+          uri: http://maintenance-service:7775
+          predicates:
+            - Path=/maintenance/**
+
+        - id: ticket
+          uri: http://ticket-service:7776
+          predicates:
+            - Path=/ticket/**
+
+        - id: city
+          uri: http://city-service:7777
+          predicates:
+            - Path=/city/**
+
+        - id: driver
+          uri: http://driver-service:7778
+          predicates:
+            - Path=/driver/**
+
+        - id: client
+          uri: http://client-service:7779
+          predicates:
+            - Path=/client/**
+
+        - id: auth 
+          uri: http://auth-service:7780
+          predicates:
+            - Path=/auth/**
+
+        - id: supervisor
+          uri: http://supervisor-service:7781
+          predicates:
+            - Path=/supervisor/**
+
+        - id: review
+          uri: http://review-service:7782
+          predicates:
+            - Path=/review/**

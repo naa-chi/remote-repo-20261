@@ -8,23 +8,23 @@
 
  :: Spring Boot ::                (v4.0.6)
 
-2026-06-14T20:54:31.767-04:00  INFO 18332 --- [ticket] [           main] c.g.ticket.TicketApplication             : Starting TicketApplication v0.0.1-SNAPSHOT using Java 24.0.1 with PID 18332 (C:\Users\XznRh\Downloads\GProjectTransport-0.2.Rollback.zip-zip.zip.Ballrock.trgz-7z.zip.php.py.zip-sql\GProjectTransport-0.2.5\GProjectTransport-0.2.5\ticket\target\ticket-0.0.1-SNAPSHOT.jar started by XznRh in C:\Users\XznRh\Downloads\GProjectTransport-0.2.Rollback.zip-zip.zip.Ballrock.trgz-7z.zip.php.py.zip-sql\GProjectTransport-0.2.5\GProjectTransport-0.2.5)
-2026-06-14T20:54:31.774-04:00  INFO 18332 --- [ticket] [           main] c.g.ticket.TicketApplication             : No active profile set, falling back to 1 default profile: "default"
-2026-06-14T20:54:33.379-04:00  INFO 18332 --- [ticket] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-14T20:54:33.413-04:00  INFO 18332 --- [ticket] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 0 JPA repository interfaces.
-2026-06-14T20:54:34.471-04:00  INFO 18332 --- [ticket] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 7776 (http)
-2026-06-14T20:54:34.492-04:00  INFO 18332 --- [ticket] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-14T20:54:34.492-04:00  INFO 18332 --- [ticket] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-06-14T20:54:34.554-04:00  INFO 18332 --- [ticket] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2703 ms
-2026-06-14T20:54:35.001-04:00  INFO 18332 --- [ticket] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-06-14T20:54:35.181-04:00  INFO 18332 --- [ticket] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-06-14T20:54:36.056-04:00  INFO 18332 --- [ticket] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-14T20:54:36.113-04:00  INFO 18332 --- [ticket] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-14T20:54:36.399-04:00  INFO 18332 --- [ticket] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@13404f75
-2026-06-14T20:54:36.402-04:00  INFO 18332 --- [ticket] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-14T20:54:36.478-04:00  WARN 18332 --- [ticket] [           main] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
-2026-06-14T20:54:36.485-04:00  WARN 18332 --- [ticket] [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-06-14T20:54:36.518-04:00  INFO 18332 --- [ticket] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+16:33:47 INFO  Starting TicketApplication v0.0.1-SNAPSHOT using Java 24.0.1 with PID 37672 (C:\Users\XznRh\Downloads\remote-repo-20261-main\remote-repo-20261-main\ticket\target\ticket-0.0.1-SNAPSHOT.jar started by XznRh in C:\Users\XznRh\Downloads\remote-repo-20261-main\remote-repo-20261-main)
+16:33:47 INFO  No active profile set, falling back to 1 default profile: "default"
+16:33:48 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:33:48 INFO  Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+16:33:49 INFO  Tomcat initialized with port 7776 (http)
+16:33:49 INFO  Starting service [Tomcat]
+16:33:49 INFO  Starting Servlet engine: [Apache Tomcat/11.0.21]
+16:33:49 INFO  Root WebApplicationContext: initialization completed in 1746 ms
+16:33:49 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
+16:33:49 INFO  HHH000001: Hibernate ORM core version 7.2.12.Final
+16:33:50 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+16:33:50 INFO  HikariPool-1 - Starting...
+16:33:50 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@77d54a41
+16:33:50 INFO  HikariPool-1 - Start completed.
+16:33:50 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+16:33:50 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+16:33:50 INFO  HHH10001005: Database info:
 	Database JDBC URL [jdbc:mysql://localhost:3306/transport_db_ticket?createDatabaseIfNotExists=true]
 	Database driver: MySQL Connector/J
 	Database dialect: MySQLDialect
@@ -36,15 +36,24 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-06-14T20:54:36.995-04:00  INFO 18332 --- [ticket] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-06-14T20:54:37.006-04:00  INFO 18332 --- [ticket] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-14T20:54:37.295-04:00  WARN 18332 --- [ticket] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-14T20:54:38.429-04:00  INFO 18332 --- [ticket] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 7776 (http) with context path '/'
-2026-06-14T20:54:38.456-04:00  INFO 18332 --- [ticket] [           main] c.g.ticket.TicketApplication             : Started TicketApplication in 7.399 seconds (process running for 8.339)
-2026-06-14T20:54:38.460-04:00  WARN 18332 --- [ticket] [           main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
-2026-06-14T20:54:38.461-04:00  WARN 18332 --- [ticket] [           main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
-2026-06-14T21:07:01.722-04:00  INFO 18332 --- [ticket] [ionShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-06-14T21:07:01.772-04:00  INFO 18332 --- [ticket] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-06-14T21:07:01.802-04:00  INFO 18332 --- [ticket] [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-06-14T21:07:01.826-04:00  INFO 18332 --- [ticket] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-06-14T21:07:01.886-04:00  INFO 18332 --- [ticket] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+16:33:50 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+16:33:51 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:33:52 INFO  Reading from transport_db_ticket.databasechangelog
+16:33:52 INFO  Database is up to date, no changesets to execute
+16:33:52 INFO  Reading from transport_db_ticket.databasechangelog
+16:33:52 INFO  UPDATE SUMMARY
+16:33:52 INFO  Run:                          0
+16:33:52 INFO  Previously run:               0
+16:33:52 INFO  Filtered out:                 0
+16:33:52 INFO  -------------------------------
+16:33:52 INFO  Total change sets:            0
+16:33:52 INFO  Update summary generated
+16:33:52 INFO  Command execution complete
+16:33:53 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:33:53 INFO  Tomcat started on port 7776 (http) with context path '/'
+16:33:53 INFO  Started TicketApplication in 6.984 seconds (process running for 7.668)
+16:35:04 INFO  Commencing graceful shutdown. Waiting for active requests to complete
+16:35:04 INFO  Graceful shutdown complete
+16:35:04 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+16:35:04 INFO  HikariPool-1 - Shutdown initiated...
+16:35:04 INFO  HikariPool-1 - Shutdown completed.

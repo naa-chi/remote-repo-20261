@@ -8,23 +8,23 @@
 
  :: Spring Boot ::                (v4.0.6)
 
-2026-06-14T20:53:19.456-04:00  INFO 18464 --- [driver] [           main] c.g.driver.DriverApplication             : Starting DriverApplication v0.0.1-SNAPSHOT using Java 24.0.1 with PID 18464 (C:\Users\XznRh\Downloads\GProjectTransport-0.2.Rollback.zip-zip.zip.Ballrock.trgz-7z.zip.php.py.zip-sql\GProjectTransport-0.2.5\GProjectTransport-0.2.5\driver\target\driver-0.0.1-SNAPSHOT.jar started by XznRh in C:\Users\XznRh\Downloads\GProjectTransport-0.2.Rollback.zip-zip.zip.Ballrock.trgz-7z.zip.php.py.zip-sql\GProjectTransport-0.2.5\GProjectTransport-0.2.5)
-2026-06-14T20:53:19.462-04:00  INFO 18464 --- [driver] [           main] c.g.driver.DriverApplication             : No active profile set, falling back to 1 default profile: "default"
-2026-06-14T20:53:20.632-04:00  INFO 18464 --- [driver] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-14T20:53:20.654-04:00  INFO 18464 --- [driver] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
-2026-06-14T20:53:21.386-04:00  INFO 18464 --- [driver] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 7778 (http)
-2026-06-14T20:53:21.404-04:00  INFO 18464 --- [driver] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-14T20:53:21.405-04:00  INFO 18464 --- [driver] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-06-14T20:53:21.454-04:00  INFO 18464 --- [driver] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1891 ms
-2026-06-14T20:53:21.742-04:00  INFO 18464 --- [driver] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-06-14T20:53:21.855-04:00  INFO 18464 --- [driver] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-06-14T20:53:22.357-04:00  INFO 18464 --- [driver] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-14T20:53:22.384-04:00  INFO 18464 --- [driver] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-14T20:53:22.554-04:00  INFO 18464 --- [driver] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@44485db
-2026-06-14T20:53:22.556-04:00  INFO 18464 --- [driver] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-14T20:53:22.590-04:00  WARN 18464 --- [driver] [           main] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
-2026-06-14T20:53:22.592-04:00  WARN 18464 --- [driver] [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-06-14T20:53:22.609-04:00  INFO 18464 --- [driver] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+16:32:17 INFO  Starting DriverApplication v0.0.1-SNAPSHOT using Java 24.0.1 with PID 3452 (C:\Users\XznRh\Downloads\remote-repo-20261-main\remote-repo-20261-main\driver\target\driver-0.0.1-SNAPSHOT.jar started by XznRh in C:\Users\XznRh\Downloads\remote-repo-20261-main\remote-repo-20261-main)
+16:32:17 INFO  No active profile set, falling back to 1 default profile: "default"
+16:32:18 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:32:18 INFO  Finished Spring Data repository scanning in 13 ms. Found 0 JPA repository interfaces.
+16:32:20 INFO  Tomcat initialized with port 7778 (http)
+16:32:20 INFO  Starting service [Tomcat]
+16:32:20 INFO  Starting Servlet engine: [Apache Tomcat/11.0.21]
+16:32:20 INFO  Root WebApplicationContext: initialization completed in 2538 ms
+16:32:20 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
+16:32:20 INFO  HHH000001: Hibernate ORM core version 7.2.12.Final
+16:32:21 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+16:32:21 INFO  HikariPool-1 - Starting...
+16:32:21 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@73b8ab2c
+16:32:21 INFO  HikariPool-1 - Start completed.
+16:32:21 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+16:32:21 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+16:32:21 INFO  HHH10001005: Database info:
 	Database JDBC URL [jdbc:mysql://localhost:3306/transport_db_driver?createDatabaseIfNotExists=true]
 	Database driver: MySQL Connector/J
 	Database dialect: MySQLDialect
@@ -36,15 +36,24 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-06-14T20:53:22.906-04:00  INFO 18464 --- [driver] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-06-14T20:53:22.915-04:00  INFO 18464 --- [driver] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-14T20:53:23.174-04:00  WARN 18464 --- [driver] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-14T20:53:24.209-04:00  INFO 18464 --- [driver] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 7778 (http) with context path '/'
-2026-06-14T20:53:24.246-04:00  INFO 18464 --- [driver] [           main] c.g.driver.DriverApplication             : Started DriverApplication in 5.418 seconds (process running for 6.184)
-2026-06-14T20:53:24.253-04:00  WARN 18464 --- [driver] [           main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
-2026-06-14T20:53:24.253-04:00  WARN 18464 --- [driver] [           main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
-2026-06-14T21:07:01.701-04:00  INFO 18464 --- [driver] [ionShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-06-14T21:07:01.763-04:00  INFO 18464 --- [driver] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-06-14T21:07:01.789-04:00  INFO 18464 --- [driver] [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-06-14T21:07:01.813-04:00  INFO 18464 --- [driver] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-06-14T21:07:01.921-04:00  INFO 18464 --- [driver] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+16:32:22 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+16:32:22 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:32:24 INFO  Reading from transport_db_driver.databasechangelog
+16:32:24 INFO  Database is up to date, no changesets to execute
+16:32:24 INFO  Reading from transport_db_driver.databasechangelog
+16:32:24 INFO  UPDATE SUMMARY
+16:32:24 INFO  Run:                          0
+16:32:24 INFO  Previously run:               0
+16:32:24 INFO  Filtered out:                 0
+16:32:24 INFO  -------------------------------
+16:32:24 INFO  Total change sets:            0
+16:32:24 INFO  Update summary generated
+16:32:24 INFO  Command execution complete
+16:32:24 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:32:25 INFO  Tomcat started on port 7778 (http) with context path '/'
+16:32:25 INFO  Started DriverApplication in 8.339 seconds (process running for 9.056)
+16:35:04 INFO  Commencing graceful shutdown. Waiting for active requests to complete
+16:35:04 INFO  Graceful shutdown complete
+16:35:04 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+16:35:04 INFO  HikariPool-1 - Shutdown initiated...
+16:35:04 INFO  HikariPool-1 - Shutdown completed.
