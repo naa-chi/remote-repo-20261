@@ -1,0 +1,5 @@
+03:38:16 INFO  Commencing graceful shutdown. Waiting for active requests to complete
+03:38:16 INFO  Graceful shutdown complete
+03:38:16 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+03:38:17 INFO  HikariPool-1 - Shutdown initiated...
+03:38:17 INFO  HikariPool-1 - Shutdown completed.

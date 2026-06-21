@@ -35,6 +35,18 @@ public class maintenanceService {
                 });
     }
 
+    public maintenanceModel getMaintenanceByVehicleId(Integer vehicleId) {
+        log.info("Fetching maintenance record with vehicle ID: {}", vehicleId);
+        return maintenanceRepo.findAll().stream()
+                .filter(record -> vehicleId.equals(record.getVehicleId()))
+                .findFirst()
+                .orElseThrow(() -> {
+                    log.error("Failed to find maintenance record with vehicle ID: {}", vehicleId);
+                    return new resourceNotFoundException("Maintenance record not found with vehicle ID: " + vehicleId);
+                });
+    }
+    
+
     // --- NEW UPDATE METHOD ---
     public maintenanceModel updateMaintenance(Integer id, maintenanceModel updatedData) {
         log.info("Updating maintenance record with id: {}", id);

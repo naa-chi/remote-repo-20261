@@ -2,6 +2,8 @@ package com.gTransitProject.manufacturer.controller;
 
 import com.gTransitProject.manufacturer.model.manufacturerModel;
 import com.gTransitProject.manufacturer.service.manufacturerService;
+
+import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
@@ -23,6 +25,7 @@ public class manufacturerController {
         return service.getAll();
     }
 
+    @Operation(summary = "Get a product by id", description = "Returns a product as per the id")
     @GetMapping("/searchId/{id}")
     public ResponseEntity<manufacturerModel> findById(@PathVariable Integer id) {
         log.info("Received request to fetch manufacturer by id: {}", id);
