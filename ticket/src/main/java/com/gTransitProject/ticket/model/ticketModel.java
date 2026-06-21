@@ -15,13 +15,16 @@ import lombok.*;
 @Table(name = "ticket")
 @NoArgsConstructor
 @AllArgsConstructor
+@Data
+@Getter
+@Setter
 public class ticketModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer ticketId;
 
     @NotNull(message = "Code cannot be null. (Formatting is weird but just do initials of two cities, i guess")
-    @Column(unique = true, length = 7, nullable = false) //imagine.. LANY001 for Los Angeles --> New York
+    @Column(unique = false, length = 7, nullable = false) //imagine.. LANY001 for Los Angeles --> New York
     private String code;
 
     @NotNull(message = "Economically, we can't have this be null")
@@ -33,7 +36,7 @@ public class ticketModel {
     @Column(nullable = false, unique=false)
     @NotNull(message = "We do need to know which city you wanted to go to.") 
     //This WORKS because there are stations everywhere and there could be many cities with the same station name, hypothetically.
-    private String cityCodeOriginDestination;
+    private String cityCodeDestination;
 
     @NotNull(message = "I do need a destination somewhere")
     @Column(unique = false, nullable = true, name="destination")
@@ -58,8 +61,8 @@ public class ticketModel {
     private String trainCode; //extract from train
 
     @NotNull(message = "Code cannot be null. We do need to know who you are.")
-    @Column(unique = true, length = 10, nullable = false)
-    private String clientId; //extract from client. Can be either a person or a company i suppose
+    @Column(unique = true, nullable = false)
+    private Integer clientId; //extract from client. Can be either a person or a company i suppose
 
     @NotNull(message = "Code cannot be null. We do need to know drove you there.")
     @Column(unique = false, length = 10, nullable = false)
@@ -67,11 +70,11 @@ public class ticketModel {
 
     @NotNull(message = "Would be nice to know when you're leaving")
     @Column(unique = false, nullable = false)
-    private Date departureTime; //extract from client
+    private Date departureTime; 
 
     @NotNull(message = "Would be nice to know when you're arriving though")
     @Column(unique = false, nullable = false)
-    private Date arrivalTime; //extract from client
+    private Date arrivalTime;
 
     @NotBlank(message = "At least type null")
     @Column(unique = false, nullable = false)

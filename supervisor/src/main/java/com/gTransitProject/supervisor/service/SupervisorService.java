@@ -24,18 +24,12 @@ public class SupervisorService {
     }
 
     public Supervisor getSupervisorById(Integer id) {
-        return supervisorRepository.findById(id)
-                .orElseThrow(() ->
-                        new ResourceNotFoundException(
-                                "Supervisor no encontrado"));
+        return supervisorRepository.findById(id).orElseThrow(() ->
+                new ResourceNotFoundException("Supervisor no encontrado"));
     }
 
     public Supervisor findByCode(String code) {
-        return supervisorRepository
-                .findBySupervisorCode(code)
-                .orElseThrow(() ->
-                        new ResourceNotFoundException(
-                                "Supervisor no encontrado"));
+        return supervisorRepository.findBySupervisorCode(code).orElseThrow(() -> new ResourceNotFoundException("Supervisor no encontrado"));
     }
 
     public void deleteSupervisor(Integer id) {

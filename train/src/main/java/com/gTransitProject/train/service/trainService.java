@@ -27,4 +27,43 @@ public class trainService {
         return trainRepository.findById(id)
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Train not found"));
     }
+
+    public train getTrainByCode(String code) {
+        return trainRepository.findAll().stream()
+                .filter(train -> train.getCode().equals(code))
+                .findFirst()
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Train not found with code: " + code));
+    }
+
+    public train getByManufacturerId(Integer manufacturerId) {
+        return trainRepository.findAll().stream()
+                .filter(train -> train.getManufacturerId().equals(manufacturerId))
+                .findFirst()
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Train not found with manufacturer ID: " + manufacturerId));
+    }
+
+    public train getByTypeTrain(Integer typeTrainId) {
+        return trainRepository.findAll().stream()
+                .filter(train -> train.getTypeTrain().getId().equals(typeTrainId))
+                .findFirst()
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Train not found with type ID: " + typeTrainId));
+    }
+
+    public void deleteTrain(Integer id) {
+        if (!trainRepository.existsById(id)) {
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Train not found");
+        }
+        trainRepository.deleteById(id);
+    }
+
+    public train updateTrain(Integer id, train updatedTrain) {
+        return trainRepository.findById(id)
+                .map(train -> {
+                    train.setCode(updatedTrain.getCode());
+                    train.setTypeTrain(updatedTrain.getTypeTrain());
+                    train.setManufacturerId(updatedTrain.getManufacturerId());
+                    return trainRepository.save(train);
+                })
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Train not found"));
+    }
 }

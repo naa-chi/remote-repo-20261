@@ -22,4 +22,18 @@ public class typeEngineService {
     public typeEngine createTypeEngine(typeEngine typeEngineData) {
         return repo.save(typeEngineData);
     }
+
+    public void deleteTypeEngine(Integer id) {
+        repo.deleteById(id);
+    }
+
+    public typeEngine updateTypeEngine(Integer id, typeEngine updatedTypeEngine) {
+        return repo.findById(id)
+                .map(existing -> {
+                    existing.setNameCodeEngine(updatedTypeEngine.getNameCodeEngine());
+                    existing.setType(updatedTypeEngine.getType());
+                    return repo.save(existing);
+                })
+                .orElseThrow(() -> new RuntimeException("No such id exists: " + id));
+    }
 }
