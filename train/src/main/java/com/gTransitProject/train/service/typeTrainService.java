@@ -25,4 +25,10 @@ public class typeTrainService {
     public typeTrain getTypeTrainByID(Integer id) {
         return typeTrainRepository.findById(id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "invalid type"));
     }
+
+    /*
+        There is no update or delete method 
+        because it makes no sense to be able to update or delete that.
+
+    */
 }

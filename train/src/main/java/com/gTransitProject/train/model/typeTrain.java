@@ -7,11 +7,15 @@ import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.Getter;
 
 @Entity
 @Table(name = "train_type")
 @Data
 @NoArgsConstructor
+@Getter
+@Setter
 @AllArgsConstructor
 public class typeTrain {
     @Id

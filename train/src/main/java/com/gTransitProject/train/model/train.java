@@ -10,6 +10,9 @@ import lombok.*;
 @Table(name = "train")
 @NoArgsConstructor
 @AllArgsConstructor
+@Data
+@Getter
+@Setter
 public class train {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

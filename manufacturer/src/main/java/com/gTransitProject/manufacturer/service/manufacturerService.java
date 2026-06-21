@@ -53,4 +53,18 @@ public class manufacturerService {
         log.info("Deleting manufacturer with id: {}", id);
         repo.deleteById(id);
     }
+
+    public manufacturerModel updateManufacturer(Integer id, manufacturerModel model) {
+        log.info("Updating manufacturer with id: {}", id);
+        return repo.findById(id)
+                .map(existing -> {
+                    existing.setName(model.getName());
+                    existing.setCountry(model.getCountry());
+                    return repo.save(existing);
+                })
+                .orElseThrow(() -> {
+                    log.error("Failed to find manufacturer with id: {} for update", id);
+                    return new RuntimeException("Manufacturer not found with id: " + id);
+                });
+    }
 }
