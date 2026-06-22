@@ -16,18 +16,19 @@ Reminder of what ports are which
 - Review = 7782
 
 
-CreateAllDatabases.py automatically opens every db so it's no longer needed to be done manually.
-Doesn't need to open individual terminals either. It does take a while, though.
-
-Run pip install pymysql to run it properly
-Then run python CreateAllDatabases.py on the root folder of the microservices
+Run zMenu.py to start the program
+Then, if pymysql is NOT installed, run "pip install mysql" on cmd (Windows+r -> cmd -> execute)
+Then, press:
+    1- To start zAPIStarter & zCreateAllDatabases
+    2- zTerminateMicroservices to end the program neatly 
+    3- Just leaves (functionally the same as Ctrl + C)
 
 
 Docs use swagger and there is logging enabled on every service
 We are currently debatably missing hateoas??? I'm not sure.
-This readme isn't really packed with information as much as it is one dev's ramblings.
 
-Help.
+Startup developed by @naa-chi
+
 
 naa-chi made the following contributions:
     - typeEngine

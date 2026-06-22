@@ -37,7 +37,7 @@ public class SupervisorController {
     }
 
         @Operation(summary = "Validate a supervisor", description = "Validates a supervisor based on their unique code and returns their authorization status.")
-@GetMapping("/validate/{code}")
+@GetMapping("/validate/{code}") //What does it mean to be? 
         public ResponseEntity<Boolean>
 validateSupervisor(@PathVariable String code){
 
