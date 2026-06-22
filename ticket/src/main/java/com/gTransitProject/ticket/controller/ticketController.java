@@ -11,7 +11,7 @@ import com.gTransitProject.ticket.service.ticketService;
 import io.swagger.v3.oas.annotations.Operation;
 
 @RestController
-@RequestMapping("/tickets")
+@RequestMapping("/ticket")
 public class ticketController {
     @Autowired
     private ticketService service;
@@ -28,6 +28,7 @@ public class ticketController {
         return service.getById(id);
     }
 
+    //functionally a duplicate. Do we deprecate it?
     @Operation(summary = "Fetches a ticket by its code.", description = "Retrieves a specific ticket based on its unique code.")
     @GetMapping("/code/{code}")
     public ticketModel getTicketByCode(@PathVariable String code){
