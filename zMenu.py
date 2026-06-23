@@ -44,22 +44,27 @@ def menu():
             print("2 - Stop all services")
             print("3 - Exit")
             choice = input("Choose an option (1/2/3): ").strip()
-            if choice == "1":
-                start_all()
-                time.sleep(3)
-                clear_console()
-            elif choice == "2":
-                stop_all()
-                time.sleep(3)
-                clear_console()
-            elif choice == "3":
-                print("Goodbye!")
-                sys.exit(0)
-            else:
-                print("Invalid choice. Please enter 1, 2, or 3.")
-                menu()
+            try:
+                if choice == "1":
+                    start_all()
+                    time.sleep(3)
+                    clear_console()
+                elif choice == "2":
+                    stop_all()
+                    time.sleep(3)
+                    clear_console()
+                elif choice == "3":
+                    print("Goodbye!")
+                    sys.exit(0)
+                else:
+                    print("Invalid choice. Please enter 1, 2, or 3.")
+                    menu()
+            except PermissionError:
+                print("Yeah so you can't really run this file again without completely quitting.")
+                print("You get a PermissionError and from the file it seems like that one is messing with System32 permissions and I don't want to touch that.")
+                raise SystemExit
     except KeyboardInterrupt:
-        print("Terminating")
+        print("Force terminating")
 
 if __name__ == "__main__":
     while True:

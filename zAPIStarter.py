@@ -14,7 +14,7 @@ def open_browser():
     webbrowser.open(url)  # open api-gateway (port 7769)
     for port in projecturls:
         time.sleep(0.5)
-        webbrowser.open(f"http://localhost:{port}")
+        webbrowser.open(f"http://localhost:{port}/doc/swagger-ui.html") # changed to automatically send to swagger docs
     print(f"Browser opened at {url}")
 
 if __name__ == "__main__":

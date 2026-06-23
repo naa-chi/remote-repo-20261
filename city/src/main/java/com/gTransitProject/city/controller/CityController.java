@@ -10,6 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import io.swagger.v3.oas.annotations.Operation;
 
 @RestController
 @RequestMapping("/api/city")
@@ -18,6 +19,7 @@ public class CityController {
     @Autowired
     private CityService cityService;
 
+    @Operation(summary = "Get all cities", description = "Retrieves a list of all cities in the database.")
     @GetMapping
     public ResponseEntity<List<City>> getAllCities() {
 
@@ -25,6 +27,7 @@ public class CityController {
                 cityService.getAllCities());
     }
 
+        @Operation(summary = "Get a city by code", description = "Retrieves a specific city based on its unique code.")
     @GetMapping("/code/{code}")
     public ResponseEntity<City> getCityByCode(
             @PathVariable String code) {
@@ -33,6 +36,7 @@ public class CityController {
                 cityService.findByCityCode(code));
     }
 
+    @Operation(summary = "Get a city by ID", description = "Retrieves a specific city based on its unique identifier.")
     @PostMapping
     public ResponseEntity<City> createCity(
             @RequestBody City city) {
@@ -44,6 +48,7 @@ public class CityController {
                 HttpStatus.CREATED);
     }
 
+    @Operation(summary = "Update a city", description = "Updates an existing city record in the database with the provided data.")
     @PutMapping("/{id}")
     public ResponseEntity<City> updateCity(
             @PathVariable Integer id,
@@ -53,6 +58,7 @@ public class CityController {
                 cityService.updateCity(id, city));
     }
 
+        @Operation(summary = "Delete a city", description = "Throws an intercontinental ballistic missile at the city. That's the only reasonable option this endpoint could signify.")
     @DeleteMapping("/{id}")
     public ResponseEntity<String> deleteCity(
             @PathVariable Integer id) {
