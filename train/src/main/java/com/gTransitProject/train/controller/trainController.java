@@ -38,8 +38,8 @@ public class trainController {
     }
 
     @Operation(summary = "Get a train by ID", description = "Retrieves a specific train based on its unique identifier.")
-    @GetMapping("/code/{code}")
-    public ResponseEntity<train> getByCode(@PathVariable String code) {
+    @GetMapping("/{code}") //Shouldn't this be the ID?
+    public ResponseEntity<train> getByCode(@PathVariable String code) { //Whatever just push it to prod i'm sure it's fine
         return ResponseEntity.ok(trainService.getTrainByCode(code));
     }
 
@@ -55,9 +55,10 @@ public class trainController {
     {
         return ResponseEntity.ok(trainService.getByTypeTrain(typeTrainId));
     }
-
+    
+    @Deprecated
     @Operation(summary = "Get a train by ID", description = "Retrieves a specific train based on its unique identifier.")
-    @GetMapping("/{id}")
+    @GetMapping("/deprecatedDONOTUSETHIS/{id}") //WHY IS THIS METHOD FUNCTIONALLY A DUPLICATE
     public ResponseEntity<train> getById(@PathVariable Integer id) {
         return ResponseEntity.ok(trainService.getTrainById(id));
     }

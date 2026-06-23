@@ -36,7 +36,7 @@ public class ControllerStation {
     }
 
     @Operation(summary = "Get a station by ID", description = "Retrieves a specific station based on its unique identifier.")
-    @GetMapping("/{id}")
+    @GetMapping("/{id}")//V
     public station getStationById(@PathVariable Integer id){
         return stationServ.getStationById(id);
     }
@@ -48,7 +48,7 @@ public class ControllerStation {
     }
 
     @Operation(summary = "Update a station", description = "Updates an existing station record in the database with the provided data.")
-    @PutMapping("/{id}")
+    @PutMapping("/{id}") //V
     public station updateStation(@PathVariable Integer id,
                                  @RequestBody station station){
 
@@ -56,21 +56,21 @@ public class ControllerStation {
     }
 
     @Operation(summary = "Delete a station", description = "Deletes an existing station record from the database based on its unique identifier.")
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/{id}")//V
     public void deleteStation(@PathVariable Integer id){
         stationServ.deleteStation(id);
     }
 
     @Operation(summary = "Test Line Client", description = "Tests the LineClient by retrieving a line based on its number.")
   @GetMapping("/test-line/{lineNumber}")
-public LineDTO testLine(
+public LineDTO testLine( //Necessary?
         @PathVariable Integer lineNumber){
 
     return lineClient.getLineByNumber(lineNumber);
 }
     @Operation(summary = "Test City Client", description = "Tests the CityClient by retrieving a city based on its code.")
     @GetMapping("/test-city/{code}")
-    public CityDTO testCity(
+    public CityDTO testCity( //Necessary?
             @PathVariable String code){
 
         return cityClient.getCityByCode(code);

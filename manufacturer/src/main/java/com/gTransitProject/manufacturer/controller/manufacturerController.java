@@ -27,7 +27,7 @@ public class manufacturerController {
     }
 
     @Operation(summary = "Get a product by id", description = "Returns a product as per the id")
-    @GetMapping("/id/{id}")
+    @GetMapping("/{id}")
     public ResponseEntity<manufacturerModel> findById(@PathVariable Integer id) {
         log.info("Received request to fetch manufacturer by id: {}", id);
         return ResponseEntity.ok(service.getById(id));
@@ -55,7 +55,7 @@ public class manufacturerController {
     }
 
     @Operation(summary = "Delete a manufacturer", description = "Deletes a manufacturer with the specified id")
-    @DeleteMapping("/id/{id}")
+    @DeleteMapping("/{id}")
     public ResponseEntity<Void> delete(@PathVariable Integer id) {
         log.info("Received request to delete manufacturer with id: {}", id);
         service.delete(id);
@@ -63,7 +63,7 @@ public class manufacturerController {
     }
 
     @Operation(summary = "Updates an existing entry.", description = "Updates an existing maintenance entry with the provided data.")
-    @PutMapping("/id/{id}")
+    @PutMapping("/{id}")
     public ResponseEntity<manufacturerModel> update(@PathVariable Integer id, @RequestBody manufacturerModel model) {
         log.info("Received request to update manufacturer with id: {}", id);
         return ResponseEntity.ok(service.updateManufacturer(id, model));
