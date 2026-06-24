@@ -23,4 +23,18 @@ public class globalExceptionHandler {
                 .status(HttpStatus.NOT_FOUND)
                 .body(error);
     }
+    @ExceptionHandler(Exception.class)
+public ResponseEntity<errorResponse>
+handleGeneral(Exception ex){
+
+    errorResponse error =
+            new errorResponse(
+                    "Error interno del servidor",
+                    HttpStatus.INTERNAL_SERVER_ERROR.value()
+            );
+
+    return ResponseEntity
+            .status(HttpStatus.INTERNAL_SERVER_ERROR)
+            .body(error);
+}
 }

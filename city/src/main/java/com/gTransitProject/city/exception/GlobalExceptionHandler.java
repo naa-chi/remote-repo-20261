@@ -44,4 +44,22 @@ public class GlobalExceptionHandler {
 
         return new ResponseEntity<>(ErrorResponse, HttpStatus.INTERNAL_SERVER_ERROR);
     }
+    @ExceptionHandler(businessException.class)
+public ResponseEntity<errorResponse> handleBusinessException(
+        businessException ex,
+        WebRequest request) {
+
+    errorResponse ErrorResponse = errorResponse.builder()
+            .timestamp(LocalDateTime.now())
+            .status(HttpStatus.BAD_REQUEST.value())
+            .error(HttpStatus.BAD_REQUEST.getReasonPhrase())
+            .message(ex.getMessage())
+            .path(request.getDescription(false).replace("uri=", ""))
+            .build();
+
+    return new ResponseEntity<>(
+            ErrorResponse,
+            HttpStatus.BAD_REQUEST);
+}
+ 
 }

@@ -31,14 +31,18 @@ spring:
             - Path=/typeengine/**
 
         - id: station
-          uri: http://station-service:7773
+          uri: http://localhost:7773
           predicates:
             - Path=/station/**
+          filters:
+            - StripPrefix=1
 
         - id: line
-          uri: http://line-service:7774
+          uri: http://localhost:7774
           predicates:
             - Path=/line/**
+          filters:
+            - StripPrefix=1
 
         - id: maintenance
           uri: http://maintenance-service:7775
@@ -51,9 +55,11 @@ spring:
             - Path=/ticket/**
 
         - id: city
-          uri: http://city-service:7777
+          uri: http://localhost:7777
           predicates:
             - Path=/city/**
+          filters:
+            - StripPrefix=1
 
         - id: driver
           uri: http://driver-service:7778
@@ -61,19 +67,25 @@ spring:
             - Path=/driver/**
 
         - id: client
-          uri: http://client-service:7779
+          uri: http://localhost:7779
           predicates:
             - Path=/client/**
+          filters:
+            - StripPrefix=1
 
-        - id: auth 
-          uri: http://auth-service:7780
+        - id: auth
+          uri: http://localhost:7780
           predicates:
             - Path=/auth/**
+          filters:
+            - StripPrefix=1
 
         - id: supervisor
-          uri: http://supervisor-service:7781
+          uri: http://localhost:7781
           predicates:
             - Path=/supervisor/**
+          filters:
+            - StripPrefix=1
 
         - id: review
           uri: http://review-service:7782

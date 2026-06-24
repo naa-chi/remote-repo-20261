@@ -2,6 +2,8 @@ package com.gTransitProject.city.service;
 
 import java.util.List;
 
+import com.gTransitProject.city.exception.businessException;
+import com.gTransitProject.city.exception.resourceNotFoundException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,66 +34,67 @@ public class CityService {
 
         return cityRepository.findByCityCode(code)
                 .orElseThrow(() ->
-                        new RuntimeException(
+                        new resourceNotFoundException(
                                 "Ciudad no encontrada con el codigo: " + code));
     }
 
     public City saveCity(City city) {
 
-    long totalCities = cityRepository.count();
+        long totalCities = cityRepository.count();
 
-    if (totalCities >= 2) {
+        if (totalCities >= 2) {
 
-        logger.warn("Intento de agregar una tercera ciudad");
+            logger.warn("Intento de agregar una tercera ciudad");
 
-        throw new RuntimeException(
-                "Solo se permiten 2 ciudades en el sistema");
+            throw new businessException(
+                    "Solo se permiten 2 ciudades en el sistema");
+        }
+
+        if (cityRepository.findByCityCode(city.getCityCode()).isPresent()) {
+
+            logger.error(
+                    "Intento de duplicar el codigo de ciudad: {}",
+                    city.getCityCode());
+
+            throw new businessException(
+                    "El codigo de ciudad ya existe");
+        }
+
+        boolean lineaExiste = cityRepository.findAll()
+                .stream()
+                .anyMatch(c ->
+                        c.getLineNumber().equals(city.getLineNumber()));
+
+        if (lineaExiste) {
+
+            logger.error(
+                    "La linea {} ya esta asignada a otra ciudad",
+                    city.getLineNumber());
+
+            throw new businessException(
+                    "La linea ya se encuentra asignada a otra ciudad");
+        }
+
+        logger.info("Nueva ciudad creada: {}", city.getCityName());
+
+        return cityRepository.save(city);
     }
-
-    if (cityRepository.findByCityCode(city.getCityCode()).isPresent()) {
-
-        logger.error(
-                "Intento de duplicar el codigo de ciudad: {}",
-                city.getCityCode());
-
-        throw new RuntimeException(
-                "El codigo de ciudad ya existe");
-    }
-
-    boolean lineaExiste = cityRepository.findAll()
-            .stream()
-            .anyMatch(c ->
-                c.getLineNumber().equals(city.getLineNumber()));
-
-    if (lineaExiste) {
-
-        logger.error(
-                "La linea {} ya esta asignada a otra ciudad",
-                city.getLineNumber());
-
-        throw new RuntimeException(
-                "La linea ya se encuentra asignada a otra ciudad");
-    }
-
-    logger.info("Nueva ciudad creada: {}", city.getCityName());
-
-    return cityRepository.save(city);
-}
 
     public City updateCity(Integer id, City updatedCity) {
 
-    City existingCity =
-            cityRepository.findById(id).orElse(null);
-
-    if (existingCity != null) {
+        City existingCity =
+                cityRepository.findById(id)
+                        .orElseThrow(() ->
+                                new resourceNotFoundException(
+                                        "No existe una ciudad con el ID: " + id));
 
         boolean lineaExiste = cityRepository.findAll()
                 .stream()
                 .anyMatch(c ->
                         !c.getCityId().equals(id)
-                        &&
-                        c.getLineNumber().equals(
-                                updatedCity.getLineNumber()));
+                                &&
+                                c.getLineNumber().equals(
+                                        updatedCity.getLineNumber()));
 
         if (lineaExiste) {
 
@@ -99,10 +102,10 @@ public class CityService {
                     "La linea {} ya pertenece a otra ciudad",
                     updatedCity.getLineNumber());
 
-            throw new RuntimeException(
+            throw new businessException(
                     "No se puede asignar la linea "
-                    + updatedCity.getLineNumber()
-                    + ". Ya se encuentra vinculada a otra ciudad.");
+                            + updatedCity.getLineNumber()
+                            + ". Ya se encuentra vinculada a otra ciudad.");
         }
 
         existingCity.setCityName(updatedCity.getCityName());
@@ -115,12 +118,6 @@ public class CityService {
 
         return cityRepository.save(existingCity);
     }
-
-    logger.error("No existe ciudad con ID: {}", id);
-
-    throw new RuntimeException(
-            "No existe una ciudad con el ID: " + id);
-}
 
     public void deleteCity(Integer id) {
 
