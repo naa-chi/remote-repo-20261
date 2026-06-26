@@ -1,6 +1,7 @@
 package com.gTransitProject.city.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
 
@@ -31,7 +32,8 @@ public class City {
     @Column(nullable = false)
     private Integer lineNumber;
 
-    @Min(value = 1)
+    @Min(value = 1, message = "A city must have at least 1 inhabitant")
+    @Max(value = 10000000, message = "A city cannot exceed 10 million inhabitants")
     @NotNull(message = "Why would there be a place with 0 people?")
     @Column(name = "inhabitants", nullable = false)
     private Integer population;
