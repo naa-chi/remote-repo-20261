@@ -35,8 +35,8 @@ public class AuthController {
     public ResponseEntity<Auth> createAuth(
             @RequestBody Auth auth) {
 
-        return ResponseEntity.ok(
-                authService.saveAuth(auth));
+        Auth newAuth = authService.saveAuth(auth);
+        return ResponseEntity.status(201).body(newAuth);
     }
 
     @Operation(summary = "Buscar autorizacion por ID")
