@@ -1,0 +1,218 @@
+03:38:16 INFO  Commencing graceful shutdown. Waiting for active requests to complete
+03:38:16 INFO  Graceful shutdown complete
+03:38:16 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+03:38:17 INFO  HikariPool-1 - Shutdown initiated...
+03:38:17 INFO  HikariPool-1 - Shutdown completed.
+15:22:28 INFO  Starting ManufacturerApplication using Java 24.0.1 with PID 21968 (C:\Users\XznRh\Downloads\remote-repo-20261-main\remote-repo-20261-main\manufacturer\target\classes started by XznRh in C:\Users\XznRh\Downloads\remote-repo-20261-main\remote-repo-20261-main\manufacturer)
+15:22:28 INFO  No active profile set, falling back to 1 default profile: "default"
+15:22:28 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+15:22:28 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+15:22:29 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15:22:29 INFO  Finished Spring Data repository scanning in 191 ms. Found 1 JPA repository interface.
+15:22:30 INFO  Tomcat initialized with port 7770 (http)
+15:22:30 INFO  Starting service [Tomcat]
+15:22:30 INFO  Starting Servlet engine: [Apache Tomcat/11.0.21]
+15:22:30 INFO  Root WebApplicationContext: initialization completed in 1959 ms
+15:22:30 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
+15:22:30 INFO  HHH000001: Hibernate ORM core version 7.2.12.Final
+15:22:31 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+15:22:31 INFO  HikariPool-1 - Starting...
+15:22:31 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@52198ffc
+15:22:31 INFO  HikariPool-1 - Start completed.
+15:22:31 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+15:22:31 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+15:22:31 INFO  HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/transport_db_manufacturer?createDatabaseIfNotExists=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: transport_db_manufacturer/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+15:22:32 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+15:22:32 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:22:33 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+15:22:35 INFO  Reading from transport_db_manufacturer.databasechangelog
+15:22:35 INFO  Database is up to date, no changesets to execute
+15:22:35 INFO  Reading from transport_db_manufacturer.databasechangelog
+15:22:35 INFO  UPDATE SUMMARY
+15:22:35 INFO  Run:                          0
+15:22:35 INFO  Previously run:               0
+15:22:35 INFO  Filtered out:                 0
+15:22:35 INFO  -------------------------------
+15:22:35 INFO  Total change sets:            0
+15:22:35 INFO  Update summary generated
+15:22:35 INFO  Command execution complete
+15:22:36 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:22:36 INFO  Tomcat started on port 7770 (http) with context path '/'
+15:22:36 INFO  Started ManufacturerApplication in 8.767 seconds (process running for 9.425)
+15:23:10 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:23:10 INFO  Initializing Servlet 'dispatcherServlet'
+15:23:10 INFO  Completed initialization in 1 ms
+15:23:10 INFO  Received request to fetch all manufacturers
+15:23:10 INFO  Fetching all manufacturers
+15:23:55 INFO  Received request to create manufacturer: manufacturerModel(id=null, name=yakovlev, country=former USSR)
+15:23:55 INFO  Creating new manufacturer: manufacturerModel(id=null, name=yakovlev, country=former USSR)
+15:24:15 INFO  Received request to update manufacturer with id: 1
+15:24:15 INFO  Updating manufacturer with id: 1
+15:24:20 ERROR An unexpected error occurred
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:260)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:434)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:376)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:116)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:544)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1157)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:951)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+15:24:20 WARN  Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+15:24:23 INFO  Received request to fetch all manufacturers
+15:24:23 INFO  Fetching all manufacturers
+15:25:15 INFO  Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+15:25:15 INFO  Commencing graceful shutdown. Waiting for active requests to complete
+15:25:15 INFO  Graceful shutdown complete
+15:25:15 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+15:25:15 INFO  HikariPool-1 - Shutdown initiated...
+15:25:15 INFO  HikariPool-1 - Shutdown completed.
+15:25:15 INFO  Starting ManufacturerApplication using Java 24.0.1 with PID 21968 (C:\Users\XznRh\Downloads\remote-repo-20261-main\remote-repo-20261-main\manufacturer\target\classes started by XznRh in C:\Users\XznRh\Downloads\remote-repo-20261-main\remote-repo-20261-main\manufacturer)
+15:25:15 INFO  No active profile set, falling back to 1 default profile: "default"
+15:25:15 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15:25:15 INFO  Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interface.
+15:25:15 INFO  Tomcat initialized with port 7770 (http)
+15:25:15 INFO  Starting service [Tomcat]
+15:25:15 INFO  Starting Servlet engine: [Apache Tomcat/11.0.21]
+15:25:15 INFO  Root WebApplicationContext: initialization completed in 359 ms
+15:25:15 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
+15:25:15 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+15:25:15 INFO  HikariPool-2 - Starting...
+15:25:15 INFO  HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6d697f82
+15:25:15 INFO  HikariPool-2 - Start completed.
+15:25:15 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+15:25:15 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+15:25:15 INFO  HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/transport_db_manufacturer?createDatabaseIfNotExists=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: transport_db_manufacturer/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+15:25:15 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+15:25:15 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:25:16 INFO  Reading from transport_db_manufacturer.databasechangelog
+15:25:16 INFO  Database is up to date, no changesets to execute
+15:25:16 INFO  Reading from transport_db_manufacturer.databasechangelog
+15:25:16 INFO  UPDATE SUMMARY
+15:25:16 INFO  Run:                          0
+15:25:16 INFO  Previously run:               0
+15:25:16 INFO  Filtered out:                 0
+15:25:16 INFO  -------------------------------
+15:25:16 INFO  Total change sets:            0
+15:25:16 INFO  Update summary generated
+15:25:16 INFO  Command execution complete
+15:25:16 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:25:16 INFO  Tomcat started on port 7770 (http) with context path '/'
+15:25:16 INFO  Started ManufacturerApplication in 0.881 seconds (process running for 169.002)
+15:25:16 INFO  Condition evaluation unchanged
+15:26:05 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:26:05 INFO  Initializing Servlet 'dispatcherServlet'
+15:26:05 INFO  Completed initialization in 3 ms
+15:26:05 INFO  Received request to fetch manufacturer by name: yakoulev
+15:26:05 INFO  Fetching manufacturer by name: yakoulev
+15:44:45 INFO  Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+15:44:45 INFO  Commencing graceful shutdown. Waiting for active requests to complete
+15:44:45 INFO  Graceful shutdown complete
+15:44:45 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+15:44:45 INFO  HikariPool-2 - Shutdown initiated...
+15:44:45 INFO  HikariPool-2 - Shutdown completed.
+15:44:45 INFO  Starting ManufacturerApplication using Java 24.0.1 with PID 21968 (C:\Users\XznRh\Downloads\remote-repo-20261-main\remote-repo-20261-main\manufacturer\target\classes started by XznRh in C:\Users\XznRh\Downloads\remote-repo-20261-main\remote-repo-20261-main\manufacturer)
+15:44:45 INFO  No active profile set, falling back to 1 default profile: "default"
+15:44:45 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15:44:45 INFO  Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.
+15:44:45 INFO  Tomcat initialized with port 7770 (http)
+15:44:45 INFO  Starting service [Tomcat]
+15:44:45 INFO  Starting Servlet engine: [Apache Tomcat/11.0.21]
+15:44:45 INFO  Root WebApplicationContext: initialization completed in 335 ms
+15:44:45 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
+15:44:45 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+15:44:45 INFO  HikariPool-3 - Starting...
+15:44:45 INFO  HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@47e45e3d
+15:44:45 INFO  HikariPool-3 - Start completed.
+15:44:45 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+15:44:45 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+15:44:45 INFO  HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/transport_db_manufacturer?createDatabaseIfNotExists=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: transport_db_manufacturer/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+15:44:45 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+15:44:45 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:44:46 INFO  Reading from transport_db_manufacturer.databasechangelog
+15:44:46 INFO  Database is up to date, no changesets to execute
+15:44:46 INFO  Reading from transport_db_manufacturer.databasechangelog
+15:44:46 INFO  UPDATE SUMMARY
+15:44:46 INFO  Run:                          0
+15:44:46 INFO  Previously run:               0
+15:44:46 INFO  Filtered out:                 0
+15:44:46 INFO  -------------------------------
+15:44:46 INFO  Total change sets:            0
+15:44:46 INFO  Update summary generated
+15:44:46 INFO  Command execution complete
+15:44:46 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:44:46 INFO  Tomcat started on port 7770 (http) with context path '/'
+15:44:46 INFO  Started ManufacturerApplication in 0.84 seconds (process running for 1339.096)
+15:44:46 INFO  Condition evaluation unchanged
+17:42:59 INFO  Commencing graceful shutdown. Waiting for active requests to complete
+17:42:59 INFO  Graceful shutdown complete
+17:42:59 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+17:42:59 INFO  HikariPool-3 - Shutdown initiated...
+17:42:59 INFO  HikariPool-3 - Shutdown completed.

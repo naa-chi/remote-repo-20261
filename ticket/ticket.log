@@ -1,0 +1,59 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.6)
+
+16:33:47 INFO  Starting TicketApplication v0.0.1-SNAPSHOT using Java 24.0.1 with PID 37672 (C:\Users\XznRh\Downloads\remote-repo-20261-main\remote-repo-20261-main\ticket\target\ticket-0.0.1-SNAPSHOT.jar started by XznRh in C:\Users\XznRh\Downloads\remote-repo-20261-main\remote-repo-20261-main)
+16:33:47 INFO  No active profile set, falling back to 1 default profile: "default"
+16:33:48 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:33:48 INFO  Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+16:33:49 INFO  Tomcat initialized with port 7776 (http)
+16:33:49 INFO  Starting service [Tomcat]
+16:33:49 INFO  Starting Servlet engine: [Apache Tomcat/11.0.21]
+16:33:49 INFO  Root WebApplicationContext: initialization completed in 1746 ms
+16:33:49 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
+16:33:49 INFO  HHH000001: Hibernate ORM core version 7.2.12.Final
+16:33:50 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+16:33:50 INFO  HikariPool-1 - Starting...
+16:33:50 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@77d54a41
+16:33:50 INFO  HikariPool-1 - Start completed.
+16:33:50 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+16:33:50 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+16:33:50 INFO  HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/transport_db_ticket?createDatabaseIfNotExists=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: transport_db_ticket/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+16:33:50 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+16:33:51 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:33:52 INFO  Reading from transport_db_ticket.databasechangelog
+16:33:52 INFO  Database is up to date, no changesets to execute
+16:33:52 INFO  Reading from transport_db_ticket.databasechangelog
+16:33:52 INFO  UPDATE SUMMARY
+16:33:52 INFO  Run:                          0
+16:33:52 INFO  Previously run:               0
+16:33:52 INFO  Filtered out:                 0
+16:33:52 INFO  -------------------------------
+16:33:52 INFO  Total change sets:            0
+16:33:52 INFO  Update summary generated
+16:33:52 INFO  Command execution complete
+16:33:53 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:33:53 INFO  Tomcat started on port 7776 (http) with context path '/'
+16:33:53 INFO  Started TicketApplication in 6.984 seconds (process running for 7.668)
+16:35:04 INFO  Commencing graceful shutdown. Waiting for active requests to complete
+16:35:04 INFO  Graceful shutdown complete
+16:35:04 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+16:35:04 INFO  HikariPool-1 - Shutdown initiated...
+16:35:04 INFO  HikariPool-1 - Shutdown completed.

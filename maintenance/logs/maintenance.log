@@ -1,0 +1,510 @@
+03:13:36 INFO  Starting MaintenanceApplication using Java 24.0.1 with PID 42420 (C:\Users\XznRh\Downloads\remote-repo-20261-main\remote-repo-20261-main\maintenance\target\classes started by XznRh in C:\Users\XznRh\Downloads\remote-repo-20261-main\remote-repo-20261-main\maintenance)
+03:13:36 INFO  No active profile set, falling back to 1 default profile: "default"
+03:13:36 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+03:13:36 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+03:13:37 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03:13:37 INFO  Finished Spring Data repository scanning in 174 ms. Found 1 JPA repository interface.
+03:13:38 INFO  Tomcat initialized with port 7775 (http)
+03:13:38 INFO  Starting service [Tomcat]
+03:13:38 INFO  Starting Servlet engine: [Apache Tomcat/11.0.21]
+03:13:38 INFO  Root WebApplicationContext: initialization completed in 1846 ms
+03:13:38 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
+03:13:38 INFO  HHH000001: Hibernate ORM core version 7.2.12.Final
+03:13:39 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+03:13:39 INFO  HikariPool-1 - Starting...
+03:13:39 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@28680f
+03:13:39 INFO  HikariPool-1 - Start completed.
+03:13:39 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+03:13:39 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+03:13:39 INFO  HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/transport_db_maintenance?createDatabaseIfNotExists=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: transport_db_maintenance/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+03:13:40 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+03:13:40 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+03:13:40 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+03:13:43 INFO  Reading from transport_db_maintenance.databasechangelog
+03:13:43 INFO  Database is up to date, no changesets to execute
+03:13:43 INFO  Reading from transport_db_maintenance.databasechangelog
+03:13:43 INFO  UPDATE SUMMARY
+03:13:43 INFO  Run:                          0
+03:13:43 INFO  Previously run:               0
+03:13:43 INFO  Filtered out:                 0
+03:13:43 INFO  -------------------------------
+03:13:43 INFO  Total change sets:            0
+03:13:43 INFO  Update summary generated
+03:13:43 INFO  Command execution complete
+03:13:43 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03:13:43 INFO  Tomcat started on port 7775 (http) with context path '/'
+03:13:43 INFO  Started MaintenanceApplication in 7.657 seconds (process running for 8.279)
+03:15:23 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+03:15:23 INFO  Initializing Servlet 'dispatcherServlet'
+03:15:23 INFO  Completed initialization in 0 ms
+03:15:23 INFO  Received request to fetch all maintenance records
+03:15:23 INFO  Fetching all maintenance records
+03:20:31 INFO  Received request to create maintenance record: maintenanceModel(id=null, entry_date_of_maintenance=1969-12-31, leave_date_of_maintenance=1969-12-31, issue_description=fucked up left carriage, report_description=replaced chain drive, maintenance_price=5555, vehicleId=55, model=WS10C, risk_importance=3, responsible_maintanance_crew=15)
+03:20:31 INFO  Creating new maintenance record: maintenanceModel(id=null, entry_date_of_maintenance=1969-12-31, leave_date_of_maintenance=1969-12-31, issue_description=fucked up left carriage, report_description=replaced chain drive, maintenance_price=5555, vehicleId=55, model=WS10C, risk_importance=3, responsible_maintanance_crew=15)
+03:20:46 INFO  Received request to update maintenance record with id: 1
+03:20:46 INFO  Updating maintenance record with id: 1
+03:20:46 INFO  Fetching maintenance record with id: 1
+03:20:52 ERROR An unexpected error occurred
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/maintenance for request '/api/maintenance/'.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:526)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+03:20:52 WARN  Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/maintenance for request '/api/maintenance/'.]
+03:20:57 INFO  Received request to fetch all maintenance records
+03:20:57 INFO  Fetching all maintenance records
+03:26:45 INFO  Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+03:26:45 INFO  Commencing graceful shutdown. Waiting for active requests to complete
+03:26:45 INFO  Graceful shutdown complete
+03:26:45 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+03:26:45 INFO  HikariPool-1 - Shutdown initiated...
+03:26:45 INFO  HikariPool-1 - Shutdown completed.
+03:26:45 INFO  Starting MaintenanceApplication using Java 24.0.1 with PID 42420 (C:\Users\XznRh\Downloads\remote-repo-20261-main\remote-repo-20261-main\maintenance\target\classes started by XznRh in C:\Users\XznRh\Downloads\remote-repo-20261-main\remote-repo-20261-main\maintenance)
+03:26:45 INFO  No active profile set, falling back to 1 default profile: "default"
+03:26:45 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03:26:45 INFO  Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interface.
+03:26:46 INFO  Tomcat initialized with port 7775 (http)
+03:26:46 INFO  Starting service [Tomcat]
+03:26:46 INFO  Starting Servlet engine: [Apache Tomcat/11.0.21]
+03:26:46 INFO  Root WebApplicationContext: initialization completed in 493 ms
+03:26:46 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
+03:26:46 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+03:26:46 INFO  HikariPool-2 - Starting...
+03:26:46 INFO  HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@17905e72
+03:26:46 INFO  HikariPool-2 - Start completed.
+03:26:46 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+03:26:46 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+03:26:46 INFO  HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/transport_db_maintenance?createDatabaseIfNotExists=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: transport_db_maintenance/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+03:26:46 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+03:26:46 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+03:26:46 INFO  Reading from transport_db_maintenance.databasechangelog
+03:26:46 INFO  Database is up to date, no changesets to execute
+03:26:46 INFO  Reading from transport_db_maintenance.databasechangelog
+03:26:46 INFO  UPDATE SUMMARY
+03:26:46 INFO  Run:                          0
+03:26:46 INFO  Previously run:               0
+03:26:46 INFO  Filtered out:                 0
+03:26:46 INFO  -------------------------------
+03:26:46 INFO  Total change sets:            0
+03:26:46 INFO  Update summary generated
+03:26:46 INFO  Command execution complete
+03:26:46 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03:26:46 INFO  Tomcat started on port 7775 (http) with context path '/'
+03:26:46 INFO  Started MaintenanceApplication in 1.108 seconds (process running for 791.142)
+03:26:46 INFO  Condition evaluation unchanged
+03:27:09 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+03:27:09 INFO  Initializing Servlet 'dispatcherServlet'
+03:27:09 INFO  Completed initialization in 2 ms
+03:27:09 INFO  Received request to fetch all maintenance records
+03:27:09 INFO  Fetching all maintenance records
+03:27:09 ERROR An unexpected error occurred
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico for request '/favicon.ico'.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:526) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
+03:27:09 WARN  Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico for request '/favicon.ico'.]
+03:27:41 INFO  Init duration for springdoc-openapi is: 276 ms
+03:36:03 INFO  Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+03:36:03 INFO  Commencing graceful shutdown. Waiting for active requests to complete
+03:36:03 INFO  Graceful shutdown complete
+03:36:03 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+03:36:03 INFO  HikariPool-2 - Shutdown initiated...
+03:36:03 INFO  HikariPool-2 - Shutdown completed.
+03:36:03 INFO  Starting MaintenanceApplication using Java 24.0.1 with PID 42420 (C:\Users\XznRh\Downloads\remote-repo-20261-main\remote-repo-20261-main\maintenance\target\classes started by XznRh in C:\Users\XznRh\Downloads\remote-repo-20261-main\remote-repo-20261-main\maintenance)
+03:36:03 INFO  No active profile set, falling back to 1 default profile: "default"
+03:36:03 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03:36:03 INFO  Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+03:36:04 INFO  Tomcat initialized with port 7775 (http)
+03:36:04 INFO  Starting service [Tomcat]
+03:36:04 INFO  Starting Servlet engine: [Apache Tomcat/11.0.21]
+03:36:04 INFO  Root WebApplicationContext: initialization completed in 312 ms
+03:36:04 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
+03:36:04 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+03:36:04 INFO  HikariPool-3 - Starting...
+03:36:04 INFO  HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@576404bb
+03:36:04 INFO  HikariPool-3 - Start completed.
+03:36:04 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+03:36:04 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+03:36:04 INFO  HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/transport_db_maintenance?createDatabaseIfNotExists=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: transport_db_maintenance/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+03:36:04 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+03:36:04 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+03:36:04 INFO  Reading from transport_db_maintenance.databasechangelog
+03:36:04 INFO  Database is up to date, no changesets to execute
+03:36:04 INFO  Reading from transport_db_maintenance.databasechangelog
+03:36:04 INFO  UPDATE SUMMARY
+03:36:04 INFO  Run:                          0
+03:36:04 INFO  Previously run:               0
+03:36:04 INFO  Filtered out:                 0
+03:36:04 INFO  -------------------------------
+03:36:04 INFO  Total change sets:            0
+03:36:04 INFO  Update summary generated
+03:36:04 INFO  Command execution complete
+03:36:04 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03:36:04 INFO  Tomcat started on port 7775 (http) with context path '/'
+03:36:04 INFO  Started MaintenanceApplication in 0.807 seconds (process running for 1349.017)
+03:36:04 INFO  Condition evaluation unchanged
+03:36:25 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+03:36:25 INFO  Initializing Servlet 'dispatcherServlet'
+03:36:25 INFO  Completed initialization in 2 ms
+03:36:25 INFO  Init duration for springdoc-openapi is: 101 ms
+03:36:49 INFO  Commencing graceful shutdown. Waiting for active requests to complete
+03:36:49 INFO  Graceful shutdown complete
+03:36:49 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+03:36:49 INFO  HikariPool-3 - Shutdown initiated...
+03:36:49 INFO  HikariPool-3 - Shutdown completed.
+03:38:30 INFO  Starting MaintenanceApplication using Java 24.0.1 with PID 43016 (C:\Users\XznRh\Downloads\remote-repo-20261-main\remote-repo-20261-main\maintenance\target\classes started by XznRh in C:\Users\XznRh\Downloads\remote-repo-20261-main\remote-repo-20261-main\maintenance)
+03:38:30 INFO  No active profile set, falling back to 1 default profile: "default"
+03:38:30 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+03:38:30 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+03:38:30 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03:38:31 INFO  Finished Spring Data repository scanning in 111 ms. Found 1 JPA repository interface.
+03:38:31 INFO  Tomcat initialized with port 7775 (http)
+03:38:31 INFO  Starting service [Tomcat]
+03:38:31 INFO  Starting Servlet engine: [Apache Tomcat/11.0.21]
+03:38:31 INFO  Root WebApplicationContext: initialization completed in 1451 ms
+03:38:31 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
+03:38:31 INFO  HHH000001: Hibernate ORM core version 7.2.12.Final
+03:38:32 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+03:38:32 INFO  HikariPool-1 - Starting...
+03:38:32 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@402d50a9
+03:38:32 INFO  HikariPool-1 - Start completed.
+03:38:32 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+03:38:32 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+03:38:32 INFO  HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/transport_db_maintenance?createDatabaseIfNotExists=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: transport_db_maintenance/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+03:38:33 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+03:38:33 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+03:38:33 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+03:38:35 INFO  Reading from transport_db_maintenance.databasechangelog
+03:38:35 INFO  Database is up to date, no changesets to execute
+03:38:35 INFO  Reading from transport_db_maintenance.databasechangelog
+03:38:35 INFO  UPDATE SUMMARY
+03:38:35 INFO  Run:                          0
+03:38:35 INFO  Previously run:               0
+03:38:35 INFO  Filtered out:                 0
+03:38:35 INFO  -------------------------------
+03:38:35 INFO  Total change sets:            0
+03:38:35 INFO  Update summary generated
+03:38:35 INFO  Command execution complete
+03:38:36 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03:38:36 INFO  Tomcat started on port 7775 (http) with context path '/'
+03:38:36 INFO  Started MaintenanceApplication in 6.919 seconds (process running for 7.479)
+03:39:47 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+03:39:47 INFO  Initializing Servlet 'dispatcherServlet'
+03:39:47 INFO  Completed initialization in 2 ms
+03:39:48 INFO  Init duration for springdoc-openapi is: 330 ms
+03:56:47 INFO  Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+03:56:47 INFO  Commencing graceful shutdown. Waiting for active requests to complete
+03:56:47 INFO  Graceful shutdown complete
+03:56:47 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+03:56:47 INFO  HikariPool-1 - Shutdown initiated...
+03:56:47 INFO  HikariPool-1 - Shutdown completed.
+03:56:47 INFO  Starting MaintenanceApplication using Java 24.0.1 with PID 43016 (C:\Users\XznRh\Downloads\remote-repo-20261-main\remote-repo-20261-main\maintenance\target\classes started by XznRh in C:\Users\XznRh\Downloads\remote-repo-20261-main\remote-repo-20261-main\maintenance)
+03:56:47 INFO  No active profile set, falling back to 1 default profile: "default"
+03:56:47 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03:56:47 INFO  Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+03:56:47 INFO  Tomcat initialized with port 7775 (http)
+03:56:47 INFO  Starting service [Tomcat]
+03:56:47 INFO  Starting Servlet engine: [Apache Tomcat/11.0.21]
+03:56:47 INFO  Root WebApplicationContext: initialization completed in 344 ms
+03:56:47 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
+03:56:47 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+03:56:47 INFO  HikariPool-2 - Starting...
+03:56:47 INFO  HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@11c4d781
+03:56:47 INFO  HikariPool-2 - Start completed.
+03:56:47 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+03:56:47 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+03:56:47 INFO  HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/transport_db_maintenance?createDatabaseIfNotExists=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: transport_db_maintenance/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+03:56:47 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+03:56:47 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+03:56:47 INFO  Reading from transport_db_maintenance.databasechangelog
+03:56:47 INFO  Database is up to date, no changesets to execute
+03:56:47 INFO  Reading from transport_db_maintenance.databasechangelog
+03:56:47 INFO  UPDATE SUMMARY
+03:56:47 INFO  Run:                          0
+03:56:47 INFO  Previously run:               0
+03:56:47 INFO  Filtered out:                 0
+03:56:47 INFO  -------------------------------
+03:56:47 INFO  Total change sets:            0
+03:56:47 INFO  Update summary generated
+03:56:47 INFO  Command execution complete
+03:56:47 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03:56:47 INFO  Tomcat started on port 7775 (http) with context path '/'
+03:56:47 INFO  Started MaintenanceApplication in 0.853 seconds (process running for 1098.841)
+03:56:47 INFO  Condition evaluation unchanged
+03:56:51 INFO  Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+03:56:51 INFO  Commencing graceful shutdown. Waiting for active requests to complete
+03:56:51 INFO  Graceful shutdown complete
+03:56:51 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+03:56:51 INFO  HikariPool-2 - Shutdown initiated...
+03:56:51 INFO  HikariPool-2 - Shutdown completed.
+03:56:51 INFO  Starting MaintenanceApplication using Java 24.0.1 with PID 43016 (C:\Users\XznRh\Downloads\remote-repo-20261-main\remote-repo-20261-main\maintenance\target\classes started by XznRh in C:\Users\XznRh\Downloads\remote-repo-20261-main\remote-repo-20261-main\maintenance)
+03:56:51 INFO  No active profile set, falling back to 1 default profile: "default"
+03:56:51 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03:56:51 INFO  Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.
+03:56:51 INFO  Tomcat initialized with port 7775 (http)
+03:56:51 INFO  Starting service [Tomcat]
+03:56:51 INFO  Starting Servlet engine: [Apache Tomcat/11.0.21]
+03:56:51 INFO  Root WebApplicationContext: initialization completed in 275 ms
+03:56:51 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
+03:56:51 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+03:56:51 INFO  HikariPool-3 - Starting...
+03:56:51 INFO  HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@587cb3be
+03:56:51 INFO  HikariPool-3 - Start completed.
+03:56:51 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+03:56:51 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+03:56:51 INFO  HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/transport_db_maintenance?createDatabaseIfNotExists=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: transport_db_maintenance/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+03:56:51 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+03:56:51 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+03:56:52 INFO  Reading from transport_db_maintenance.databasechangelog
+03:56:52 INFO  Database is up to date, no changesets to execute
+03:56:52 INFO  Reading from transport_db_maintenance.databasechangelog
+03:56:52 INFO  UPDATE SUMMARY
+03:56:52 INFO  Run:                          0
+03:56:52 INFO  Previously run:               0
+03:56:52 INFO  Filtered out:                 0
+03:56:52 INFO  -------------------------------
+03:56:52 INFO  Total change sets:            0
+03:56:52 INFO  Update summary generated
+03:56:52 INFO  Command execution complete
+03:56:52 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03:56:52 INFO  Tomcat started on port 7775 (http) with context path '/'
+03:56:52 INFO  Started MaintenanceApplication in 0.777 seconds (process running for 1103.101)
+03:56:52 INFO  Condition evaluation unchanged
+03:58:19 INFO  Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+03:58:19 INFO  Commencing graceful shutdown. Waiting for active requests to complete
+03:58:19 INFO  Graceful shutdown complete
+03:58:19 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+03:58:19 INFO  HikariPool-3 - Shutdown initiated...
+03:58:19 INFO  HikariPool-3 - Shutdown completed.
+03:58:19 INFO  Starting MaintenanceApplication using Java 24.0.1 with PID 43016 (C:\Users\XznRh\Downloads\remote-repo-20261-main\remote-repo-20261-main\maintenance\target\classes started by XznRh in C:\Users\XznRh\Downloads\remote-repo-20261-main\remote-repo-20261-main\maintenance)
+03:58:19 INFO  No active profile set, falling back to 1 default profile: "default"
+03:58:19 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03:58:19 INFO  Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interface.
+03:58:19 INFO  Tomcat initialized with port 7775 (http)
+03:58:19 INFO  Starting service [Tomcat]
+03:58:19 INFO  Starting Servlet engine: [Apache Tomcat/11.0.21]
+03:58:19 INFO  Root WebApplicationContext: initialization completed in 361 ms
+03:58:19 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
+03:58:19 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+03:58:19 INFO  HikariPool-4 - Starting...
+03:58:19 INFO  HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6cb34552
+03:58:19 INFO  HikariPool-4 - Start completed.
+03:58:19 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+03:58:19 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+03:58:19 INFO  HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/transport_db_maintenance?createDatabaseIfNotExists=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: transport_db_maintenance/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+03:58:19 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+03:58:20 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+03:58:20 INFO  Reading from transport_db_maintenance.databasechangelog
+03:58:20 INFO  Database is up to date, no changesets to execute
+03:58:20 INFO  Reading from transport_db_maintenance.databasechangelog
+03:58:20 INFO  UPDATE SUMMARY
+03:58:20 INFO  Run:                          0
+03:58:20 INFO  Previously run:               0
+03:58:20 INFO  Filtered out:                 0
+03:58:20 INFO  -------------------------------
+03:58:20 INFO  Total change sets:            0
+03:58:20 INFO  Update summary generated
+03:58:20 INFO  Command execution complete
+03:58:20 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03:58:20 INFO  Tomcat started on port 7775 (http) with context path '/'
+03:58:20 INFO  Started MaintenanceApplication in 0.866 seconds (process running for 1191.209)
+03:58:20 INFO  Condition evaluation unchanged
+03:58:53 INFO  Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+03:58:53 INFO  Commencing graceful shutdown. Waiting for active requests to complete
+03:58:53 INFO  Graceful shutdown complete
+03:58:53 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+03:58:53 INFO  HikariPool-4 - Shutdown initiated...
+03:58:53 INFO  HikariPool-4 - Shutdown completed.
+03:58:54 INFO  Starting MaintenanceApplication using Java 24.0.1 with PID 43016 (C:\Users\XznRh\Downloads\remote-repo-20261-main\remote-repo-20261-main\maintenance\target\classes started by XznRh in C:\Users\XznRh\Downloads\remote-repo-20261-main\remote-repo-20261-main\maintenance)
+03:58:54 INFO  No active profile set, falling back to 1 default profile: "default"
+03:58:54 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03:58:54 INFO  Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+03:58:54 INFO  Tomcat initialized with port 7775 (http)
+03:58:54 INFO  Starting service [Tomcat]
+03:58:54 INFO  Starting Servlet engine: [Apache Tomcat/11.0.21]
+03:58:54 INFO  Root WebApplicationContext: initialization completed in 290 ms
+03:58:54 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
+03:58:54 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+03:58:54 INFO  HikariPool-5 - Starting...
+03:58:54 INFO  HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@604a4ab1
+03:58:54 INFO  HikariPool-5 - Start completed.
+03:58:54 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+03:58:54 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+03:58:54 INFO  HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/transport_db_maintenance?createDatabaseIfNotExists=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: transport_db_maintenance/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+03:58:54 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+03:58:54 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+03:58:54 INFO  Reading from transport_db_maintenance.databasechangelog
+03:58:54 INFO  Database is up to date, no changesets to execute
+03:58:54 INFO  Reading from transport_db_maintenance.databasechangelog
+03:58:54 INFO  UPDATE SUMMARY
+03:58:54 INFO  Run:                          0
+03:58:54 INFO  Previously run:               0
+03:58:54 INFO  Filtered out:                 0
+03:58:54 INFO  -------------------------------
+03:58:54 INFO  Total change sets:            0
+03:58:54 INFO  Update summary generated
+03:58:54 INFO  Command execution complete
+03:58:54 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03:58:54 INFO  Tomcat started on port 7775 (http) with context path '/'
+03:58:54 INFO  Started MaintenanceApplication in 0.748 seconds (process running for 1225.616)
+03:58:54 INFO  Condition evaluation unchanged
+04:23:30 INFO  Commencing graceful shutdown. Waiting for active requests to complete
+04:23:30 INFO  Graceful shutdown complete
+04:23:30 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+04:23:30 INFO  HikariPool-5 - Shutdown initiated...
+04:23:30 INFO  HikariPool-5 - Shutdown completed.

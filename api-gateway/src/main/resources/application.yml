@@ -1,0 +1,189 @@
+server:
+  port: 7769
+
+spring:
+  main:
+    web-application-type: reactive
+
+  cloud:
+    gateway:
+      routes:
+        # ---------------------------------------------------------
+        # DOC routes – MUST APPEAR FIRST to prevent catch-all matching
+        # ---------------------------------------------------------
+        - id: manufacturer-docs
+          uri: http://localhost:7770
+          predicates:
+            - Path=/api/manufacturer/v3/api-docs
+          filters:
+            - RewritePath=/api/manufacturer/(?<segment>.*), /$\{segment}
+        - id: train-docs
+          uri: http://localhost:7771
+          predicates:
+            - Path=/api/trains/v3/api-docs
+          filters:
+            - RewritePath=/api/trains/(?<segment>.*), /$\{segment}
+        - id: typeengine-docs
+          uri: http://localhost:7772
+          predicates:
+            - Path=/api/engine/v3/api-docs
+          filters:
+            - RewritePath=/api/engine/(?<segment>.*), /$\{segment}
+        - id: station-docs
+          uri: http://localhost:7773
+          predicates:
+            - Path=/api/station/v3/api-docs
+          filters:
+            - RewritePath=/api/station/(?<segment>.*), /$\{segment}
+        - id: line-docs
+          uri: http://localhost:7774
+          predicates:
+            - Path=/api/lines/v3/api-docs
+          filters:
+            - RewritePath=/api/lines/(?<segment>.*), /$\{segment}
+        - id: maintenance-docs
+          uri: http://localhost:7775
+          predicates:
+            - Path=/api/maintenance/v3/api-docs
+          filters:
+            - RewritePath=/api/maintenance/(?<segment>.*), /$\{segment}
+        - id: ticket-docs
+          uri: http://localhost:7776
+          predicates:
+            - Path=/ticket/v3/api-docs
+          filters:
+            - RewritePath=/ticket/(?<segment>.*), /$\{segment}
+        - id: city-docs
+          uri: http://localhost:7777
+          predicates:
+            - Path=/api/city/v3/api-docs
+          filters:
+            - RewritePath=/api/city/(?<segment>.*), /$\{segment}
+        - id: driver-docs
+          uri: http://localhost:7778
+          predicates:
+            - Path=/api/driver/v3/api-docs
+          filters:
+            - RewritePath=/api/driver/(?<segment>.*), /$\{segment}
+        - id: client-docs
+          uri: http://localhost:7779
+          predicates:
+            - Path=/api/client/v3/api-docs
+          filters:
+            - RewritePath=/api/client/(?<segment>.*), /$\{segment}
+        - id: auth-docs
+          uri: http://localhost:7780
+          predicates:
+            - Path=/api/auth/v3/api-docs
+          filters:
+            - RewritePath=/api/auth/(?<segment>.*), /$\{segment}
+        - id: supervisor-docs
+          uri: http://localhost:7781
+          predicates:
+            - Path=/api/supervisor/v3/api-docs
+          filters:
+            - RewritePath=/api/supervisor/(?<segment>.*), /$\{segment}
+        - id: review-docs
+          uri: http://localhost:7782
+          predicates:
+            - Path=/reviews/v3/api-docs
+          filters:
+            - RewritePath=/reviews/(?<segment>.*), /$\{segment}
+
+        # ---------------------------------------------------------
+        # API routes - Evaluated AFTER Doc routes
+        # ---------------------------------------------------------
+        - id: manufacturer-api
+          uri: http://localhost:7770
+          predicates:
+            - Path=/api/manufacturer/**
+        - id: train-api
+          uri: http://localhost:7771
+          predicates:
+            - Path=/api/trains/**
+        - id: typeengine-api
+          uri: http://localhost:7772
+          predicates:
+            - Path=/api/engine/**
+        - id: station-api
+          uri: http://localhost:7773
+          predicates:
+            - Path=/api/station/**
+        - id: line-api
+          uri: http://localhost:7774
+          predicates:
+            - Path=/api/lines/**
+        - id: maintenance-api
+          uri: http://localhost:7775
+          predicates:
+            - Path=/api/maintenance/**
+        - id: ticket-api
+          uri: http://localhost:7776
+          predicates:
+            - Path=/ticket/**
+        - id: city-api
+          uri: http://localhost:7777
+          predicates:
+            - Path=/api/city/**
+        - id: driver-api
+          uri: http://localhost:7778
+          predicates:
+            - Path=/api/driver/**
+        - id: client-api
+          uri: http://localhost:7779
+          predicates:
+            - Path=/api/client/**
+        - id: auth-api
+          uri: http://localhost:7780
+          predicates:
+            - Path=/api/auth/**
+        - id: supervisor-api
+          uri: http://localhost:7781
+          predicates:
+            - Path=/api/supervisor/**
+        - id: review-api
+          uri: http://localhost:7782
+          predicates:
+            - Path=/reviews/**
+
+# Swagger UI aggregation
+springdoc:
+  swagger-ui:
+    urls:
+      - name: Manufacturer
+        url: /api/manufacturer/v3/api-docs
+      - name: Train
+        url: /api/trains/v3/api-docs
+      - name: Type Engine
+        url: /api/engine/v3/api-docs
+      - name: Station
+        url: /api/station/v3/api-docs
+      - name: Line
+        url: /api/lines/v3/api-docs
+      - name: Maintenance
+        url: /api/maintenance/v3/api-docs
+      - name: Ticket
+        url: /ticket/v3/api-docs
+      - name: City
+        url: /api/city/v3/api-docs
+      - name: Driver
+        url: /api/driver/v3/api-docs
+      - name: Client
+        url: /api/client/v3/api-docs
+      - name: Auth
+        url: /api/auth/v3/api-docs
+      - name: Supervisor
+        url: /api/supervisor/v3/api-docs
+      - name: Review
+        url: /reviews/v3/api-docs
+    disable-swagger-default-url: true
+
+# Actuator (helpful for debugging)
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,gateway
+  endpoint:
+    gateway:
+      enabled: true
