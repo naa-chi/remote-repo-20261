@@ -18,8 +18,8 @@ import java.util.List;
 */
 
 @RestController
-@RequestMapping("/api/supervisor")
-public class SupervisorController {
+@RequestMapping("/api/supervisors")
+public class SupervisorController { 
 
     @Autowired
     private SupervisorService supervisorService;

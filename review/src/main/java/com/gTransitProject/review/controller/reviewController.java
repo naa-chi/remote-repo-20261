@@ -10,7 +10,7 @@ import com.gTransitProject.review.service.reviewService;
 import io.swagger.v3.oas.annotations.Operation;
 
 @RestController
-@RequestMapping("/reviews")
+@RequestMapping("/api/reviews")
 public class reviewController {
     @Autowired
     private reviewService service;

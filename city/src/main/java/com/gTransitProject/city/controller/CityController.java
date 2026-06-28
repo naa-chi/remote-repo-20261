@@ -13,7 +13,7 @@ import java.util.List;
 import io.swagger.v3.oas.annotations.Operation;
 
 @RestController
-@RequestMapping("/api/city")
+@RequestMapping("/api/cities")
 public class CityController {
 
     @Autowired

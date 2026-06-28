@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/typeTrains")
+@RequestMapping("/api/typetrains")
 public class typeTrainController {
     @Autowired
     private typeTrainService typeTrainService;
