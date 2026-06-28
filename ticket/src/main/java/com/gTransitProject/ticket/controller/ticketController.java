@@ -11,7 +11,7 @@ import com.gTransitProject.ticket.service.ticketService;
 import io.swagger.v3.oas.annotations.Operation;
 
 @RestController
-@RequestMapping("/ticket")
+@RequestMapping("/api/tickets")
 public class ticketController {
     @Autowired
     private ticketService service;

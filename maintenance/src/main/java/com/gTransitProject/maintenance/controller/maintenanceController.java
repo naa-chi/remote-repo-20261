@@ -16,7 +16,7 @@ import java.util.List;
 
 @Slf4j
 @RestController
-@RequestMapping("/api/maintenance")
+@RequestMapping("/api/maintenances") //doesn't make sense to be plural here but we gotta be consistent at some point
 @RequiredArgsConstructor
 public class maintenanceController {
     
