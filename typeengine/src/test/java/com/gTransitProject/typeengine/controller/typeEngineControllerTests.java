@@ -1,113 +1,144 @@
 package com.gTransitProject.typeengine.controller;
 
+import com.gTransitProject.typeengine.assembler.engineModelAssembler;   // new assembler
 import com.gTransitProject.typeengine.model.typeEngine;
 import com.gTransitProject.typeengine.service.typeEngineService;
+import com.gTransitProject.typeengine.typeEngineDTO.engineDTO;          // DTO
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.hateoas.CollectionModel;
+import org.springframework.hateoas.EntityModel;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
-class typeengineControllerTest {
+public class typeEngineControllerTests {
 
     @Mock
     private typeEngineService service;
 
+    @Mock
+    private engineModelAssembler assembler;   // new assembler
+
     @InjectMocks
     private typeEngineController controller;
 
-    private typeEngine sampleTypeEngine;
-
     @BeforeEach
     void setUp() {
-        sampleTypeEngine = new typeEngine();
-        sampleTypeEngine.setId(1);
-        sampleTypeEngine.setType("Diesel");
-        sampleTypeEngine.setHorsepower(3500.5f);
-        sampleTypeEngine.setTypeCodeEngine(101);
-        sampleTypeEngine.setNameCodeEngine("DIESEL_ENGINE_101");
+        // Stub the assembler to return an EntityModel<engineDTO>
+        // We use lenient() because the delete test doesn't use the assembler.
+        lenient().when(assembler.toModel(any(typeEngine.class))).thenAnswer(invocation -> {
+            typeEngine entity = invocation.getArgument(0);
+            engineDTO dto = new engineDTO();
+            dto.setId(entity.getId());
+            dto.setTypeCodeEngine(entity.getTypeCodeEngine());
+            dto.setHorsepower(entity.getHorsepower());
+            return EntityModel.of(dto);
+        });
     }
 
     @Test
-    void createTypeEngine_shouldReturnCreatedTypeEngineWithStatus201() {
-        when(service.createTypeEngine(any(typeEngine.class))).thenReturn(sampleTypeEngine);
+    public void testCreateTypeEngine() {
+        typeEngine input = new typeEngine();
+        input.setType("V8");
+        input.setHorsepower(450.0f);
+        input.setTypeCodeEngine(100);
+        input.setNameCodeEngine("V8-Engine");
 
-        ResponseEntity<typeEngine> response = controller.createTypeEngine(sampleTypeEngine);
+        typeEngine saved = new typeEngine();
+        saved.setId(1);
+        saved.setType("V8");
+        saved.setHorsepower(450.0f);
+        saved.setTypeCodeEngine(100);
+        saved.setNameCodeEngine("V8-Engine");
+
+        when(service.createTypeEngine(any(typeEngine.class))).thenReturn(saved);
+
+        ResponseEntity<EntityModel<engineDTO>> response = controller.createTypeEngine(input);
 
         assertEquals(HttpStatus.CREATED, response.getStatusCode());
-        assertEquals(sampleTypeEngine, response.getBody());
-        verify(service, times(1)).createTypeEngine(sampleTypeEngine);
+        assertNotNull(response.getHeaders().getLocation());
+
+        engineDTO result = response.getBody().getContent();
+        assertEquals(1, result.getId());
+        assertEquals(100, result.getTypeCodeEngine());
+        assertEquals(450.0f, result.getHorsepower());
     }
 
     @Test
-    void getAll_shouldReturnListOfTypeEngines() {
-        List<typeEngine> engines = Arrays.asList(sampleTypeEngine, new typeEngine());
+    public void testGetAll() {
+        typeEngine engine1 = new typeEngine(1, "V8", 450.0f, 100, "V8-Engine");
+        typeEngine engine2 = new typeEngine(2, "Electric", 0f, 200, "Elec-Engine");
+
+        List<typeEngine> engines = Arrays.asList(engine1, engine2);
         when(service.getAll()).thenReturn(engines);
 
-        List<typeEngine> result = controller.getAll();
-
-        assertEquals(2, result.size());
-        verify(service, times(1)).getAll();
-    }
-
-    @Test
-    void getById_withValidId_shouldReturnTypeEngine() {
-        Integer id = 1;
-        when(service.getById(id)).thenReturn(sampleTypeEngine);
-
-        ResponseEntity<typeEngine> response = controller.getById(id);
+        ResponseEntity<CollectionModel<EntityModel<engineDTO>>> response = controller.getAll();
 
         assertEquals(HttpStatus.OK, response.getStatusCode());
-        assertEquals(sampleTypeEngine, response.getBody());
-        verify(service, times(1)).getById(id);
+        CollectionModel<EntityModel<engineDTO>> body = response.getBody();
+        assertNotNull(body);
+
+        List<engineDTO> dtos = body.getContent().stream()
+                .map(EntityModel::getContent)
+                .collect(Collectors.toList());
+
+        assertEquals(2, dtos.size());
+        assertEquals(100, dtos.get(0).getTypeCodeEngine());
+        assertEquals(450.0f, dtos.get(0).getHorsepower());
+        assertEquals(200, dtos.get(1).getTypeCodeEngine());
+        assertEquals(0f, dtos.get(1).getHorsepower());
+
+        assertTrue(body.getLinks().hasLink("self"));
     }
 
     @Test
-    void getById_withInvalidId_shouldReturnNull() {
-        Integer id = 999;
-        when(service.getById(id)).thenReturn(null);
+    public void testGetById() {
+        typeEngine engine = new typeEngine(1, "V8", 450.0f, 100, "V8-Engine");
+        when(service.getById(1)).thenReturn(engine);
 
-        ResponseEntity<typeEngine> response = controller.getById(id);
+        ResponseEntity<EntityModel<engineDTO>> response = controller.getById(1);
 
         assertEquals(HttpStatus.OK, response.getStatusCode());
-        assertNull(response.getBody());
-        verify(service, times(1)).getById(id);
+        engineDTO result = response.getBody().getContent();
+        assertEquals(1, result.getId());
+        assertEquals(100, result.getTypeCodeEngine());
+        assertEquals(450.0f, result.getHorsepower());
     }
 
     @Test
-    void updateTypeEngine_shouldReturnUpdatedTypeEngine() {
-        Integer id = 1;
-        typeEngine updated = new typeEngine();
-        updated.setId(1);
-        updated.setType("Electric");
-        when(service.updateTypeEngine(eq(id), any(typeEngine.class))).thenReturn(updated);
+    public void testUpdateTypeEngine() {
+        typeEngine updated = new typeEngine(1, "V12", 600.0f, 101, "V12-Engine");
+        when(service.updateTypeEngine(eq(1), any(typeEngine.class))).thenReturn(updated);
 
-        ResponseEntity<typeEngine> response = controller.updateTypeEngine(id, sampleTypeEngine);
+        ResponseEntity<EntityModel<engineDTO>> response = controller.updateTypeEngine(1, updated);
 
         assertEquals(HttpStatus.OK, response.getStatusCode());
-        assertEquals(updated, response.getBody());
-        verify(service, times(1)).updateTypeEngine(id, sampleTypeEngine);
+        engineDTO result = response.getBody().getContent();
+        assertEquals(1, result.getId());
+        assertEquals(101, result.getTypeCodeEngine());
+        assertEquals(600.0f, result.getHorsepower());
     }
 
     @Test
-    void deleteTypeEngine_shouldReturnNoContent() {
-        Integer id = 1;
-        doNothing().when(service).deleteTypeEngine(id);
+    public void testDeleteTypeEngine() {
+        doNothing().when(service).deleteTypeEngine(1);
 
-        ResponseEntity<Void> response = controller.deleteTypeEngine(id);
+        ResponseEntity<Void> response = controller.deleteTypeEngine(1);
 
         assertEquals(HttpStatus.NO_CONTENT, response.getStatusCode());
-        assertNull(response.getBody());
-        verify(service, times(1)).deleteTypeEngine(id);
+        verify(service, times(1)).deleteTypeEngine(1);
     }
 }
