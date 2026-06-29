@@ -6,4 +6,5 @@ import lombok.Data;
 public class engineDTO {
     private Integer id;
     private Integer typeCodeEngine;
+    private float horsepower;
 }
