@@ -8,24 +8,34 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.hateoas.CollectionModel;
+import org.springframework.hateoas.EntityModel;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 
 import java.sql.Date;
 import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
-class ticketControllerTest {
+class ticketControllerTests {
 
     @Mock
     private ticketService service;
+
+    @Mock
+    private ticketAssembler assembler;
 
     @InjectMocks
     private ticketController controller;
 
     private ticketModel sampleTicket;
+    private EntityModel<ticketModel> sampleModel;
 
     @BeforeEach
     void setUp() {
@@ -44,138 +54,172 @@ class ticketControllerTest {
         sampleTicket.setDepartureTime(Date.valueOf("2026-06-26"));
         sampleTicket.setArrivalTime(Date.valueOf("2026-06-27"));
         sampleTicket.setKgCargo(500);
+
+        sampleModel = EntityModel.of(sampleTicket);
     }
 
     @Test
-    void getTickets_shouldReturnListOfTickets() {
+    void getTickets_shouldReturnCollectionModelWithSelfLink() {
         List<ticketModel> tickets = Arrays.asList(sampleTicket, new ticketModel());
+        CollectionModel<EntityModel<ticketModel>> collection = CollectionModel.of(
+                Arrays.asList(EntityModel.of(tickets.get(0)), EntityModel.of(tickets.get(1))));
         when(service.getAll()).thenReturn(tickets);
+        when(assembler.toCollectionModel(tickets)).thenReturn(collection);
 
-        List<ticketModel> result = controller.getTickets();
+        CollectionModel<EntityModel<ticketModel>> result = controller.getTickets();
 
-        assertEquals(2, result.size());
+        assertEquals(2, result.getContent().size());
         verify(service, times(1)).getAll();
+        verify(assembler, times(1)).toCollectionModel(tickets);
     }
 
     @Test
-    void getTicketById_withValidId_shouldReturnTicket() {
+    void getTicketById_withValidId_shouldReturnOkResponseWithModel() {
         Integer id = 1;
         when(service.getById(id)).thenReturn(sampleTicket);
+        when(assembler.toModel(sampleTicket)).thenReturn(sampleModel);
 
-        ticketModel result = controller.getTicketById(id);
+        ResponseEntity<EntityModel<ticketModel>> response = controller.getTicketById(id);
 
-        assertEquals(sampleTicket, result);
+        assertEquals(HttpStatus.OK, response.getStatusCode());
+        assertEquals(sampleModel, response.getBody());
         verify(service, times(1)).getById(id);
+        verify(assembler, times(1)).toModel(sampleTicket);
     }
 
     @Test
-    void getTicketById_withInvalidId_shouldReturnNull() {
+    void getTicketById_withInvalidId_shouldReturnNotFound() {
         Integer id = 999;
         when(service.getById(id)).thenReturn(null);
 
-        ticketModel result = controller.getTicketById(id);
+        ResponseEntity<EntityModel<ticketModel>> response = controller.getTicketById(id);
 
-        assertNull(result);
+        assertEquals(HttpStatus.NOT_FOUND, response.getStatusCode());
+        assertNull(response.getBody());
         verify(service, times(1)).getById(id);
+        verify(assembler, never()).toModel(any());
     }
 
     @Test
-    void getTicketByCode_withValidCode_shouldReturnTicket() {
+    void getTicketByCode_withValidCode_shouldReturnOkResponseWithModel() {
         String code = "LANY001";
         when(service.getByCode(code)).thenReturn(sampleTicket);
+        when(assembler.toModel(sampleTicket)).thenReturn(sampleModel);
 
-        ticketModel result = controller.getTicketByCode(code);
+        ResponseEntity<EntityModel<ticketModel>> response = controller.getTicketByCode(code);
 
-        assertEquals(sampleTicket, result);
+        assertEquals(HttpStatus.OK, response.getStatusCode());
+        assertEquals(sampleModel, response.getBody());
         verify(service, times(1)).getByCode(code);
+        verify(assembler, times(1)).toModel(sampleTicket);
     }
 
     @Test
-    void getTicketByCode_withInvalidCode_shouldReturnNull() {
+    void getTicketByCode_withInvalidCode_shouldReturnNotFound() {
         String code = "INVALID";
         when(service.getByCode(code)).thenReturn(null);
 
-        ticketModel result = controller.getTicketByCode(code);
+        ResponseEntity<EntityModel<ticketModel>> response = controller.getTicketByCode(code);
 
-        assertNull(result);
+        assertEquals(HttpStatus.NOT_FOUND, response.getStatusCode());
+        assertNull(response.getBody());
         verify(service, times(1)).getByCode(code);
+        verify(assembler, never()).toModel(any());
     }
 
     @Test
-    void getTicketByCityCodeOrigin_withValidOrigin_shouldReturnTicket() {
+    void getTicketByCityCodeOrigin_withValidOrigin_shouldReturnOkResponseWithModel() {
         String origin = "LAX";
         when(service.getCityCodeOrigin(origin)).thenReturn(sampleTicket);
+        when(assembler.toModel(sampleTicket)).thenReturn(sampleModel);
 
-        ticketModel result = controller.getTicketByCityCodeOrigin(origin);
+        ResponseEntity<EntityModel<ticketModel>> response = controller.getTicketByCityCodeOrigin(origin);
 
-        assertEquals(sampleTicket, result);
+        assertEquals(HttpStatus.OK, response.getStatusCode());
+        assertEquals(sampleModel, response.getBody());
         verify(service, times(1)).getCityCodeOrigin(origin);
+        verify(assembler, times(1)).toModel(sampleTicket);
     }
 
     @Test
-    void getTicketByCityCodeOrigin_withInvalidOrigin_shouldReturnNull() {
+    void getTicketByCityCodeOrigin_withInvalidOrigin_shouldReturnNotFound() {
         String origin = "XXX";
         when(service.getCityCodeOrigin(origin)).thenReturn(null);
 
-        ticketModel result = controller.getTicketByCityCodeOrigin(origin);
+        ResponseEntity<EntityModel<ticketModel>> response = controller.getTicketByCityCodeOrigin(origin);
 
-        assertNull(result);
+        assertEquals(HttpStatus.NOT_FOUND, response.getStatusCode());
+        assertNull(response.getBody());
         verify(service, times(1)).getCityCodeOrigin(origin);
+        verify(assembler, never()).toModel(any());
     }
 
     @Test
-    void getTicketByCityCodeDestination_withValidDestination_shouldReturnTicket() {
+    void getTicketByCityCodeDestination_withValidDestination_shouldReturnOkResponseWithModel() {
         String dest = "NYC";
         when(service.getCityCodeDestination(dest)).thenReturn(sampleTicket);
+        when(assembler.toModel(sampleTicket)).thenReturn(sampleModel);
 
-        ticketModel result = controller.getTicketByCityCodeDestination(dest);
+        ResponseEntity<EntityModel<ticketModel>> response = controller.getTicketByCityCodeDestination(dest);
 
-        assertEquals(sampleTicket, result);
+        assertEquals(HttpStatus.OK, response.getStatusCode());
+        assertEquals(sampleModel, response.getBody());
         verify(service, times(1)).getCityCodeDestination(dest);
+        verify(assembler, times(1)).toModel(sampleTicket);
     }
 
     @Test
-    void getTicketByCityCodeDestination_withInvalidDestination_shouldReturnNull() {
+    void getTicketByCityCodeDestination_withInvalidDestination_shouldReturnNotFound() {
         String dest = "XXX";
         when(service.getCityCodeDestination(dest)).thenReturn(null);
 
-        ticketModel result = controller.getTicketByCityCodeDestination(dest);
+        ResponseEntity<EntityModel<ticketModel>> response = controller.getTicketByCityCodeDestination(dest);
 
-        assertNull(result);
+        assertEquals(HttpStatus.NOT_FOUND, response.getStatusCode());
+        assertNull(response.getBody());
         verify(service, times(1)).getCityCodeDestination(dest);
+        verify(assembler, never()).toModel(any());
     }
 
     @Test
-    void saveTicket_shouldReturnSavedTicket() {
+    void saveTicket_shouldReturnCreatedResponseWithModel() {
         when(service.create(any(ticketModel.class))).thenReturn(sampleTicket);
+        when(assembler.toModel(sampleTicket)).thenReturn(sampleModel);
 
-        ticketModel result = controller.saveTicket(sampleTicket);
+        ResponseEntity<EntityModel<ticketModel>> response = controller.saveTicket(sampleTicket);
 
-        assertEquals(sampleTicket, result);
+        assertEquals(HttpStatus.CREATED, response.getStatusCode());
+        assertEquals(sampleModel, response.getBody());
         verify(service, times(1)).create(sampleTicket);
+        verify(assembler, times(1)).toModel(sampleTicket);
     }
 
     @Test
-    void deleteTicket_shouldCallServiceDelete() {
+    void deleteTicket_shouldReturnNoContent() {
         Integer id = 1;
         doNothing().when(service).delete(id);
 
-        controller.deleteTicket(id);
+        ResponseEntity<Void> response = controller.deleteTicket(id);
 
+        assertEquals(HttpStatus.NO_CONTENT, response.getStatusCode());
+        assertNull(response.getBody());
         verify(service, times(1)).delete(id);
     }
 
     @Test
-    void updateTicket_shouldReturnUpdatedTicket() {
+    void updateTicket_shouldReturnOkResponseWithUpdatedModel() {
         Integer id = 1;
         ticketModel updated = new ticketModel();
         updated.setTicketId(1);
         updated.setPrice(200);
         when(service.update(eq(id), any(ticketModel.class))).thenReturn(updated);
+        when(assembler.toModel(updated)).thenReturn(EntityModel.of(updated));
 
-        ticketModel result = controller.updateTicket(id, sampleTicket);
+        ResponseEntity<EntityModel<ticketModel>> response = controller.updateTicket(id, sampleTicket);
 
-        assertEquals(updated, result);
+        assertEquals(HttpStatus.OK, response.getStatusCode());
+        assertEquals(EntityModel.of(updated), response.getBody());
         verify(service, times(1)).update(id, sampleTicket);
+        verify(assembler, times(1)).toModel(updated);
     }
 }
