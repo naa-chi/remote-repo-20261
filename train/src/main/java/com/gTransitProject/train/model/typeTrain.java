@@ -7,17 +7,14 @@ import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.Getter;
 
 @Entity
 @Table(name = "train_type")
 @Data
 @NoArgsConstructor
-@Getter
-@Setter
 @AllArgsConstructor
 public class typeTrain {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -25,7 +22,7 @@ public class typeTrain {
     @NotNull(message = "Type cannot be null. We need to know what type of train this is.")
     @Column(unique = true, length = 20, nullable = false)
     private String type; //cargo, passenger
-    
+
     @NotNull(message = "Type Code cannot be null. We need to know the unique identifier for this train type.")
     @Column(unique = true, nullable = false)
     @Min(value = 10)

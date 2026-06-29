@@ -8,6 +8,8 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.hateoas.CollectionModel;
+import org.springframework.hateoas.EntityModel;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
@@ -15,6 +17,8 @@ import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
@@ -23,10 +27,14 @@ class SupervisorControllerTest {
     @Mock
     private SupervisorService supervisorService;
 
+    @Mock
+    private SupervisorAssembler assembler;
+
     @InjectMocks
     private SupervisorController controller;
 
     private Supervisor sampleSupervisor;
+    private EntityModel<Supervisor> sampleModel;
 
     @BeforeEach
     void setUp() {
@@ -36,29 +44,36 @@ class SupervisorControllerTest {
         sampleSupervisor.setSupervisorCode("ABC123");
         sampleSupervisor.setCityCode("NYC");
         sampleSupervisor.setAuthorized(true);
+
+        sampleModel = EntityModel.of(sampleSupervisor);
     }
 
     @Test
-    void getAllSupervisors_shouldReturnListOfSupervisors() {
+    void getAllSupervisors_shouldReturnCollectionModelWithSelfLink() {
         List<Supervisor> supervisors = Arrays.asList(sampleSupervisor, new Supervisor());
+        CollectionModel<EntityModel<Supervisor>> collection = CollectionModel.of(
+                Arrays.asList(EntityModel.of(supervisors.get(0)), EntityModel.of(supervisors.get(1))));
         when(supervisorService.getAllSupervisors()).thenReturn(supervisors);
+        when(assembler.toCollectionModel(supervisors)).thenReturn(collection);
 
-        ResponseEntity<List<Supervisor>> response = controller.getAllSupervisors();
+        CollectionModel<EntityModel<Supervisor>> result = controller.getAllSupervisors();
 
-        assertEquals(HttpStatus.OK, response.getStatusCode());
-        assertEquals(2, response.getBody().size());
+        assertEquals(2, result.getContent().size());
         verify(supervisorService, times(1)).getAllSupervisors();
+        verify(assembler, times(1)).toCollectionModel(supervisors);
     }
 
     @Test
-    void createSupervisor_shouldReturnSavedSupervisor() {
+    void createSupervisor_shouldReturnCreatedResponseWithModel() {
         when(supervisorService.saveSupervisor(any(Supervisor.class))).thenReturn(sampleSupervisor);
+        when(assembler.toModel(sampleSupervisor)).thenReturn(sampleModel);
 
-        ResponseEntity<Supervisor> response = controller.createSupervisor(sampleSupervisor);
+        ResponseEntity<EntityModel<Supervisor>> response = controller.createSupervisor(sampleSupervisor);
 
-        assertEquals(HttpStatus.OK, response.getStatusCode());
-        assertEquals(sampleSupervisor, response.getBody());
+        assertEquals(HttpStatus.CREATED, response.getStatusCode());
+        assertEquals(sampleModel, response.getBody());
         verify(supervisorService, times(1)).saveSupervisor(sampleSupervisor);
+        verify(assembler, times(1)).toModel(sampleSupervisor);
     }
 
     @Test
@@ -66,70 +81,90 @@ class SupervisorControllerTest {
         String code = "ABC123";
         when(supervisorService.findByCode(code)).thenReturn(sampleSupervisor);
 
-        ResponseEntity<Boolean> response = controller.validateSupervisor(code);
+        ResponseEntity<EntityModel<Boolean>> response = controller.validateSupervisor(code);
 
         assertEquals(HttpStatus.OK, response.getStatusCode());
-        assertTrue(response.getBody());
+        assertTrue(response.getBody().getContent());
         verify(supervisorService, times(1)).findByCode(code);
     }
 
     @Test
-    void validateSupervisor_withInvalidCode_shouldThrowNullPointerException() {
+    void validateSupervisor_withInvalidCode_shouldReturnNotFound() {
         String code = "INVALID";
         when(supervisorService.findByCode(code)).thenReturn(null);
 
-        // The controller does not handle null, so calling getAuthorized() will throw NPE
-        assertThrows(NullPointerException.class, () -> controller.validateSupervisor(code));
+        ResponseEntity<EntityModel<Boolean>> response = controller.validateSupervisor(code);
+
+        assertEquals(HttpStatus.NOT_FOUND, response.getStatusCode());
+        assertNull(response.getBody());
         verify(supervisorService, times(1)).findByCode(code);
     }
 
     @Test
-    void deleteSupervisor_shouldReturnSuccessMessage() {
+    void deleteSupervisor_shouldReturnNoContent() {
         Integer id = 1;
         doNothing().when(supervisorService).deleteSupervisor(id);
 
-        ResponseEntity<String> response = controller.deleteSupervisor(id);
+        ResponseEntity<Void> response = controller.deleteSupervisor(id);
 
-        assertEquals(HttpStatus.OK, response.getStatusCode());
-        assertEquals("Supervisor eliminado", response.getBody());
+        assertEquals(HttpStatus.NO_CONTENT, response.getStatusCode());
+        assertNull(response.getBody());
         verify(supervisorService, times(1)).deleteSupervisor(id);
     }
 
     @Test
-    void getSupervisorById_withValidId_shouldReturnSupervisor() {
+    void getSupervisorById_withValidId_shouldReturnOkResponseWithModel() {
         Integer id = 1;
         when(supervisorService.getSupervisorById(id)).thenReturn(sampleSupervisor);
+        when(assembler.toModel(sampleSupervisor)).thenReturn(sampleModel);
 
-        ResponseEntity<Supervisor> response = controller.getSupervisorById(id);
+        ResponseEntity<EntityModel<Supervisor>> response = controller.getSupervisorById(id);
 
         assertEquals(HttpStatus.OK, response.getStatusCode());
-        assertEquals(sampleSupervisor, response.getBody());
+        assertEquals(sampleModel, response.getBody());
         verify(supervisorService, times(1)).getSupervisorById(id);
+        verify(assembler, times(1)).toModel(sampleSupervisor);
     }
 
     @Test
-    void getSupervisorById_withInvalidId_shouldReturnNull() {
+    void getSupervisorById_withInvalidId_shouldReturnNotFound() {
         Integer id = 999;
         when(supervisorService.getSupervisorById(id)).thenReturn(null);
 
-        ResponseEntity<Supervisor> response = controller.getSupervisorById(id);
+        ResponseEntity<EntityModel<Supervisor>> response = controller.getSupervisorById(id);
 
-        assertEquals(HttpStatus.OK, response.getStatusCode());
+        assertEquals(HttpStatus.NOT_FOUND, response.getStatusCode());
         assertNull(response.getBody());
         verify(supervisorService, times(1)).getSupervisorById(id);
+        verify(assembler, never()).toModel(any());
     }
 
     @Test
-    void updateSupervisor_shouldReturnUpdatedSupervisor() {
+    void updateSupervisor_shouldReturnOkResponseWithUpdatedModel() {
         Integer id = 1;
         Supervisor updated = new Supervisor();
         updated.setSupervisorName("Jane Doe");
         when(supervisorService.updateSupervisor(eq(id), any(Supervisor.class))).thenReturn(updated);
+        when(assembler.toModel(updated)).thenReturn(EntityModel.of(updated));
 
-        ResponseEntity<Supervisor> response = controller.updateSupervisor(id, sampleSupervisor);
+        ResponseEntity<EntityModel<Supervisor>> response = controller.updateSupervisor(id, sampleSupervisor);
 
         assertEquals(HttpStatus.OK, response.getStatusCode());
-        assertEquals(updated, response.getBody());
+        assertEquals(EntityModel.of(updated), response.getBody());
         verify(supervisorService, times(1)).updateSupervisor(id, sampleSupervisor);
+        verify(assembler, times(1)).toModel(updated);
+    }
+
+    @Test
+    void updateSupervisor_whenServiceReturnsNull_shouldReturnNotFound() {
+        Integer id = 999;
+        when(supervisorService.updateSupervisor(eq(id), any(Supervisor.class))).thenReturn(null);
+
+        ResponseEntity<EntityModel<Supervisor>> response = controller.updateSupervisor(id, sampleSupervisor);
+
+        assertEquals(HttpStatus.NOT_FOUND, response.getStatusCode());
+        assertNull(response.getBody());
+        verify(supervisorService, times(1)).updateSupervisor(id, sampleSupervisor);
+        verify(assembler, never()).toModel(any());
     }
 }
