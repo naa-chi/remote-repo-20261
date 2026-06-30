@@ -340,3 +340,53 @@ org.springframework.web.servlet.resource.NoResourceFoundException: No static res
 09:07:48 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
 09:07:48 INFO  HikariPool-1 - Shutdown initiated...
 09:07:48 INFO  HikariPool-1 - Shutdown completed.
+18:25:37 INFO  Starting StationApplication using Java 17.0.15 with PID 22304 (C:\Users\XznRh\Downloads\proper-release-for-the-exam\remote-repo-20261-main\station\target\classes started by XznRh in C:\Users\XznRh\Downloads\proper-release-for-the-exam\remote-repo-20261-main\station)
+18:25:37 INFO  No active profile set, falling back to 1 default profile: "default"
+18:25:37 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+18:25:37 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+18:25:38 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18:25:38 INFO  Finished Spring Data repository scanning in 109 ms. Found 1 JPA repository interface.
+18:25:38 INFO  Tomcat initialized with port 7773 (http)
+18:25:38 INFO  Starting service [Tomcat]
+18:25:38 INFO  Starting Servlet engine: [Apache Tomcat/10.1.34]
+18:25:38 INFO  Initializing Spring embedded WebApplicationContext
+18:25:38 INFO  Root WebApplicationContext: initialization completed in 1340 ms
+18:25:38 INFO  HikariPool-1 - Starting...
+18:25:39 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@61eeef78
+18:25:39 INFO  HikariPool-1 - Start completed.
+18:25:39 INFO  Reading from transport_db_station.databasechangelog
+18:25:39 INFO  Database is up to date, no changesets to execute
+18:25:39 INFO  Reading from transport_db_station.databasechangelog
+18:25:39 INFO  UPDATE SUMMARY
+18:25:39 INFO  Run:                          0
+18:25:39 INFO  Previously run:               0
+18:25:39 INFO  Filtered out:                 0
+18:25:39 INFO  -------------------------------
+18:25:39 INFO  Total change sets:            0
+18:25:39 INFO  Update summary generated
+18:25:39 INFO  Command execution complete
+18:25:39 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+18:25:39 INFO  HHH000412: Hibernate ORM core version 6.6.4.Final
+18:25:39 INFO  HHH000026: Second-level cache disabled
+18:25:39 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+18:25:39 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+18:25:39 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+18:25:39 INFO  HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+18:25:40 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+18:25:40 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:25:40 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:25:41 INFO  LiveReload server is running on port 35729
+18:25:41 INFO  Tomcat started on port 7773 (http) with context path '/'
+18:25:41 INFO  Started StationApplication in 4.214 seconds (process running for 4.623)
+18:27:56 INFO  Commencing graceful shutdown. Waiting for active requests to complete
+18:27:56 INFO  Graceful shutdown complete
+18:27:56 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+18:27:56 INFO  HikariPool-1 - Shutdown initiated...
+18:27:56 INFO  HikariPool-1 - Shutdown completed.

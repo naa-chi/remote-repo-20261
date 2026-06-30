@@ -1,0 +1,50 @@
+18:23:57 INFO  Starting TrainApplication using Java 17.0.15 with PID 46812 (C:\Users\XznRh\Downloads\proper-release-for-the-exam\remote-repo-20261-main\train\target\classes started by XznRh in C:\Users\XznRh\Downloads\proper-release-for-the-exam\remote-repo-20261-main\train)
+18:23:57 INFO  No active profile set, falling back to 1 default profile: "default"
+18:23:57 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+18:23:57 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+18:23:58 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18:23:58 INFO  Finished Spring Data repository scanning in 114 ms. Found 2 JPA repository interfaces.
+18:23:58 INFO  Tomcat initialized with port 7771 (http)
+18:23:58 INFO  Starting service [Tomcat]
+18:23:58 INFO  Starting Servlet engine: [Apache Tomcat/10.1.34]
+18:23:58 INFO  Initializing Spring embedded WebApplicationContext
+18:23:58 INFO  Root WebApplicationContext: initialization completed in 1395 ms
+18:23:59 INFO  HikariPool-1 - Starting...
+18:23:59 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1d28a23b
+18:23:59 INFO  HikariPool-1 - Start completed.
+18:23:59 INFO  Reading from transport_db_train.databasechangelog
+18:23:59 INFO  Database is up to date, no changesets to execute
+18:23:59 INFO  Reading from transport_db_train.databasechangelog
+18:23:59 INFO  UPDATE SUMMARY
+18:23:59 INFO  Run:                          0
+18:23:59 INFO  Previously run:               0
+18:23:59 INFO  Filtered out:                 0
+18:23:59 INFO  -------------------------------
+18:23:59 INFO  Total change sets:            0
+18:23:59 INFO  Update summary generated
+18:23:59 INFO  Command execution complete
+18:23:59 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+18:23:59 INFO  HHH000412: Hibernate ORM core version 6.6.4.Final
+18:23:59 INFO  HHH000026: Second-level cache disabled
+18:24:00 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+18:24:00 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+18:24:00 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+18:24:00 INFO  HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+18:24:00 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+18:24:00 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:24:01 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:24:01 INFO  LiveReload server is running on port 35729
+18:24:01 INFO  Tomcat started on port 7771 (http) with context path '/'
+18:24:01 INFO  Started TrainApplication in 4.404 seconds (process running for 4.844)
+18:25:13 INFO  Commencing graceful shutdown. Waiting for active requests to complete
+18:25:13 INFO  Graceful shutdown complete
+18:25:13 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+18:25:13 INFO  HikariPool-1 - Shutdown initiated...
+18:25:13 INFO  HikariPool-1 - Shutdown completed.
