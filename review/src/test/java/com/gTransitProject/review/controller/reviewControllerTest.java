@@ -28,7 +28,7 @@ class reviewControllerTest {
     private MockMvc mockMvc;
 
     @Autowired
-    private ObjectMapper objectMapper; // Converts objects to JSON string payloads
+    private ObjectMapper objectMapper;
 
     @MockitoBean
     private reviewService service;
@@ -37,7 +37,6 @@ class reviewControllerTest {
 
     @BeforeEach
     void setUp() {
-        // Build a complete sample entity matching your reviewModel definitions
         sampleReview = new reviewModel();
         sampleReview.setId(1);
         sampleReview.setClientId("C-9872");
@@ -52,83 +51,116 @@ class reviewControllerTest {
     }
 
     @Test
-    void getReviews_ShouldReturnAllRecords() throws Exception {
+    void getReviews_ShouldReturnCollectionWithEmbeddedReviews() throws Exception {
         List<reviewModel> allReviews = Arrays.asList(sampleReview);
         when(service.getAll()).thenReturn(allReviews);
 
-        mockMvc.perform(get("/reviews")
+        mockMvc.perform(get("/api/reviews")
                 .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$[0].id").value(1))
-                .andExpect(jsonPath("$[0].clientId").value("C-9872"))
-                .andExpect(jsonPath("$[0].reviewContent").value("The commute was very smooth and on time!"))
-                .andExpect(jsonPath("$[0].rating").value(5));
+                .andExpect(jsonPath("$._embedded.reviewModel[0].id").value(1))
+                .andExpect(jsonPath("$._embedded.reviewModel[0].clientId").value("C-9872"))
+                .andExpect(jsonPath("$._embedded.reviewModel[0].reviewContent").value("The commute was very smooth and on time!"))
+                .andExpect(jsonPath("$._embedded.reviewModel[0].rating").value(5))
+                .andExpect(jsonPath("$._links.self.href").exists());
     }
 
     @Test
-    void getReviewById_ShouldReturnSingleReview() throws Exception {
+    void getReviewById_ShouldReturnSingleReviewWithLinks() throws Exception {
         when(service.getById(1)).thenReturn(sampleReview);
 
-        mockMvc.perform(get("/reviews/1")
+        mockMvc.perform(get("/api/reviews/1")
                 .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.id").value(1))
-                .andExpect(jsonPath("$.ticketId").value("TKT-112233"));
+                .andExpect(jsonPath("$.ticketId").value("TKT-112233"))
+                .andExpect(jsonPath("$._links.self.href").exists())
+                .andExpect(jsonPath("$._links.allReviews.href").exists());
     }
 
     @Test
-    void getReviewByClientId_ShouldReturnMatchingReview() throws Exception {
-        // Mapping paths to handle integers as specified by your @PathVariable inside the controller
+    void getReviewById_NotFound_ShouldReturn404() throws Exception {
+        when(service.getById(999)).thenReturn(null);
+
+        mockMvc.perform(get("/api/reviews/999")
+                .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isNotFound());
+    }
+
+    @Test
+    void getReviewByClientId_ShouldReturnSingleReviewWithLinks() throws Exception {
         when(service.getByClientId(9872)).thenReturn(sampleReview);
 
-        mockMvc.perform(get("/reviews/client/9872")
+        mockMvc.perform(get("/api/reviews/client/9872")
                 .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.id").value(1))
-                .andExpect(jsonPath("$.clientId").value("C-9872"));
+                .andExpect(jsonPath("$.clientId").value("C-9872"))
+                .andExpect(jsonPath("$._links.self.href").exists());
     }
 
     @Test
-    void getReviewBySpecificTrainId_ShouldReturnMatchingReview() throws Exception {
+    void getReviewByClientId_NotFound_ShouldReturn404() throws Exception {
+        when(service.getByClientId(9999)).thenReturn(null);
+
+        mockMvc.perform(get("/api/reviews/client/9999")
+                .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isNotFound());
+    }
+
+    @Test
+    void getReviewBySpecificTrainId_ShouldReturnSingleReviewWithLinks() throws Exception {
         when(service.getBySpecificTrainId(404)).thenReturn(sampleReview);
 
-        mockMvc.perform(get("/reviews/train/404")
+        mockMvc.perform(get("/api/reviews/train/404")
                 .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.id").value(1))
-                .andExpect(jsonPath("$.specificTrainId").value("TR-404"));
+                .andExpect(jsonPath("$.specificTrainId").value("TR-404"))
+                .andExpect(jsonPath("$._links.self.href").exists());
     }
 
     @Test
-    void getReviewByRating_ShouldReturnListOfReviewsWithSameRating() throws Exception {
+    void getReviewBySpecificTrainId_NotFound_ShouldReturn404() throws Exception {
+        when(service.getBySpecificTrainId(999)).thenReturn(null);
+
+        mockMvc.perform(get("/api/reviews/train/999")
+                .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isNotFound());
+    }
+
+    @Test
+    void getReviewByRating_ShouldReturnCollectionWithEmbeddedReviews() throws Exception {
         List<reviewModel> matchingReviews = Arrays.asList(sampleReview);
         when(service.getByRating(5)).thenReturn(matchingReviews);
 
-        mockMvc.perform(get("/reviews/rating/5")
+        mockMvc.perform(get("/api/reviews/rating/5")
                 .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$[0].id").value(1))
-                .andExpect(jsonPath("$[0].rating").value(5));
+                .andExpect(jsonPath("$._embedded.reviewModel[0].id").value(1))
+                .andExpect(jsonPath("$._embedded.reviewModel[0].rating").value(5))
+                .andExpect(jsonPath("$._links.self.href").exists());
     }
 
     @Test
-    void saveReview_ShouldCreateAndReturnReview() throws Exception {
+    void saveReview_ShouldCreateAndReturnReviewWithLinks() throws Exception {
         when(service.createReview(any(reviewModel.class))).thenReturn(sampleReview);
 
-        mockMvc.perform(post("/reviews")
+        mockMvc.perform(post("/api/reviews")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(objectMapper.writeValueAsString(sampleReview)))
-                .andExpect(status().isOk())
+                .andExpect(status().isCreated())
                 .andExpect(jsonPath("$.id").value(1))
-                .andExpect(jsonPath("$.driverInCharge").value("D-5501"));
+                .andExpect(jsonPath("$.driverInCharge").value("D-5501"))
+                .andExpect(jsonPath("$._links.self.href").exists());
     }
 
     @Test
-    void deleteReview_ShouldExecuteSuccessfully() throws Exception {
+    void deleteReview_ShouldReturnNoContent() throws Exception {
         doNothing().when(service).deleteReview(1);
 
-        mockMvc.perform(delete("/reviews/1")
+        mockMvc.perform(delete("/api/reviews/1")
                 .contentType(MediaType.APPLICATION_JSON))
-                .andExpect(status().isOk()); // Resolves void with standard HTTP 200 OK
+                .andExpect(status().isNoContent());
     }
 }
