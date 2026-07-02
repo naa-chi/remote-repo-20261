@@ -1,5 +1,7 @@
 package com.gTransitProject.train.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import java.sql.Date;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Min;
@@ -44,6 +46,7 @@ public class train {
     @Column(nullable = false)
     private Integer pricePerCar;
 
+    @JsonIgnore
     @ManyToOne 
     @JoinColumn(name = "type_code_id", referencedColumnName = "id") 
     private typeTrain typeTrain;

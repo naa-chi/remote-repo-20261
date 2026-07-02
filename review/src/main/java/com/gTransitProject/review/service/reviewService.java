@@ -27,7 +27,7 @@ public class reviewService {
                 });
     }
 
-    public reviewModel getByClientId(Integer clientId) {
+    public reviewModel getByClientId(String clientId) {
         log.info("Fetching review by client id: {}", clientId);
         return repo.findByClientId(clientId)
                 .orElseThrow(() -> {

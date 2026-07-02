@@ -9,7 +9,7 @@ import com.gTransitProject.review.model.reviewModel;
 
 @Repository
 public interface reviewRepo extends JpaRepository<reviewModel, Integer> {
-    Optional<reviewModel> findByClientId(Integer clientId);
+    Optional<reviewModel> findByClientId(String clientId);
     List<reviewModel> findByRating(Integer rating); //idk man
 
 }

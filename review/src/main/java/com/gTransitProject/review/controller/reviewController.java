@@ -42,7 +42,7 @@ public class reviewController {
 
     @Operation(summary = "Fetches a review by the client ID.", description = "Retrieves a specific review based on the associated client's unique identifier.")
     @GetMapping("/client/{clientId}")
-    public ResponseEntity<EntityModel<reviewModel>> getReviewByClientId(@PathVariable Integer clientId) {
+    public ResponseEntity<EntityModel<reviewModel>> getReviewByClientId(@PathVariable String clientId) {
         reviewModel review = service.getByClientId(clientId);
         if (review == null) {
             return ResponseEntity.notFound().build();
