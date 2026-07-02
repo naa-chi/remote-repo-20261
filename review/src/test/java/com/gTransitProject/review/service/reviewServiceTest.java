@@ -67,22 +67,22 @@ class reviewServiceTest {
     void getByClientId_whenExists_shouldReturnReview() {
         reviewModel expected = new reviewModel();
         expected.setClientId("100");  // String, not int
-        when(repo.findByClientId(100)).thenReturn(Optional.of(expected)); // service passes Integer
+        when(repo.findByClientId("100")).thenReturn(Optional.of(expected)); // service passes Integer
 
         reviewModel result = service.getByClientId(100);
 
         assertThat(result).isSameAs(expected);
-        verify(repo, times(1)).findByClientId(100);
+        verify(repo, times(1)).findByClientId("100");
     }
 
     @Test
     void getByClientId_whenNotExists_shouldThrowRuntimeException() {
-        when(repo.findByClientId(999)).thenReturn(Optional.empty());
+        when(repo.findByClientId("999")).thenReturn(Optional.empty());
 
         assertThatThrownBy(() -> service.getByClientId(999))
                 .isInstanceOf(RuntimeException.class)
                 .hasMessage("Review not found with client id: 999");
-        verify(repo, times(1)).findByClientId(999);
+        verify(repo, times(1)).findByClientId("999");
     }
 
     // ---------- getByRating (custom repo method, returns List) ----------
@@ -211,7 +211,7 @@ class reviewServiceTest {
     // ---------- updateReview ----------
     @Test
     void updateReview_whenExists_shouldUpdateFieldsAndSave() {
-        Integer id = 1;
+        String id = "1";
         reviewModel existing = new reviewModel();
         existing.setClientId("100");
         existing.setRating(4);
@@ -235,7 +235,7 @@ class reviewServiceTest {
 
     @Test
     void updateReview_whenNotExists_shouldThrowRuntimeException() {
-        Integer id = 99;
+        String id = "99";
         when(repo.findById(id)).thenReturn(Optional.empty());
 
         assertThatThrownBy(() -> service.updateReview(id, new reviewModel()))

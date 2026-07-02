@@ -3,150 +3,329 @@ server:
 
 spring:
   main:
-    web-application-type: reactive
+    web-application-type: servlet
 
   cloud:
     gateway:
-      routes:
-        # ---------------------------------------------------------
-        # DOC routes – MUST APPEAR FIRST to prevent catch-all matching
-        # ---------------------------------------------------------
-        - id: manufacturer-docs
-          uri: http://localhost:7770
-          predicates:
-            - Path=/api/manufacturer/v3/api-docs
-          filters:
-            - RewritePath=/api/manufacturer/(?<segment>.*), /$\{segment}
-        - id: train-docs
-          uri: http://localhost:7771
-          predicates:
-            - Path=/api/trains/v3/api-docs
-          filters:
-            - RewritePath=/api/trains/(?<segment>.*), /$\{segment}
-        - id: typeengine-docs
-          uri: http://localhost:7772
-          predicates:
-            - Path=/api/engine/v3/api-docs
-          filters:
-            - RewritePath=/api/engine/(?<segment>.*), /$\{segment}
-        - id: station-docs
-          uri: http://localhost:7773
-          predicates:
-            - Path=/api/station/v3/api-docs
-          filters:
-            - RewritePath=/api/station/(?<segment>.*), /$\{segment}
-        - id: line-docs
-          uri: http://localhost:7774
-          predicates:
-            - Path=/api/lines/v3/api-docs
-          filters:
-            - RewritePath=/api/lines/(?<segment>.*), /$\{segment}
-        - id: maintenance-docs
-          uri: http://localhost:7775
-          predicates:
-            - Path=/api/maintenance/v3/api-docs
-          filters:
-            - RewritePath=/api/maintenance/(?<segment>.*), /$\{segment}
-        - id: ticket-docs
-          uri: http://localhost:7776
-          predicates:
-            - Path=/ticket/v3/api-docs
-          filters:
-            - RewritePath=/ticket/(?<segment>.*), /$\{segment}
-        - id: city-docs
-          uri: http://localhost:7777
-          predicates:
-            - Path=/api/city/v3/api-docs
-          filters:
-            - RewritePath=/api/city/(?<segment>.*), /$\{segment}
-        - id: driver-docs
-          uri: http://localhost:7778
-          predicates:
-            - Path=/api/driver/v3/api-docs
-          filters:
-            - RewritePath=/api/driver/(?<segment>.*), /$\{segment}
-        - id: client-docs
-          uri: http://localhost:7779
-          predicates:
-            - Path=/api/client/v3/api-docs
-          filters:
-            - RewritePath=/api/client/(?<segment>.*), /$\{segment}
-        - id: auth-docs
-          uri: http://localhost:7780
-          predicates:
-            - Path=/api/auth/v3/api-docs
-          filters:
-            - RewritePath=/api/auth/(?<segment>.*), /$\{segment}
-        - id: supervisor-docs
-          uri: http://localhost:7781
-          predicates:
-            - Path=/api/supervisor/v3/api-docs
-          filters:
-            - RewritePath=/api/supervisor/(?<segment>.*), /$\{segment}
-        - id: review-docs
-          uri: http://localhost:7782
-          predicates:
-            - Path=/reviews/v3/api-docs
-          filters:
-            - RewritePath=/reviews/(?<segment>.*), /$\{segment}
+      mvc:
+        routes:
+          # ============================================================================
+          # MICROSERVICE: manufacturer
+          #   ID   : manufacturer-docs / manufacturer-api-*
+          #   PORT : 7770
+          #   PATH : /api/manufacturers
+          #   DOCS : /api/manufacturer/v3/api-docs
+          # ============================================================================
+          - id: manufacturer-docs
+            uri: http://localhost:7770
+            predicates:
+              - Path=/api/manufacturer/v3/api-docs
+            filters:
+              - RewritePath=/api/manufacturer/(?<segment>.*), /${segment}
+          - id: manufacturer-api-exact
+            uri: http://localhost:7770
+            predicates:
+              - Path=/api/manufacturers
+          - id: manufacturer-api-sub
+            uri: http://localhost:7770
+            predicates:
+              - Path=/api/manufacturers/**
 
-        # ---------------------------------------------------------
-        # API routes - Evaluated AFTER Doc routes
-        # ---------------------------------------------------------
-        - id: manufacturer-api
-          uri: http://localhost:7770
-          predicates:
-            - Path=/api/manufacturer/**
-        - id: train-api
-          uri: http://localhost:7771
-          predicates:
-            - Path=/api/trains/**
-        - id: typeengine-api
-          uri: http://localhost:7772
-          predicates:
-            - Path=/api/engine/**
-        - id: station-api
-          uri: http://localhost:7773
-          predicates:
-            - Path=/api/station/**
-        - id: line-api
-          uri: http://localhost:7774
-          predicates:
-            - Path=/api/lines/**
-        - id: maintenance-api
-          uri: http://localhost:7775
-          predicates:
-            - Path=/api/maintenance/**
-        - id: ticket-api
-          uri: http://localhost:7776
-          predicates:
-            - Path=/ticket/**
-        - id: city-api
-          uri: http://localhost:7777
-          predicates:
-            - Path=/api/city/**
-        - id: driver-api
-          uri: http://localhost:7778
-          predicates:
-            - Path=/api/driver/**
-        - id: client-api
-          uri: http://localhost:7779
-          predicates:
-            - Path=/api/client/**
-        - id: auth-api
-          uri: http://localhost:7780
-          predicates:
-            - Path=/api/auth/**
-        - id: supervisor-api
-          uri: http://localhost:7781
-          predicates:
-            - Path=/api/supervisor/**
-        - id: review-api
-          uri: http://localhost:7782
-          predicates:
-            - Path=/reviews/**
+          # ============================================================================
+          # MICROSERVICE: train
+          #   ID   : train-docs / train-api-*
+          #   PORT : 7771
+          #   PATH : /api/trains
+          #   DOCS : /api/trains/v3/api-docs
+          # ============================================================================
+          - id: train-docs
+            uri: http://localhost:7771
+            predicates:
+              - Path=/api/trains/v3/api-docs
+            filters:
+              - RewritePath=/api/trains/(?<segment>.*), /${segment}
+          - id: train-api-exact
+            uri: http://localhost:7771
+            predicates:
+              - Path=/api/trains
+          - id: train-api-sub
+            uri: http://localhost:7771
+            predicates:
+              - Path=/api/trains/**
 
-# Swagger UI aggregation
+          # ============================================================================
+          # MICROSERVICE: typeengine
+          #   ID   : typeengine-docs / typeengine-api-*
+          #   PORT : 7772
+          #   PATH : /api/engines
+          #   DOCS : /api/engine/v3/api-docs
+          # ============================================================================
+          - id: typeengine-docs
+            uri: http://localhost:7772
+            predicates:
+              - Path=/api/engine/v3/api-docs
+            filters:
+              - RewritePath=/api/engine/(?<segment>.*), /${segment}
+          - id: typeengine-api-exact
+            uri: http://localhost:7772
+            predicates:
+              - Path=/api/engines
+          - id: typeengine-api-sub
+            uri: http://localhost:7772
+            predicates:
+              - Path=/api/engines/**
+
+          # ============================================================================
+          # MICROSERVICE: station
+          #   ID   : station-docs / station-api-*
+          #   PORT : 7773
+          #   PATH : /api/station
+          #   DOCS : /api/station/v3/api-docs
+          # ============================================================================
+          - id: station-docs
+            uri: http://localhost:7773
+            predicates:
+              - Path=/api/station/v3/api-docs
+            filters:
+              - RewritePath=/api/station/(?<segment>.*), /${segment}
+          - id: station-api-exact
+            uri: http://localhost:7773
+            predicates:
+              - Path=/api/station
+          - id: station-api-sub
+            uri: http://localhost:7773
+            predicates:
+              - Path=/api/station/**
+
+          # ============================================================================
+          # MICROSERVICE: line
+          #   ID   : line-docs / line-api-*
+          #   PORT : 7774
+          #   PATH : /api/lines
+          #   DOCS : /api/lines/v3/api-docs
+          # ============================================================================
+          - id: line-docs
+            uri: http://localhost:7774
+            predicates:
+              - Path=/api/lines/v3/api-docs
+            filters:
+              - RewritePath=/api/lines/(?<segment>.*), /${segment}
+          - id: line-api-exact
+            uri: http://localhost:7774
+            predicates:
+              - Path=/api/lines
+          - id: line-api-sub
+            uri: http://localhost:7774
+            predicates:
+              - Path=/api/lines/**
+
+          # ============================================================================
+          # MICROSERVICE: maintenance
+          #   ID   : maintenance-docs / maintenance-api-*
+          #   PORT : 7775
+          #   PATH : /api/maintenances
+          #   DOCS : /api/maintenance/v3/api-docs
+          # ============================================================================
+          - id: maintenance-docs
+            uri: http://localhost:7775
+            predicates:
+              - Path=/api/maintenance/v3/api-docs
+            filters:
+              - RewritePath=/api/maintenance/(?<segment>.*), /${segment}
+          - id: maintenance-api-exact
+            uri: http://localhost:7775
+            predicates:
+              - Path=/api/maintenances
+          - id: maintenance-api-sub
+            uri: http://localhost:7775
+            predicates:
+              - Path=/api/maintenances/**
+
+          # ============================================================================
+          # MICROSERVICE: ticket
+          #   ID   : ticket-docs / ticket-api-*
+          #   PORT : 7776
+          #   PATH : /api/tickets
+          #   DOCS : /api/tickets/v3/api-docs
+          # ============================================================================
+          - id: ticket-docs
+            uri: http://localhost:7776
+            predicates:
+              - Path=/api/tickets/v3/api-docs
+            filters:
+              - RewritePath=/api/tickets/(?<segment>.*), /${segment}
+          - id: ticket-api-exact
+            uri: http://localhost:7776
+            predicates:
+              - Path=/api/tickets
+          - id: ticket-api-sub
+            uri: http://localhost:7776
+            predicates:
+              - Path=/api/tickets/**
+
+          # ============================================================================
+          # MICROSERVICE: city
+          #   ID   : city-docs / city-api-*
+          #   PORT : 7777
+          #   PATH : /api/cities
+          #   DOCS : /api/city/v3/api-docs
+          # ============================================================================
+          - id: city-docs
+            uri: http://localhost:7777
+            predicates:
+              - Path=/api/city/v3/api-docs
+            filters:
+              - RewritePath=/api/city/(?<segment>.*), /${segment}
+          - id: city-api-exact
+            uri: http://localhost:7777
+            predicates:
+              - Path=/api/cities
+          - id: city-api-sub
+            uri: http://localhost:7777
+            predicates:
+              - Path=/api/cities/**
+
+          # ============================================================================
+          # MICROSERVICE: driver
+          #   ID   : driver-docs / driver-api-*
+          #   PORT : 7778
+          #   PATH : /api/drivers
+          #   DOCS : /api/driver/v3/api-docs
+          # ============================================================================
+          - id: driver-docs
+            uri: http://localhost:7778
+            predicates:
+              - Path=/api/driver/v3/api-docs
+            filters:
+              - RewritePath=/api/driver/(?<segment>.*), /${segment}
+          - id: driver-api-exact
+            uri: http://localhost:7778
+            predicates:
+              - Path=/api/drivers
+          - id: driver-api-sub
+            uri: http://localhost:7778
+            predicates:
+              - Path=/api/drivers/**
+
+          # ============================================================================
+          # MICROSERVICE: client
+          #   ID   : client-docs / client-api-*
+          #   PORT : 7779
+          #   PATH : /api/clients
+          #   DOCS : /api/client/v3/api-docs
+          # ============================================================================
+          - id: client-docs
+            uri: http://localhost:7779
+            predicates:
+              - Path=/api/client/v3/api-docs
+            filters:
+              - RewritePath=/api/client/(?<segment>.*), /${segment}
+          - id: client-api-exact
+            uri: http://localhost:7779
+            predicates:
+              - Path=/api/clients
+          - id: client-api-sub
+            uri: http://localhost:7779
+            predicates:
+              - Path=/api/clients/**
+
+          # ============================================================================
+          # MICROSERVICE: auth
+          #   ID   : auth-docs / auth-api-*
+          #   PORT : 7780
+          #   PATH : /api/auth
+          #   DOCS : /api/auth/v3/api-docs
+          # ============================================================================
+          - id: auth-docs
+            uri: http://localhost:7780
+            predicates:
+              - Path=/api/auth/v3/api-docs
+            filters:
+              - RewritePath=/api/auth/(?<segment>.*), /${segment}
+          - id: auth-api-exact
+            uri: http://localhost:7780
+            predicates:
+              - Path=/api/auth
+          - id: auth-api-sub
+            uri: http://localhost:7780
+            predicates:
+              - Path=/api/auth/**
+
+          # ============================================================================
+          # MICROSERVICE: supervisor
+          #   ID   : supervisor-docs / supervisor-api-*
+          #   PORT : 7781
+          #   PATH : /api/supervisors
+          #   DOCS : /api/supervisor/v3/api-docs
+          # ============================================================================
+          - id: supervisor-docs
+            uri: http://localhost:7781
+            predicates:
+              - Path=/api/supervisor/v3/api-docs
+            filters:
+              - RewritePath=/api/supervisor/(?<segment>.*), /${segment}
+          - id: supervisor-api-exact
+            uri: http://localhost:7781
+            predicates:
+              - Path=/api/supervisors
+          - id: supervisor-api-sub
+            uri: http://localhost:7781
+            predicates:
+              - Path=/api/supervisors/**
+
+          # ============================================================================
+          # MICROSERVICE: review
+          #   ID   : review-docs / review-api-*
+          #   PORT : 7782
+          #   PATH : /api/reviews
+          #   DOCS : /api/reviews/v3/api-docs
+          # ============================================================================
+          - id: review-docs
+            uri: http://localhost:7782
+            predicates:
+              - Path=/api/reviews/v3/api-docs
+            filters:
+              - RewritePath=/api/reviews/(?<segment>.*), /${segment}
+          - id: review-api-exact
+            uri: http://localhost:7782
+            predicates:
+              - Path=/api/reviews
+          - id: review-api-sub
+            uri: http://localhost:7782
+            predicates:
+              - Path=/api/reviews/**
+
+          # ============================================================================
+          # ---------- TEMPLATE FOR ADDING A NEW MICROSERVICE ----------
+          # Copy the block below, replace placeholders, and uncomment.
+          # ============================================================================
+          # MICROSERVICE: newservice
+          #   ID   : newservice-docs / newservice-api-*
+          #   PORT : 7783
+          #   PATH : /api/newservices
+          #   DOCS : /api/newservice/v3/api-docs
+          # ============================================================================
+          # - id: newservice-docs
+          #   uri: http://localhost:7783
+          #   predicates:
+          #     - Path=/api/newservice/v3/api-docs
+          #   filters:
+          #     - RewritePath=/api/newservice/(?<segment>.*), /${segment}
+          # - id: newservice-api-exact
+          #   uri: http://localhost:7783
+          #   predicates:
+          #     - Path=/api/newservices
+          # - id: newservice-api-sub
+          #   uri: http://localhost:7783
+          #   predicates:
+          #     - Path=/api/newservices/**
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          secret-key: "your_super_secret_key_that_is_at_least_256_bits_long"
+
 springdoc:
   swagger-ui:
     urls:
@@ -163,7 +342,7 @@ springdoc:
       - name: Maintenance
         url: /api/maintenance/v3/api-docs
       - name: Ticket
-        url: /ticket/v3/api-docs
+        url: /api/tickets/v3/api-docs
       - name: City
         url: /api/city/v3/api-docs
       - name: Driver
@@ -175,15 +354,14 @@ springdoc:
       - name: Supervisor
         url: /api/supervisor/v3/api-docs
       - name: Review
-        url: /reviews/v3/api-docs
+        url: /api/reviews/v3/api-docs
+      # ---------- TEMPLATE FOR ADDING A NEW SWAGGER UI ENTRY ----------
+      # - name: New Service
+      #   url: /api/newservice/v3/api-docs
     disable-swagger-default-url: true
 
-# Actuator (helpful for debugging)
 management:
   endpoints:
     web:
       exposure:
-        include: health,info,gateway
-  endpoint:
-    gateway:
-      enabled: true
+        include: health,info

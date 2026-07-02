@@ -1,0 +1,19 @@
+Run with "RUN ME RUN ME.py"
+
+If anything fails, run "DELETEDB.py"
+
+Here is a list of functional, preapproved microservices:
+    http://localhost:7769/api/engines
+    http://localhost:7769/api/trains
+    http://localhost:7769/api/maintenances
+    http://localhost:7769/api/manufacturers
+    http://localhost:7769/api/drivers
+    http://localhost:7769/api/tickets
+
+As well as the swagger urls:
+    http://localhost:7769/swagger-ui/index.html?urls.primaryName=Type+Engine
+    http://localhost:7769/swagger-ui/index.html?urls.primaryName=Train
+    http://localhost:7769/swagger-ui/index.html?urls.primaryName=Maintenance
+    http://localhost:7769/swagger-ui/index.html?urls.primaryName=Manufacturer
+    http://localhost:7769/swagger-ui/index.html?urls.primaryName=Driver
+    http://localhost:7769/swagger-ui/index.html?urls.primaryName=Ticket

@@ -1,0 +1,49 @@
+01:02:36 INFO  Starting AuthApplication v0.0.1-SNAPSHOT using Java 24.0.1 with PID 21684 (C:\Users\XznRh\Downloads\rnwh19h\auth\target\maintenance-0.0.1-SNAPSHOT.jar started by XznRh in C:\Users\XznRh\Downloads\rnwh19h)
+01:02:36 INFO  No active profile set, falling back to 1 default profile: "default"
+01:02:38 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+01:02:38 INFO  Finished Spring Data repository scanning in 62 ms. Found 1 JPA repository interface.
+01:02:39 INFO  Tomcat initialized with port 7780 (http)
+01:02:39 INFO  Starting service [Tomcat]
+01:02:39 INFO  Starting Servlet engine: [Apache Tomcat/10.1.34]
+01:02:39 INFO  Initializing Spring embedded WebApplicationContext
+01:02:39 INFO  Root WebApplicationContext: initialization completed in 2755 ms
+01:02:39 INFO  HikariPool-1 - Starting...
+01:02:40 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@40df6090
+01:02:40 INFO  HikariPool-1 - Start completed.
+01:02:41 INFO  Reading from transport_db_auth.databasechangelog
+01:02:42 INFO  Database is up to date, no changesets to execute
+01:02:42 INFO  Reading from transport_db_auth.databasechangelog
+01:02:42 INFO  UPDATE SUMMARY
+01:02:42 INFO  Run:                          0
+01:02:42 INFO  Previously run:               1
+01:02:42 INFO  Filtered out:                 0
+01:02:42 INFO  -------------------------------
+01:02:42 INFO  Total change sets:            1
+01:02:42 INFO  Update summary generated
+01:02:42 INFO  Command execution complete
+01:02:42 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+01:02:42 INFO  HHH000412: Hibernate ORM core version 6.6.4.Final
+01:02:42 INFO  HHH000026: Second-level cache disabled
+01:02:42 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+01:02:42 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+01:02:43 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+01:02:43 INFO  HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+01:02:44 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+01:02:44 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+01:02:45 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+01:02:47 WARN  
+
+Using generated security password: 546a7b14-a7b3-4d52-b94d-7b64af5e61e4
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+01:02:48 INFO  Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+01:02:48 INFO  Tomcat started on port 7780 (http) with context path '/'
+01:02:48 INFO  Started AuthApplication in 12.97 seconds (process running for 13.961)

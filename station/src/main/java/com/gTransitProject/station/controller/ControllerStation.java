@@ -21,7 +21,7 @@ import com.gTransitProject.station.dto.LineDTO;
 import com.gTransitProject.station.dto.CityDTO;
 
 @RestController
-@RequestMapping("/api/stations")
+@RequestMapping("/api/station")
 public class ControllerStation {
 
     @Autowired

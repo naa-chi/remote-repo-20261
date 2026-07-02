@@ -1,35 +1,35 @@
-18:09:18 INFO  Starting ClientApplication using Java 17.0.15 with PID 10924 (C:\Users\XznRh\Downloads\proper-release-for-the-exam\remote-repo-20261-main\client\target\classes started by XznRh in C:\Users\XznRh\Downloads\proper-release-for-the-exam\remote-repo-20261-main\client)
-18:09:18 INFO  No active profile set, falling back to 1 default profile: "default"
-18:09:18 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-18:09:18 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-18:09:19 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-18:09:19 INFO  Finished Spring Data repository scanning in 114 ms. Found 1 JPA repository interface.
-18:09:19 INFO  Tomcat initialized with port 7779 (http)
-18:09:19 INFO  Starting service [Tomcat]
-18:09:19 INFO  Starting Servlet engine: [Apache Tomcat/10.1.34]
-18:09:19 INFO  Initializing Spring embedded WebApplicationContext
-18:09:19 INFO  Root WebApplicationContext: initialization completed in 1398 ms
-18:09:19 INFO  HikariPool-1 - Starting...
-18:09:20 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1b2b590b
-18:09:20 INFO  HikariPool-1 - Start completed.
-18:09:20 INFO  Reading from transport_db_client.databasechangelog
-18:09:20 INFO  Database is up to date, no changesets to execute
-18:09:20 INFO  Reading from transport_db_client.databasechangelog
-18:09:20 INFO  UPDATE SUMMARY
-18:09:20 INFO  Run:                          0
-18:09:20 INFO  Previously run:               0
-18:09:20 INFO  Filtered out:                 0
-18:09:20 INFO  -------------------------------
-18:09:20 INFO  Total change sets:            0
-18:09:20 INFO  Update summary generated
-18:09:20 INFO  Command execution complete
-18:09:20 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
-18:09:20 INFO  HHH000412: Hibernate ORM core version 6.6.4.Final
-18:09:20 INFO  HHH000026: Second-level cache disabled
-18:09:20 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
-18:09:20 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
-18:09:20 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-18:09:20 INFO  HHH10001005: Database info:
+01:10:18 INFO  Starting ClientApplication using Java 17.0.15 with PID 35752 (c:\Users\XznRh\Downloads\rnwh19h\client\target\classes started by XznRh in c:\Users\XznRh\Downloads\rnwh19h\client)
+01:10:18 INFO  No active profile set, falling back to 1 default profile: "default"
+01:10:18 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+01:10:18 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+01:10:20 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+01:10:20 INFO  Finished Spring Data repository scanning in 117 ms. Found 1 JPA repository interface.
+01:10:22 INFO  Tomcat initialized with port 7779 (http)
+01:10:22 INFO  Starting service [Tomcat]
+01:10:22 INFO  Starting Servlet engine: [Apache Tomcat/10.1.34]
+01:10:22 INFO  Initializing Spring embedded WebApplicationContext
+01:10:22 INFO  Root WebApplicationContext: initialization completed in 3656 ms
+01:10:22 INFO  HikariPool-1 - Starting...
+01:10:23 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@25349cac
+01:10:23 INFO  HikariPool-1 - Start completed.
+01:10:24 INFO  Reading from transport_db_client.databasechangelog
+01:10:24 INFO  Database is up to date, no changesets to execute
+01:10:24 INFO  Reading from transport_db_client.databasechangelog
+01:10:24 INFO  UPDATE SUMMARY
+01:10:24 INFO  Run:                          0
+01:10:24 INFO  Previously run:               0
+01:10:24 INFO  Filtered out:                 0
+01:10:24 INFO  -------------------------------
+01:10:24 INFO  Total change sets:            0
+01:10:24 INFO  Update summary generated
+01:10:24 INFO  Command execution complete
+01:10:25 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+01:10:25 INFO  HHH000412: Hibernate ORM core version 6.6.4.Final
+01:10:25 INFO  HHH000026: Second-level cache disabled
+01:10:25 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+01:10:26 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+01:10:26 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+01:10:26 INFO  HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 5.5.5
@@ -37,14 +37,1511 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-18:09:21 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-18:09:21 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
-18:09:22 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-18:09:22 INFO  LiveReload server is running on port 35729
-18:09:22 INFO  Tomcat started on port 7779 (http) with context path '/'
-18:09:22 INFO  Started ClientApplication in 4.41 seconds (process running for 4.845)
-18:11:35 INFO  Commencing graceful shutdown. Waiting for active requests to complete
-18:11:35 INFO  Graceful shutdown complete
-18:11:35 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
-18:11:35 INFO  HikariPool-1 - Shutdown initiated...
-18:11:35 INFO  HikariPool-1 - Shutdown completed.
+01:10:28 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+01:10:28 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+01:10:30 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+01:10:31 WARN  Unable to start LiveReload server
+01:10:31 INFO  Tomcat started on port 7779 (http) with context path '/'
+01:10:31 INFO  Started ClientApplication in 13.507 seconds (process running for 14.255)
+01:11:59 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+01:11:59 INFO  Initializing Servlet 'dispatcherServlet'
+01:11:59 INFO  Completed initialization in 1 ms
+01:11:59 INFO  Init duration for springdoc-openapi is: 572 ms
+01:16:05 INFO  Starting ClientApplication using Java 17.0.15 with PID 34448 (c:\Users\XznRh\Downloads\rnwh19h\client\target\classes started by XznRh in c:\Users\XznRh\Downloads\rnwh19h\client)
+01:16:05 INFO  No active profile set, falling back to 1 default profile: "default"
+01:16:05 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+01:16:05 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+01:16:07 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+01:16:07 INFO  Finished Spring Data repository scanning in 100 ms. Found 1 JPA repository interface.
+01:16:09 INFO  Tomcat initialized with port 7779 (http)
+01:16:09 INFO  Starting service [Tomcat]
+01:16:09 INFO  Starting Servlet engine: [Apache Tomcat/10.1.34]
+01:16:09 INFO  Initializing Spring embedded WebApplicationContext
+01:16:09 INFO  Root WebApplicationContext: initialization completed in 3355 ms
+01:16:09 INFO  HikariPool-1 - Starting...
+01:16:09 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@17223b3
+01:16:09 INFO  HikariPool-1 - Start completed.
+01:16:11 INFO  Reading from transport_db_client.databasechangelog
+01:16:11 INFO  Database is up to date, no changesets to execute
+01:16:11 INFO  Reading from transport_db_client.databasechangelog
+01:16:11 INFO  UPDATE SUMMARY
+01:16:11 INFO  Run:                          0
+01:16:11 INFO  Previously run:               0
+01:16:11 INFO  Filtered out:                 0
+01:16:11 INFO  -------------------------------
+01:16:11 INFO  Total change sets:            0
+01:16:11 INFO  Update summary generated
+01:16:11 INFO  Command execution complete
+01:16:11 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+01:16:11 INFO  HHH000412: Hibernate ORM core version 6.6.4.Final
+01:16:11 INFO  HHH000026: Second-level cache disabled
+01:16:12 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+01:16:12 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+01:16:12 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+01:16:12 INFO  HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+01:16:38 INFO  Starting ClientApplication using Java 17.0.15 with PID 4368 (c:\Users\XznRh\Downloads\rnwh19h\client\target\classes started by XznRh in c:\Users\XznRh\Downloads\rnwh19h\client)
+01:16:38 INFO  No active profile set, falling back to 1 default profile: "default"
+01:16:38 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+01:16:38 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+01:16:39 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+01:16:39 INFO  Finished Spring Data repository scanning in 89 ms. Found 1 JPA repository interface.
+01:16:41 INFO  Tomcat initialized with port 7779 (http)
+01:16:41 INFO  Starting service [Tomcat]
+01:16:41 INFO  Starting Servlet engine: [Apache Tomcat/10.1.34]
+01:16:41 INFO  Initializing Spring embedded WebApplicationContext
+01:16:41 INFO  Root WebApplicationContext: initialization completed in 3184 ms
+01:16:41 INFO  HikariPool-1 - Starting...
+01:16:42 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2b8a7894
+01:16:42 INFO  HikariPool-1 - Start completed.
+01:16:43 INFO  Reading from transport_db_client.databasechangelog
+01:16:43 INFO  Database is up to date, no changesets to execute
+01:16:43 INFO  Reading from transport_db_client.databasechangelog
+01:16:43 INFO  UPDATE SUMMARY
+01:16:43 INFO  Run:                          0
+01:16:43 INFO  Previously run:               0
+01:16:43 INFO  Filtered out:                 0
+01:16:43 INFO  -------------------------------
+01:16:43 INFO  Total change sets:            0
+01:16:43 INFO  Update summary generated
+01:16:43 INFO  Command execution complete
+01:16:43 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+01:16:43 INFO  HHH000412: Hibernate ORM core version 6.6.4.Final
+01:16:43 INFO  HHH000026: Second-level cache disabled
+01:16:43 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+01:16:44 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+01:16:44 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+01:16:44 INFO  HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+01:16:45 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+01:16:45 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+01:16:46 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+01:16:47 WARN  Unable to start LiveReload server
+01:16:47 INFO  Tomcat started on port 7779 (http) with context path '/'
+01:16:47 INFO  Started ClientApplication in 10.017 seconds (process running for 10.805)
+01:19:27 INFO  Starting ClientApplication using Java 17.0.15 with PID 31436 (c:\Users\XznRh\Downloads\rnwh19h\client\target\classes started by XznRh in c:\Users\XznRh\Downloads\rnwh19h\client)
+01:19:27 INFO  No active profile set, falling back to 1 default profile: "default"
+01:19:27 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+01:19:27 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+01:19:31 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+01:19:31 INFO  Finished Spring Data repository scanning in 193 ms. Found 1 JPA repository interface.
+01:19:34 INFO  Tomcat initialized with port 7779 (http)
+01:19:34 INFO  Starting service [Tomcat]
+01:19:34 INFO  Starting Servlet engine: [Apache Tomcat/10.1.34]
+01:19:35 INFO  Initializing Spring embedded WebApplicationContext
+01:19:35 INFO  Root WebApplicationContext: initialization completed in 7470 ms
+01:19:35 INFO  HikariPool-1 - Starting...
+01:19:36 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1b3a557a
+01:19:36 INFO  HikariPool-1 - Start completed.
+01:19:38 INFO  Reading from transport_db_client.databasechangelog
+01:19:38 INFO  Database is up to date, no changesets to execute
+01:19:38 INFO  Reading from transport_db_client.databasechangelog
+01:19:38 INFO  UPDATE SUMMARY
+01:19:38 INFO  Run:                          0
+01:19:38 INFO  Previously run:               0
+01:19:38 INFO  Filtered out:                 0
+01:19:38 INFO  -------------------------------
+01:19:38 INFO  Total change sets:            0
+01:19:38 INFO  Update summary generated
+01:19:38 INFO  Command execution complete
+01:19:38 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+01:19:39 INFO  HHH000412: Hibernate ORM core version 6.6.4.Final
+01:19:39 INFO  HHH000026: Second-level cache disabled
+01:19:40 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+01:19:40 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+01:19:40 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+01:19:40 INFO  HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+01:19:42 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+01:19:43 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+01:19:44 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+01:19:46 WARN  Unable to start LiveReload server
+01:19:47 INFO  Tomcat started on port 7779 (http) with context path '/'
+01:19:47 INFO  Started ClientApplication in 20.67 seconds (process running for 22.298)
+01:20:26 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+01:20:26 INFO  Initializing Servlet 'dispatcherServlet'
+01:20:26 INFO  Completed initialization in 2 ms
+01:20:27 INFO  Init duration for springdoc-openapi is: 578 ms
+01:44:36 INFO  Starting ClientApplication using Java 21.0.10 with PID 8172 (c:\Users\Admin\Downloads\rnwh19h\rnwh19h\client\target\classes started by Admin in c:\Users\Admin\Downloads\rnwh19h\rnwh19h\client)
+01:44:36 INFO  No active profile set, falling back to 1 default profile: "default"
+01:44:36 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+01:44:36 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+01:44:39 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+01:44:39 INFO  Finished Spring Data repository scanning in 137 ms. Found 1 JPA repository interface.
+01:44:41 INFO  Tomcat initialized with port 7779 (http)
+01:44:41 INFO  Starting service [Tomcat]
+01:44:41 INFO  Starting Servlet engine: [Apache Tomcat/10.1.34]
+01:44:41 INFO  Initializing Spring embedded WebApplicationContext
+01:44:41 INFO  Root WebApplicationContext: initialization completed in 5405 ms
+01:44:42 INFO  HikariPool-1 - Starting...
+01:44:46 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2602bfcb
+01:44:46 INFO  HikariPool-1 - Start completed.
+01:44:47 INFO  Creating database history table with name: transport_db_client.databasechangelog
+01:44:48 INFO  Reading from transport_db_client.databasechangelog
+01:44:49 WARN  Name 'PK_DATABASECHANGELOGLOCK' ignored for PRIMARY key.
+01:44:49 INFO  Database is up to date, no changesets to execute
+01:44:49 INFO  Reading from transport_db_client.databasechangelog
+01:44:49 INFO  UPDATE SUMMARY
+01:44:49 INFO  Run:                          0
+01:44:49 INFO  Previously run:               0
+01:44:49 INFO  Filtered out:                 0
+01:44:49 INFO  -------------------------------
+01:44:49 INFO  Total change sets:            0
+01:44:49 INFO  Update summary generated
+01:44:49 INFO  Command execution complete
+01:44:49 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+01:44:49 INFO  HHH000412: Hibernate ORM core version 6.6.4.Final
+01:44:50 INFO  HHH000026: Second-level cache disabled
+01:44:51 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+01:44:51 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+01:44:51 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+01:44:51 INFO  HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+01:44:54 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+01:44:55 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+01:47:34 INFO  Starting ClientApplication using Java 21.0.10 with PID 32560 (c:\Users\Admin\Downloads\rnwh19h\rnwh19h\client\target\classes started by Admin in c:\Users\Admin\Downloads\rnwh19h\rnwh19h\client)
+01:47:34 INFO  No active profile set, falling back to 1 default profile: "default"
+01:47:35 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+01:47:35 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+01:47:38 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+01:47:38 INFO  Finished Spring Data repository scanning in 137 ms. Found 1 JPA repository interface.
+01:47:40 INFO  Tomcat initialized with port 7779 (http)
+01:47:40 INFO  Starting service [Tomcat]
+01:47:40 INFO  Starting Servlet engine: [Apache Tomcat/10.1.34]
+01:47:41 INFO  Initializing Spring embedded WebApplicationContext
+01:47:41 INFO  Root WebApplicationContext: initialization completed in 6053 ms
+01:47:41 INFO  HikariPool-1 - Starting...
+01:47:42 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@351e87ce
+01:47:42 INFO  HikariPool-1 - Start completed.
+01:47:45 INFO  Reading from transport_db_client.databasechangelog
+01:47:45 INFO  Database is up to date, no changesets to execute
+01:47:45 INFO  Reading from transport_db_client.databasechangelog
+01:47:45 INFO  UPDATE SUMMARY
+01:47:45 INFO  Run:                          0
+01:47:45 INFO  Previously run:               0
+01:47:45 INFO  Filtered out:                 0
+01:47:45 INFO  -------------------------------
+01:47:45 INFO  Total change sets:            0
+01:47:45 INFO  Update summary generated
+01:47:45 INFO  Command execution complete
+01:47:45 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+01:47:46 INFO  HHH000412: Hibernate ORM core version 6.6.4.Final
+01:47:46 INFO  HHH000026: Second-level cache disabled
+01:47:47 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+01:47:47 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+01:47:47 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+01:47:47 INFO  HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+01:47:50 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+01:47:50 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+01:47:51 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+01:47:53 INFO  LiveReload server is running on port 35729
+01:47:53 INFO  Tomcat started on port 7779 (http) with context path '/'
+01:47:53 INFO  Started ClientApplication in 19.679 seconds (process running for 20.772)
+01:48:49 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+01:48:49 INFO  Initializing Servlet 'dispatcherServlet'
+01:48:49 INFO  Completed initialization in 0 ms
+01:48:49 INFO  Init duration for springdoc-openapi is: 368 ms
+01:50:34 INFO  Starting ClientApplication using Java 21.0.10 with PID 12652 (c:\Users\Admin\Downloads\rnwh19h\rnwh19h\client\target\classes started by Admin in c:\Users\Admin\Downloads\rnwh19h\rnwh19h\client)
+01:50:34 INFO  No active profile set, falling back to 1 default profile: "default"
+01:50:34 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+01:50:34 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+01:50:36 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+01:50:36 INFO  Finished Spring Data repository scanning in 85 ms. Found 1 JPA repository interface.
+01:50:38 INFO  Tomcat initialized with port 7779 (http)
+01:50:38 INFO  Starting service [Tomcat]
+01:50:38 INFO  Starting Servlet engine: [Apache Tomcat/10.1.34]
+01:50:38 INFO  Initializing Spring embedded WebApplicationContext
+01:50:38 INFO  Root WebApplicationContext: initialization completed in 3946 ms
+01:50:38 INFO  HikariPool-1 - Starting...
+01:50:39 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@351e87ce
+01:50:39 INFO  HikariPool-1 - Start completed.
+01:50:41 INFO  Reading from transport_db_client.databasechangelog
+01:50:41 INFO  Database is up to date, no changesets to execute
+01:50:41 INFO  Reading from transport_db_client.databasechangelog
+01:50:41 INFO  UPDATE SUMMARY
+01:50:41 INFO  Run:                          0
+01:50:41 INFO  Previously run:               0
+01:50:41 INFO  Filtered out:                 0
+01:50:41 INFO  -------------------------------
+01:50:41 INFO  Total change sets:            0
+01:50:41 INFO  Update summary generated
+01:50:41 INFO  Command execution complete
+01:50:41 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+01:50:42 INFO  HHH000412: Hibernate ORM core version 6.6.4.Final
+01:50:42 INFO  HHH000026: Second-level cache disabled
+01:50:43 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+01:50:43 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+01:50:43 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+01:50:43 INFO  HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+01:52:57 INFO  Starting ClientApplication using Java 21.0.10 with PID 26104 (c:\Users\Admin\Downloads\rnwh19h\rnwh19h\client\target\classes started by Admin in c:\Users\Admin\Downloads\rnwh19h\rnwh19h\client)
+01:52:57 INFO  No active profile set, falling back to 1 default profile: "default"
+01:52:57 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+01:52:57 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+01:52:59 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+01:52:59 INFO  Finished Spring Data repository scanning in 82 ms. Found 1 JPA repository interface.
+01:53:00 INFO  Tomcat initialized with port 7779 (http)
+01:53:00 INFO  Starting service [Tomcat]
+01:53:00 INFO  Starting Servlet engine: [Apache Tomcat/10.1.34]
+01:53:00 INFO  Initializing Spring embedded WebApplicationContext
+01:53:00 INFO  Root WebApplicationContext: initialization completed in 2931 ms
+01:53:00 INFO  HikariPool-1 - Starting...
+01:53:01 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3378bebe
+01:53:01 INFO  HikariPool-1 - Start completed.
+01:53:03 INFO  Reading from transport_db_client.databasechangelog
+01:53:03 INFO  Database is up to date, no changesets to execute
+01:53:03 INFO  Reading from transport_db_client.databasechangelog
+01:53:03 INFO  UPDATE SUMMARY
+01:53:03 INFO  Run:                          0
+01:53:03 INFO  Previously run:               0
+01:53:03 INFO  Filtered out:                 0
+01:53:03 INFO  -------------------------------
+01:53:03 INFO  Total change sets:            0
+01:53:03 INFO  Update summary generated
+01:53:03 INFO  Command execution complete
+01:53:03 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+01:53:03 INFO  HHH000412: Hibernate ORM core version 6.6.4.Final
+01:53:03 INFO  HHH000026: Second-level cache disabled
+01:53:04 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+01:53:04 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+01:53:04 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+01:53:04 INFO  HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+01:53:06 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+01:53:07 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+01:53:08 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+02:00:35 INFO  Starting ClientApplication using Java 21.0.10 with PID 29252 (c:\Users\Admin\Downloads\rnwh19h\rnwh19h\client\target\classes started by Admin in c:\Users\Admin\Downloads\rnwh19h\rnwh19h\client)
+02:00:35 INFO  No active profile set, falling back to 1 default profile: "default"
+02:00:35 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+02:00:35 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+02:00:37 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02:00:37 INFO  Finished Spring Data repository scanning in 102 ms. Found 1 JPA repository interface.
+02:00:39 INFO  Tomcat initialized with port 7779 (http)
+02:00:39 INFO  Starting service [Tomcat]
+02:00:39 INFO  Starting Servlet engine: [Apache Tomcat/10.1.34]
+02:00:39 INFO  Initializing Spring embedded WebApplicationContext
+02:00:39 INFO  Root WebApplicationContext: initialization completed in 3853 ms
+02:00:39 INFO  HikariPool-1 - Starting...
+02:00:40 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@62562542
+02:00:40 INFO  HikariPool-1 - Start completed.
+02:00:42 INFO  Reading from transport_db_client.databasechangelog
+02:00:42 INFO  Database is up to date, no changesets to execute
+02:00:42 INFO  Reading from transport_db_client.databasechangelog
+02:00:42 INFO  UPDATE SUMMARY
+02:00:42 INFO  Run:                          0
+02:00:42 INFO  Previously run:               0
+02:00:42 INFO  Filtered out:                 0
+02:00:42 INFO  -------------------------------
+02:00:42 INFO  Total change sets:            0
+02:00:42 INFO  Update summary generated
+02:00:42 INFO  Command execution complete
+02:00:43 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+02:00:43 INFO  HHH000412: Hibernate ORM core version 6.6.4.Final
+02:00:43 INFO  HHH000026: Second-level cache disabled
+02:00:44 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+02:00:44 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+02:00:44 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+02:00:44 INFO  HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+02:00:46 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+02:00:47 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+02:00:48 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+02:00:50 INFO  LiveReload server is running on port 35729
+02:00:50 INFO  Tomcat started on port 7779 (http) with context path '/'
+02:00:50 INFO  Started ClientApplication in 15.498 seconds (process running for 16.373)
+02:02:16 INFO  Starting ClientApplication using Java 21.0.10 with PID 29776 (c:\Users\Admin\Downloads\rnwh19h\rnwh19h\client\target\classes started by Admin in c:\Users\Admin\Downloads\rnwh19h\rnwh19h\client)
+02:02:16 INFO  No active profile set, falling back to 1 default profile: "default"
+02:02:16 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+02:02:16 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+02:02:18 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02:02:18 INFO  Finished Spring Data repository scanning in 80 ms. Found 1 JPA repository interface.
+02:02:19 INFO  Tomcat initialized with port 7779 (http)
+02:02:19 INFO  Starting service [Tomcat]
+02:02:19 INFO  Starting Servlet engine: [Apache Tomcat/10.1.34]
+02:02:19 INFO  Initializing Spring embedded WebApplicationContext
+02:02:19 INFO  Root WebApplicationContext: initialization completed in 3407 ms
+02:02:20 INFO  HikariPool-1 - Starting...
+02:02:20 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@506e3163
+02:02:20 INFO  HikariPool-1 - Start completed.
+02:02:22 INFO  Reading from transport_db_client.databasechangelog
+02:02:22 INFO  Database is up to date, no changesets to execute
+02:02:22 INFO  Reading from transport_db_client.databasechangelog
+02:02:22 INFO  UPDATE SUMMARY
+02:02:22 INFO  Run:                          0
+02:02:22 INFO  Previously run:               0
+02:02:22 INFO  Filtered out:                 0
+02:02:22 INFO  -------------------------------
+02:02:22 INFO  Total change sets:            0
+02:02:22 INFO  Update summary generated
+02:02:22 INFO  Command execution complete
+02:02:22 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+02:02:23 INFO  HHH000412: Hibernate ORM core version 6.6.4.Final
+02:02:23 INFO  HHH000026: Second-level cache disabled
+02:02:23 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+02:02:24 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+02:02:24 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+02:02:24 INFO  HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+02:02:26 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+02:02:26 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+02:02:27 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+02:02:29 INFO  LiveReload server is running on port 35729
+02:02:29 INFO  Tomcat started on port 7779 (http) with context path '/'
+02:02:29 INFO  Started ClientApplication in 13.698 seconds (process running for 14.76)
+02:03:54 INFO  Starting ClientApplication using Java 21.0.10 with PID 33532 (c:\Users\Admin\Downloads\rnwh19h\rnwh19h\client\target\classes started by Admin in c:\Users\Admin\Downloads\rnwh19h\rnwh19h\client)
+02:03:54 INFO  No active profile set, falling back to 1 default profile: "default"
+02:03:54 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+02:03:54 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+02:03:56 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02:03:56 INFO  Finished Spring Data repository scanning in 97 ms. Found 1 JPA repository interface.
+02:03:57 INFO  Tomcat initialized with port 7779 (http)
+02:03:57 INFO  Starting service [Tomcat]
+02:03:57 INFO  Starting Servlet engine: [Apache Tomcat/10.1.34]
+02:03:57 INFO  Initializing Spring embedded WebApplicationContext
+02:03:57 INFO  Root WebApplicationContext: initialization completed in 3521 ms
+02:03:58 INFO  HikariPool-1 - Starting...
+02:03:58 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@684a32b6
+02:03:58 INFO  HikariPool-1 - Start completed.
+02:03:59 INFO  Creating database history table with name: transport_db_client.databasechangelog
+02:03:59 INFO  Reading from transport_db_client.databasechangelog
+02:04:00 WARN  Name 'PK_DATABASECHANGELOGLOCK' ignored for PRIMARY key.
+02:04:00 INFO  Database is up to date, no changesets to execute
+02:04:00 INFO  Reading from transport_db_client.databasechangelog
+02:04:01 INFO  UPDATE SUMMARY
+02:04:01 INFO  Run:                          0
+02:04:01 INFO  Previously run:               0
+02:04:01 INFO  Filtered out:                 0
+02:04:01 INFO  -------------------------------
+02:04:01 INFO  Total change sets:            0
+02:04:01 INFO  Update summary generated
+02:04:01 INFO  Command execution complete
+02:04:01 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+02:04:01 INFO  HHH000412: Hibernate ORM core version 6.6.4.Final
+02:04:01 INFO  HHH000026: Second-level cache disabled
+02:04:02 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+02:04:02 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+02:04:02 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+02:04:02 INFO  HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+02:04:05 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+02:04:05 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+02:04:06 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+02:04:08 INFO  LiveReload server is running on port 35729
+02:04:08 INFO  Tomcat started on port 7779 (http) with context path '/'
+02:04:08 INFO  Started ClientApplication in 15.065 seconds (process running for 15.916)
+02:05:47 INFO  Starting ClientApplication using Java 21.0.10 with PID 24416 (c:\Users\Admin\Downloads\rnwh19h\rnwh19h\client\target\classes started by Admin in c:\Users\Admin\Downloads\rnwh19h\rnwh19h\client)
+02:05:47 INFO  No active profile set, falling back to 1 default profile: "default"
+02:05:47 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+02:05:47 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+02:05:48 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02:05:48 INFO  Finished Spring Data repository scanning in 74 ms. Found 1 JPA repository interface.
+02:05:50 INFO  Tomcat initialized with port 7779 (http)
+02:05:50 INFO  Starting service [Tomcat]
+02:05:50 INFO  Starting Servlet engine: [Apache Tomcat/10.1.34]
+02:05:50 INFO  Initializing Spring embedded WebApplicationContext
+02:05:50 INFO  Root WebApplicationContext: initialization completed in 3386 ms
+02:05:50 INFO  HikariPool-1 - Starting...
+02:05:51 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3fc03e81
+02:05:51 INFO  HikariPool-1 - Start completed.
+02:05:51 INFO  Creating database history table with name: transport_db_client.databasechangelog
+02:05:52 INFO  Reading from transport_db_client.databasechangelog
+02:05:53 WARN  Name 'PK_DATABASECHANGELOGLOCK' ignored for PRIMARY key.
+02:05:53 INFO  Database is up to date, no changesets to execute
+02:05:53 INFO  Reading from transport_db_client.databasechangelog
+02:05:53 INFO  UPDATE SUMMARY
+02:05:53 INFO  Run:                          0
+02:05:53 INFO  Previously run:               0
+02:05:53 INFO  Filtered out:                 0
+02:05:53 INFO  -------------------------------
+02:05:53 INFO  Total change sets:            0
+02:05:53 INFO  Update summary generated
+02:05:53 INFO  Command execution complete
+02:05:53 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+02:05:53 INFO  HHH000412: Hibernate ORM core version 6.6.4.Final
+02:05:53 INFO  HHH000026: Second-level cache disabled
+02:05:54 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+02:05:54 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+02:05:54 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+02:05:54 INFO  HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+02:05:56 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+02:05:57 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+02:05:58 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+02:05:59 INFO  LiveReload server is running on port 35729
+02:06:00 INFO  Tomcat started on port 7779 (http) with context path '/'
+02:06:00 INFO  Started ClientApplication in 13.723 seconds (process running for 14.506)
+02:07:58 INFO  Starting ClientApplication using Java 21.0.10 with PID 7752 (c:\Users\Admin\Downloads\rnwh19h\rnwh19h\client\target\classes started by Admin in c:\Users\Admin\Downloads\rnwh19h\rnwh19h\client)
+02:07:58 INFO  No active profile set, falling back to 1 default profile: "default"
+02:07:59 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+02:07:59 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+02:08:00 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02:08:00 INFO  Finished Spring Data repository scanning in 75 ms. Found 1 JPA repository interface.
+02:08:02 INFO  Tomcat initialized with port 7779 (http)
+02:08:02 INFO  Starting service [Tomcat]
+02:08:02 INFO  Starting Servlet engine: [Apache Tomcat/10.1.34]
+02:08:02 INFO  Initializing Spring embedded WebApplicationContext
+02:08:02 INFO  Root WebApplicationContext: initialization completed in 3255 ms
+02:08:02 INFO  HikariPool-1 - Starting...
+02:08:02 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@65acd500
+02:08:02 INFO  HikariPool-1 - Start completed.
+02:08:04 INFO  Reading from transport_db_client.databasechangelog
+02:08:05 INFO  Database is up to date, no changesets to execute
+02:08:05 INFO  Reading from transport_db_client.databasechangelog
+02:08:05 INFO  UPDATE SUMMARY
+02:08:05 INFO  Run:                          0
+02:08:05 INFO  Previously run:               0
+02:08:05 INFO  Filtered out:                 0
+02:08:05 INFO  -------------------------------
+02:08:05 INFO  Total change sets:            0
+02:08:05 INFO  Update summary generated
+02:08:05 INFO  Command execution complete
+02:08:05 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+02:08:05 INFO  HHH000412: Hibernate ORM core version 6.6.4.Final
+02:08:05 INFO  HHH000026: Second-level cache disabled
+02:08:06 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+02:08:06 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+02:08:06 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+02:08:06 INFO  HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+02:08:08 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+02:08:08 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+02:08:09 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+02:08:11 WARN  Unable to start LiveReload server
+02:08:11 INFO  Tomcat started on port 7779 (http) with context path '/'
+02:08:11 INFO  Started ClientApplication in 13.105 seconds (process running for 14.057)
+02:11:06 INFO  Starting ClientApplication using Java 21.0.10 with PID 964 (c:\Users\Admin\Downloads\rnwh19h\rnwh19h\client\target\classes started by Admin in c:\Users\Admin\Downloads\rnwh19h\rnwh19h\client)
+02:11:06 INFO  No active profile set, falling back to 1 default profile: "default"
+02:11:06 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+02:11:06 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+02:11:08 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02:11:08 INFO  Finished Spring Data repository scanning in 75 ms. Found 1 JPA repository interface.
+02:11:10 INFO  Tomcat initialized with port 7779 (http)
+02:11:10 INFO  Starting service [Tomcat]
+02:11:10 INFO  Starting Servlet engine: [Apache Tomcat/10.1.34]
+02:11:10 INFO  Initializing Spring embedded WebApplicationContext
+02:11:10 INFO  Root WebApplicationContext: initialization completed in 3482 ms
+02:11:10 INFO  HikariPool-1 - Starting...
+02:11:11 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@8e866d2
+02:11:11 INFO  HikariPool-1 - Start completed.
+02:11:13 INFO  Reading from transport_db_client.databasechangelog
+02:11:13 INFO  Database is up to date, no changesets to execute
+02:11:13 INFO  Reading from transport_db_client.databasechangelog
+02:11:13 INFO  UPDATE SUMMARY
+02:11:13 INFO  Run:                          0
+02:11:13 INFO  Previously run:               0
+02:11:13 INFO  Filtered out:                 0
+02:11:13 INFO  -------------------------------
+02:11:13 INFO  Total change sets:            0
+02:11:13 INFO  Update summary generated
+02:11:13 INFO  Command execution complete
+02:11:13 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+02:11:13 INFO  HHH000412: Hibernate ORM core version 6.6.4.Final
+02:11:13 INFO  HHH000026: Second-level cache disabled
+02:11:14 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+02:11:14 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+02:11:14 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+02:11:14 INFO  HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+02:11:16 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+02:11:16 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+02:11:17 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+02:11:19 WARN  Unable to start LiveReload server
+02:11:19 INFO  Tomcat started on port 7779 (http) with context path '/'
+02:11:19 INFO  Started ClientApplication in 13.481 seconds (process running for 14.507)
+02:14:37 INFO  Starting ClientApplication using Java 21.0.10 with PID 28348 (c:\Users\Admin\Downloads\rnwh19h\rnwh19h\client\target\classes started by Admin in c:\Users\Admin\Downloads\rnwh19h\rnwh19h\client)
+02:14:37 INFO  No active profile set, falling back to 1 default profile: "default"
+02:14:37 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+02:14:37 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+02:14:39 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02:14:39 INFO  Finished Spring Data repository scanning in 82 ms. Found 1 JPA repository interface.
+02:14:40 INFO  Tomcat initialized with port 7779 (http)
+02:14:40 INFO  Starting service [Tomcat]
+02:14:40 INFO  Starting Servlet engine: [Apache Tomcat/10.1.34]
+02:14:40 INFO  Initializing Spring embedded WebApplicationContext
+02:14:40 INFO  Root WebApplicationContext: initialization completed in 3240 ms
+02:14:40 INFO  HikariPool-1 - Starting...
+02:14:41 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5150b2a6
+02:14:41 INFO  HikariPool-1 - Start completed.
+02:14:43 INFO  Reading from transport_db_client.databasechangelog
+02:14:43 INFO  Database is up to date, no changesets to execute
+02:14:43 INFO  Reading from transport_db_client.databasechangelog
+02:14:43 INFO  UPDATE SUMMARY
+02:14:43 INFO  Run:                          0
+02:14:43 INFO  Previously run:               0
+02:14:43 INFO  Filtered out:                 0
+02:14:43 INFO  -------------------------------
+02:14:43 INFO  Total change sets:            0
+02:14:43 INFO  Update summary generated
+02:14:43 INFO  Command execution complete
+02:14:43 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+02:14:43 INFO  HHH000412: Hibernate ORM core version 6.6.4.Final
+02:14:43 INFO  HHH000026: Second-level cache disabled
+02:14:44 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+02:14:44 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+02:14:44 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+02:14:44 INFO  HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+02:14:46 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+02:14:46 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+02:14:48 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+02:14:49 WARN  Unable to start LiveReload server
+02:14:49 INFO  Tomcat started on port 7779 (http) with context path '/'
+02:14:49 INFO  Started ClientApplication in 12.886 seconds (process running for 13.811)
+02:15:57 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+02:15:57 INFO  Initializing Servlet 'dispatcherServlet'
+02:15:57 INFO  Completed initialization in 0 ms
+02:15:57 INFO  Init duration for springdoc-openapi is: 365 ms
+02:22:15 INFO  Starting ClientApplication using Java 17.0.15 with PID 40488 (c:\Users\XznRh\Downloads\definitive\client\target\classes started by XznRh in c:\Users\XznRh\Downloads\definitive\client)
+02:22:15 INFO  No active profile set, falling back to 1 default profile: "default"
+02:22:15 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+02:22:15 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+02:22:19 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02:22:20 INFO  Finished Spring Data repository scanning in 143 ms. Found 1 JPA repository interface.
+02:22:23 INFO  Tomcat initialized with port 7779 (http)
+02:22:23 INFO  Starting service [Tomcat]
+02:22:23 INFO  Starting Servlet engine: [Apache Tomcat/10.1.34]
+02:22:24 INFO  Initializing Spring embedded WebApplicationContext
+02:22:24 INFO  Root WebApplicationContext: initialization completed in 8348 ms
+02:22:24 INFO  HikariPool-1 - Starting...
+02:22:25 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45facf69
+02:22:25 INFO  HikariPool-1 - Start completed.
+02:22:28 INFO  Reading from transport_db_client.databasechangelog
+02:22:28 INFO  Database is up to date, no changesets to execute
+02:22:28 INFO  Reading from transport_db_client.databasechangelog
+02:22:28 INFO  UPDATE SUMMARY
+02:22:28 INFO  Run:                          0
+02:22:28 INFO  Previously run:               0
+02:22:28 INFO  Filtered out:                 0
+02:22:28 INFO  -------------------------------
+02:22:28 INFO  Total change sets:            0
+02:22:28 INFO  Update summary generated
+02:22:28 INFO  Command execution complete
+02:22:29 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+02:22:30 INFO  HHH000412: Hibernate ORM core version 6.6.4.Final
+02:22:30 INFO  HHH000026: Second-level cache disabled
+02:22:32 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+02:22:32 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+02:22:32 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+02:22:32 INFO  HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+02:24:42 INFO  Starting ClientApplication using Java 17.0.15 with PID 33856 (c:\Users\XznRh\Downloads\definitive\client\target\classes started by XznRh in c:\Users\XznRh\Downloads\definitive\client)
+02:24:42 INFO  No active profile set, falling back to 1 default profile: "default"
+02:24:42 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+02:24:42 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+02:24:45 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02:24:45 INFO  Finished Spring Data repository scanning in 102 ms. Found 1 JPA repository interface.
+02:24:48 INFO  Tomcat initialized with port 7779 (http)
+02:24:48 INFO  Starting service [Tomcat]
+02:24:48 INFO  Starting Servlet engine: [Apache Tomcat/10.1.34]
+02:24:48 INFO  Initializing Spring embedded WebApplicationContext
+02:24:48 INFO  Root WebApplicationContext: initialization completed in 5814 ms
+02:24:49 INFO  HikariPool-1 - Starting...
+02:24:49 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3de88e69
+02:24:50 INFO  HikariPool-1 - Start completed.
+02:24:51 INFO  Creating database history table with name: transport_db_client.databasechangelog
+02:24:51 INFO  Reading from transport_db_client.databasechangelog
+02:24:51 WARN  Name 'PK_DATABASECHANGELOGLOCK' ignored for PRIMARY key.
+02:24:51 INFO  Database is up to date, no changesets to execute
+02:24:51 INFO  Reading from transport_db_client.databasechangelog
+02:24:51 INFO  UPDATE SUMMARY
+02:24:51 INFO  Run:                          0
+02:24:51 INFO  Previously run:               0
+02:24:51 INFO  Filtered out:                 0
+02:24:51 INFO  -------------------------------
+02:24:51 INFO  Total change sets:            0
+02:24:51 INFO  Update summary generated
+02:24:51 INFO  Command execution complete
+02:24:51 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+02:24:52 INFO  HHH000412: Hibernate ORM core version 6.6.4.Final
+02:24:52 INFO  HHH000026: Second-level cache disabled
+02:24:53 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+02:24:53 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+02:24:53 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+02:24:53 INFO  HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+02:24:56 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+02:24:56 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+02:24:58 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+02:25:02 WARN  Unable to start LiveReload server
+02:25:02 INFO  Tomcat started on port 7779 (http) with context path '/'
+02:25:02 INFO  Started ClientApplication in 20.705 seconds (process running for 22.435)
+02:25:54 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+02:25:54 INFO  Initializing Servlet 'dispatcherServlet'
+02:25:54 INFO  Completed initialization in 2 ms
+02:25:54 INFO  Init duration for springdoc-openapi is: 516 ms
+02:26:48 INFO  Starting ClientApplication using Java 17.0.15 with PID 21980 (c:\Users\XznRh\Downloads\definitive\client\target\classes started by XznRh in c:\Users\XznRh\Downloads\definitive\client)
+02:26:48 INFO  No active profile set, falling back to 1 default profile: "default"
+02:26:48 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+02:26:48 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+02:26:51 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02:26:51 INFO  Finished Spring Data repository scanning in 119 ms. Found 1 JPA repository interface.
+02:26:53 INFO  Tomcat initialized with port 7779 (http)
+02:26:53 INFO  Starting service [Tomcat]
+02:26:53 INFO  Starting Servlet engine: [Apache Tomcat/10.1.34]
+02:26:53 INFO  Initializing Spring embedded WebApplicationContext
+02:26:53 INFO  Root WebApplicationContext: initialization completed in 5195 ms
+02:26:54 INFO  HikariPool-1 - Starting...
+02:26:55 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3de88e69
+02:26:55 INFO  HikariPool-1 - Start completed.
+02:26:57 INFO  Reading from transport_db_client.databasechangelog
+02:26:57 INFO  Database is up to date, no changesets to execute
+02:26:57 INFO  Reading from transport_db_client.databasechangelog
+02:26:57 INFO  UPDATE SUMMARY
+02:26:57 INFO  Run:                          0
+02:26:57 INFO  Previously run:               0
+02:26:57 INFO  Filtered out:                 0
+02:26:57 INFO  -------------------------------
+02:26:57 INFO  Total change sets:            0
+02:26:57 INFO  Update summary generated
+02:26:57 INFO  Command execution complete
+02:26:57 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+02:26:57 INFO  HHH000412: Hibernate ORM core version 6.6.4.Final
+02:26:57 INFO  HHH000026: Second-level cache disabled
+02:26:58 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+02:26:58 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+02:26:58 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+02:26:58 INFO  HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+02:27:01 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+02:27:01 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+02:27:03 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+02:27:05 WARN  Unable to start LiveReload server
+02:27:05 INFO  Tomcat started on port 7779 (http) with context path '/'
+02:27:05 INFO  Started ClientApplication in 17.991 seconds (process running for 19.807)
+02:31:22 INFO  Starting ClientApplication using Java 17.0.15 with PID 5356 (c:\Users\XznRh\Downloads\definitive\client\target\classes started by XznRh in c:\Users\XznRh\Downloads\definitive\client)
+02:31:22 INFO  No active profile set, falling back to 1 default profile: "default"
+02:31:23 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+02:31:23 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+02:31:26 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02:31:26 INFO  Finished Spring Data repository scanning in 129 ms. Found 1 JPA repository interface.
+02:31:29 INFO  Tomcat initialized with port 7779 (http)
+02:31:29 INFO  Starting service [Tomcat]
+02:31:29 INFO  Starting Servlet engine: [Apache Tomcat/10.1.34]
+02:31:29 INFO  Initializing Spring embedded WebApplicationContext
+02:31:29 INFO  Root WebApplicationContext: initialization completed in 6178 ms
+02:31:29 INFO  HikariPool-1 - Starting...
+02:31:30 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3de88e69
+02:31:30 INFO  HikariPool-1 - Start completed.
+02:31:32 INFO  Reading from transport_db_client.databasechangelog
+02:31:32 INFO  Database is up to date, no changesets to execute
+02:31:32 INFO  Reading from transport_db_client.databasechangelog
+02:31:32 INFO  UPDATE SUMMARY
+02:31:32 INFO  Run:                          0
+02:31:32 INFO  Previously run:               0
+02:31:32 INFO  Filtered out:                 0
+02:31:32 INFO  -------------------------------
+02:31:32 INFO  Total change sets:            0
+02:31:32 INFO  Update summary generated
+02:31:32 INFO  Command execution complete
+02:31:33 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+02:31:33 INFO  HHH000412: Hibernate ORM core version 6.6.4.Final
+02:31:33 INFO  HHH000026: Second-level cache disabled
+02:31:34 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+02:31:34 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+02:31:34 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+02:31:34 INFO  HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+02:31:37 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+02:31:37 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+02:31:39 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+02:31:41 WARN  Unable to start LiveReload server
+02:31:41 INFO  Tomcat started on port 7779 (http) with context path '/'
+02:31:41 INFO  Started ClientApplication in 19.994 seconds (process running for 22.135)
+02:34:50 INFO  Starting ClientApplication using Java 17.0.15 with PID 35240 (c:\Users\XznRh\Downloads\definitive\client\target\classes started by XznRh in c:\Users\XznRh\Downloads\definitive\client)
+02:34:50 INFO  No active profile set, falling back to 1 default profile: "default"
+02:34:50 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+02:34:50 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+02:34:52 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02:34:52 INFO  Finished Spring Data repository scanning in 138 ms. Found 1 JPA repository interface.
+02:34:55 INFO  Tomcat initialized with port 7779 (http)
+02:34:55 INFO  Starting service [Tomcat]
+02:34:55 INFO  Starting Servlet engine: [Apache Tomcat/10.1.34]
+02:34:55 INFO  Initializing Spring embedded WebApplicationContext
+02:34:55 INFO  Root WebApplicationContext: initialization completed in 5603 ms
+02:34:56 INFO  HikariPool-1 - Starting...
+02:34:56 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@26102528
+02:34:56 INFO  HikariPool-1 - Start completed.
+02:34:59 INFO  Reading from transport_db_client.databasechangelog
+02:34:59 INFO  Database is up to date, no changesets to execute
+02:34:59 INFO  Reading from transport_db_client.databasechangelog
+02:34:59 INFO  UPDATE SUMMARY
+02:34:59 INFO  Run:                          0
+02:34:59 INFO  Previously run:               0
+02:34:59 INFO  Filtered out:                 0
+02:34:59 INFO  -------------------------------
+02:34:59 INFO  Total change sets:            0
+02:34:59 INFO  Update summary generated
+02:34:59 INFO  Command execution complete
+02:34:59 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+02:34:59 INFO  HHH000412: Hibernate ORM core version 6.6.4.Final
+02:35:00 INFO  HHH000026: Second-level cache disabled
+02:35:01 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+02:35:01 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+02:35:01 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+02:35:01 INFO  HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+02:35:04 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+02:35:04 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+02:35:06 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+02:35:08 WARN  Unable to start LiveReload server
+02:35:08 INFO  Tomcat started on port 7779 (http) with context path '/'
+02:35:08 INFO  Started ClientApplication in 19.236 seconds (process running for 21.548)
+02:41:05 INFO  Starting ClientApplication using Java 17.0.15 with PID 14580 (c:\Users\XznRh\Downloads\definitive\client\target\classes started by XznRh in c:\Users\XznRh\Downloads\definitive\client)
+02:41:05 INFO  No active profile set, falling back to 1 default profile: "default"
+02:41:05 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+02:41:05 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+02:41:08 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02:41:09 INFO  Finished Spring Data repository scanning in 161 ms. Found 1 JPA repository interface.
+02:41:11 INFO  Tomcat initialized with port 7779 (http)
+02:41:11 INFO  Starting service [Tomcat]
+02:41:11 INFO  Starting Servlet engine: [Apache Tomcat/10.1.34]
+02:41:12 INFO  Initializing Spring embedded WebApplicationContext
+02:41:12 INFO  Root WebApplicationContext: initialization completed in 6347 ms
+02:41:14 INFO  HikariPool-1 - Starting...
+02:41:15 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@26102528
+02:41:15 INFO  HikariPool-1 - Start completed.
+02:41:20 INFO  Reading from transport_db_client.databasechangelog
+02:41:20 INFO  Database is up to date, no changesets to execute
+02:41:20 INFO  Reading from transport_db_client.databasechangelog
+02:41:20 INFO  UPDATE SUMMARY
+02:41:20 INFO  Run:                          0
+02:41:20 INFO  Previously run:               0
+02:41:20 INFO  Filtered out:                 0
+02:41:20 INFO  -------------------------------
+02:41:20 INFO  Total change sets:            0
+02:41:20 INFO  Update summary generated
+02:41:20 INFO  Command execution complete
+02:41:21 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+02:41:21 INFO  HHH000412: Hibernate ORM core version 6.6.4.Final
+02:41:21 INFO  HHH000026: Second-level cache disabled
+02:41:22 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+02:41:22 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+02:41:22 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+02:41:22 INFO  HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+02:41:26 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+02:41:26 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+02:41:28 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+02:41:30 WARN  Unable to start LiveReload server
+02:41:30 INFO  Tomcat started on port 7779 (http) with context path '/'
+02:41:30 INFO  Started ClientApplication in 26.381 seconds (process running for 28.217)
+02:45:00 INFO  Starting ClientApplication using Java 17.0.15 with PID 39180 (c:\Users\XznRh\Downloads\definitive\client\target\classes started by XznRh in c:\Users\XznRh\Downloads\definitive\client)
+02:45:00 INFO  No active profile set, falling back to 1 default profile: "default"
+02:45:01 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+02:45:01 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+02:45:04 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02:45:04 INFO  Finished Spring Data repository scanning in 182 ms. Found 1 JPA repository interface.
+02:45:10 INFO  Tomcat initialized with port 7779 (http)
+02:45:10 INFO  Starting service [Tomcat]
+02:45:10 INFO  Starting Servlet engine: [Apache Tomcat/10.1.34]
+02:45:10 INFO  Initializing Spring embedded WebApplicationContext
+02:45:10 INFO  Root WebApplicationContext: initialization completed in 9474 ms
+02:45:11 INFO  HikariPool-1 - Starting...
+02:45:12 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2b8a7894
+02:45:12 INFO  HikariPool-1 - Start completed.
+02:45:15 INFO  Reading from transport_db_client.databasechangelog
+02:45:15 INFO  Database is up to date, no changesets to execute
+02:45:15 INFO  Reading from transport_db_client.databasechangelog
+02:45:15 INFO  UPDATE SUMMARY
+02:45:15 INFO  Run:                          0
+02:45:15 INFO  Previously run:               0
+02:45:15 INFO  Filtered out:                 0
+02:45:15 INFO  -------------------------------
+02:45:15 INFO  Total change sets:            0
+02:45:15 INFO  Update summary generated
+02:45:15 INFO  Command execution complete
+02:45:15 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+02:45:16 INFO  HHH000412: Hibernate ORM core version 6.6.4.Final
+02:45:16 INFO  HHH000026: Second-level cache disabled
+02:45:17 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+02:45:18 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+02:45:18 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+02:45:18 INFO  HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+02:45:22 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+02:45:23 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+02:45:25 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+02:45:26 WARN  Unable to start LiveReload server
+02:45:27 INFO  Tomcat started on port 7779 (http) with context path '/'
+02:45:27 INFO  Started ClientApplication in 27.682 seconds (process running for 29.277)
+02:47:52 INFO  Starting ClientApplication using Java 17.0.15 with PID 26792 (c:\Users\XznRh\Downloads\definitive\client\target\classes started by XznRh in c:\Users\XznRh\Downloads\definitive\client)
+02:47:52 INFO  No active profile set, falling back to 1 default profile: "default"
+02:47:52 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+02:47:52 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+02:47:55 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02:47:55 INFO  Finished Spring Data repository scanning in 181 ms. Found 1 JPA repository interface.
+02:47:57 INFO  Tomcat initialized with port 7779 (http)
+02:47:58 INFO  Starting service [Tomcat]
+02:47:58 INFO  Starting Servlet engine: [Apache Tomcat/10.1.34]
+02:47:58 INFO  Initializing Spring embedded WebApplicationContext
+02:47:58 INFO  Root WebApplicationContext: initialization completed in 5960 ms
+02:47:59 INFO  HikariPool-1 - Starting...
+02:48:00 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@65a69574
+02:48:00 INFO  HikariPool-1 - Start completed.
+02:48:02 INFO  Reading from transport_db_client.databasechangelog
+02:48:02 INFO  Database is up to date, no changesets to execute
+02:48:03 INFO  Reading from transport_db_client.databasechangelog
+02:48:03 INFO  UPDATE SUMMARY
+02:48:03 INFO  Run:                          0
+02:48:03 INFO  Previously run:               0
+02:48:03 INFO  Filtered out:                 0
+02:48:03 INFO  -------------------------------
+02:48:03 INFO  Total change sets:            0
+02:48:03 INFO  Update summary generated
+02:48:03 INFO  Command execution complete
+02:48:03 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+02:48:03 INFO  HHH000412: Hibernate ORM core version 6.6.4.Final
+02:48:03 INFO  HHH000026: Second-level cache disabled
+02:48:04 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+02:48:04 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+02:48:04 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+02:48:04 INFO  HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+02:48:07 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+02:48:07 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+02:48:09 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+02:48:11 WARN  Unable to start LiveReload server
+02:48:11 INFO  Tomcat started on port 7779 (http) with context path '/'
+02:48:11 INFO  Started ClientApplication in 20.342 seconds (process running for 22.068)
+02:49:29 INFO  Starting ClientApplication using Java 17.0.15 with PID 32196 (c:\Users\XznRh\Downloads\definitive\client\target\classes started by XznRh in c:\Users\XznRh\Downloads\definitive\client)
+02:49:30 INFO  No active profile set, falling back to 1 default profile: "default"
+02:49:30 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+02:49:30 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+02:49:33 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02:49:33 INFO  Finished Spring Data repository scanning in 92 ms. Found 1 JPA repository interface.
+02:49:36 INFO  Tomcat initialized with port 7779 (http)
+02:49:36 INFO  Starting service [Tomcat]
+02:49:36 INFO  Starting Servlet engine: [Apache Tomcat/10.1.34]
+02:49:37 INFO  Initializing Spring embedded WebApplicationContext
+02:49:37 INFO  Root WebApplicationContext: initialization completed in 6460 ms
+02:49:37 INFO  HikariPool-1 - Starting...
+02:49:38 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6ef695a1
+02:49:38 INFO  HikariPool-1 - Start completed.
+02:49:41 INFO  Reading from transport_db_client.databasechangelog
+02:49:41 INFO  Database is up to date, no changesets to execute
+02:49:41 INFO  Reading from transport_db_client.databasechangelog
+02:49:41 INFO  UPDATE SUMMARY
+02:49:41 INFO  Run:                          0
+02:49:41 INFO  Previously run:               0
+02:49:41 INFO  Filtered out:                 0
+02:49:41 INFO  -------------------------------
+02:49:41 INFO  Total change sets:            0
+02:49:41 INFO  Update summary generated
+02:49:41 INFO  Command execution complete
+02:49:41 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+02:49:41 INFO  HHH000412: Hibernate ORM core version 6.6.4.Final
+02:49:41 INFO  HHH000026: Second-level cache disabled
+02:49:42 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+02:49:43 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+02:49:43 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+02:49:43 INFO  HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+02:49:45 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+02:49:45 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+02:49:47 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+02:49:48 WARN  Unable to start LiveReload server
+02:49:48 INFO  Tomcat started on port 7779 (http) with context path '/'
+02:49:48 INFO  Started ClientApplication in 22.578 seconds (process running for 25.697)
+02:51:49 INFO  Starting ClientApplication using Java 17.0.15 with PID 2636 (c:\Users\XznRh\Downloads\definitive\client\target\classes started by XznRh in c:\Users\XznRh\Downloads\definitive\client)
+02:51:49 INFO  No active profile set, falling back to 1 default profile: "default"
+02:51:49 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+02:51:49 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+02:51:51 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02:51:51 INFO  Finished Spring Data repository scanning in 127 ms. Found 1 JPA repository interface.
+02:51:53 INFO  Tomcat initialized with port 7779 (http)
+02:51:53 INFO  Starting service [Tomcat]
+02:51:53 INFO  Starting Servlet engine: [Apache Tomcat/10.1.34]
+02:51:54 INFO  Initializing Spring embedded WebApplicationContext
+02:51:54 INFO  Root WebApplicationContext: initialization completed in 5042 ms
+02:51:56 INFO  HikariPool-1 - Starting...
+02:51:56 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3de88e69
+02:51:56 INFO  HikariPool-1 - Start completed.
+02:51:59 INFO  Reading from transport_db_client.databasechangelog
+02:51:59 INFO  Database is up to date, no changesets to execute
+02:51:59 INFO  Reading from transport_db_client.databasechangelog
+02:51:59 INFO  UPDATE SUMMARY
+02:51:59 INFO  Run:                          0
+02:52:00 INFO  Previously run:               0
+02:52:00 INFO  Filtered out:                 0
+02:52:00 INFO  -------------------------------
+02:52:00 INFO  Total change sets:            0
+02:52:00 INFO  Update summary generated
+02:52:00 INFO  Command execution complete
+02:52:00 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+02:52:00 INFO  HHH000412: Hibernate ORM core version 6.6.4.Final
+02:52:01 INFO  HHH000026: Second-level cache disabled
+02:52:02 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+02:52:02 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+02:52:02 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+02:52:02 INFO  HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+02:52:05 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+02:52:05 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+02:52:06 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+02:52:08 WARN  Unable to start LiveReload server
+02:52:08 INFO  Tomcat started on port 7779 (http) with context path '/'
+02:52:08 INFO  Started ClientApplication in 20.506 seconds (process running for 23.807)
+02:59:35 INFO  Starting ClientApplication using Java 17.0.15 with PID 28412 (c:\Users\XznRh\Downloads\definitive\client\target\classes started by XznRh in c:\Users\XznRh\Downloads\definitive\client)
+02:59:35 INFO  No active profile set, falling back to 1 default profile: "default"
+02:59:35 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+02:59:35 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+02:59:39 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02:59:39 INFO  Finished Spring Data repository scanning in 125 ms. Found 1 JPA repository interface.
+02:59:44 INFO  Tomcat initialized with port 7779 (http)
+02:59:44 INFO  Starting service [Tomcat]
+02:59:44 INFO  Starting Servlet engine: [Apache Tomcat/10.1.34]
+02:59:44 INFO  Initializing Spring embedded WebApplicationContext
+02:59:44 INFO  Root WebApplicationContext: initialization completed in 9419 ms
+02:59:45 INFO  HikariPool-1 - Starting...
+02:59:46 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1b872ebd
+02:59:46 INFO  HikariPool-1 - Start completed.
+02:59:48 INFO  Reading from transport_db_client.databasechangelog
+02:59:48 INFO  Database is up to date, no changesets to execute
+02:59:48 INFO  Reading from transport_db_client.databasechangelog
+02:59:48 INFO  UPDATE SUMMARY
+02:59:48 INFO  Run:                          0
+02:59:48 INFO  Previously run:               0
+02:59:48 INFO  Filtered out:                 0
+02:59:48 INFO  -------------------------------
+02:59:48 INFO  Total change sets:            0
+02:59:48 INFO  Update summary generated
+02:59:48 INFO  Command execution complete
+02:59:48 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+02:59:49 INFO  HHH000412: Hibernate ORM core version 6.6.4.Final
+02:59:49 INFO  HHH000026: Second-level cache disabled
+02:59:51 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+02:59:51 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+02:59:51 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+02:59:51 INFO  HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+02:59:54 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+02:59:54 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+02:59:55 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+02:59:56 WARN  Unable to start LiveReload server
+02:59:56 INFO  Tomcat started on port 7779 (http) with context path '/'
+02:59:57 INFO  Started ClientApplication in 24.481 seconds (process running for 25.978)
+03:01:46 INFO  Starting ClientApplication using Java 17.0.15 with PID 41692 (c:\Users\XznRh\Downloads\definitive\client\target\classes started by XznRh in c:\Users\XznRh\Downloads\definitive\client)
+03:01:46 INFO  No active profile set, falling back to 1 default profile: "default"
+03:01:47 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+03:01:47 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+03:01:50 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03:01:51 INFO  Finished Spring Data repository scanning in 164 ms. Found 1 JPA repository interface.
+03:01:55 INFO  Tomcat initialized with port 7779 (http)
+03:01:55 INFO  Starting service [Tomcat]
+03:01:55 INFO  Starting Servlet engine: [Apache Tomcat/10.1.34]
+03:01:56 INFO  Initializing Spring embedded WebApplicationContext
+03:01:56 INFO  Root WebApplicationContext: initialization completed in 8941 ms
+03:01:56 INFO  HikariPool-1 - Starting...
+03:01:57 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1d8a7835
+03:01:57 INFO  HikariPool-1 - Start completed.
+03:01:59 INFO  Reading from transport_db_client.databasechangelog
+03:01:59 INFO  Database is up to date, no changesets to execute
+03:01:59 INFO  Reading from transport_db_client.databasechangelog
+03:01:59 INFO  UPDATE SUMMARY
+03:01:59 INFO  Run:                          0
+03:01:59 INFO  Previously run:               0
+03:01:59 INFO  Filtered out:                 0
+03:01:59 INFO  -------------------------------
+03:01:59 INFO  Total change sets:            0
+03:01:59 INFO  Update summary generated
+03:01:59 INFO  Command execution complete
+03:02:00 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+03:02:00 INFO  HHH000412: Hibernate ORM core version 6.6.4.Final
+03:02:00 INFO  HHH000026: Second-level cache disabled
+03:02:01 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+03:02:01 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+03:02:02 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+03:02:02 INFO  HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+03:02:05 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+03:02:05 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+03:02:06 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03:02:08 WARN  Unable to start LiveReload server
+03:02:08 INFO  Tomcat started on port 7779 (http) with context path '/'
+03:02:08 INFO  Started ClientApplication in 22.314 seconds (process running for 23.946)
+03:05:19 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+03:05:19 INFO  Initializing Servlet 'dispatcherServlet'
+03:05:19 INFO  Completed initialization in 1 ms
+03:05:19 WARN  Resolved [com.gTransitProject.client.exception.resourceNotFoundException: Codigo no encontrado]
+03:05:19 WARN  Resolved [com.gTransitProject.client.exception.resourceNotFoundException: Cliente no encontrado]
+03:07:04 WARN  Resolved [com.gTransitProject.client.exception.resourceNotFoundException: Codigo no encontrado]
+03:07:04 WARN  Resolved [com.gTransitProject.client.exception.resourceNotFoundException: Cliente no encontrado]
+03:12:36 INFO  Starting ClientApplication using Java 17.0.15 with PID 26944 (c:\Users\XznRh\Downloads\definitive\client\target\classes started by XznRh in c:\Users\XznRh\Downloads\definitive\client)
+03:12:36 INFO  No active profile set, falling back to 1 default profile: "default"
+03:12:36 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+03:12:36 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+03:12:39 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03:12:39 INFO  Finished Spring Data repository scanning in 142 ms. Found 1 JPA repository interface.
+03:12:42 INFO  Tomcat initialized with port 7779 (http)
+03:12:42 INFO  Starting service [Tomcat]
+03:12:42 INFO  Starting Servlet engine: [Apache Tomcat/10.1.34]
+03:12:42 INFO  Initializing Spring embedded WebApplicationContext
+03:12:42 INFO  Root WebApplicationContext: initialization completed in 5388 ms
+03:12:42 INFO  HikariPool-1 - Starting...
+03:12:43 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7bc2e044
+03:12:43 INFO  HikariPool-1 - Start completed.
+03:12:44 INFO  Creating database history table with name: transport_db_client.databasechangelog
+03:12:44 INFO  Reading from transport_db_client.databasechangelog
+03:12:44 WARN  Name 'PK_DATABASECHANGELOGLOCK' ignored for PRIMARY key.
+03:12:44 INFO  Database is up to date, no changesets to execute
+03:12:44 INFO  Reading from transport_db_client.databasechangelog
+03:12:44 INFO  UPDATE SUMMARY
+03:12:44 INFO  Run:                          0
+03:12:44 INFO  Previously run:               0
+03:12:44 INFO  Filtered out:                 0
+03:12:44 INFO  -------------------------------
+03:12:44 INFO  Total change sets:            0
+03:12:44 INFO  Update summary generated
+03:12:44 INFO  Command execution complete
+03:12:44 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+03:12:45 INFO  HHH000412: Hibernate ORM core version 6.6.4.Final
+03:12:45 INFO  HHH000026: Second-level cache disabled
+03:12:46 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+03:12:46 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+03:12:46 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+03:12:46 INFO  HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+03:12:48 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+03:12:48 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+03:12:49 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03:12:50 WARN  Unable to start LiveReload server
+03:12:50 INFO  Tomcat started on port 7779 (http) with context path '/'
+03:12:50 INFO  Started ClientApplication in 14.968 seconds (process running for 17.515)
+03:13:40 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+03:13:40 INFO  Initializing Servlet 'dispatcherServlet'
+03:13:40 INFO  Completed initialization in 1 ms
+03:13:41 WARN  Resolved [com.gTransitProject.client.exception.resourceNotFoundException: Codigo no encontrado]
+03:13:41 WARN  Resolved [com.gTransitProject.client.exception.resourceNotFoundException: Cliente no encontrado]
+03:26:33 INFO  Starting ClientApplication using Java 17.0.15 with PID 42284 (c:\Users\XznRh\Downloads\definitive\client\target\classes started by XznRh in c:\Users\XznRh\Downloads\definitive\client)
+03:26:33 INFO  No active profile set, falling back to 1 default profile: "default"
+03:26:33 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+03:26:33 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+03:26:37 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03:26:37 INFO  Finished Spring Data repository scanning in 99 ms. Found 1 JPA repository interface.
+03:26:38 INFO  Tomcat initialized with port 7779 (http)
+03:26:38 INFO  Starting service [Tomcat]
+03:26:38 INFO  Starting Servlet engine: [Apache Tomcat/10.1.34]
+03:26:39 INFO  Initializing Spring embedded WebApplicationContext
+03:26:39 INFO  Root WebApplicationContext: initialization completed in 5190 ms
+03:26:39 INFO  HikariPool-1 - Starting...
+03:26:39 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f1eaddc
+03:26:39 INFO  HikariPool-1 - Start completed.
+03:26:41 INFO  Reading from transport_db_client.databasechangelog
+03:26:41 INFO  Database is up to date, no changesets to execute
+03:26:41 INFO  Reading from transport_db_client.databasechangelog
+03:26:41 INFO  UPDATE SUMMARY
+03:26:41 INFO  Run:                          0
+03:26:41 INFO  Previously run:               0
+03:26:41 INFO  Filtered out:                 0
+03:26:41 INFO  -------------------------------
+03:26:41 INFO  Total change sets:            0
+03:26:41 INFO  Update summary generated
+03:26:41 INFO  Command execution complete
+03:26:41 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+03:26:41 INFO  HHH000412: Hibernate ORM core version 6.6.4.Final
+03:26:41 INFO  HHH000026: Second-level cache disabled
+03:26:42 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+03:26:42 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+03:26:42 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+03:26:42 INFO  HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+03:26:43 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+03:26:43 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+03:26:44 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03:26:44 WARN  Unable to start LiveReload server
+03:26:44 INFO  Tomcat started on port 7779 (http) with context path '/'
+03:26:44 INFO  Started ClientApplication in 11.981 seconds (process running for 13.586)
+03:30:56 INFO  Starting ClientApplication using Java 17.0.15 with PID 42628 (c:\Users\XznRh\Downloads\definitive\client\target\classes started by XznRh in c:\Users\XznRh\Downloads\definitive\client)
+03:30:56 INFO  No active profile set, falling back to 1 default profile: "default"
+03:30:56 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+03:30:56 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+03:30:59 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03:30:59 INFO  Finished Spring Data repository scanning in 141 ms. Found 1 JPA repository interface.
+03:31:01 INFO  Tomcat initialized with port 7779 (http)
+03:31:01 INFO  Starting service [Tomcat]
+03:31:01 INFO  Starting Servlet engine: [Apache Tomcat/10.1.34]
+03:31:01 INFO  Initializing Spring embedded WebApplicationContext
+03:31:01 INFO  Root WebApplicationContext: initialization completed in 5703 ms
+03:31:02 INFO  HikariPool-1 - Starting...
+03:31:03 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'liquibase' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'liquibase' defined in class path resource [com/gTransitProject/client/config/liquibaseConfig.class]: liquibase.exception.DatabaseException: java.sql.SQLNonTransientConnectionException: Connection exception, SQL-server rejected establishment of SQL-connection,  message from server: "Too many connections"
+03:31:03 INFO  Stopping service [Tomcat]
+03:31:03 INFO  
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+03:31:03 ERROR Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'liquibase' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'liquibase' defined in class path resource [com/gTransitProject/client/config/liquibaseConfig.class]: liquibase.exception.DatabaseException: java.sql.SQLNonTransientConnectionException: Connection exception, SQL-server rejected establishment of SQL-connection,  message from server: "Too many connections"
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.gTransitProject.client.ClientApplication.main(ClientApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [com/gTransitProject/client/config/liquibaseConfig.class]: liquibase.exception.DatabaseException: java.sql.SQLNonTransientConnectionException: Connection exception, SQL-server rejected establishment of SQL-connection,  message from server: "Too many connections"
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:312)
+	... 15 common frames omitted
+Caused by: liquibase.exception.UnexpectedLiquibaseException: liquibase.exception.DatabaseException: java.sql.SQLNonTransientConnectionException: Connection exception, SQL-server rejected establishment of SQL-connection,  message from server: "Too many connections"
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:267)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	... 22 common frames omitted
+Caused by: liquibase.exception.DatabaseException: java.sql.SQLNonTransientConnectionException: Connection exception, SQL-server rejected establishment of SQL-connection,  message from server: "Too many connections"
+	at liquibase.integration.spring.SpringLiquibase.lambda$afterPropertiesSet$0(SpringLiquibase.java:259)
+	at liquibase.Scope.lambda$child$0(Scope.java:191)
+	at liquibase.Scope.child(Scope.java:200)
+	at liquibase.Scope.child(Scope.java:190)
+	at liquibase.Scope.child(Scope.java:169)
+	at liquibase.Scope.child(Scope.java:257)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:250)
+	... 24 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: Connection exception, SQL-server rejected establishment of SQL-connection,  message from server: "Too many connections"
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:102)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at liquibase.integration.spring.SpringLiquibase.lambda$afterPropertiesSet$0(SpringLiquibase.java:254)
+	... 30 common frames omitted
+03:32:24 INFO  Starting ClientApplication using Java 17.0.15 with PID 26672 (c:\Users\XznRh\Downloads\definitive\client\target\classes started by XznRh in c:\Users\XznRh\Downloads\definitive\client)
+03:32:24 INFO  No active profile set, falling back to 1 default profile: "default"
+03:32:24 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+03:32:24 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+03:32:27 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03:32:27 INFO  Finished Spring Data repository scanning in 302 ms. Found 1 JPA repository interface.
+03:32:29 INFO  Tomcat initialized with port 7779 (http)
+03:32:29 INFO  Starting service [Tomcat]
+03:32:30 INFO  Starting Servlet engine: [Apache Tomcat/10.1.34]
+03:32:30 INFO  Initializing Spring embedded WebApplicationContext
+03:32:30 INFO  Root WebApplicationContext: initialization completed in 5268 ms
+03:32:30 INFO  HikariPool-1 - Starting...
+03:32:31 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@26102528
+03:32:31 INFO  HikariPool-1 - Start completed.
+03:32:32 INFO  Creating database history table with name: transport_db_client.databasechangelog
+03:32:33 INFO  Reading from transport_db_client.databasechangelog
+03:32:33 WARN  Name 'PK_DATABASECHANGELOGLOCK' ignored for PRIMARY key.
+03:32:33 INFO  Database is up to date, no changesets to execute
+03:32:33 INFO  Reading from transport_db_client.databasechangelog
+03:32:33 INFO  UPDATE SUMMARY
+03:32:33 INFO  Run:                          0
+03:32:33 INFO  Previously run:               0
+03:32:33 INFO  Filtered out:                 0
+03:32:33 INFO  -------------------------------
+03:32:33 INFO  Total change sets:            0
+03:32:33 INFO  Update summary generated
+03:32:33 INFO  Command execution complete
+03:32:33 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+03:32:33 INFO  HHH000412: Hibernate ORM core version 6.6.4.Final
+03:32:34 INFO  HHH000026: Second-level cache disabled
+03:32:34 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+03:32:34 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+03:32:34 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+03:32:34 INFO  HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+03:32:37 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+03:32:37 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+03:32:38 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03:32:40 INFO  LiveReload server is running on port 35729
+03:32:40 INFO  Tomcat started on port 7779 (http) with context path '/'
+03:32:40 INFO  Started ClientApplication in 16.143 seconds (process running for 18.32)
+03:32:58 INFO  Restarting due to 16 class path changes (0 additions, 2 deletions, 14 modifications)
+03:32:58 INFO  Commencing graceful shutdown. Waiting for active requests to complete
+03:32:59 INFO  Graceful shutdown complete
+03:32:59 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+03:32:59 INFO  HikariPool-1 - Shutdown initiated...
+03:32:59 INFO  HikariPool-1 - Shutdown completed.
+03:33:03 INFO  Starting ClientApplication using Java 17.0.15 with PID 26672 (c:\Users\XznRh\Downloads\definitive\client\target\classes started by XznRh in c:\Users\XznRh\Downloads\definitive\client)
+03:33:03 INFO  No active profile set, falling back to 1 default profile: "default"
+03:33:03 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03:33:03 INFO  Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interface.
+03:33:03 INFO  Tomcat initialized with port 7779 (http)
+03:33:03 INFO  Starting service [Tomcat]
+03:33:03 INFO  Starting Servlet engine: [Apache Tomcat/10.1.34]
+03:33:03 INFO  Initializing Spring embedded WebApplicationContext
+03:33:03 INFO  Root WebApplicationContext: initialization completed in 626 ms
+03:33:04 INFO  HikariPool-2 - Starting...
+03:33:04 INFO  HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@13927ec2
+03:33:04 INFO  HikariPool-2 - Start completed.
+03:33:04 INFO  Reading from transport_db_client.databasechangelog
+03:33:04 INFO  Database is up to date, no changesets to execute
+03:33:04 INFO  Reading from transport_db_client.databasechangelog
+03:33:04 INFO  UPDATE SUMMARY
+03:33:04 INFO  Run:                          0
+03:33:04 INFO  Previously run:               0
+03:33:04 INFO  Filtered out:                 0
+03:33:04 INFO  -------------------------------
+03:33:04 INFO  Total change sets:            0
+03:33:04 INFO  Update summary generated
+03:33:04 INFO  Command execution complete
+03:33:04 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+03:33:04 INFO  HHH000026: Second-level cache disabled
+03:33:04 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+03:33:04 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+03:33:04 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+03:33:04 INFO  HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+03:33:04 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+03:33:04 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+03:33:04 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03:33:04 INFO  LiveReload server is running on port 35729
+03:33:04 INFO  Tomcat started on port 7779 (http) with context path '/'
+03:33:04 INFO  Started ClientApplication in 1.412 seconds (process running for 42.935)
+03:33:04 INFO  Condition evaluation unchanged
+03:33:13 INFO  Restarting due to 15 class path changes (0 additions, 0 deletions, 15 modifications)
+03:33:13 INFO  Commencing graceful shutdown. Waiting for active requests to complete
+03:33:14 INFO  Graceful shutdown complete
+03:33:14 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+03:33:14 INFO  HikariPool-2 - Shutdown initiated...
+03:33:14 INFO  HikariPool-2 - Shutdown completed.
+03:33:14 INFO  Starting ClientApplication using Java 17.0.15 with PID 26672 (c:\Users\XznRh\Downloads\definitive\client\target\classes started by XznRh in c:\Users\XznRh\Downloads\definitive\client)
+03:33:14 INFO  No active profile set, falling back to 1 default profile: "default"
+03:33:14 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03:33:14 INFO  Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.
+03:33:14 INFO  Tomcat initialized with port 7779 (http)
+03:33:14 INFO  Starting service [Tomcat]
+03:33:14 INFO  Starting Servlet engine: [Apache Tomcat/10.1.34]
+03:33:14 INFO  Initializing Spring embedded WebApplicationContext
+03:33:14 INFO  Root WebApplicationContext: initialization completed in 357 ms
+03:33:14 INFO  HikariPool-3 - Starting...
+03:33:14 INFO  HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@70295718
+03:33:14 INFO  HikariPool-3 - Start completed.
+03:33:14 INFO  Reading from transport_db_client.databasechangelog
+03:33:14 INFO  Database is up to date, no changesets to execute
+03:33:14 INFO  Reading from transport_db_client.databasechangelog
+03:33:14 INFO  UPDATE SUMMARY
+03:33:14 INFO  Run:                          0
+03:33:14 INFO  Previously run:               0
+03:33:14 INFO  Filtered out:                 0
+03:33:14 INFO  -------------------------------
+03:33:14 INFO  Total change sets:            0
+03:33:14 INFO  Update summary generated
+03:33:14 INFO  Command execution complete
+03:33:14 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+03:33:14 INFO  HHH000026: Second-level cache disabled
+03:33:14 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+03:33:14 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+03:33:14 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+03:33:14 INFO  HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+03:33:14 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+03:33:14 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+03:33:14 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03:33:15 INFO  LiveReload server is running on port 35729
+03:33:15 INFO  Tomcat started on port 7779 (http) with context path '/'
+03:33:15 INFO  Started ClientApplication in 0.873 seconds (process running for 53.315)
+03:33:15 INFO  Condition evaluation unchanged
+03:33:25 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+03:33:25 INFO  Initializing Servlet 'dispatcherServlet'
+03:33:25 INFO  Completed initialization in 2 ms
+03:33:25 WARN  Resolved [com.gTransitProject.client.exception.resourceNotFoundException: Codigo no encontrado]
+03:33:25 WARN  Resolved [com.gTransitProject.client.exception.resourceNotFoundException: Cliente no encontrado]
