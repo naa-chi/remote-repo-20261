@@ -33,17 +33,20 @@ public class EngineModel {
 
     @NotNull(message = "hp count cannot be null")
     @Min(value = 0, message = "hp count has to be a positive number")
+    @Column(name = "engine_horsepower", nullable = false)
     private Float engineHorsepower;
 
     @NotNull(message = "weight count cannot be null")
     @Min(value = 0, message = "weight count has to be a positive number")
+    @Column(name = "engine_weight", nullable = false)
     private Float engineWeight;
 
     @NotNull(message = "price count cannot be null")
     @Min(value = 0, message = "price count has to be a positive number")
+    @Column(name = "engine_price", nullable = false)
     private Float enginePrice;
 
     @NotNull(message = "We need to know the date of production")
     @Column(name = "production_date", nullable = false)
-    private Date productionDate; 
+    private Date productionDate;
 }

@@ -1,4 +1,4 @@
-package com.transit.trains.config;
+package com.transit.reviews.config;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;
@@ -12,8 +12,8 @@ public class SwaggerConfig {
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
                 .info(new Info()
-                        .title("API2026 Train Service")
+                        .title("API2026 Reviews Service")
                         .version("1.0")
-                        .description("API Docs for the Trains Service of the transit project"));
+                        .description("API Docs for the Reviews Service of the transit project"));
     }
 }

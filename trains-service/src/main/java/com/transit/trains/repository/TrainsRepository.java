@@ -9,8 +9,8 @@ import java.util.Optional;
 
 @Repository
 public interface TrainsRepository extends JpaRepository<TrainModel, Long> {
+
     List<TrainModel> findByManufacturerId(String manufacturerId);
-    
-    // NEW: Efficient query for the service layer
+
     Optional<TrainModel> findByCode(String code);
 }
