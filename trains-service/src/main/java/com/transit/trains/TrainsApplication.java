@@ -2,10 +2,10 @@ package com.transit.trains;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
-@EnableJpaRepositories(basePackages = "com.transit.trains.repository")
+@EnableFeignClients
 public class TrainsApplication {
 
 	public static void main(String[] args) {
