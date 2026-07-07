@@ -1,0 +1,126 @@
+=== Test run at 2026-07-06 18:53:55 ===
+[EN] [2026-07-06 18:53:52] [FAIL] http://localhost:7770/all -> 404 Error: Unknown
+[EN] [2026-07-06 18:53:52] [FAIL] http://localhost:7770/1 -> 404 Error: Unknown
+[EN] [2026-07-06 18:53:53] [FAIL] http://localhost:7771/1 -> 404 Error: Unknown
+[EN] [2026-07-06 18:53:53] [FAIL] http://localhost:7771/manufacturer/M123 -> 404 Error: Unknown
+[EN] [2026-07-06 18:53:53] [FAIL] http://localhost:7771/manufacturer/1 -> 404 Error: Unknown
+[EN] [2026-07-06 18:53:54] [FAIL] http://localhost:7771/engineCode/1 -> 404 Error: Unknown
+[EN] [2026-07-06 18:53:54] [FAIL] http://localhost:7771/horsepower/1 -> 404 Error: Unknown
+[EN] [2026-07-06 18:53:54] [FAIL] http://localhost:7771/price/1 -> 404 Error: Unknown
+[EN] [2026-07-06 18:53:54] [FAIL] http://localhost:7771/weight/1 -> 404 Error: Unknown
+[EN] [2026-07-06 18:53:54] [FAIL] http://localhost:7771/1 -> N/A Error: Unsupported method: PUT
+[EN] [2026-07-06 18:53:55] [FAIL] http://localhost:7771/1 -> N/A Error: Unsupported method: DELETE
+[EN] [2026-07-06 18:53:55] [FAIL] http://localhost:7771/create -> 404 Error: Unknown
+[CN] [2026-07-06 18:53:52] [失败] http://localhost:7770/all -> 404 错误: 未知
+[CN] [2026-07-06 18:53:52] [失败] http://localhost:7770/1 -> 404 错误: 未知
+[CN] [2026-07-06 18:53:53] [失败] http://localhost:7771/1 -> 404 错误: 未知
+[CN] [2026-07-06 18:53:53] [失败] http://localhost:7771/manufacturer/M123 -> 404 错误: 未知
+[CN] [2026-07-06 18:53:53] [失败] http://localhost:7771/manufacturer/1 -> 404 错误: 未知
+[CN] [2026-07-06 18:53:54] [失败] http://localhost:7771/engineCode/1 -> 404 错误: 未知
+[CN] [2026-07-06 18:53:54] [失败] http://localhost:7771/horsepower/1 -> 404 错误: 未知
+[CN] [2026-07-06 18:53:54] [失败] http://localhost:7771/price/1 -> 404 错误: 未知
+[CN] [2026-07-06 18:53:54] [失败] http://localhost:7771/weight/1 -> 404 错误: 未知
+[CN] [2026-07-06 18:53:54] [失败] http://localhost:7771/1 -> N/A 错误: Unsupported method: PUT
+[CN] [2026-07-06 18:53:55] [失败] http://localhost:7771/1 -> N/A 错误: Unsupported method: DELETE
+[CN] [2026-07-06 18:53:55] [失败] http://localhost:7771/create -> 404 错误: 未知
+
+=== Test run at 2026-07-06 18:57:17 ===
+[EN] [2026-07-06 18:57:16] [OK] http://localhost:7770/api/trains/all -> 200 {"_embedded":{"trainDTOList":[{"id":1,"code":"TRN01","manufacturerId":"Siemens","engineId":104,"carAmount":8,"costPerCar":15000,"productionDate":"2026-07-04T04:00:00.000Z","_links":{"self":{"href":"ht
+[EN] [2026-07-06 18:57:16] [OK] http://localhost:7770/api/trains/1 -> 200 {"id":1,"code":"TRN01","manufacturerId":"Siemens","engineId":104,"carAmount":8,"costPerCar":15000,"productionDate":"2026-07-04T04:00:00.000Z","_links":{"self":{"href":"http://localhost:7770/api/trains
+[EN] [2026-07-06 18:57:16] [FAIL] http://localhost:7771/engines/1 -> 404 Error: Unknown
+[EN] [2026-07-06 18:57:16] [FAIL] http://localhost:7771/engines/manufacturer/M123 -> 404 Error: Unknown
+[CN] [2026-07-06 18:57:16] [成功] http://localhost:7770/api/trains/all -> 200 {"_embedded":{"trainDTOList":[{"id":1,"code":"TRN01","manufacturerId":"Siemens","engineId":104,"carAmount":8,"costPerCar":15000,"productionDate":"2026-07-04T04:00:00.000Z","_links":{"self":{"href":"ht
+[CN] [2026-07-06 18:57:16] [成功] http://localhost:7770/api/trains/1 -> 200 {"id":1,"code":"TRN01","manufacturerId":"Siemens","engineId":104,"carAmount":8,"costPerCar":15000,"productionDate":"2026-07-04T04:00:00.000Z","_links":{"self":{"href":"http://localhost:7770/api/trains
+[CN] [2026-07-06 18:57:16] [失败] http://localhost:7771/engines/1 -> 404 错误: 未知
+[CN] [2026-07-06 18:57:16] [失败] http://localhost:7771/engines/manufacturer/M123 -> 404 错误: 未知
+
+=== Test run at 2026-07-06 18:58:59 ===
+[EN] [2026-07-06 18:58:57] [OK] http://localhost:7770/api/trains/all -> 200 {"_embedded":{"trainDTOList":[{"id":1,"code":"TRN01","manufacturerId":"Siemens","engineId":104,"carAmount":8,"costPerCar":15000,"productionDate":"2026-07-04T04:00:00.000Z","_links":{"self":{"href":"ht
+[EN] [2026-07-06 18:58:58] [OK] http://localhost:7770/api/trains/1 -> 200 {"id":1,"code":"TRN01","manufacturerId":"Siemens","engineId":104,"carAmount":8,"costPerCar":15000,"productionDate":"2026-07-04T04:00:00.000Z","_links":{"self":{"href":"http://localhost:7770/api/trains
+[EN] [2026-07-06 18:58:58] [OK] http://localhost:7771/api/engines/1 -> 200 {"id":1,"manufacturerId":"Unavailable","engineCode":"ERROR","engineHorsepower":0.0,"engineWeight":0.0,"enginePrice":0.0,"productionDate":"2026-07-06T04:00:00.000Z","_links":{"self":{"href":"http://loc
+[EN] [2026-07-06 18:58:59] [OK] http://localhost:7771/api/engines/manufacturer/M123 -> 200 {"_embedded":{"engineDTOList":[{"id":-1,"manufacturerId":"Unavailable","engineCode":"ERROR","engineHorsepower":0.0,"engineWeight":0.0,"enginePrice":0.0,"productionDate":"2026-07-06T04:00:00.000Z"}]},"
+[CN] [2026-07-06 18:58:57] [成功] http://localhost:7770/api/trains/all -> 200 {"_embedded":{"trainDTOList":[{"id":1,"code":"TRN01","manufacturerId":"Siemens","engineId":104,"carAmount":8,"costPerCar":15000,"productionDate":"2026-07-04T04:00:00.000Z","_links":{"self":{"href":"ht
+[CN] [2026-07-06 18:58:58] [成功] http://localhost:7770/api/trains/1 -> 200 {"id":1,"code":"TRN01","manufacturerId":"Siemens","engineId":104,"carAmount":8,"costPerCar":15000,"productionDate":"2026-07-04T04:00:00.000Z","_links":{"self":{"href":"http://localhost:7770/api/trains
+[CN] [2026-07-06 18:58:58] [成功] http://localhost:7771/api/engines/1 -> 200 {"id":1,"manufacturerId":"Unavailable","engineCode":"ERROR","engineHorsepower":0.0,"engineWeight":0.0,"enginePrice":0.0,"productionDate":"2026-07-06T04:00:00.000Z","_links":{"self":{"href":"http://loc
+[CN] [2026-07-06 18:58:59] [成功] http://localhost:7771/api/engines/manufacturer/M123 -> 200 {"_embedded":{"engineDTOList":[{"id":-1,"manufacturerId":"Unavailable","engineCode":"ERROR","engineHorsepower":0.0,"engineWeight":0.0,"enginePrice":0.0,"productionDate":"2026-07-06T04:00:00.000Z"}]},"
+
+=== Test run at 2026-07-06 19:03:05 ===
+[EN] [2026-07-06 19:03:04] [OK] http://localhost:7770/api/trains/all -> 200 {"_embedded":{"trainDTOList":[{"id":1,"code":"TRN01","manufacturerId":"Siemens","engineId":104,"carAmount":8,"costPerCar":15000,"productionDate":"2026-07-04T04:00:00.000Z","_links":{"self":{"href":"ht
+[EN] [2026-07-06 19:03:04] [OK] http://localhost:7770/api/trains/1 -> 200 {"id":1,"code":"TRN01","manufacturerId":"Siemens","engineId":104,"carAmount":8,"costPerCar":15000,"productionDate":"2026-07-04T04:00:00.000Z","_links":{"self":{"href":"http://localhost:7770/api/trains
+[EN] [2026-07-06 19:03:04] [OK] http://localhost:7771/api/engines/1 -> 200 {"id":1,"manufacturerId":"Unavailable","engineCode":"ERROR","engineHorsepower":0.0,"engineWeight":0.0,"enginePrice":0.0,"productionDate":"2026-07-06T04:00:00.000Z","_links":{"self":{"href":"http://loc
+[EN] [2026-07-06 19:03:04] [OK] http://localhost:7771/api/engines/manufacturer/M123 -> 200 {"_embedded":{"engineDTOList":[{"id":-1,"manufacturerId":"Unavailable","engineCode":"ERROR","engineHorsepower":0.0,"engineWeight":0.0,"enginePrice":0.0,"productionDate":"2026-07-06T04:00:00.000Z"}]},"
+[CN] [2026-07-06 19:03:04] [成功] http://localhost:7770/api/trains/all -> 200 {"_embedded":{"trainDTOList":[{"id":1,"code":"TRN01","manufacturerId":"Siemens","engineId":104,"carAmount":8,"costPerCar":15000,"productionDate":"2026-07-04T04:00:00.000Z","_links":{"self":{"href":"ht
+[CN] [2026-07-06 19:03:04] [成功] http://localhost:7770/api/trains/1 -> 200 {"id":1,"code":"TRN01","manufacturerId":"Siemens","engineId":104,"carAmount":8,"costPerCar":15000,"productionDate":"2026-07-04T04:00:00.000Z","_links":{"self":{"href":"http://localhost:7770/api/trains
+[CN] [2026-07-06 19:03:04] [成功] http://localhost:7771/api/engines/1 -> 200 {"id":1,"manufacturerId":"Unavailable","engineCode":"ERROR","engineHorsepower":0.0,"engineWeight":0.0,"enginePrice":0.0,"productionDate":"2026-07-06T04:00:00.000Z","_links":{"self":{"href":"http://loc
+[CN] [2026-07-06 19:03:04] [成功] http://localhost:7771/api/engines/manufacturer/M123 -> 200 {"_embedded":{"engineDTOList":[{"id":-1,"manufacturerId":"Unavailable","engineCode":"ERROR","engineHorsepower":0.0,"engineWeight":0.0,"enginePrice":0.0,"productionDate":"2026-07-06T04:00:00.000Z"}]},"
+
+=== Test run at 2026-07-06 19:05:38 ===
+[EN] [2026-07-06 19:05:37] [OK] http://localhost:7770/api/trains/all -> 200 {"_embedded":{"trainDTOList":[{"id":1,"code":"TRN01","manufacturerId":"Siemens","engineId":104,"carAmount":8,"costPerCar":15000,"productionDate":"2026-07-04T04:00:00.000Z","_links":{"self":{"href":"ht
+[EN] [2026-07-06 19:05:38] [OK] http://localhost:7770/api/trains/1 -> 200 {"id":1,"code":"TRN01","manufacturerId":"Siemens","engineId":104,"carAmount":8,"costPerCar":15000,"productionDate":"2026-07-04T04:00:00.000Z","_links":{"self":{"href":"http://localhost:7770/api/trains
+[EN] [2026-07-06 19:05:38] [OK] http://localhost:7771/api/engines/1 -> 200 {"id":1,"manufacturerId":"Unavailable","engineCode":"ERROR","engineHorsepower":0.0,"engineWeight":0.0,"enginePrice":0.0,"productionDate":"2026-07-06T04:00:00.000Z","_links":{"self":{"href":"http://loc
+[EN] [2026-07-06 19:05:38] [OK] http://localhost:7771/api/engines/manufacturer/M123 -> 200 {"_embedded":{"engineDTOList":[{"id":-1,"manufacturerId":"Unavailable","engineCode":"ERROR","engineHorsepower":0.0,"engineWeight":0.0,"enginePrice":0.0,"productionDate":"2026-07-06T04:00:00.000Z"}]},"
+[CN] [2026-07-06 19:05:37] [成功] http://localhost:7770/api/trains/all -> 200 {"_embedded":{"trainDTOList":[{"id":1,"code":"TRN01","manufacturerId":"Siemens","engineId":104,"carAmount":8,"costPerCar":15000,"productionDate":"2026-07-04T04:00:00.000Z","_links":{"self":{"href":"ht
+[CN] [2026-07-06 19:05:38] [成功] http://localhost:7770/api/trains/1 -> 200 {"id":1,"code":"TRN01","manufacturerId":"Siemens","engineId":104,"carAmount":8,"costPerCar":15000,"productionDate":"2026-07-04T04:00:00.000Z","_links":{"self":{"href":"http://localhost:7770/api/trains
+[CN] [2026-07-06 19:05:38] [成功] http://localhost:7771/api/engines/1 -> 200 {"id":1,"manufacturerId":"Unavailable","engineCode":"ERROR","engineHorsepower":0.0,"engineWeight":0.0,"enginePrice":0.0,"productionDate":"2026-07-06T04:00:00.000Z","_links":{"self":{"href":"http://loc
+[CN] [2026-07-06 19:05:38] [成功] http://localhost:7771/api/engines/manufacturer/M123 -> 200 {"_embedded":{"engineDTOList":[{"id":-1,"manufacturerId":"Unavailable","engineCode":"ERROR","engineHorsepower":0.0,"engineWeight":0.0,"enginePrice":0.0,"productionDate":"2026-07-06T04:00:00.000Z"}]},"
+
+=== Test run at 2026-07-06 19:07:14 ===
+[EN] [2026-07-06 19:07:13] [OK] http://localhost:7770/api/trains/all -> 200 {"_embedded":{"trainDTOList":[{"id":1,"code":"TRN01","manufacturerId":"Siemens","engineId":104,"carAmount":8,"costPerCar":15000,"productionDate":"2026-07-04T04:00:00.000Z","_links":{"self":{"href":"ht
+[EN] [2026-07-06 19:07:13] [OK] http://localhost:7770/api/trains/1 -> 200 {"id":1,"code":"TRN01","manufacturerId":"Siemens","engineId":104,"carAmount":8,"costPerCar":15000,"productionDate":"2026-07-04T04:00:00.000Z","_links":{"self":{"href":"http://localhost:7770/api/trains
+[EN] [2026-07-06 19:07:14] [OK] http://localhost:7771/api/engines/1 -> 200 {"id":1,"manufacturerId":"Unavailable","engineCode":"ERROR","engineHorsepower":0.0,"engineWeight":0.0,"enginePrice":0.0,"productionDate":"2026-07-06T04:00:00.000Z","_links":{"self":{"href":"http://loc
+[EN] [2026-07-06 19:07:14] [OK] http://localhost:7771/api/engines/manufacturer/M123 -> 200 {"_embedded":{"engineDTOList":[{"id":-1,"manufacturerId":"Unavailable","engineCode":"ERROR","engineHorsepower":0.0,"engineWeight":0.0,"enginePrice":0.0,"productionDate":"2026-07-06T04:00:00.000Z"}]},"
+[CN] [2026-07-06 19:07:13] [成功] http://localhost:7770/api/trains/all -> 200 {"_embedded":{"trainDTOList":[{"id":1,"code":"TRN01","manufacturerId":"Siemens","engineId":104,"carAmount":8,"costPerCar":15000,"productionDate":"2026-07-04T04:00:00.000Z","_links":{"self":{"href":"ht
+[CN] [2026-07-06 19:07:13] [成功] http://localhost:7770/api/trains/1 -> 200 {"id":1,"code":"TRN01","manufacturerId":"Siemens","engineId":104,"carAmount":8,"costPerCar":15000,"productionDate":"2026-07-04T04:00:00.000Z","_links":{"self":{"href":"http://localhost:7770/api/trains
+[CN] [2026-07-06 19:07:14] [成功] http://localhost:7771/api/engines/1 -> 200 {"id":1,"manufacturerId":"Unavailable","engineCode":"ERROR","engineHorsepower":0.0,"engineWeight":0.0,"enginePrice":0.0,"productionDate":"2026-07-06T04:00:00.000Z","_links":{"self":{"href":"http://loc
+[CN] [2026-07-06 19:07:14] [成功] http://localhost:7771/api/engines/manufacturer/M123 -> 200 {"_embedded":{"engineDTOList":[{"id":-1,"manufacturerId":"Unavailable","engineCode":"ERROR","engineHorsepower":0.0,"engineWeight":0.0,"enginePrice":0.0,"productionDate":"2026-07-06T04:00:00.000Z"}]},"
+
+=== Test run at 2026-07-06 19:20:18 ===
+[EN] [2026-07-06 19:20:17] [OK] http://localhost:7770/api/trains/all -> 200 {"_embedded":{"trainDTOList":[{"id":1,"code":"TRN01","manufacturerId":"Siemens","engineId":104,"carAmount":8,"costPerCar":15000,"productionDate":"2026-07-04T04:00:00.000Z","_links":{"self":{"href":"ht
+[EN] [2026-07-06 19:20:17] [OK] http://localhost:7770/api/trains/1 -> 200 {"id":1,"code":"TRN01","manufacturerId":"Siemens","engineId":104,"carAmount":8,"costPerCar":15000,"productionDate":"2026-07-04T04:00:00.000Z","_links":{"self":{"href":"http://localhost:7770/api/trains
+[EN] [2026-07-06 19:20:17] [OK] http://localhost:7771/api/engines/1 -> 200 {"id":1,"manufacturerId":"Unavailable","engineCode":"ERROR","engineHorsepower":0.0,"engineWeight":0.0,"enginePrice":0.0,"productionDate":"2026-07-06T04:00:00.000Z","_links":{"self":{"href":"http://loc
+[EN] [2026-07-06 19:20:18] [OK] http://localhost:7771/api/engines/manufacturer/M123 -> 200 {"_embedded":{"engineDTOList":[{"id":-1,"manufacturerId":"Unavailable","engineCode":"ERROR","engineHorsepower":0.0,"engineWeight":0.0,"enginePrice":0.0,"productionDate":"2026-07-06T04:00:00.000Z"}]},"
+[CN] [2026-07-06 19:20:17] [成功] http://localhost:7770/api/trains/all -> 200 {"_embedded":{"trainDTOList":[{"id":1,"code":"TRN01","manufacturerId":"Siemens","engineId":104,"carAmount":8,"costPerCar":15000,"productionDate":"2026-07-04T04:00:00.000Z","_links":{"self":{"href":"ht
+[CN] [2026-07-06 19:20:17] [成功] http://localhost:7770/api/trains/1 -> 200 {"id":1,"code":"TRN01","manufacturerId":"Siemens","engineId":104,"carAmount":8,"costPerCar":15000,"productionDate":"2026-07-04T04:00:00.000Z","_links":{"self":{"href":"http://localhost:7770/api/trains
+[CN] [2026-07-06 19:20:17] [成功] http://localhost:7771/api/engines/1 -> 200 {"id":1,"manufacturerId":"Unavailable","engineCode":"ERROR","engineHorsepower":0.0,"engineWeight":0.0,"enginePrice":0.0,"productionDate":"2026-07-06T04:00:00.000Z","_links":{"self":{"href":"http://loc
+[CN] [2026-07-06 19:20:18] [成功] http://localhost:7771/api/engines/manufacturer/M123 -> 200 {"_embedded":{"engineDTOList":[{"id":-1,"manufacturerId":"Unavailable","engineCode":"ERROR","engineHorsepower":0.0,"engineWeight":0.0,"enginePrice":0.0,"productionDate":"2026-07-06T04:00:00.000Z"}]},"
+
+=== Test run at 2026-07-06 19:22:38 ===
+[EN] [2026-07-06 19:22:37] [OK] http://localhost:7770/api/trains/all -> 200 {"_embedded":{"trainDTOList":[{"id":1,"code":"TRN01","manufacturerId":"Siemens","engineId":104,"carAmount":8,"costPerCar":15000,"productionDate":"2026-07-04T04:00:00.000Z","_links":{"self":{"href":"ht
+[EN] [2026-07-06 19:22:37] [OK] http://localhost:7770/api/trains/1 -> 200 {"id":1,"code":"TRN01","manufacturerId":"Siemens","engineId":104,"carAmount":8,"costPerCar":15000,"productionDate":"2026-07-04T04:00:00.000Z","_links":{"self":{"href":"http://localhost:7770/api/trains
+[EN] [2026-07-06 19:22:37] [OK] http://localhost:7771/api/engines/1 -> 200 {"id":1,"manufacturerId":"Unavailable","engineCode":"ERROR","engineHorsepower":0.0,"engineWeight":0.0,"enginePrice":0.0,"productionDate":"2026-07-06T04:00:00.000Z","_links":{"self":{"href":"http://loc
+[EN] [2026-07-06 19:22:38] [OK] http://localhost:7771/api/engines/manufacturer/M123 -> 200 {"_embedded":{"engineDTOList":[{"id":-1,"manufacturerId":"Unavailable","engineCode":"ERROR","engineHorsepower":0.0,"engineWeight":0.0,"enginePrice":0.0,"productionDate":"2026-07-06T04:00:00.000Z"}]},"
+[CN] [2026-07-06 19:22:37] [成功] http://localhost:7770/api/trains/all -> 200 {"_embedded":{"trainDTOList":[{"id":1,"code":"TRN01","manufacturerId":"Siemens","engineId":104,"carAmount":8,"costPerCar":15000,"productionDate":"2026-07-04T04:00:00.000Z","_links":{"self":{"href":"ht
+[CN] [2026-07-06 19:22:37] [成功] http://localhost:7770/api/trains/1 -> 200 {"id":1,"code":"TRN01","manufacturerId":"Siemens","engineId":104,"carAmount":8,"costPerCar":15000,"productionDate":"2026-07-04T04:00:00.000Z","_links":{"self":{"href":"http://localhost:7770/api/trains
+[CN] [2026-07-06 19:22:37] [成功] http://localhost:7771/api/engines/1 -> 200 {"id":1,"manufacturerId":"Unavailable","engineCode":"ERROR","engineHorsepower":0.0,"engineWeight":0.0,"enginePrice":0.0,"productionDate":"2026-07-06T04:00:00.000Z","_links":{"self":{"href":"http://loc
+[CN] [2026-07-06 19:22:38] [成功] http://localhost:7771/api/engines/manufacturer/M123 -> 200 {"_embedded":{"engineDTOList":[{"id":-1,"manufacturerId":"Unavailable","engineCode":"ERROR","engineHorsepower":0.0,"engineWeight":0.0,"enginePrice":0.0,"productionDate":"2026-07-06T04:00:00.000Z"}]},"
+
+=== Test run at 2026-07-06 19:32:36 ===
+[EN] [2026-07-06 19:32:35] [OK] http://localhost:7770/api/trains/all -> 200 {"_embedded":{"trainDTOList":[{"id":1,"code":"TRN01","manufacturerId":"Siemens","engineId":104,"carAmount":8,"costPerCar":15000,"productionDate":"2026-07-04T04:00:00.000Z","_links":{"self":{"href":"ht
+[EN] [2026-07-06 19:32:36] [OK] http://localhost:7770/api/trains/1 -> 200 {"id":1,"code":"TRN01","manufacturerId":"Siemens","engineId":104,"carAmount":8,"costPerCar":15000,"productionDate":"2026-07-04T04:00:00.000Z","_links":{"self":{"href":"http://localhost:7770/api/trains
+[EN] [2026-07-06 19:32:36] [OK] http://localhost:7771/api/engines/1 -> 200 {"id":1,"manufacturerId":"Unavailable","engineCode":"ERROR","engineHorsepower":0.0,"engineWeight":0.0,"enginePrice":0.0,"productionDate":"2026-07-06T04:00:00.000Z","_links":{"self":{"href":"http://loc
+[EN] [2026-07-06 19:32:36] [OK] http://localhost:7771/api/engines/manufacturer/M123 -> 200 {"_embedded":{"engineDTOList":[{"id":-1,"manufacturerId":"Unavailable","engineCode":"ERROR","engineHorsepower":0.0,"engineWeight":0.0,"enginePrice":0.0,"productionDate":"2026-07-06T04:00:00.000Z"}]},"
+[CN] [2026-07-06 19:32:35] [成功] http://localhost:7770/api/trains/all -> 200 {"_embedded":{"trainDTOList":[{"id":1,"code":"TRN01","manufacturerId":"Siemens","engineId":104,"carAmount":8,"costPerCar":15000,"productionDate":"2026-07-04T04:00:00.000Z","_links":{"self":{"href":"ht
+[CN] [2026-07-06 19:32:36] [成功] http://localhost:7770/api/trains/1 -> 200 {"id":1,"code":"TRN01","manufacturerId":"Siemens","engineId":104,"carAmount":8,"costPerCar":15000,"productionDate":"2026-07-04T04:00:00.000Z","_links":{"self":{"href":"http://localhost:7770/api/trains
+[CN] [2026-07-06 19:32:36] [成功] http://localhost:7771/api/engines/1 -> 200 {"id":1,"manufacturerId":"Unavailable","engineCode":"ERROR","engineHorsepower":0.0,"engineWeight":0.0,"enginePrice":0.0,"productionDate":"2026-07-06T04:00:00.000Z","_links":{"self":{"href":"http://loc
+[CN] [2026-07-06 19:32:36] [成功] http://localhost:7771/api/engines/manufacturer/M123 -> 200 {"_embedded":{"engineDTOList":[{"id":-1,"manufacturerId":"Unavailable","engineCode":"ERROR","engineHorsepower":0.0,"engineWeight":0.0,"enginePrice":0.0,"productionDate":"2026-07-06T04:00:00.000Z"}]},"
+
+=== Test run at 2026-07-06 19:36:26 ===
+[EN] [2026-07-06 19:36:25] [OK] http://localhost:7770/api/trains/all -> 200 {"_embedded":{"trainDTOList":[{"id":1,"code":"TRN01","manufacturerId":"Siemens","engineId":104,"carAmount":8,"costPerCar":15000,"productionDate":"2026-07-04T04:00:00.000Z","_links":{"self":{"href":"ht
+[EN] [2026-07-06 19:36:25] [OK] http://localhost:7770/api/trains/1 -> 200 {"id":1,"code":"TRN01","manufacturerId":"Siemens","engineId":104,"carAmount":8,"costPerCar":15000,"productionDate":"2026-07-04T04:00:00.000Z","_links":{"self":{"href":"http://localhost:7770/api/trains
+[EN] [2026-07-06 19:36:26] [OK] http://localhost:7771/api/engines/1 -> 200 {"id":1,"manufacturerId":"Unavailable","engineCode":"ERROR","engineHorsepower":0.0,"engineWeight":0.0,"enginePrice":0.0,"productionDate":"2026-07-06T04:00:00.000Z","_links":{"self":{"href":"http://loc
+[EN] [2026-07-06 19:36:26] [OK] http://localhost:7771/api/engines/manufacturer/M123 -> 200 {"_embedded":{"engineDTOList":[{"id":-1,"manufacturerId":"Unavailable","engineCode":"ERROR","engineHorsepower":0.0,"engineWeight":0.0,"enginePrice":0.0,"productionDate":"2026-07-06T04:00:00.000Z"}]},"
+[CN] [2026-07-06 19:36:25] [成功] http://localhost:7770/api/trains/all -> 200 {"_embedded":{"trainDTOList":[{"id":1,"code":"TRN01","manufacturerId":"Siemens","engineId":104,"carAmount":8,"costPerCar":15000,"productionDate":"2026-07-04T04:00:00.000Z","_links":{"self":{"href":"ht
+[CN] [2026-07-06 19:36:25] [成功] http://localhost:7770/api/trains/1 -> 200 {"id":1,"code":"TRN01","manufacturerId":"Siemens","engineId":104,"carAmount":8,"costPerCar":15000,"productionDate":"2026-07-04T04:00:00.000Z","_links":{"self":{"href":"http://localhost:7770/api/trains
+[CN] [2026-07-06 19:36:26] [成功] http://localhost:7771/api/engines/1 -> 200 {"id":1,"manufacturerId":"Unavailable","engineCode":"ERROR","engineHorsepower":0.0,"engineWeight":0.0,"enginePrice":0.0,"productionDate":"2026-07-06T04:00:00.000Z","_links":{"self":{"href":"http://loc
+[CN] [2026-07-06 19:36:26] [成功] http://localhost:7771/api/engines/manufacturer/M123 -> 200 {"_embedded":{"engineDTOList":[{"id":-1,"manufacturerId":"Unavailable","engineCode":"ERROR","engineHorsepower":0.0,"engineWeight":0.0,"enginePrice":0.0,"productionDate":"2026-07-06T04:00:00.000Z"}]},"
+
+=== Test run at 2026-07-06 20:13:58 ===
+[EN] [2026-07-06 20:13:57] [OK] http://localhost:7770/api/trains/all -> 200 {"_embedded":{"trainDTOList":[{"id":4,"code":"ITKRO","manufacturerId":"Mitsubishi","engineId":10,"carAmount":12,"costPerCar":4601,"productionDate":"2020-08-21T04:00:00.000Z","_links":{"self":{"href":"
+[EN] [2026-07-06 20:13:57] [OK] http://localhost:7770/api/trains/1 -> 200 {"id":1,"code":"ERROR","manufacturerId":"Unavailable","engineId":0,"carAmount":0,"costPerCar":0,"productionDate":"2026-07-06T04:00:00.000Z","_links":{"self":{"href":"http://localhost:7770/api/trains/1
+[EN] [2026-07-06 20:13:58] [OK] http://localhost:7771/api/engines/1 -> 200 {"id":1,"manufacturerId":"GE","engineCode":"VLFDNK","engineHorsepower":109.26,"engineWeight":409.36,"enginePrice":7976.25,"productionDate":"2020-03-21T03:00:00.000Z","_links":{"self":{"href":"http://l
+[EN] [2026-07-06 20:13:58] [OK] http://localhost:7771/api/engines/manufacturer/M123 -> 200 {"_embedded":{"engineDTOList":[{"id":-1,"manufacturerId":"Unavailable","engineCode":"ERROR","engineHorsepower":0.0,"engineWeight":0.0,"enginePrice":0.0,"productionDate":"2026-07-06T04:00:00.000Z"}]},"
+[CN] [2026-07-06 20:13:57] [成功] http://localhost:7770/api/trains/all -> 200 {"_embedded":{"trainDTOList":[{"id":4,"code":"ITKRO","manufacturerId":"Mitsubishi","engineId":10,"carAmount":12,"costPerCar":4601,"productionDate":"2020-08-21T04:00:00.000Z","_links":{"self":{"href":"
+[CN] [2026-07-06 20:13:57] [成功] http://localhost:7770/api/trains/1 -> 200 {"id":1,"code":"ERROR","manufacturerId":"Unavailable","engineId":0,"carAmount":0,"costPerCar":0,"productionDate":"2026-07-06T04:00:00.000Z","_links":{"self":{"href":"http://localhost:7770/api/trains/1
+[CN] [2026-07-06 20:13:58] [成功] http://localhost:7771/api/engines/1 -> 200 {"id":1,"manufacturerId":"GE","engineCode":"VLFDNK","engineHorsepower":109.26,"engineWeight":409.36,"enginePrice":7976.25,"productionDate":"2020-03-21T03:00:00.000Z","_links":{"self":{"href":"http://l
+[CN] [2026-07-06 20:13:58] [成功] http://localhost:7771/api/engines/manufacturer/M123 -> 200 {"_embedded":{"engineDTOList":[{"id":-1,"manufacturerId":"Unavailable","engineCode":"ERROR","engineHorsepower":0.0,"engineWeight":0.0,"enginePrice":0.0,"productionDate":"2026-07-06T04:00:00.000Z"}]},"
+

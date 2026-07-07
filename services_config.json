@@ -1,0 +1,39 @@
+{
+  "gateway_url": "http://localhost:8080",
+  "services": [
+    {
+      "name": "Train Service",
+      "base_url": "http://localhost:7770",
+      "route_prefix": "/trains-service",
+      "endpoints": [
+        {
+          "gateway_path": "/all",
+          "direct_path": "/api/trains/all",
+          "method": "GET"
+        },
+        {
+          "gateway_path": "/1",
+          "direct_path": "/api/trains/1",
+          "method": "GET"
+        }
+      ]
+    },
+    {
+      "name": "Engine Service",
+      "base_url": "http://localhost:7771",
+      "route_prefix": "/engines-service",
+      "endpoints": [
+        {
+          "gateway_path": "/1",
+          "direct_path": "/api/engines/1",
+          "method": "GET"
+        },
+        {
+          "gateway_path": "/manufacturer/M123",
+          "direct_path": "/api/engines/manufacturer/M123",
+          "method": "GET"
+        }
+      ]
+    }
+  ]
+}
