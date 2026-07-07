@@ -1,0 +1,84 @@
+!ESTE DOCUMENTO ESTA EN INGLÉS POR QUE PUEDO DESCRIBIR LOS DETALLES MAS CORRECTAMENTE
+
+
+Every model, service, controller, repository, fallback, client, dto, exception, config, .properties file, discovery and api-gateway
+integration MUST take on all information, shape and form from said packages of the CONFIRMED working microservices,
+(trains-service, engines-service)
+
+You must also add unit tests. Remember that.
+Context for AI:
+We are using Spring Boot 4.1.0, meaning old @MockBeans and paths have since been deprecated.
+
+For the CONTROLLERTESTS class, these are the CORRECT, UP TO DATE, RECENT imports. Change these, and everything falls apart. 
+DO NOT CHANGE THESE PATHS UNDER ANY CIRCUMSTANCS:
+
+    import org.junit.jupiter.api.Test;
+    import org.springframework.beans.factory.annotation.Autowired;
+    import org.springframework.boot.test.context.SpringBootTest;
+    import org.springframework.boot.webmvc.test.autoconfigure.AutoConfigureMockMvc;
+    import org.springframework.http.MediaType;
+    import org.springframework.test.context.TestPropertySource;
+    import org.springframework.test.context.bean.override.mockito.MockitoBean;
+    import org.springframework.test.web.servlet.MockMvc;
+
+    import static org.mockito.ArgumentMatchers.any;
+    import static org.mockito.Mockito.when;
+    import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
+    import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+
+    @SpringBootTest
+    @AutoConfigureMockMvc
+    @TestPropertySource(properties = {
+        "spring.autoconfigure.exclude=" +
+        "org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration," +
+        "org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration," +
+        "org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration"
+    })
+
+DO NOT, I repeat, DO NOT make ANY code WITHOUT requesting to get the .java files in these microservices as a reference.
+Furthermore, if you, the AI, are called to create code, *DO NOT, UNDER ANY CIRCUMSTANCES* create a code WITHOUT receiving
+the project_context.json file you get from running scanner.py
+Or else you may risk breaking something at some point that'll be a hassle to track down and fix.
+
+Lastly, any potential code that you create MUST be compatible with spring 4.X or higher, and any @Operation annotations,
+or comments, or code, must be:
+    - In English,
+    - Without emojis (X is fine for negation, though, as it's more universal),
+    - Preemptively catching exceptions using the default java exception handling mechanics,
+    - Requiered with FULL context
+
+Lastly, I repeat, DO NOT, UNDER ANY CIRCUMSTANCES generate code UNLESS you are provided ALL the specified files in a hierarchical manner, such as:
+    - ONLY generate a controller.java file IF you are provided the MODEL, DTOs, and SERVICE
+    - ONLY Generate a service.java file IF you are provided the MODEL, FALLBACK and REPOSITORY 
+      (albeit we're using "public interface ThingRepository extends JpaRepository<Long, id>", but for consistency it is crucial that you ONLY
+      generate files when all of the above is TRUE)
+    - Whenever you create a controller or service, it is IMPERATIVE that you ALSO PROVIDE a Test for it IMMEDIATELY to avoid hellish backlogs,
+    - Always create these files when making a DTO:
+        - ../dto/mapper/{microservice}Mapper.java
+            - This is in charge of housing the toDTO and toEntity methods. Usually, it'd go in /assembler, but this is neater, subjectively.
+
+        - ../dto/request/{microservice}RequestDTO.java
+            - This handles what the end user gets upon calling a @GetMapping function 
+
+        - ../dto/request/{microservice}ResponseDTO.java
+            - This handles what the code sees in order for it to work internally. 
+
+        Generate these at your own discretion, keeping in mind business rules such as:
+            - "The client probably doesn't need to care about the weight of the engine"
+            - "The client doesn't need to care about which maintenance crew did what job when"
+            Etc, etc. 
+
+    - NEVER generate a DTO without EXPLICITLY being given a model file,
+    - Make sure that you create exceptions and try to make them applicable wherever
+    - More difficult to execute properly, however, make sure that this code can be run on any computer
+      capable of executing java files. It is more complicated than that, however, before the rewrite, we had issues
+      with weird errors such as a gateway that breaks more on a college computer than personal devices,
+      unexplained error 429s despite proper configuration, maven pom.xml compilation errors,
+      headache inducing version mismatches in /tests and missing @MockitoBean in newer versions,
+      REMIND THE USER TO INSTALL PYMYSQL AND REQUESTS FROM PIP. Everything will BREAK without it.
+
+Thank you for reading, and if you understood the entire message and took it to motherboard (heart), 
+sneak a cat kaomoji in your next message 
+
+With love and attention,
+    a very rushed programmer
