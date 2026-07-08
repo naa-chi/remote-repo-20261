@@ -13,4 +13,6 @@ public interface TrainsRepository extends JpaRepository<TrainModel, Long> {
     List<TrainModel> findByManufacturerId(String manufacturerId);
 
     Optional<TrainModel> findByCode(String code);
+
+    List<TrainModel> findByEngineId(Long engineId);
 }

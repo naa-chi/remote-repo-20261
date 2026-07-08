@@ -79,6 +79,22 @@ public class TrainController {
         return ResponseEntity.ok(savedTrain);
     }
 
+    @Operation(summary = "Get trains by engine ID", description = "Fetches all trains that use a specific engine.")
+    @GetMapping("/engine/{engineId}")
+    public ResponseEntity<CollectionModel<TrainResponseDTO>> getTrainsByEngineId(@PathVariable Long engineId) {
+        List<TrainResponseDTO> trains = trainService.getTrainsByEngineId(engineId);
+        
+        for (TrainResponseDTO train : trains) {
+            train.add(linkTo(methodOn(TrainController.class).getTrain(train.getId())).withSelfRel());
+        }
+        
+        CollectionModel<TrainResponseDTO> collectionModel = CollectionModel.of(trains);
+        collectionModel.add(linkTo(methodOn(TrainController.class).getTrainsByEngineId(engineId)).withSelfRel());
+        collectionModel.add(linkTo(methodOn(TrainController.class).getAllTrains()).withRel("all-trains"));
+        
+        return ResponseEntity.ok(collectionModel);
+    }
+
     @Operation(summary = "Delete train by ID", description = "Deletes a train by its unique ID.")
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteTrain(@PathVariable Long id) {

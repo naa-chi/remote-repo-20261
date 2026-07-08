@@ -1,7 +1,9 @@
 package com.transit.trains.service;
 
+import com.transit.trains.client.EngineClient;
 import com.transit.trains.dto.mapper.TrainMapper;
 import com.transit.trains.dto.request.TrainRequestDTO;
+import com.transit.trains.dto.response.EngineResponseDTO;
 import com.transit.trains.dto.response.TrainResponseDTO;
 import com.transit.trains.fallback.TrainServiceFallback;
 import com.transit.trains.model.TrainModel;
@@ -17,20 +19,33 @@ public class TrainService {
     private final TrainsRepository repository;
     private final TrainMapper mapper;
     private final TrainServiceFallback serviceFallback;
+    private final EngineClient engineClient;   // Feign client
 
     public TrainService(TrainsRepository repository,
                         TrainMapper mapper,
-                        TrainServiceFallback serviceFallback) {
+                        TrainServiceFallback serviceFallback,
+                        EngineClient engineClient) {
         this.repository = repository;
         this.mapper = mapper;
         this.serviceFallback = serviceFallback;
+        this.engineClient = engineClient;
     }
 
     @CircuitBreaker(name = "trainService", fallbackMethod = "handleGetTrainFallback")
     public TrainResponseDTO getTrainById(Long id) {
-        return repository.findById(id)
-                .map(mapper::toResponse)
+        TrainModel model = repository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Train not found with id: " + id));
+        TrainResponseDTO dto = mapper.toResponse(model);
+
+        Long engineId = model.getEngineId();
+        if (engineId != null) {
+            try {
+                EngineResponseDTO engine = engineClient.getEngineById(engineId);
+            } catch (Exception e) {
+                System.err.println("Failed to fetch engine " + engineId + ": " + e.getMessage());
+            }
+        }
+        return dto;
     }
 
     @CircuitBreaker(name = "trainService", fallbackMethod = "handleGetTrainFallback")
@@ -77,7 +92,17 @@ public class TrainService {
         return mapper.toResponse(savedTrain);
     }
 
-    // Fallback handlers matching structural rules
+    @CircuitBreaker(name = "trainService", fallbackMethod = "handleGetTrainsFallbackList")
+    public List<TrainResponseDTO> getTrainsByEngineId(Long engineId) {
+        List<TrainModel> trains = repository.findByEngineId(engineId);
+        if (trains.isEmpty()) {
+            throw new RuntimeException("No trains found with engine ID: " + engineId);
+        }
+        return trains.stream()
+                .map(mapper::toResponse)
+                .collect(Collectors.toList());
+    }
+
     public TrainResponseDTO handleGetTrainFallback(Long id, Throwable t) {
         return serviceFallback.getTrainFallback(id, t);
     }

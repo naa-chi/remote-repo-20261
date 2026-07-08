@@ -24,23 +24,21 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 @RequestMapping("/api/engines")
 @Tag(name = "Engines", description = "Operations pertaining to rolling stock engines management")
 public class EngineController {
-
     private final EngineService engineService;
 
     public EngineController(EngineService engineService) {
         this.engineService = engineService;
     }
-
     @Operation(summary = "Get an engine by ID", description = "Fetches a single engine record by its primary key database ID.")
     @ApiResponses(value = {
-            @ApiResponse(responseCode = "200", description = "Successfully retrieved the engine record",
-                    content = @Content(schema = @Schema(implementation = EngineResponseDTO.class))),
-            @ApiResponse(responseCode = "404", description = "Engine not found with the specified database ID", content = @Content)
+         @ApiResponse(responseCode = "200", description = "Successfully retrieved the engine record",
+        content = @Content(schema = @Schema(implementation = EngineResponseDTO.class))),
+        @ApiResponse(responseCode = "404", description = "Engine not found with the specified database ID", content = @Content)
     })
     @GetMapping("/{id}")
     public ResponseEntity<EngineResponseDTO> getEngineById(
-            @Parameter(description = "Primary key database ID of the engine record", required = true, example = "1")
-            @PathVariable Long id) {
+        @Parameter(description = "Primary key database ID of the engine record", required = true, example = "1")
+        @PathVariable Long id) {
         EngineResponseDTO engine = engineService.getEngineById(id);
         engine.add(linkTo(methodOn(EngineController.class).getEngineById(id)).withSelfRel());
         engine.add(linkTo(methodOn(EngineController.class).getAllEngines()).withRel("all-engines"));
@@ -49,10 +47,11 @@ public class EngineController {
 
     @Operation(summary = "Get a list of engines by manufacturer", description = "Retrieves a collection of engines built by a specific manufacturer string ID.")
     @ApiResponses(value = {
-            @ApiResponse(responseCode = "200", description = "Successfully retrieved list of engines",
-                    content = @Content(schema = @Schema(implementation = CollectionModel.class))),
-            @ApiResponse(responseCode = "404", description = "No engines found for the specified manufacturer", content = @Content)
+        @ApiResponse(responseCode = "200", description = "Successfully retrieved list of engines",
+        content = @Content(schema = @Schema(implementation = CollectionModel.class))),
+        @ApiResponse(responseCode = "404", description = "No engines found for the specified manufacturer", content = @Content)
     })
+    
     @GetMapping("/manufacturer/{code}")
     public ResponseEntity<CollectionModel<EngineResponseDTO>> getEnginesByManufacturerCode(
             @Parameter(description = "The unique string code identifying the manufacturer", required = true, example = "M123")

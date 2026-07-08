@@ -1,6 +1,6 @@
 package com.transit.engines.service;
 
-import com.transit.engines.dto.mapper.EngineMapper;
+import com.transit.engines.dto.mapper.EngineAssembler;
 import com.transit.engines.dto.request.EngineRequestDTO;
 import com.transit.engines.dto.response.EngineResponseDTO;
 import com.transit.engines.fallback.EngineServiceFallback;
@@ -15,11 +15,11 @@ import java.util.stream.Collectors;
 @Service
 public class EngineService {
     private final EnginesRepository repository;
-    private final EngineMapper mapper;
+    private final EngineAssembler mapper;
     private final EngineServiceFallback serviceFallback;
 
     public EngineService(EnginesRepository repository,
-                         EngineMapper mapper,
+                         EngineAssembler mapper,
                          EngineServiceFallback serviceFallback) {
         this.repository = repository;
         this.mapper = mapper;
