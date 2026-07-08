@@ -1,6 +1,8 @@
 package com.transit.reviews.service;
 
-import com.transit.reviews.assembler.ReviewMapper;
+import com.transit.reviews.client.TicketClient;
+import com.transit.reviews.client.TrainClient;
+import com.transit.reviews.dto.mapper.ReviewMapper;
 import com.transit.reviews.dto.request.ReviewRequestDTO;
 import com.transit.reviews.dto.response.ReviewResponseDTO;
 import com.transit.reviews.fallback.ReviewServiceFallback;
@@ -18,13 +20,19 @@ public class ReviewService {
     private final ReviewsRepository repository;
     private final ReviewMapper mapper;
     private final ReviewServiceFallback serviceFallback;
+    private final TicketClient ticketClient;
+    private final TrainClient trainClient; // optional
 
     public ReviewService(ReviewsRepository repository,
                          ReviewMapper mapper,
-                         ReviewServiceFallback serviceFallback) {
+                         ReviewServiceFallback serviceFallback,
+                         TicketClient ticketClient,
+                         TrainClient trainClient) {
         this.repository = repository;
         this.mapper = mapper;
         this.serviceFallback = serviceFallback;
+        this.ticketClient = ticketClient;
+        this.trainClient = trainClient;
     }
 
     @CircuitBreaker(name = "reviewService", fallbackMethod = "handleGetReviewFallback")
@@ -70,9 +78,23 @@ public class ReviewService {
         return reviews.stream().map(mapper::toResponse).collect(Collectors.toList());
     }
 
-    @CircuitBreaker(name = "reviewService", fallbackMethod = "handleGetReviewFallback")
-    public ReviewResponseDTO createReview(ReviewRequestDTO requestDTO) {
-        ReviewModel model = mapper.toEntity(requestDTO);
+    @CircuitBreaker(name = "reviewService", fallbackMethod = "handleCreateReviewFallback")
+    public ReviewResponseDTO createReview(ReviewRequestDTO request) {
+        // 1. Validate ticket exists
+        try {
+            ticketClient.getTicketByCode(request.getTicketCode());
+        } catch (Exception e) {
+            throw new RuntimeException("Ticket not found with code: " + request.getTicketCode());
+        }
+
+        // 2. (Optional) Validate train exists
+        try {
+            trainClient.getTrainById(request.getTrainId());
+        } catch (Exception e) {
+            throw new RuntimeException("Train not found with ID: " + request.getTrainId());
+        }
+
+        ReviewModel model = mapper.toEntity(request);
         return mapper.toResponse(repository.save(model));
     }
 
@@ -84,6 +106,7 @@ public class ReviewService {
         repository.deleteById(id);
     }
 
+    // --- Fallbacks ---
     private ReviewResponseDTO handleGetReviewFallback(Long id, Throwable t) {
         return serviceFallback.getReviewFallback(id, t);
     }
@@ -102,5 +125,9 @@ public class ReviewService {
 
     private List<ReviewResponseDTO> handleGetAllReviewsFallback(Throwable t) {
         return serviceFallback.getAllReviewsFallback(t);
+    }
+
+    private ReviewResponseDTO handleCreateReviewFallback(ReviewRequestDTO request, Throwable t) {
+        return serviceFallback.getReviewFallback(-1L, t);
     }
 }

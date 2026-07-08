@@ -4,6 +4,11 @@ import com.transit.reviews.dto.request.ReviewRequestDTO;
 import com.transit.reviews.dto.response.ReviewResponseDTO;
 import com.transit.reviews.service.ReviewService;
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import org.springframework.hateoas.CollectionModel;
@@ -26,7 +31,11 @@ public class ReviewController {
         this.reviewService = reviewService;
     }
 
-    @Operation(summary = "Grabs every review record there is.", description = "Returns all stored reviews in the db.")
+    @Operation(summary = "Get all reviews", description = "Returns all stored reviews in the database.")
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "Successfully retrieved all reviews"),
+        @ApiResponse(responseCode = "404", description = "No reviews found")
+    })
     @GetMapping
     public ResponseEntity<CollectionModel<ReviewResponseDTO>> getAllReviews() {
         List<ReviewResponseDTO> reviews = reviewService.getAllReviews();
@@ -34,68 +43,92 @@ public class ReviewController {
 
         CollectionModel<ReviewResponseDTO> collectionModel = CollectionModel.of(reviews);
         collectionModel.add(linkTo(methodOn(ReviewController.class).getAllReviews()).withSelfRel());
-
         return ResponseEntity.ok(collectionModel);
     }
 
-    @Operation(summary = "Fetches a review by its ID.", description = "Retrieves a specific review based on its unique identifier.")
+    @Operation(summary = "Get review by ID", description = "Retrieves a specific review based on its unique identifier.")
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "Successfully retrieved review", content = @Content(schema = @Schema(implementation = ReviewResponseDTO.class))),
+        @ApiResponse(responseCode = "404", description = "Review not found")
+    })
     @GetMapping("/{id}")
-    public ResponseEntity<ReviewResponseDTO> getReviewById(@PathVariable Long id) {
+    public ResponseEntity<ReviewResponseDTO> getReviewById(@Parameter(description = "Review ID", example = "1") @PathVariable Long id) {
         ReviewResponseDTO review = reviewService.getReviewById(id);
         addLinks(review);
         return ResponseEntity.ok(review);
     }
 
-    @Operation(summary = "Fetches a review by the client ID.", description = "Retrieves reviews based on the associated client's unique identifier.")
+    @Operation(summary = "Get reviews by client ID", description = "Retrieves reviews based on the associated client's unique identifier.")
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "Successfully retrieved reviews"),
+        @ApiResponse(responseCode = "404", description = "No reviews found for this client")
+    })
     @GetMapping("/client/{clientId}")
-    public ResponseEntity<CollectionModel<ReviewResponseDTO>> getReviewsByClientId(@PathVariable Long clientId) {
+    public ResponseEntity<CollectionModel<ReviewResponseDTO>> getReviewsByClientId(
+            @Parameter(description = "Client ID", example = "1") @PathVariable Long clientId) {
         List<ReviewResponseDTO> reviews = reviewService.getReviewsByClientId(clientId);
         reviews.forEach(this::addLinks);
 
         CollectionModel<ReviewResponseDTO> collectionModel = CollectionModel.of(reviews);
         collectionModel.add(linkTo(methodOn(ReviewController.class).getReviewsByClientId(clientId)).withSelfRel());
         collectionModel.add(linkTo(methodOn(ReviewController.class).getAllReviews()).withRel("all-reviews"));
-
         return ResponseEntity.ok(collectionModel);
     }
 
-    @Operation(summary = "Fetches a review by the specific train ID.", description = "Retrieves reviews based on the associated train's unique identifier.")
+    @Operation(summary = "Get reviews by train ID", description = "Retrieves reviews based on the associated train's unique identifier.")
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "Successfully retrieved reviews"),
+        @ApiResponse(responseCode = "404", description = "No reviews found for this train")
+    })
     @GetMapping("/train/{trainId}")
-    public ResponseEntity<CollectionModel<ReviewResponseDTO>> getReviewsByTrainId(@PathVariable Long trainId) {
+    public ResponseEntity<CollectionModel<ReviewResponseDTO>> getReviewsByTrainId(
+            @Parameter(description = "Train ID", example = "1") @PathVariable Long trainId) {
         List<ReviewResponseDTO> reviews = reviewService.getReviewsByTrainId(trainId);
         reviews.forEach(this::addLinks);
 
         CollectionModel<ReviewResponseDTO> collectionModel = CollectionModel.of(reviews);
         collectionModel.add(linkTo(methodOn(ReviewController.class).getReviewsByTrainId(trainId)).withSelfRel());
         collectionModel.add(linkTo(methodOn(ReviewController.class).getAllReviews()).withRel("all-reviews"));
-
         return ResponseEntity.ok(collectionModel);
     }
 
-    @Operation(summary = "Fetches every review with a provided rating.", description = "Retrieves a list of reviews that match the provided rating value (1-5).")
+    @Operation(summary = "Get reviews by rating", description = "Retrieves a list of reviews that match the provided rating value (1-5).")
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "Successfully retrieved reviews"),
+        @ApiResponse(responseCode = "404", description = "No reviews found with this rating")
+    })
     @GetMapping("/rating/{rating}")
-    public ResponseEntity<CollectionModel<ReviewResponseDTO>> getReviewsByRating(@PathVariable Integer rating) {
+    public ResponseEntity<CollectionModel<ReviewResponseDTO>> getReviewsByRating(
+            @Parameter(description = "Rating value (1-5)", example = "5") @PathVariable Integer rating) {
         List<ReviewResponseDTO> reviews = reviewService.getReviewsByRating(rating);
         reviews.forEach(this::addLinks);
 
         CollectionModel<ReviewResponseDTO> collectionModel = CollectionModel.of(reviews);
         collectionModel.add(linkTo(methodOn(ReviewController.class).getReviewsByRating(rating)).withSelfRel());
         collectionModel.add(linkTo(methodOn(ReviewController.class).getAllReviews()).withRel("all-reviews"));
-
         return ResponseEntity.ok(collectionModel);
     }
 
-    @Operation(summary = "Creates a new review entry.", description = "Creates a new review record in the database utilizing data protection and validation (@Min, @Max, etc).")
+    @Operation(summary = "Create a new review", description = "Creates a new review record in the database.")
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "Review created successfully", content = @Content(schema = @Schema(implementation = ReviewResponseDTO.class))),
+        @ApiResponse(responseCode = "400", description = "Invalid input"),
+        @ApiResponse(responseCode = "404", description = "Referenced ticket or train not found")
+    })
     @PostMapping
-    public ResponseEntity<ReviewResponseDTO> saveReview(@Valid @RequestBody ReviewRequestDTO requestDTO) {
+    public ResponseEntity<ReviewResponseDTO> createReview(@Valid @RequestBody ReviewRequestDTO requestDTO) {
         ReviewResponseDTO savedReview = reviewService.createReview(requestDTO);
         addLinks(savedReview);
         return ResponseEntity.ok(savedReview);
     }
 
-    @Operation(summary = "Deletes an entry.", description = "Deletes a review record from the database based on the provided ID.")
+    @Operation(summary = "Delete a review", description = "Deletes a review record from the database based on the provided ID.")
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "204", description = "Review deleted successfully"),
+        @ApiResponse(responseCode = "404", description = "Review not found")
+    })
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteReview(@PathVariable Long id) {
+    public ResponseEntity<Void> deleteReview(@Parameter(description = "Review ID", example = "1") @PathVariable Long id) {
         reviewService.deleteReview(id);
         return ResponseEntity.noContent().build();
     }

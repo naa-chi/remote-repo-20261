@@ -21,6 +21,9 @@ public class ReviewRequestDTO {
     @NotNull(message = "Train ID cannot be null")
     private Long trainId;
 
+    @NotBlank(message = "Ticket code cannot be blank")
+    private String ticketCode;
+
     @NotNull(message = "Rating cannot be null")
     @Min(value = 1, message = "Rating must be at least 1")
     @Max(value = 5, message = "Rating cannot exceed 5")

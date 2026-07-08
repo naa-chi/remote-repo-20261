@@ -1,16 +1,23 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+
 import json
 import requests
 import sys
 import time
 import argparse
+import os
 from datetime import datetime
 from typing import Dict, List, Tuple, Optional
 
-DEFAULT_CONFIG_FILE = "services_config.json"
-GATEWAY_LOG_FILE = "Api-Gateway-Logging.txt"
-MICROSERVICE_LOG_FILE = "Microservice-Endpoint-Logging.txt"
+def get_script_dir() -> str:
+    """Return the directory where this script is located."""
+    return os.path.dirname(os.path.abspath(__file__))
+
+def get_project_root() -> str:
+    """Return the project root (parent of the directory containing this script)."""
+    script_dir = get_script_dir()
+    return os.path.abspath(os.path.join(script_dir, ".."))
 
 def timestamp() -> str:
     return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -40,8 +47,10 @@ def build_log_entry(level: str, url: str, status: Optional[int], ok: bool, error
         zh = f"[{timestamp()}] [失败] {url} -> {status_str} 错误: {error or '未知'}"
     return {"en": en, "zh": zh}
 
-def write_logs(filename: str, header: str, en_lines: List[str], zh_lines: List[str]):
-    with open(filename, "a", encoding="utf-8") as f:
+def write_logs(filename: str, header: str, en_lines: List[str], zh_lines: List[str], log_dir: str):
+    os.makedirs(log_dir, exist_ok=True)
+    filepath = os.path.join(log_dir, filename)
+    with open(filepath, "a", encoding="utf-8") as f:
         f.write(header + "\n")
         for line in en_lines:
             f.write("[EN] " + line + "\n")
@@ -50,17 +59,32 @@ def write_logs(filename: str, header: str, en_lines: List[str], zh_lines: List[s
         f.write("\n")
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("-c", "--config", default=DEFAULT_CONFIG_FILE)
+    parser = argparse.ArgumentParser(description="Health check for microservices.")
+    parser.add_argument("-c", "--config", help="Path to services_config.json (default: script directory -> project root)")
     parser.add_argument("-g", "--gateway", help="Override gateway URL")
     parser.add_argument("-t", "--timeout", type=int, default=3)
+    parser.add_argument("--logs-dir", help="Directory for log files (default: zPythonLogs in project root)")
     args = parser.parse_args()
 
+    project_root = get_project_root()
+    script_dir = get_script_dir()
+    logs_dir = args.logs_dir or os.path.join(project_root, "zPythonLogs")
+
+    # Determine config file location
+    if args.config:
+        config_path = args.config
+    else:
+        # First try in the script directory (zDevtools)
+        config_path = os.path.join(script_dir, "services_config.json")
+        if not os.path.exists(config_path):
+            # Fallback to project root
+            config_path = os.path.join(project_root, "services_config.json")
+
     try:
-        with open(args.config, "r", encoding="utf-8") as f:
+        with open(config_path, "r", encoding="utf-8") as f:
             config = json.load(f)
     except FileNotFoundError:
-        print(f"❌ Config file '{args.config}' not found.")
+        print(f"❌ Config file not found: {config_path}")
         sys.exit(1)
     except json.JSONDecodeError as e:
         print(f"❌ Invalid JSON: {e}")
@@ -74,6 +98,8 @@ def main():
 
     print(f"🚀 Starting health check at {timestamp()}")
     print(f"Gateway: {gateway_url}")
+    print(f"Logs directory: {logs_dir}")
+    print(f"Config file: {config_path}")
 
     all_gateway_en, all_gateway_zh = [], []
     all_micro_en, all_micro_zh = [], []
@@ -94,7 +120,6 @@ def main():
         for ep in endpoints:
             g_path = ep.get("gateway_path")
             d_path = ep.get("direct_path")
-            # If only 'path' is provided, use it for both
             if g_path is None and d_path is None:
                 common = ep.get("path")
                 if common is None:
@@ -128,12 +153,12 @@ def main():
             time.sleep(0.2)
 
     header = f"=== Test run at {timestamp()} ==="
-    write_logs(GATEWAY_LOG_FILE, header, all_gateway_en, all_gateway_zh)
-    write_logs(MICROSERVICE_LOG_FILE, header, all_micro_en, all_micro_zh)
+    write_logs("Api-Gateway-Logging.txt", header, all_gateway_en, all_gateway_zh, logs_dir)
+    write_logs("Microservice-Endpoint-Logging.txt", header, all_micro_en, all_micro_zh, logs_dir)
 
     print("\n✅ Testing complete. Logs written to:")
-    print(f"  - {GATEWAY_LOG_FILE}")
-    print(f"  - {MICROSERVICE_LOG_FILE}")
+    print(f"  - {os.path.join(logs_dir, 'Api-Gateway-Logging.txt')}")
+    print(f"  - {os.path.join(logs_dir, 'Microservice-Endpoint-Logging.txt')}")
 
 if __name__ == "__main__":
     main()

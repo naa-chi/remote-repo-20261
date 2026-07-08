@@ -1,0 +1,193 @@
+{
+  "gateway_url": "http://localhost:8080",
+  "services": [
+    {
+      "name": "Train Service",
+      "base_url": "http://localhost:7770",
+      "route_prefix": "/trains-service",
+      "endpoints": [
+        {
+          "gateway_path": "/all",
+          "direct_path": "/api/trains/all",
+          "method": "GET"
+        },
+        {
+          "gateway_path": "/1",
+          "direct_path": "/api/trains/1",
+          "method": "GET"
+        },
+        {
+          "gateway_path": "/code/TRN01",
+          "direct_path": "/api/trains/code/TRN01",
+          "method": "GET"
+        },
+        {
+          "gateway_path": "/manufacturer/Siemens",
+          "direct_path": "/api/trains/manufacturer/Siemens",
+          "method": "GET"
+        },
+        {
+          "gateway_path": "/engine/1",
+          "direct_path": "/api/trains/engine/1",
+          "method": "GET"
+        },
+        {
+          "gateway_path": "/create",
+          "direct_path": "/api/trains/create",
+          "method": "POST"
+        },
+        {
+          "gateway_path": "/1",
+          "direct_path": "/api/trains/1",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "name": "Engine Service",
+      "base_url": "http://localhost:7771",
+      "route_prefix": "/engines-service",
+      "endpoints": [
+        {
+          "gateway_path": "/1",
+          "direct_path": "/api/engines/1",
+          "method": "GET"
+        },
+        {
+          "gateway_path": "/manufacturer/M123",
+          "direct_path": "/api/engines/manufacturer/M123",
+          "method": "GET"
+        },
+        {
+          "gateway_path": "/engineCode/VLFDNK",
+          "direct_path": "/api/engines/engineCode/VLFDNK",
+          "method": "GET"
+        },
+        {
+          "gateway_path": "/horsepower/109.26",
+          "direct_path": "/api/engines/horsepower/109.26",
+          "method": "GET"
+        },
+        {
+          "gateway_path": "/price/7976.25",
+          "direct_path": "/api/engines/price/7976.25",
+          "method": "GET"
+        },
+        {
+          "gateway_path": "/weight/409.36",
+          "direct_path": "/api/engines/weight/409.36",
+          "method": "GET"
+        },
+        {
+          "gateway_path": "/all",
+          "direct_path": "/api/engines/all",
+          "method": "GET"
+        },
+        {
+          "gateway_path": "/create",
+          "direct_path": "/api/engines/create",
+          "method": "POST"
+        },
+        {
+          "gateway_path": "/1",
+          "direct_path": "/api/engines/1",
+          "method": "PUT"
+        },
+        {
+          "gateway_path": "/1",
+          "direct_path": "/api/engines/1",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "name": "Ticket Service",
+      "base_url": "http://localhost:7772",
+      "route_prefix": "/tickets-service",
+      "endpoints": [
+        {
+          "gateway_path": "",
+          "direct_path": "/api/tickets",
+          "method": "GET"
+        },
+        {
+          "gateway_path": "/1",
+          "direct_path": "/api/tickets/1",
+          "method": "GET"
+        },
+        {
+          "gateway_path": "/code/TICKET001",
+          "direct_path": "/api/tickets/code/TICKET001",
+          "method": "GET"
+        },
+        {
+          "gateway_path": "/origin/LON",
+          "direct_path": "/api/tickets/origin/LON",
+          "method": "GET"
+        },
+        {
+          "gateway_path": "/destination/PAR",
+          "direct_path": "/api/tickets/destination/PAR",
+          "method": "GET"
+        },
+        {
+          "gateway_path": "",
+          "direct_path": "/api/tickets",
+          "method": "POST"
+        },
+        {
+          "gateway_path": "/1",
+          "direct_path": "/api/tickets/1",
+          "method": "PUT"
+        },
+        {
+          "gateway_path": "/1",
+          "direct_path": "/api/tickets/1",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "name": "Review Service",
+      "base_url": "http://localhost:7773",
+      "route_prefix": "/reviews-service",
+      "endpoints": [
+        {
+          "gateway_path": "",
+          "direct_path": "/api/reviews",
+          "method": "GET"
+        },
+        {
+          "gateway_path": "/1",
+          "direct_path": "/api/reviews/1",
+          "method": "GET"
+        },
+        {
+          "gateway_path": "/client/1",
+          "direct_path": "/api/reviews/client/1",
+          "method": "GET"
+        },
+        {
+          "gateway_path": "/train/1",
+          "direct_path": "/api/reviews/train/1",
+          "method": "GET"
+        },
+        {
+          "gateway_path": "/rating/5",
+          "direct_path": "/api/reviews/rating/5",
+          "method": "GET"
+        },
+        {
+          "gateway_path": "",
+          "direct_path": "/api/reviews",
+          "method": "POST"
+        },
+        {
+          "gateway_path": "/1",
+          "direct_path": "/api/reviews/1",
+          "method": "DELETE"
+        }
+      ]
+    }
+  ]
+}
