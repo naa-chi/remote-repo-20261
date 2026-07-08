@@ -12,12 +12,13 @@ import java.sql.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = false)
-public class ReviewResponseDTO extends RepresentationModel<ReviewResponseDTO> {
+public class TicketResponseDTO extends RepresentationModel<TicketResponseDTO> {
     private Long id;
+    private String code;
+    private String cityCodeOrigin;
+    private String cityCodeDestination;
+    private Double price;
     private Long clientId;
     private Long trainId;
-    private String ticketCode;
-    private Integer rating;
-    private String comment;
-    private Date reviewDate;
+    private Date departureDate;
 }

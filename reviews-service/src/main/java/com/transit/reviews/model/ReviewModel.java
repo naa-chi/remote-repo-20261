@@ -17,6 +17,7 @@ import java.sql.Date;
 @Entity
 @Table(name = "reviews", schema = "transport_db_reviewsservice")
 public class ReviewModel {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -28,6 +29,10 @@ public class ReviewModel {
     @NotNull(message = "Train ID cannot be null")
     @Column(name = "train_id", nullable = false)
     private Long trainId;
+
+    @NotBlank(message = "Ticket code cannot be blank")
+    @Column(name = "ticket_code", nullable = false)
+    private String ticketCode;   // <-- references ticket.code
 
     @NotNull(message = "Rating cannot be null")
     @Min(value = 1, message = "Rating must be at least 1")

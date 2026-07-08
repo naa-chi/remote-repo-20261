@@ -9,14 +9,13 @@ import org.springframework.stereotype.Component;
 public class ReviewMapper {
 
     public ReviewResponseDTO toResponse(ReviewModel model) {
-        if (model == null) {
-            return null;
-        }
+        if (model == null) return null;
 
         ReviewResponseDTO response = new ReviewResponseDTO();
         response.setId(model.getId());
         response.setClientId(model.getClientId());
         response.setTrainId(model.getTrainId());
+        response.setTicketCode(model.getTicketCode());
         response.setRating(model.getRating());
         response.setComment(model.getComment());
         response.setReviewDate(model.getReviewDate());
@@ -25,13 +24,12 @@ public class ReviewMapper {
     }
 
     public ReviewModel toEntity(ReviewRequestDTO request) {
-        if (request == null) {
-            return null;
-        }
+        if (request == null) return null;
 
         ReviewModel model = new ReviewModel();
         model.setClientId(request.getClientId());
         model.setTrainId(request.getTrainId());
+        model.setTicketCode(request.getTicketCode());
         model.setRating(request.getRating());
         model.setComment(request.getComment());
         model.setReviewDate(request.getReviewDate());

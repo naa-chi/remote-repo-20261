@@ -1,10 +1,14 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 import os
 import json
+import sys
 
-# Define the root directory of your Spring Boot project
-# Change "." to the specific path if running the script from outside the project root
-PROJECT_ROOT = "."
-OUTPUT_FILE = "project_context.json"
+def get_project_root() -> str:
+    """Return the project root (parent of the directory containing this script)."""
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    return os.path.abspath(os.path.join(script_dir, ".."))
 
 # File extensions and specific filenames to include as relevant context
 TARGET_EXTENSIONS = {".java", ".properties", ".yml", ".yaml", ".sql", ".xml", ".gradle"}
@@ -25,9 +29,8 @@ def generate_project_context(root_dir):
 
     for dirpath, dirnames, filenames in os.walk(root_dir):
         # Exclude common build and IDE directories to keep context clean
-        dirnames[:] = [d for d in dirnames if d not in {".git", ".idea", "target", "build", ".gradle", "bin"}]
+        dirnames[:] = [d for d in dirnames if d not in {".git", ".idea", "target", "build", ".gradle", "bin", "zPythonLogs"}]
         
-        # Record directory structure relative to root
         rel_dir = os.path.relpath(dirpath, root_dir)
         if rel_dir != ".":
             project_context["structure"].append(rel_dir)
@@ -40,7 +43,6 @@ def generate_project_context(root_dir):
                 try:
                     with open(full_path, 'r', encoding='utf-8', errors='replace') as f:
                         content = f.read()
-                    
                     project_context["files"][rel_path] = {
                         "filename": filename,
                         "path": rel_path,
@@ -56,10 +58,12 @@ def generate_project_context(root_dir):
     return project_context
 
 if __name__ == "__main__":
-    print(f"Mapping project from root: {os.path.abspath(PROJECT_ROOT)}...")
-    context_data = generate_project_context(PROJECT_ROOT)
+    project_root = get_project_root()
+    output_file = os.path.join(project_root, "project_context.json")
+    print(f"📂 Scanning project root: {project_root}")
+    context_data = generate_project_context(project_root)
     
-    with open(OUTPUT_FILE, 'w', encoding='utf-8') as json_file:
+    with open(output_file, 'w', encoding='utf-8') as json_file:
         json.dump(context_data, json_file, indent=4, ensure_ascii=False)
         
-    print(f"Project context successfully saved to {OUTPUT_FILE}")
+    print(f"✅ Project context saved to {output_file}")

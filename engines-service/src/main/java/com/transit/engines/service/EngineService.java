@@ -26,65 +26,13 @@ public class EngineService {
         this.serviceFallback = serviceFallback;
     }
 
+    // --- Single item ---
+
     @CircuitBreaker(name = "engineService", fallbackMethod = "handleGetEngineFallback")
     public EngineResponseDTO getEngineById(Long id) {
         return repository.findById(id)
                 .map(mapper::toResponse)
                 .orElseThrow(() -> new RuntimeException("Engine not found with id: " + id));
-    }
-
-    @CircuitBreaker(name = "engineService", fallbackMethod = "handleGetEnginesFallbackList")
-    public List<EngineResponseDTO> getEnginesByManufacturerId(String manufacturerId) {
-        List<EngineModel> engineModels = repository.findByManufacturerId(manufacturerId);
-        if (engineModels.isEmpty()) {
-            throw new RuntimeException("No engines found with manufacturer: " + manufacturerId);
-        }
-        return engineModels.stream().map(mapper::toResponse).collect(Collectors.toList());
-    }
-
-    @CircuitBreaker(name = "engineService", fallbackMethod = "handleGetEnginesFallbackList")
-    public List<EngineResponseDTO> getEnginesByEngineCode(String engineCode) {
-        List<EngineModel> engineModels = repository.findByEngineCode(engineCode);
-        if (engineModels.isEmpty()) {
-            throw new RuntimeException("No engines found with engine code: " + engineCode);
-        }
-        return engineModels.stream().map(mapper::toResponse).collect(Collectors.toList());
-    }
-
-    @CircuitBreaker(name = "engineService", fallbackMethod = "handleGetEnginesFallbackList")
-    public List<EngineResponseDTO> getEngineHorsepower(float engineHorsepower) {
-        List<EngineModel> engineModels = repository.findByEngineHorsepower(engineHorsepower);
-        if (engineModels.isEmpty()) {
-            throw new RuntimeException("No engines found with engine hp: " + engineHorsepower);
-        }
-        return engineModels.stream().map(mapper::toResponse).collect(Collectors.toList());
-    }
-
-    @CircuitBreaker(name = "engineService", fallbackMethod = "handleGetEnginesFallbackList")
-    public List<EngineResponseDTO> getEnginePrice(float enginePrice) {
-        List<EngineModel> engineModels = repository.findByEnginePrice(enginePrice);
-        if (engineModels.isEmpty()) {
-            throw new RuntimeException("No engines found with engine price: " + enginePrice);
-        }
-        return engineModels.stream().map(mapper::toResponse).collect(Collectors.toList());
-    }
-
-    @CircuitBreaker(name = "engineService", fallbackMethod = "handleGetEnginesFallbackList")
-    public List<EngineResponseDTO> getEngineWeight(float engineWeight) {
-        List<EngineModel> engineModels = repository.findByEngineWeight(engineWeight);
-        if (engineModels.isEmpty()) {
-            throw new RuntimeException("No engines found with engine weight: " + engineWeight);
-        }
-        return engineModels.stream().map(mapper::toResponse).collect(Collectors.toList());
-    }
-
-    @CircuitBreaker(name = "engineService", fallbackMethod = "handleGetEnginesFallbackList")
-    public List<EngineResponseDTO> getAllEngines() {
-        List<EngineModel> engineModels = repository.findAll();
-        if (engineModels.isEmpty()) {
-            throw new RuntimeException("No engines found");
-        }
-        return engineModels.stream().map(mapper::toResponse).collect(Collectors.toList());
     }
 
     @CircuitBreaker(name = "engineService", fallbackMethod = "handleGetEngineFallback")
@@ -110,11 +58,77 @@ public class EngineService {
         repository.deleteById(id);
     }
 
-    // Structural signatures for framework lookup compatibility
-    public EngineResponseDTO handleGetEngineFallback(Long id, Throwable t) { return serviceFallback.getEngineFallback(id, t); }
-    public EngineResponseDTO handleGetEngineFallback(EngineRequestDTO dto, Throwable t) { return serviceFallback.getEngineFallback(-1L, t); }
-    public EngineResponseDTO handleGetEngineFallback(Long id, EngineRequestDTO dto, Throwable t) { return serviceFallback.getEngineFallback(id, t); }
-    public List<EngineResponseDTO> handleGetEnginesFallbackList(Throwable t) { return serviceFallback.getEnginesFallbackList(t); }
-    public List<EngineResponseDTO> handleGetEnginesFallbackList(String param, Throwable t) { return serviceFallback.getEnginesFallbackList(t); }
-    public List<EngineResponseDTO> handleGetEnginesFallbackList(float param, Throwable t) { return serviceFallback.getEnginesFallbackList(t); }
+    // --- List methods (return empty list instead of throwing) ---
+
+    @CircuitBreaker(name = "engineService", fallbackMethod = "handleGetEnginesFallbackString")
+    public List<EngineResponseDTO> getEnginesByManufacturerId(String manufacturerId) {
+        return repository.findByManufacturerId(manufacturerId).stream()
+                .map(mapper::toResponse)
+                .collect(Collectors.toList());
+    }
+
+    @CircuitBreaker(name = "engineService", fallbackMethod = "handleGetEnginesFallbackString")
+    public List<EngineResponseDTO> getEnginesByEngineCode(String engineCode) {
+        return repository.findByEngineCode(engineCode).stream()
+                .map(mapper::toResponse)
+                .collect(Collectors.toList());
+    }
+
+    @CircuitBreaker(name = "engineService", fallbackMethod = "handleGetEnginesFallbackFloat")
+    public List<EngineResponseDTO> getEngineHorsepower(float engineHorsepower) {
+        return repository.findByEngineHorsepower(engineHorsepower).stream()
+                .map(mapper::toResponse)
+                .collect(Collectors.toList());
+    }
+
+    @CircuitBreaker(name = "engineService", fallbackMethod = "handleGetEnginesFallbackFloat")
+    public List<EngineResponseDTO> getEnginePrice(float enginePrice) {
+        return repository.findByEnginePrice(enginePrice).stream()
+                .map(mapper::toResponse)
+                .collect(Collectors.toList());
+    }
+
+    @CircuitBreaker(name = "engineService", fallbackMethod = "handleGetEnginesFallbackFloat")
+    public List<EngineResponseDTO> getEngineWeight(float engineWeight) {
+        return repository.findByEngineWeight(engineWeight).stream()
+                .map(mapper::toResponse)
+                .collect(Collectors.toList());
+    }
+
+    @CircuitBreaker(name = "engineService", fallbackMethod = "handleGetEnginesFallbackNoParam")
+    public List<EngineResponseDTO> getAllEngines() {
+        return repository.findAll().stream()
+                .map(mapper::toResponse)
+                .collect(Collectors.toList());
+    }
+
+    // --- Fallback methods (unique names) ---
+
+    // For methods with Long + Throwable
+    public EngineResponseDTO handleGetEngineFallback(Long id, Throwable t) {
+        return serviceFallback.getEngineFallback(id, t);
+    }
+
+    public EngineResponseDTO handleGetEngineFallback(EngineRequestDTO dto, Throwable t) {
+        return serviceFallback.getEngineFallback(-1L, t);
+    }
+
+    public EngineResponseDTO handleGetEngineFallback(Long id, EngineRequestDTO dto, Throwable t) {
+        return serviceFallback.getEngineFallback(id, t);
+    }
+
+    // For methods with String parameter
+    public List<EngineResponseDTO> handleGetEnginesFallbackString(String param, Throwable t) {
+        return serviceFallback.getEnginesFallbackList(t);
+    }
+
+    // For methods with float parameter
+    public List<EngineResponseDTO> handleGetEnginesFallbackFloat(float param, Throwable t) {
+        return serviceFallback.getEnginesFallbackList(t);
+    }
+
+    // For methods with no parameters
+    public List<EngineResponseDTO> handleGetEnginesFallbackNoParam(Throwable t) {
+        return serviceFallback.getEnginesFallbackList(t);
+    }
 }

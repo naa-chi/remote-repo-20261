@@ -27,31 +27,40 @@ public class TicketService {
 
     @CircuitBreaker(name = "ticketService", fallbackMethod = "handleGetTicketsFallbackList")
     public List<TicketResponseDTO> getAllTickets() {
-        return repository.findAll().stream().map(mapper::toResponse).collect(Collectors.toList());
+        // Return empty list if none
+        return repository.findAll().stream()
+                .map(mapper::toResponse)
+                .collect(Collectors.toList());
     }
 
     @CircuitBreaker(name = "ticketService", fallbackMethod = "handleGetTicketFallback")
     public TicketResponseDTO getTicketById(Long id) {
-        return repository.findById(id).map(mapper::toResponse)
+        return repository.findById(id)
+                .map(mapper::toResponse)
                 .orElseThrow(() -> new RuntimeException("Ticket not found: " + id));
     }
 
     @CircuitBreaker(name = "ticketService", fallbackMethod = "handleGetTicketByCodeFallback")
     public TicketResponseDTO getTicketByCode(String code) {
-        return repository.findByCode(code).map(mapper::toResponse)
+        return repository.findByCode(code)
+                .map(mapper::toResponse)
                 .orElseThrow(() -> new RuntimeException("Ticket not found with code: " + code));
     }
 
     @CircuitBreaker(name = "ticketService", fallbackMethod = "handleGetTicketsFallbackList")
     public List<TicketResponseDTO> getTicketsByCityCodeOrigin(String cityCodeOrigin) {
+        // Return empty list
         return repository.findByCityCodeOrigin(cityCodeOrigin).stream()
-                .map(mapper::toResponse).collect(Collectors.toList());
+                .map(mapper::toResponse)
+                .collect(Collectors.toList());
     }
 
     @CircuitBreaker(name = "ticketService", fallbackMethod = "handleGetTicketsFallbackList")
     public List<TicketResponseDTO> getTicketsByCityCodeDestination(String cityCodeDestination) {
+        // Return empty list
         return repository.findByCityCodeDestination(cityCodeDestination).stream()
-                .map(mapper::toResponse).collect(Collectors.toList());
+                .map(mapper::toResponse)
+                .collect(Collectors.toList());
     }
 
     @CircuitBreaker(name = "ticketService", fallbackMethod = "handleGetTicketFallback")
@@ -81,10 +90,27 @@ public class TicketService {
     }
 
     // Fallbacks
-    private TicketResponseDTO handleGetTicketFallback(Long id, Throwable t) { return fallback.getTicketFallback(id, t); }
-    private TicketResponseDTO handleGetTicketByCodeFallback(String code, Throwable t) { return fallback.getTicketByCodeFallback(code, t); }
-    private List<TicketResponseDTO> handleGetTicketsFallbackList(Throwable t) { return fallback.getTicketsFallbackList(t); }
-    private List<TicketResponseDTO> handleGetTicketsFallbackList(String param, Throwable t) { return fallback.getTicketsFallbackList(t); }
-    private TicketResponseDTO handleGetTicketFallback(TicketRequestDTO request, Throwable t) { return fallback.getTicketFallback(-1L, t); }
-    private TicketResponseDTO handleGetTicketFallback(Long id, TicketRequestDTO request, Throwable t) { return fallback.getTicketFallback(id, t); }
+    private TicketResponseDTO handleGetTicketFallback(Long id, Throwable t) {
+        return fallback.getTicketFallback(id, t);
+    }
+
+    private TicketResponseDTO handleGetTicketByCodeFallback(String code, Throwable t) {
+        return fallback.getTicketByCodeFallback(code, t);
+    }
+
+    private List<TicketResponseDTO> handleGetTicketsFallbackList(Throwable t) {
+        return fallback.getTicketsFallbackList(t);
+    }
+
+    private List<TicketResponseDTO> handleGetTicketsFallbackList(String param, Throwable t) {
+        return fallback.getTicketsFallbackList(t);
+    }
+
+    private TicketResponseDTO handleGetTicketFallback(TicketRequestDTO request, Throwable t) {
+        return fallback.getTicketFallback(-1L, t);
+    }
+
+    private TicketResponseDTO handleGetTicketFallback(Long id, TicketRequestDTO request, Throwable t) {
+        return fallback.getTicketFallback(id, t);
+    }
 }
