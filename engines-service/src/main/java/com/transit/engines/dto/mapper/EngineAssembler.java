@@ -6,7 +6,7 @@ import com.transit.engines.model.EngineModel;
 import org.springframework.stereotype.Component;
 
 @Component
-public class EngineMapper {
+public class EngineAssembler {
 
     public EngineResponseDTO toResponse(EngineModel model) {
         if (model == null) return null;
