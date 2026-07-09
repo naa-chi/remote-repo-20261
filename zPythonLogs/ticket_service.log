@@ -35,52 +35,52 @@
 
  :: Spring Boot ::                (v4.1.0)
 
-23:28:11 INFO  Starting TicketsApplication using Java 21.0.10 with PID 10776 (c:\Users\XznRh\Downloads\exam-release\exam-release\tickets-service\target\classes started by XznRh in c:\Users\XznRh\Downloads\exam-release\exam-release\tickets-service)
-23:28:11 INFO  No active profile set, falling back to 1 default profile: "default"
-23:28:11 DEBUG Loading source class com.transit.tickets.TicketsApplication
-23:28:11 DEBUG Matching URLs for reloading : [file:/c:/Users/XznRh/Downloads/exam-release/exam-release/tickets-service/target/classes/]
-23:28:11 DEBUG Included patterns for restart : []
-23:28:11 DEBUG Excluded patterns for restart : [/spring-boot-starter-[\w-]+/, /spring-boot/(bin|build|out)/, /spring-boot-starter/(bin|build|out)/, /spring-boot-devtools/(bin|build|out)/, /spring-boot-actuator/(bin|build|out)/, /spring-boot-autoconfigure/(bin|build|out)/]
-23:28:11 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-23:28:11 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-23:28:11 DEBUG Refreshing org.springframework.boot.web.server.servlet.context.AnnotationConfigServletWebServerApplicationContext@3eaebf3e
-23:28:13 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-23:28:13 DEBUG @EnableAutoConfiguration was declared on a class in the package 'com.transit.tickets'. Automatic @Repository and @Entity scanning is enabled.
-23:28:13 INFO  Finished Spring Data repository scanning in 203 ms. Found 1 JPA repository interface.
-23:28:14 INFO  BeanFactory id=3f645057-6ec7-357d-bbed-a0fc91d88964
-23:28:15 DEBUG Code archive: C:\Users\XznRh\.m2\repository\org\springframework\boot\spring-boot-web-server\4.1.0\spring-boot-web-server-4.1.0.jar
-23:28:15 DEBUG Code archive: C:\Users\XznRh\.m2\repository\org\springframework\boot\spring-boot-web-server\4.1.0\spring-boot-web-server-4.1.0.jar
-23:28:15 DEBUG None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
-23:28:15 INFO  Tomcat initialized with port 7772 (http)
-23:28:15 INFO  Starting service [Tomcat]
-23:28:15 INFO  Starting Servlet engine: [Apache Tomcat/11.0.22]
-23:28:15 DEBUG Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-23:28:15 INFO  Root WebApplicationContext: initialization completed in 3989 ms
-23:28:15 DEBUG Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
-23:28:15 DEBUG Mapping servlets: dispatcherServlet urls=[/]
-23:28:15 DEBUG Filter 'requestContextFilter' configured for use
-23:28:15 DEBUG Filter 'characterEncodingFilter' configured for use
-23:28:15 DEBUG Filter 'formContentFilter' configured for use
-23:28:15 INFO  HikariPool-1 - Starting...
-23:28:15 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4a646c70
-23:28:15 INFO  HikariPool-1 - Start completed.
-23:28:18 INFO  Reading from transport_db_ticketsservice.databasechangelog
-23:28:18 INFO  Database is up to date, no changesets to execute
-23:28:18 INFO  Reading from transport_db_ticketsservice.databasechangelog
-23:28:18 INFO  UPDATE SUMMARY
-23:28:18 INFO  Run:                          0
-23:28:18 INFO  Previously run:               1
-23:28:18 INFO  Filtered out:                 0
-23:28:18 INFO  -------------------------------
-23:28:18 INFO  Total change sets:            1
-23:28:18 INFO  Update summary generated
-23:28:18 INFO  Command execution complete
-23:28:18 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
-23:28:19 INFO  HHH000001: Hibernate ORM core version 7.4.1.Final
-23:28:19 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
-23:28:19 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
-23:28:19 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-23:28:19 INFO  HHH10001005: Database info:
+03:20:33 INFO  Starting TicketsApplication using Java 21.0.10 with PID 38344 (c:\Users\XznRh\Downloads\exam-release\exam-release\tickets-service\target\classes started by XznRh in c:\Users\XznRh\Downloads\exam-release\exam-release\tickets-service)
+03:20:33 INFO  No active profile set, falling back to 1 default profile: "default"
+03:20:33 DEBUG Loading source class com.transit.tickets.TicketsApplication
+03:20:33 DEBUG Matching URLs for reloading : [file:/c:/Users/XznRh/Downloads/exam-release/exam-release/tickets-service/target/classes/]
+03:20:33 DEBUG Included patterns for restart : []
+03:20:33 DEBUG Excluded patterns for restart : [/spring-boot-starter-[\w-]+/, /spring-boot/(bin|build|out)/, /spring-boot-starter/(bin|build|out)/, /spring-boot-devtools/(bin|build|out)/, /spring-boot-actuator/(bin|build|out)/, /spring-boot-autoconfigure/(bin|build|out)/]
+03:20:33 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+03:20:33 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+03:20:33 DEBUG Refreshing org.springframework.boot.web.server.servlet.context.AnnotationConfigServletWebServerApplicationContext@3eaebf3e
+03:20:36 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03:20:36 DEBUG @EnableAutoConfiguration was declared on a class in the package 'com.transit.tickets'. Automatic @Repository and @Entity scanning is enabled.
+03:20:37 INFO  Finished Spring Data repository scanning in 457 ms. Found 1 JPA repository interface.
+03:20:37 INFO  BeanFactory id=3f645057-6ec7-357d-bbed-a0fc91d88964
+03:20:39 DEBUG Code archive: C:\Users\XznRh\.m2\repository\org\springframework\boot\spring-boot-web-server\4.1.0\spring-boot-web-server-4.1.0.jar
+03:20:39 DEBUG Code archive: C:\Users\XznRh\.m2\repository\org\springframework\boot\spring-boot-web-server\4.1.0\spring-boot-web-server-4.1.0.jar
+03:20:39 DEBUG None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+03:20:39 INFO  Tomcat initialized with port 7772 (http)
+03:20:39 INFO  Starting service [Tomcat]
+03:20:39 INFO  Starting Servlet engine: [Apache Tomcat/11.0.22]
+03:20:40 DEBUG Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+03:20:40 INFO  Root WebApplicationContext: initialization completed in 6248 ms
+03:20:40 DEBUG Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+03:20:40 DEBUG Mapping servlets: dispatcherServlet urls=[/]
+03:20:40 DEBUG Filter 'requestContextFilter' configured for use
+03:20:40 DEBUG Filter 'characterEncodingFilter' configured for use
+03:20:40 DEBUG Filter 'formContentFilter' configured for use
+03:20:40 INFO  HikariPool-1 - Starting...
+03:20:40 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4a646c70
+03:20:40 INFO  HikariPool-1 - Start completed.
+03:20:43 INFO  Reading from transport_db_ticketsservice.databasechangelog
+03:20:43 INFO  Database is up to date, no changesets to execute
+03:20:43 INFO  Reading from transport_db_ticketsservice.databasechangelog
+03:20:43 INFO  UPDATE SUMMARY
+03:20:43 INFO  Run:                          0
+03:20:43 INFO  Previously run:               1
+03:20:43 INFO  Filtered out:                 0
+03:20:43 INFO  -------------------------------
+03:20:43 INFO  Total change sets:            1
+03:20:43 INFO  Update summary generated
+03:20:43 INFO  Command execution complete
+03:20:43 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
+03:20:44 INFO  HHH000001: Hibernate ORM core version 7.4.1.Final
+03:20:45 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+03:20:45 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+03:20:45 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+03:20:45 INFO  HHH10001005: Database info:
 	Database JDBC URL [jdbc:mysql://localhost:3306/transport_db_ticketsservice?createDatabaseIfNotExists=true]
 	Database driver: MySQL Connector/J
 	Database dialect: MySQLDialect
@@ -92,42 +92,42 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-23:28:20 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-23:28:20 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
-23:28:21 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
-23:28:21 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-23:28:22 DEBUG 14 mappings in 'requestMappingHandlerMapping'
-23:28:22 DEBUG Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
-23:28:22 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 2 RequestBodyAdvice, 1 ResponseBodyAdvice
-23:28:22 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-23:28:25 INFO  Cannot determine local hostname
-23:28:26 INFO  Cannot determine local hostname
-23:28:26 INFO  Eureka HTTP Client uses RestClient.
-23:28:26 WARN  Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-23:28:26 INFO  Setting initial instance status as: STARTING
-23:28:26 INFO  Initializing Eureka in region us-east-1
-23:28:26 INFO  Resolving eureka endpoints via configuration
-23:28:26 INFO  Disable delta property : false
-23:28:26 INFO  Single vip registry refresh property : null
-23:28:26 INFO  Force full registry fetch : false
-23:28:26 INFO  Application is null : false
-23:28:26 INFO  Registered Applications size is zero : true
-23:28:26 INFO  Application version is -1: true
-23:28:26 INFO  Getting all instance registry info from the eureka server
-23:28:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:28:26 INFO  The response status is 200
-23:28:26 INFO  Starting heartbeat executor: renew interval is: 30
-23:28:26 INFO  InstanceInfoReplicator onDemand update allowed rate per min is 4
-23:28:26 INFO  Discovery Client initialized at timestamp 1783567706746 with initial instances count: 0
-23:28:26 INFO  Registering application TICKETS-SERVICE with eureka with status UP
-23:28:26 INFO  Saw local status change event StatusChangeEvent [timestamp=1783567706761, current=UP, previous=STARTING]
-23:28:26 INFO  DiscoveryClient_TICKETS-SERVICE/localhost:tickets-service:7772: registering service...
-23:28:26 DEBUG Writing [InstanceInfo [instanceId = localhost:tickets-service:7772, appName = TICKETS-SERVICE, hostName = localhost, status = UP, ipAddr = 192.168.56.1, port = 7772, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@1eee597a] as "application/json" with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
-23:28:26 INFO  Tomcat started on port 7772 (http) with context path '/'
-23:28:26 INFO  Updating port to 7772
-23:28:26 INFO  DiscoveryClient_TICKETS-SERVICE/localhost:tickets-service:7772 - registration status: 204
-23:28:27 INFO  Cannot determine local hostname
-23:28:27 DEBUG 
+03:20:46 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+03:20:47 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+03:20:47 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+03:20:48 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03:20:49 DEBUG 14 mappings in 'requestMappingHandlerMapping'
+03:20:49 DEBUG Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+03:20:49 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 2 RequestBodyAdvice, 1 ResponseBodyAdvice
+03:20:49 DEBUG ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+03:20:52 INFO  Cannot determine local hostname
+03:20:53 INFO  Cannot determine local hostname
+03:20:53 INFO  Eureka HTTP Client uses RestClient.
+03:20:53 WARN  Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+03:20:53 INFO  Setting initial instance status as: STARTING
+03:20:53 INFO  Initializing Eureka in region us-east-1
+03:20:53 INFO  Resolving eureka endpoints via configuration
+03:20:53 INFO  Disable delta property : false
+03:20:53 INFO  Single vip registry refresh property : null
+03:20:53 INFO  Force full registry fetch : false
+03:20:53 INFO  Application is null : false
+03:20:53 INFO  Registered Applications size is zero : true
+03:20:53 INFO  Application version is -1: true
+03:20:53 INFO  Getting all instance registry info from the eureka server
+03:20:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:20:54 INFO  The response status is 200
+03:20:54 INFO  Starting heartbeat executor: renew interval is: 30
+03:20:54 INFO  InstanceInfoReplicator onDemand update allowed rate per min is 4
+03:20:54 INFO  Discovery Client initialized at timestamp 1783581654117 with initial instances count: 0
+03:20:54 INFO  Registering application TICKETS-SERVICE with eureka with status UP
+03:20:54 INFO  Saw local status change event StatusChangeEvent [timestamp=1783581654145, current=UP, previous=STARTING]
+03:20:54 INFO  DiscoveryClient_TICKETS-SERVICE/localhost:tickets-service:7772: registering service...
+03:20:54 DEBUG Writing [InstanceInfo [instanceId = localhost:tickets-service:7772, appName = TICKETS-SERVICE, hostName = localhost, status = UP, ipAddr = 192.168.56.1, port = 7772, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@1819db41] as "application/json" with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+03:20:54 INFO  Tomcat started on port 7772 (http) with context path '/'
+03:20:54 INFO  Updating port to 7772
+03:20:54 INFO  DiscoveryClient_TICKETS-SERVICE/localhost:tickets-service:7772 - registration status: 204
+03:20:55 INFO  Cannot determine local hostname
+03:20:55 DEBUG 
 
 
 ============================
@@ -1879,32 +1879,32 @@ Unconditional classes:
 
 
 
-23:28:27 INFO  Started TicketsApplication in 18.164 seconds (process running for 19.319)
-23:28:27 DEBUG Application availability state LivenessState changed to CORRECT
-23:28:27 DEBUG Creating new Restarter for thread Thread[#1,main,5,main]
-23:28:27 DEBUG Immediately restarting application
-23:28:27 DEBUG Starting application com.transit.tickets.TicketsApplication with URLs [file:/c:/Users/XznRh/Downloads/exam-release/exam-release/tickets-service/target/classes/]
-23:28:27 DEBUG Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
-23:28:56 INFO  Disable delta property : false
-23:28:56 INFO  Single vip registry refresh property : null
-23:28:56 INFO  Force full registry fetch : false
-23:28:56 INFO  Application is null : false
-23:28:56 INFO  Registered Applications size is zero : true
-23:28:56 INFO  Application version is -1: false
-23:28:56 INFO  Getting all instance registry info from the eureka server
-23:28:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:28:56 INFO  The response status is 200
-23:29:25 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
-23:29:25 INFO  Initializing Servlet 'dispatcherServlet'
-23:29:25 DEBUG Detected StandardServletMultipartResolver
-23:29:25 DEBUG Detected AcceptHeaderLocaleResolver
-23:29:25 DEBUG Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6ae65ef9
-23:29:25 DEBUG Detected org.springframework.web.servlet.support.SessionFlashMapManager@25a42f8d
-23:29:25 DEBUG enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-23:29:25 INFO  Completed initialization in 1 ms
-23:29:25 DEBUG GET "/api/tickets", parameters={}
-23:29:25 DEBUG Mapped to com.transit.tickets.controller.TicketController#getAllTickets()
-23:29:26 DEBUG 
+03:20:55 INFO  Started TicketsApplication in 23.291 seconds (process running for 25.383)
+03:20:55 DEBUG Application availability state LivenessState changed to CORRECT
+03:20:55 DEBUG Creating new Restarter for thread Thread[#1,main,5,main]
+03:20:55 DEBUG Immediately restarting application
+03:20:55 DEBUG Starting application com.transit.tickets.TicketsApplication with URLs [file:/c:/Users/XznRh/Downloads/exam-release/exam-release/tickets-service/target/classes/]
+03:20:55 DEBUG Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+03:21:24 INFO  Disable delta property : false
+03:21:24 INFO  Single vip registry refresh property : null
+03:21:24 INFO  Force full registry fetch : false
+03:21:24 INFO  Application is null : false
+03:21:24 INFO  Registered Applications size is zero : true
+03:21:24 INFO  Application version is -1: false
+03:21:24 INFO  Getting all instance registry info from the eureka server
+03:21:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:21:24 INFO  The response status is 200
+03:21:43 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+03:21:43 INFO  Initializing Servlet 'dispatcherServlet'
+03:21:43 DEBUG Detected StandardServletMultipartResolver
+03:21:43 DEBUG Detected AcceptHeaderLocaleResolver
+03:21:43 DEBUG Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@176c31d9
+03:21:43 DEBUG Detected org.springframework.web.servlet.support.SessionFlashMapManager@22df4ede
+03:21:43 DEBUG enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:21:43 INFO  Completed initialization in 2 ms
+03:21:43 DEBUG GET "/api/tickets", parameters={}
+03:21:43 DEBUG Mapped to com.transit.tickets.controller.TicketController#getAllTickets()
+03:21:43 DEBUG 
     select
         tm1_0.id,
         tm1_0.city_code_destination,
@@ -1928,12 +1928,12 @@ Hibernate:
         tm1_0.train_id 
     from
         tickets tm1_0
-23:29:26 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-23:29:26 DEBUG Writing [CollectionModel { content: [TicketResponseDTO(id=1, code=G1DF4LLG, cityCodeOrigin=CAY, cityCodeDesti (truncated)...]
-23:29:26 DEBUG Completed 200 OK
-23:29:26 DEBUG GET "/api/tickets", parameters={}
-23:29:26 DEBUG Mapped to com.transit.tickets.controller.TicketController#getAllTickets()
-23:29:26 DEBUG 
+03:21:43 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
+03:21:43 DEBUG Writing [CollectionModel { content: [TicketResponseDTO(id=1, code=Y249WM23, cityCodeOrigin=GVO, cityCodeDesti (truncated)...]
+03:21:43 DEBUG Completed 200 OK
+03:21:43 DEBUG GET "/api/tickets", parameters={}
+03:21:43 DEBUG Mapped to com.transit.tickets.controller.TicketController#getAllTickets()
+03:21:43 DEBUG 
     select
         tm1_0.id,
         tm1_0.city_code_destination,
@@ -1957,12 +1957,12 @@ Hibernate:
         tm1_0.train_id 
     from
         tickets tm1_0
-23:29:26 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-23:29:26 DEBUG Writing [CollectionModel { content: [TicketResponseDTO(id=1, code=G1DF4LLG, cityCodeOrigin=CAY, cityCodeDesti (truncated)...]
-23:29:26 DEBUG Completed 200 OK
-23:29:26 DEBUG GET "/api/tickets/1", parameters={}
-23:29:26 DEBUG Mapped to com.transit.tickets.controller.TicketController#getTicketById(Long)
-23:29:26 DEBUG 
+03:21:43 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
+03:21:43 DEBUG Writing [CollectionModel { content: [TicketResponseDTO(id=1, code=Y249WM23, cityCodeOrigin=GVO, cityCodeDesti (truncated)...]
+03:21:43 DEBUG Completed 200 OK
+03:21:43 DEBUG GET "/api/tickets/1", parameters={}
+03:21:43 DEBUG Mapped to com.transit.tickets.controller.TicketController#getTicketById(Long)
+03:21:43 DEBUG 
     select
         tm1_0.id,
         tm1_0.city_code_destination,
@@ -1990,12 +1990,12 @@ Hibernate:
         tickets tm1_0 
     where
         tm1_0.id=?
-23:29:26 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-23:29:26 DEBUG Writing [TicketResponseDTO(id=1, code=G1DF4LLG, cityCodeOrigin=CAY, cityCodeDestination=BKC, price=239.24, cl (truncated)...]
-23:29:26 DEBUG Completed 200 OK
-23:29:26 DEBUG GET "/api/tickets/1", parameters={}
-23:29:26 DEBUG Mapped to com.transit.tickets.controller.TicketController#getTicketById(Long)
-23:29:26 DEBUG 
+03:21:43 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
+03:21:43 DEBUG Writing [TicketResponseDTO(id=1, code=Y249WM23, cityCodeOrigin=GVO, cityCodeDestination=ISX, price=384.33, cl (truncated)...]
+03:21:43 DEBUG Completed 200 OK
+03:21:43 DEBUG GET "/api/tickets/1", parameters={}
+03:21:43 DEBUG Mapped to com.transit.tickets.controller.TicketController#getTicketById(Long)
+03:21:43 DEBUG 
     select
         tm1_0.id,
         tm1_0.city_code_destination,
@@ -2023,13 +2023,12 @@ Hibernate:
         tickets tm1_0 
     where
         tm1_0.id=?
-23:29:26 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-23:29:26 DEBUG Writing [TicketResponseDTO(id=1, code=G1DF4LLG, cityCodeOrigin=CAY, cityCodeDestination=BKC, price=239.24, cl (truncated)...]
-23:29:26 DEBUG Completed 200 OK
-23:29:26 DEBUG GET "/api/tickets/code/TICKET001", parameters={}
-23:29:26 DEBUG Mapped to com.transit.tickets.controller.TicketController#getTicketByCode(String)
-23:29:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:29:26 DEBUG 
+03:21:43 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
+03:21:43 DEBUG Writing [TicketResponseDTO(id=1, code=Y249WM23, cityCodeOrigin=GVO, cityCodeDestination=ISX, price=384.33, cl (truncated)...]
+03:21:43 DEBUG Completed 200 OK
+03:21:44 DEBUG GET "/api/tickets/code/TICKET001", parameters={}
+03:21:44 DEBUG Mapped to com.transit.tickets.controller.TicketController#getTicketByCode(String)
+03:21:44 DEBUG 
     select
         tm1_0.id,
         tm1_0.city_code_destination,
@@ -2057,12 +2056,12 @@ Hibernate:
         tickets tm1_0 
     where
         tm1_0.code=?
-23:29:26 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-23:29:26 DEBUG Writing [TicketResponseDTO(id=-1, code=ERROR, cityCodeOrigin=ERR, cityCodeDestination=ERR, price=0.0, clientI (truncated)...]
-23:29:26 DEBUG Completed 200 OK
-23:29:26 DEBUG GET "/api/tickets/code/TICKET001", parameters={}
-23:29:26 DEBUG Mapped to com.transit.tickets.controller.TicketController#getTicketByCode(String)
-23:29:26 DEBUG 
+03:21:44 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
+03:21:44 DEBUG Writing [TicketResponseDTO(id=-1, code=ERROR, cityCodeOrigin=ERR, cityCodeDestination=ERR, price=0.0, clientI (truncated)...]
+03:21:44 DEBUG Completed 200 OK
+03:21:44 DEBUG GET "/api/tickets/code/TICKET001", parameters={}
+03:21:44 DEBUG Mapped to com.transit.tickets.controller.TicketController#getTicketByCode(String)
+03:21:44 DEBUG 
     select
         tm1_0.id,
         tm1_0.city_code_destination,
@@ -2090,13 +2089,13 @@ Hibernate:
         tickets tm1_0 
     where
         tm1_0.code=?
-23:29:26 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-23:29:26 DEBUG Writing [TicketResponseDTO(id=-1, code=ERROR, cityCodeOrigin=ERR, cityCodeDestination=ERR, price=0.0, clientI (truncated)...]
-23:29:26 DEBUG Completed 200 OK
-23:29:27 DEBUG GET "/api/tickets/origin/LON", parameters={}
-23:29:27 DEBUG Mapped to com.transit.tickets.controller.TicketController#getTicketsByCityCodeOrigin(String)
-23:29:27 DEBUG Failed to complete request: java.lang.IllegalStateException: You have more that one fallback method that cover the same exception type java.lang.Throwable
-23:29:27 ERROR Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: You have more that one fallback method that cover the same exception type java.lang.Throwable] with root cause
+03:21:44 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
+03:21:44 DEBUG Writing [TicketResponseDTO(id=-1, code=ERROR, cityCodeOrigin=ERR, cityCodeDestination=ERR, price=0.0, clientI (truncated)...]
+03:21:44 DEBUG Completed 200 OK
+03:21:44 DEBUG GET "/api/tickets/origin/LON", parameters={}
+03:21:44 DEBUG Mapped to com.transit.tickets.controller.TicketController#getTicketsByCityCodeOrigin(String)
+03:21:44 DEBUG Failed to complete request: java.lang.IllegalStateException: You have more that one fallback method that cover the same exception type java.lang.Throwable
+03:21:44 ERROR Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: You have more that one fallback method that cover the same exception type java.lang.Throwable] with root cause
 java.lang.IllegalStateException: You have more that one fallback method that cover the same exception type java.lang.Throwable
 	at io.github.resilience4j.spring6.fallback.FallbackMethod.merge(FallbackMethod.java:128)
 	at io.github.resilience4j.spring6.fallback.FallbackMethod.lambda$extractMethods$0(FallbackMethod.java:112)
@@ -2163,15 +2162,15 @@ java.lang.IllegalStateException: You have more that one fallback method that cov
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-23:29:27 DEBUG "ERROR" dispatch for GET "/error", parameters={}
-23:29:27 DEBUG Mapped to org.springframework.boot.webmvc.autoconfigure.error.BasicErrorController#error(HttpServletRequest)
-23:29:27 DEBUG Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
-23:29:27 DEBUG Writing [{timestamp=Wed Jul 08 23:29:27 CLT 2026, status=500, error=Internal Server Error, trace=java.lang.Il (truncated)...]
-23:29:27 DEBUG Exiting from "ERROR" dispatch, status 500
-23:29:27 DEBUG GET "/api/tickets/origin/LON", parameters={}
-23:29:27 DEBUG Mapped to com.transit.tickets.controller.TicketController#getTicketsByCityCodeOrigin(String)
-23:29:27 DEBUG Failed to complete request: java.lang.IllegalStateException: You have more that one fallback method that cover the same exception type java.lang.Throwable
-23:29:27 ERROR Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: You have more that one fallback method that cover the same exception type java.lang.Throwable] with root cause
+03:21:44 DEBUG "ERROR" dispatch for GET "/error", parameters={}
+03:21:44 DEBUG Mapped to org.springframework.boot.webmvc.autoconfigure.error.BasicErrorController#error(HttpServletRequest)
+03:21:44 DEBUG Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+03:21:44 DEBUG Writing [{timestamp=Thu Jul 09 03:21:44 CLT 2026, status=500, error=Internal Server Error, trace=java.lang.Il (truncated)...]
+03:21:44 DEBUG Exiting from "ERROR" dispatch, status 500
+03:21:44 DEBUG GET "/api/tickets/origin/LON", parameters={}
+03:21:44 DEBUG Mapped to com.transit.tickets.controller.TicketController#getTicketsByCityCodeOrigin(String)
+03:21:44 DEBUG Failed to complete request: java.lang.IllegalStateException: You have more that one fallback method that cover the same exception type java.lang.Throwable
+03:21:44 ERROR Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: You have more that one fallback method that cover the same exception type java.lang.Throwable] with root cause
 java.lang.IllegalStateException: You have more that one fallback method that cover the same exception type java.lang.Throwable
 	at io.github.resilience4j.spring6.fallback.FallbackMethod.merge(FallbackMethod.java:128)
 	at io.github.resilience4j.spring6.fallback.FallbackMethod.lambda$extractMethods$0(FallbackMethod.java:112)
@@ -2238,15 +2237,15 @@ java.lang.IllegalStateException: You have more that one fallback method that cov
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-23:29:27 DEBUG "ERROR" dispatch for GET "/error", parameters={}
-23:29:27 DEBUG Mapped to org.springframework.boot.webmvc.autoconfigure.error.BasicErrorController#error(HttpServletRequest)
-23:29:27 DEBUG Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
-23:29:27 DEBUG Writing [{timestamp=Wed Jul 08 23:29:27 CLT 2026, status=500, error=Internal Server Error, trace=java.lang.Il (truncated)...]
-23:29:27 DEBUG Exiting from "ERROR" dispatch, status 500
-23:29:27 DEBUG GET "/api/tickets/destination/PAR", parameters={}
-23:29:27 DEBUG Mapped to com.transit.tickets.controller.TicketController#getTicketsByCityCodeDestination(String)
-23:29:27 DEBUG Failed to complete request: java.lang.IllegalStateException: You have more that one fallback method that cover the same exception type java.lang.Throwable
-23:29:27 ERROR Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: You have more that one fallback method that cover the same exception type java.lang.Throwable] with root cause
+03:21:44 DEBUG "ERROR" dispatch for GET "/error", parameters={}
+03:21:44 DEBUG Mapped to org.springframework.boot.webmvc.autoconfigure.error.BasicErrorController#error(HttpServletRequest)
+03:21:44 DEBUG Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+03:21:44 DEBUG Writing [{timestamp=Thu Jul 09 03:21:44 CLT 2026, status=500, error=Internal Server Error, trace=java.lang.Il (truncated)...]
+03:21:44 DEBUG Exiting from "ERROR" dispatch, status 500
+03:21:44 DEBUG GET "/api/tickets/destination/PAR", parameters={}
+03:21:44 DEBUG Mapped to com.transit.tickets.controller.TicketController#getTicketsByCityCodeDestination(String)
+03:21:44 DEBUG Failed to complete request: java.lang.IllegalStateException: You have more that one fallback method that cover the same exception type java.lang.Throwable
+03:21:44 ERROR Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: You have more that one fallback method that cover the same exception type java.lang.Throwable] with root cause
 java.lang.IllegalStateException: You have more that one fallback method that cover the same exception type java.lang.Throwable
 	at io.github.resilience4j.spring6.fallback.FallbackMethod.merge(FallbackMethod.java:128)
 	at io.github.resilience4j.spring6.fallback.FallbackMethod.lambda$extractMethods$0(FallbackMethod.java:112)
@@ -2313,15 +2312,15 @@ java.lang.IllegalStateException: You have more that one fallback method that cov
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-23:29:27 DEBUG "ERROR" dispatch for GET "/error", parameters={}
-23:29:27 DEBUG Mapped to org.springframework.boot.webmvc.autoconfigure.error.BasicErrorController#error(HttpServletRequest)
-23:29:27 DEBUG Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
-23:29:27 DEBUG Writing [{timestamp=Wed Jul 08 23:29:27 CLT 2026, status=500, error=Internal Server Error, trace=java.lang.Il (truncated)...]
-23:29:27 DEBUG Exiting from "ERROR" dispatch, status 500
-23:29:27 DEBUG GET "/api/tickets/destination/PAR", parameters={}
-23:29:27 DEBUG Mapped to com.transit.tickets.controller.TicketController#getTicketsByCityCodeDestination(String)
-23:29:27 DEBUG Failed to complete request: java.lang.IllegalStateException: You have more that one fallback method that cover the same exception type java.lang.Throwable
-23:29:27 ERROR Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: You have more that one fallback method that cover the same exception type java.lang.Throwable] with root cause
+03:21:44 DEBUG "ERROR" dispatch for GET "/error", parameters={}
+03:21:44 DEBUG Mapped to org.springframework.boot.webmvc.autoconfigure.error.BasicErrorController#error(HttpServletRequest)
+03:21:44 DEBUG Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+03:21:44 DEBUG Writing [{timestamp=Thu Jul 09 03:21:44 CLT 2026, status=500, error=Internal Server Error, trace=java.lang.Il (truncated)...]
+03:21:44 DEBUG Exiting from "ERROR" dispatch, status 500
+03:21:44 DEBUG GET "/api/tickets/destination/PAR", parameters={}
+03:21:44 DEBUG Mapped to com.transit.tickets.controller.TicketController#getTicketsByCityCodeDestination(String)
+03:21:44 DEBUG Failed to complete request: java.lang.IllegalStateException: You have more that one fallback method that cover the same exception type java.lang.Throwable
+03:21:44 ERROR Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: You have more that one fallback method that cover the same exception type java.lang.Throwable] with root cause
 java.lang.IllegalStateException: You have more that one fallback method that cover the same exception type java.lang.Throwable
 	at io.github.resilience4j.spring6.fallback.FallbackMethod.merge(FallbackMethod.java:128)
 	at io.github.resilience4j.spring6.fallback.FallbackMethod.lambda$extractMethods$0(FallbackMethod.java:112)
@@ -2388,191 +2387,112 @@ java.lang.IllegalStateException: You have more that one fallback method that cov
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-23:29:27 DEBUG "ERROR" dispatch for GET "/error", parameters={}
-23:29:27 DEBUG Mapped to org.springframework.boot.webmvc.autoconfigure.error.BasicErrorController#error(HttpServletRequest)
-23:29:27 DEBUG Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
-23:29:27 DEBUG Writing [{timestamp=Wed Jul 08 23:29:27 CLT 2026, status=500, error=Internal Server Error, trace=java.lang.Il (truncated)...]
-23:29:27 DEBUG Exiting from "ERROR" dispatch, status 500
-23:29:27 DEBUG POST "/api/tickets", parameters={}
-23:29:27 DEBUG Mapped to com.transit.tickets.controller.TicketController#createTicket(TicketRequestDTO)
-23:29:27 DEBUG Read "application/json;charset=UTF-8" to [TicketRequestDTO(code=null, cityCodeOrigin=null, cityCodeDestination=null, price=null, clientId=null (truncated)...]
-23:29:27 WARN  Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.transit.tickets.dto.response.TicketResponseDTO> com.transit.tickets.controller.TicketController.createTicket(com.transit.tickets.dto.request.TicketRequestDTO) with 7 errors: [Field error in object 'ticketRequestDTO' on field 'trainId': rejected value [null]; codes [NotNull.ticketRequestDTO.trainId,NotNull.trainId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ticketRequestDTO.trainId,trainId]; arguments []; default message [trainId]]; default message [Train ID cannot be null]] [Field error in object 'ticketRequestDTO' on field 'price': rejected value [null]; codes [NotNull.ticketRequestDTO.price,NotNull.price,NotNull.java.lang.Double,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ticketRequestDTO.price,price]; arguments []; default message [price]]; default message [Price cannot be null]] [Field error in object 'ticketRequestDTO' on field 'departureDate': rejected value [null]; codes [NotNull.ticketRequestDTO.departureDate,NotNull.departureDate,NotNull.java.sql.Date,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ticketRequestDTO.departureDate,departureDate]; arguments []; default message [departureDate]]; default message [Departure date cannot be null]] [Field error in object 'ticketRequestDTO' on field 'cityCodeOrigin': rejected value [null]; codes [NotBlank.ticketRequestDTO.cityCodeOrigin,NotBlank.cityCodeOrigin,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ticketRequestDTO.cityCodeOrigin,cityCodeOrigin]; arguments []; default message [cityCodeOrigin]]; default message [Origin city code cannot be blank]] [Field error in object 'ticketRequestDTO' on field 'clientId': rejected value [null]; codes [NotNull.ticketRequestDTO.clientId,NotNull.clientId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ticketRequestDTO.clientId,clientId]; arguments []; default message [clientId]]; default message [Client ID cannot be null]] [Field error in object 'ticketRequestDTO' on field 'code': rejected value [null]; codes [NotBlank.ticketRequestDTO.code,NotBlank.code,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ticketRequestDTO.code,code]; arguments []; default message [code]]; default message [Ticket code cannot be blank]] [Field error in object 'ticketRequestDTO' on field 'cityCodeDestination': rejected value [null]; codes [NotBlank.ticketRequestDTO.cityCodeDestination,NotBlank.cityCodeDestination,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ticketRequestDTO.cityCodeDestination,cityCodeDestination]; arguments []; default message [cityCodeDestination]]; default message [Destination city code cannot be blank]] ]
-23:29:27 DEBUG Completed 400 BAD_REQUEST
-23:29:27 DEBUG "ERROR" dispatch for GET "/error", parameters={}
-23:29:27 DEBUG Mapped to org.springframework.boot.webmvc.autoconfigure.error.BasicErrorController#error(HttpServletRequest)
-23:29:27 DEBUG Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
-23:29:27 DEBUG Writing [{timestamp=Wed Jul 08 23:29:27 CLT 2026, status=400, error=Bad Request, trace=org.springframework.we (truncated)...]
-23:29:27 DEBUG Exiting from "ERROR" dispatch, status 400
-23:29:27 DEBUG POST "/api/tickets", parameters={}
-23:29:27 DEBUG Mapped to com.transit.tickets.controller.TicketController#createTicket(TicketRequestDTO)
-23:29:27 DEBUG Read "application/json;charset=UTF-8" to [TicketRequestDTO(code=null, cityCodeOrigin=null, cityCodeDestination=null, price=null, clientId=null (truncated)...]
-23:29:27 WARN  Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.transit.tickets.dto.response.TicketResponseDTO> com.transit.tickets.controller.TicketController.createTicket(com.transit.tickets.dto.request.TicketRequestDTO) with 7 errors: [Field error in object 'ticketRequestDTO' on field 'code': rejected value [null]; codes [NotBlank.ticketRequestDTO.code,NotBlank.code,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ticketRequestDTO.code,code]; arguments []; default message [code]]; default message [Ticket code cannot be blank]] [Field error in object 'ticketRequestDTO' on field 'cityCodeDestination': rejected value [null]; codes [NotBlank.ticketRequestDTO.cityCodeDestination,NotBlank.cityCodeDestination,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ticketRequestDTO.cityCodeDestination,cityCodeDestination]; arguments []; default message [cityCodeDestination]]; default message [Destination city code cannot be blank]] [Field error in object 'ticketRequestDTO' on field 'clientId': rejected value [null]; codes [NotNull.ticketRequestDTO.clientId,NotNull.clientId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ticketRequestDTO.clientId,clientId]; arguments []; default message [clientId]]; default message [Client ID cannot be null]] [Field error in object 'ticketRequestDTO' on field 'price': rejected value [null]; codes [NotNull.ticketRequestDTO.price,NotNull.price,NotNull.java.lang.Double,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ticketRequestDTO.price,price]; arguments []; default message [price]]; default message [Price cannot be null]] [Field error in object 'ticketRequestDTO' on field 'departureDate': rejected value [null]; codes [NotNull.ticketRequestDTO.departureDate,NotNull.departureDate,NotNull.java.sql.Date,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ticketRequestDTO.departureDate,departureDate]; arguments []; default message [departureDate]]; default message [Departure date cannot be null]] [Field error in object 'ticketRequestDTO' on field 'cityCodeOrigin': rejected value [null]; codes [NotBlank.ticketRequestDTO.cityCodeOrigin,NotBlank.cityCodeOrigin,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ticketRequestDTO.cityCodeOrigin,cityCodeOrigin]; arguments []; default message [cityCodeOrigin]]; default message [Origin city code cannot be blank]] [Field error in object 'ticketRequestDTO' on field 'trainId': rejected value [null]; codes [NotNull.ticketRequestDTO.trainId,NotNull.trainId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ticketRequestDTO.trainId,trainId]; arguments []; default message [trainId]]; default message [Train ID cannot be null]] ]
-23:29:27 DEBUG Completed 400 BAD_REQUEST
-23:29:27 DEBUG "ERROR" dispatch for GET "/error", parameters={}
-23:29:27 DEBUG Mapped to org.springframework.boot.webmvc.autoconfigure.error.BasicErrorController#error(HttpServletRequest)
-23:29:27 DEBUG Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
-23:29:27 DEBUG Writing [{timestamp=Wed Jul 08 23:29:27 CLT 2026, status=400, error=Bad Request, trace=org.springframework.we (truncated)...]
-23:29:27 DEBUG Exiting from "ERROR" dispatch, status 400
-23:29:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:30:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:30:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:31:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:31:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:32:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:32:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:33:26 INFO  Resolving eureka endpoints via configuration
-23:33:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:33:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:34:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:34:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:35:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:35:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:36:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:36:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:37:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:37:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:38:26 INFO  Resolving eureka endpoints via configuration
-23:38:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:38:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:39:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:39:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:40:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:40:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:41:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:41:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:42:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:42:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:43:26 INFO  Resolving eureka endpoints via configuration
-23:43:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:43:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:44:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:44:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:45:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:45:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:46:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:46:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:47:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:47:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:48:26 INFO  Resolving eureka endpoints via configuration
-23:48:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:48:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:49:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:49:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:50:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:50:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:51:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:51:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:52:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:52:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:53:26 INFO  Resolving eureka endpoints via configuration
-23:53:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:53:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:54:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:54:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:55:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:55:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:56:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:56:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:57:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:57:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:58:26 INFO  Resolving eureka endpoints via configuration
-23:58:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:58:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:59:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:59:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:00:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:00:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:01:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:01:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:02:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:02:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:03:26 INFO  Resolving eureka endpoints via configuration
-00:03:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:03:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:04:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:04:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:05:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:05:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:06:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:06:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:07:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:07:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:08:26 INFO  Resolving eureka endpoints via configuration
-00:08:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:08:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:09:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:09:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:10:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:10:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:11:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:11:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:12:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:12:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:13:26 INFO  Resolving eureka endpoints via configuration
-00:13:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:13:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:14:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:14:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:15:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:15:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:16:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:16:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:17:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:17:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:18:26 INFO  Resolving eureka endpoints via configuration
-00:18:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:18:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:19:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:19:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:20:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:20:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:21:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:21:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:22:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:22:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:23:26 INFO  Resolving eureka endpoints via configuration
-00:23:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:23:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:24:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:24:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:25:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:25:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:26:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:26:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:27:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:27:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:28:26 INFO  Resolving eureka endpoints via configuration
-00:28:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:28:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:29:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:29:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:30:30 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:31:00 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:31:30 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:32:00 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:32:30 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:33:00 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:33:26 INFO  Resolving eureka endpoints via configuration
-00:33:30 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:34:00 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:34:30 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:35:00 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:35:30 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:36:00 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:36:30 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:37:00 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:37:30 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:38:00 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:38:26 INFO  Resolving eureka endpoints via configuration
-00:38:30 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:39:00 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:39:30 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:40:00 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:40:30 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:41:00 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:41:30 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:42:00 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:42:30 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:43:00 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:43:26 INFO  Resolving eureka endpoints via configuration
-00:43:30 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:21:44 DEBUG "ERROR" dispatch for GET "/error", parameters={}
+03:21:44 DEBUG Mapped to org.springframework.boot.webmvc.autoconfigure.error.BasicErrorController#error(HttpServletRequest)
+03:21:44 DEBUG Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+03:21:44 DEBUG Writing [{timestamp=Thu Jul 09 03:21:44 CLT 2026, status=500, error=Internal Server Error, trace=java.lang.Il (truncated)...]
+03:21:44 DEBUG Exiting from "ERROR" dispatch, status 500
+03:21:45 DEBUG POST "/api/tickets", parameters={}
+03:21:45 DEBUG Mapped to com.transit.tickets.controller.TicketController#createTicket(TicketRequestDTO)
+03:21:45 DEBUG Read "application/json;charset=UTF-8" to [TicketRequestDTO(code=null, cityCodeOrigin=null, cityCodeDestination=null, price=null, clientId=null (truncated)...]
+03:21:45 WARN  Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.transit.tickets.dto.response.TicketResponseDTO> com.transit.tickets.controller.TicketController.createTicket(com.transit.tickets.dto.request.TicketRequestDTO) with 7 errors: [Field error in object 'ticketRequestDTO' on field 'clientId': rejected value [null]; codes [NotNull.ticketRequestDTO.clientId,NotNull.clientId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ticketRequestDTO.clientId,clientId]; arguments []; default message [clientId]]; default message [Client ID cannot be null]] [Field error in object 'ticketRequestDTO' on field 'code': rejected value [null]; codes [NotBlank.ticketRequestDTO.code,NotBlank.code,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ticketRequestDTO.code,code]; arguments []; default message [code]]; default message [Ticket code cannot be blank]] [Field error in object 'ticketRequestDTO' on field 'trainId': rejected value [null]; codes [NotNull.ticketRequestDTO.trainId,NotNull.trainId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ticketRequestDTO.trainId,trainId]; arguments []; default message [trainId]]; default message [Train ID cannot be null]] [Field error in object 'ticketRequestDTO' on field 'departureDate': rejected value [null]; codes [NotNull.ticketRequestDTO.departureDate,NotNull.departureDate,NotNull.java.sql.Date,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ticketRequestDTO.departureDate,departureDate]; arguments []; default message [departureDate]]; default message [Departure date cannot be null]] [Field error in object 'ticketRequestDTO' on field 'cityCodeOrigin': rejected value [null]; codes [NotBlank.ticketRequestDTO.cityCodeOrigin,NotBlank.cityCodeOrigin,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ticketRequestDTO.cityCodeOrigin,cityCodeOrigin]; arguments []; default message [cityCodeOrigin]]; default message [Origin city code cannot be blank]] [Field error in object 'ticketRequestDTO' on field 'price': rejected value [null]; codes [NotNull.ticketRequestDTO.price,NotNull.price,NotNull.java.lang.Double,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ticketRequestDTO.price,price]; arguments []; default message [price]]; default message [Price cannot be null]] [Field error in object 'ticketRequestDTO' on field 'cityCodeDestination': rejected value [null]; codes [NotBlank.ticketRequestDTO.cityCodeDestination,NotBlank.cityCodeDestination,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ticketRequestDTO.cityCodeDestination,cityCodeDestination]; arguments []; default message [cityCodeDestination]]; default message [Destination city code cannot be blank]] ]
+03:21:45 DEBUG Completed 400 BAD_REQUEST
+03:21:45 DEBUG "ERROR" dispatch for GET "/error", parameters={}
+03:21:45 DEBUG Mapped to org.springframework.boot.webmvc.autoconfigure.error.BasicErrorController#error(HttpServletRequest)
+03:21:45 DEBUG Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+03:21:45 DEBUG Writing [{timestamp=Thu Jul 09 03:21:45 CLT 2026, status=400, error=Bad Request, trace=org.springframework.we (truncated)...]
+03:21:45 DEBUG Exiting from "ERROR" dispatch, status 400
+03:21:45 DEBUG POST "/api/tickets", parameters={}
+03:21:45 DEBUG Mapped to com.transit.tickets.controller.TicketController#createTicket(TicketRequestDTO)
+03:21:45 DEBUG Read "application/json;charset=UTF-8" to [TicketRequestDTO(code=null, cityCodeOrigin=null, cityCodeDestination=null, price=null, clientId=null (truncated)...]
+03:21:45 WARN  Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.transit.tickets.dto.response.TicketResponseDTO> com.transit.tickets.controller.TicketController.createTicket(com.transit.tickets.dto.request.TicketRequestDTO) with 7 errors: [Field error in object 'ticketRequestDTO' on field 'cityCodeDestination': rejected value [null]; codes [NotBlank.ticketRequestDTO.cityCodeDestination,NotBlank.cityCodeDestination,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ticketRequestDTO.cityCodeDestination,cityCodeDestination]; arguments []; default message [cityCodeDestination]]; default message [Destination city code cannot be blank]] [Field error in object 'ticketRequestDTO' on field 'code': rejected value [null]; codes [NotBlank.ticketRequestDTO.code,NotBlank.code,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ticketRequestDTO.code,code]; arguments []; default message [code]]; default message [Ticket code cannot be blank]] [Field error in object 'ticketRequestDTO' on field 'trainId': rejected value [null]; codes [NotNull.ticketRequestDTO.trainId,NotNull.trainId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ticketRequestDTO.trainId,trainId]; arguments []; default message [trainId]]; default message [Train ID cannot be null]] [Field error in object 'ticketRequestDTO' on field 'departureDate': rejected value [null]; codes [NotNull.ticketRequestDTO.departureDate,NotNull.departureDate,NotNull.java.sql.Date,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ticketRequestDTO.departureDate,departureDate]; arguments []; default message [departureDate]]; default message [Departure date cannot be null]] [Field error in object 'ticketRequestDTO' on field 'cityCodeOrigin': rejected value [null]; codes [NotBlank.ticketRequestDTO.cityCodeOrigin,NotBlank.cityCodeOrigin,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ticketRequestDTO.cityCodeOrigin,cityCodeOrigin]; arguments []; default message [cityCodeOrigin]]; default message [Origin city code cannot be blank]] [Field error in object 'ticketRequestDTO' on field 'clientId': rejected value [null]; codes [NotNull.ticketRequestDTO.clientId,NotNull.clientId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ticketRequestDTO.clientId,clientId]; arguments []; default message [clientId]]; default message [Client ID cannot be null]] [Field error in object 'ticketRequestDTO' on field 'price': rejected value [null]; codes [NotNull.ticketRequestDTO.price,NotNull.price,NotNull.java.lang.Double,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ticketRequestDTO.price,price]; arguments []; default message [price]]; default message [Price cannot be null]] ]
+03:21:45 DEBUG Completed 400 BAD_REQUEST
+03:21:45 DEBUG "ERROR" dispatch for GET "/error", parameters={}
+03:21:45 DEBUG Mapped to org.springframework.boot.webmvc.autoconfigure.error.BasicErrorController#error(HttpServletRequest)
+03:21:45 DEBUG Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+03:21:45 DEBUG Writing [{timestamp=Thu Jul 09 03:21:45 CLT 2026, status=400, error=Bad Request, trace=org.springframework.we (truncated)...]
+03:21:45 DEBUG Exiting from "ERROR" dispatch, status 400
+03:21:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:22:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:22:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:23:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:23:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:24:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:24:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:25:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:25:53 INFO  Resolving eureka endpoints via configuration
+03:25:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:26:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:26:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:27:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:27:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:28:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:28:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:29:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:29:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:30:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:30:53 INFO  Resolving eureka endpoints via configuration
+03:30:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:31:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:31:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:32:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:32:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:33:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:33:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:34:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:34:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:35:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:35:53 INFO  Resolving eureka endpoints via configuration
+03:35:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:36:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:36:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:37:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:37:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:38:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:38:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:39:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:39:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:40:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:40:53 INFO  Resolving eureka endpoints via configuration
+03:40:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:41:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:41:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:42:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:42:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:43:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:43:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:44:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:44:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:45:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:45:53 INFO  Resolving eureka endpoints via configuration
+03:45:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:46:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:46:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:47:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:47:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:48:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:48:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:49:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:49:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:50:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:50:53 INFO  Resolving eureka endpoints via configuration
+03:50:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:51:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:51:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:52:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:52:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:53:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:53:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:54:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:54:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:55:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:55:53 INFO  Resolving eureka endpoints via configuration
+03:55:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:56:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:56:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:57:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:57:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:58:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:58:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:59:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:59:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]

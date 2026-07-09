@@ -53,6 +53,21 @@ public class ApiGatewayApplication {
                 .filters(f -> f.rewritePath("/manufacturers-service(?<segment>.*)", "/api/manufacturers${segment}"))
                 .uri("lb://manufacturers-service")
             )
+            .route("station-route", r -> r
+                .path("/stations-service/**", "/stations-service")
+                .filters(f -> f.rewritePath("/stations-service(?<segment>.*)", "/api/stations${segment}"))
+                .uri("lb://stations-service")
+            )
+            .route("line-route", r -> r
+                .path("/lines-service/**", "/lines-service")
+                .filters(f -> f.rewritePath("/lines-service(?<segment>.*)", "/api/lines${segment}"))
+                .uri("lb://lines-service")
+            )
+            .route("city-route", r -> r
+                .path("/cities-service/**", "/cities-service")
+                .filters(f -> f.rewritePath("/cities-service(?<segment>.*)", "/api/cities${segment}"))
+                .uri("lb://cities-service")
+            )
             .build();
     }
 }

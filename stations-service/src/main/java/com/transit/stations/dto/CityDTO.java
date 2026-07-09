@@ -1,0 +1,13 @@
+package com.transit.stations.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class CityDTO {
+    private String threeLetterCityCode;
+    private String fullCityName;
+}

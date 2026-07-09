@@ -18,6 +18,9 @@ DB_TRAINS = {**DB_CONFIG, 'database': 'transport_db_trainsservice'}
 DB_TICKETS = {**DB_CONFIG, 'database': 'transport_db_ticketsservice'}
 DB_REVIEWS = {**DB_CONFIG, 'database': 'transport_db_reviewsservice'}
 DB_MAINTENANCES = {**DB_CONFIG, 'database': 'transport_db_maintenancesservice'}
+DB_CITIES = {**DB_CONFIG, 'database': 'transport_db_citiesservice'}
+DB_LINES = {**DB_CONFIG, 'database': 'transport_db_linesservice'}
+DB_STATIONS = {**DB_CONFIG, 'database': 'transport_db_stationsservice'}
 
 def random_string(length, chars=string.ascii_uppercase + string.digits):
     return ''.join(random.choices(chars, k=length))
@@ -168,6 +171,81 @@ def populate_maintenances(conn_trains, conn_engines, conn_maintenances):
         conn_maintenances.commit()
     print("✅ Maintenances populated")
 
+def populate_cities(conn):
+    truncate_table(conn, 'cities')
+    cities = [
+        ("LON", "London", "2020-01-01", 9000000, "GB"),
+        ("PAR", "Paris", "2020-02-01", 11000000, "FR"),
+        ("BER", "Berlin", "2020-03-01", 3600000, "DE"),
+        ("MAD", "Madrid", "2020-04-01", 3200000, "ES"),
+        ("ROM", "Rome", "2020-05-01", 2800000, "IT"),
+        ("AMS", "Amsterdam", "2020-06-01", 1100000, "NL"),
+        ("BRU", "Brussels", "2020-07-01", 1200000, "BE"),
+        ("VIE", "Vienna", "2020-08-01", 1900000, "AT"),
+        ("ZUR", "Zurich", "2020-09-01", 400000, "CH"),
+        ("STO", "Stockholm", "2020-10-01", 1600000, "SE")
+    ]
+    with conn.cursor() as cursor:
+        for city_code, name, founding, pop, country in cities:
+            cursor.execute("""
+                INSERT INTO cities (city_code, city_name, founding_date, city_population, country_code)
+                VALUES (%s, %s, %s, %s, %s)
+            """, (city_code, name, founding, pop, country))
+    conn.commit()
+    print("✅ Cities populated (10)")
+
+def populate_lines(conn):
+    truncate_table(conn, 'lines')
+    lines = []
+    for i in range(1, 16):
+        line_code = i
+        length = random.randint(10, 200)  # km
+        people = random.randint(10000, 5000000)
+        lines.append((line_code, length, people))
+    with conn.cursor() as cursor:
+        for code, length, people in lines:
+            cursor.execute("""
+                INSERT INTO lines (line_code, line_length, line_people_served)
+                VALUES (%s, %s, %s)
+            """, (code, length, people))
+    conn.commit()
+    print("✅ Lines populated (15)")
+
+def populate_stations(conn_cities, conn_lines, conn_stations):
+    truncate_table(conn_stations, 'stations')
+    # Get city codes
+    with conn_cities.cursor() as cursor:
+        cursor.execute("SELECT city_code FROM cities")
+        city_codes = [row[0] for row in cursor.fetchall()]
+    # Get line codes
+    with conn_lines.cursor() as cursor:
+        cursor.execute("SELECT line_code FROM lines")
+        line_codes = [row[0] for row in cursor.fetchall()]
+    if not city_codes or not line_codes:
+        print("❌ Missing city or line data")
+        return
+    stations = []
+    for i in range(1, 21):
+        station_code = f"ST{i:03d}"
+        city = random.choice(city_codes)
+        # choose 1 to 4 line codes (unique)
+        chosen_lines = random.sample(line_codes, min(random.randint(1, 4), len(line_codes)))
+        # pad with None if less than 4
+        l1 = chosen_lines[0] if len(chosen_lines) > 0 else None
+        l2 = chosen_lines[1] if len(chosen_lines) > 1 else None
+        l3 = chosen_lines[2] if len(chosen_lines) > 2 else None
+        l4 = chosen_lines[3] if len(chosen_lines) > 3 else None
+        stations.append((station_code, city, l1, l2, l3, l4))
+    with conn_stations.cursor() as cursor:
+        for st in stations:
+            cursor.execute("""
+                INSERT INTO stations (station_code, city_code, line_1, line_2, line_3, line_4)
+                VALUES (%s, %s, %s, %s, %s, %s)
+            """, st)
+    conn_stations.commit()
+    print("✅ Stations populated (20)")
+
+# Modify main() to include new connections and calls
 def main():
     print("Connecting to databases...")
     conn_engines = pymysql.connect(**DB_ENGINES)
@@ -175,6 +253,9 @@ def main():
     conn_tickets = pymysql.connect(**DB_TICKETS)
     conn_reviews = pymysql.connect(**DB_REVIEWS)
     conn_maintenances = pymysql.connect(**DB_MAINTENANCES)
+    conn_cities = pymysql.connect(**DB_CITIES)
+    conn_lines = pymysql.connect(**DB_LINES)
+    conn_stations = pymysql.connect(**DB_STATIONS)
 
     try:
         populate_engines(conn_engines)
@@ -182,15 +263,16 @@ def main():
         populate_tickets(conn_trains, conn_tickets)
         populate_reviews(conn_trains, conn_tickets, conn_reviews)
         populate_maintenances(conn_trains, conn_engines, conn_maintenances)
+        populate_cities(conn_cities)
+        populate_lines(conn_lines)
+        populate_stations(conn_cities, conn_lines, conn_stations)
         print("🎉 All data inserted successfully.")
     except Exception as e:
         print(f"❌ Error: {e}")
     finally:
-        conn_engines.close()
-        conn_trains.close()
-        conn_tickets.close()
-        conn_reviews.close()
-        conn_maintenances.close()
+        for conn in [conn_engines, conn_trains, conn_tickets, conn_reviews,
+                     conn_maintenances, conn_cities, conn_lines, conn_stations]:
+            conn.close()
 
 if __name__ == "__main__":
     main()

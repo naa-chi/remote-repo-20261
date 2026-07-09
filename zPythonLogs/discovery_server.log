@@ -35,135 +35,95 @@
 
  :: Spring Boot ::                (v4.1.0)
 
-2026-07-08T23:28:10.731-04:00  INFO 10964 --- [discovery-server] [           main] c.t.d.DiscoveryServerApplication         : Starting DiscoveryServerApplication using Java 21.0.10 with PID 10964 (C:\Users\XznRh\Downloads\exam-release\exam-release\discovery\target\classes started by XznRh in c:\Users\XznRh\Downloads\exam-release\exam-release\discovery)
-2026-07-08T23:28:10.735-04:00  INFO 10964 --- [discovery-server] [           main] c.t.d.DiscoveryServerApplication         : No active profile set, falling back to 1 default profile: "default"
-2026-07-08T23:28:12.610-04:00  INFO 10964 --- [discovery-server] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=de401257-b535-36e1-a1fd-4816a61b6ac8
-2026-07-08T23:28:13.089-04:00  INFO 10964 --- [discovery-server] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8761 (http)
-2026-07-08T23:28:13.115-04:00  INFO 10964 --- [discovery-server] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-07-08T23:28:13.115-04:00  INFO 10964 --- [discovery-server] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
-2026-07-08T23:28:13.224-04:00  INFO 10964 --- [discovery-server] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2444 ms
-2026-07-08T23:28:14.486-04:00  INFO 10964 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2026-07-08T23:28:14.487-04:00  INFO 10964 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2026-07-08T23:28:14.724-04:00  INFO 10964 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2026-07-08T23:28:14.725-04:00  INFO 10964 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2026-07-08T23:28:14.928-04:00  INFO 10964 --- [discovery-server] [           main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2026-07-08T23:28:16.383-04:00  INFO 10964 --- [discovery-server] [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-2026-07-08T23:28:17.579-04:00  INFO 10964 --- [discovery-server] [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-2026-07-08T23:28:17.640-04:00  WARN 10964 --- [discovery-server] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2026-07-08T23:28:17.665-04:00  INFO 10964 --- [discovery-server] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2026-07-08T23:28:17.686-04:00  INFO 10964 --- [discovery-server] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2026-07-08T23:28:17.686-04:00  INFO 10964 --- [discovery-server] [           main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
-2026-07-08T23:28:17.688-04:00  INFO 10964 --- [discovery-server] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1783567697687 with initial instances count: 0
-2026-07-08T23:28:17.749-04:00  INFO 10964 --- [discovery-server] [           main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
-2026-07-08T23:28:17.752-04:00  WARN 10964 --- [discovery-server] [           main] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
-2026-07-08T23:28:17.769-04:00  INFO 10964 --- [discovery-server] [           main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
-2026-07-08T23:28:17.769-04:00  INFO 10964 --- [discovery-server] [           main] c.n.eureka.DefaultEurekaServerContext    : Initialized
-2026-07-08T23:28:17.787-04:00  INFO 10964 --- [discovery-server] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
-2026-07-08T23:28:17.884-04:00  INFO 10964 --- [discovery-server] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DISCOVERY-SERVER with eureka with status UP
-2026-07-08T23:28:17.906-04:00  INFO 10964 --- [discovery-server] [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
-2026-07-08T23:28:17.907-04:00  INFO 10964 --- [discovery-server] [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
-2026-07-08T23:28:17.907-04:00  INFO 10964 --- [discovery-server] [      Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
-2026-07-08T23:28:17.907-04:00  INFO 10964 --- [discovery-server] [      Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
-2026-07-08T23:28:17.907-04:00  INFO 10964 --- [discovery-server] [      Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
-2026-07-08T23:28:17.911-04:00  INFO 10964 --- [discovery-server] [      Thread-10] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
-2026-07-08T23:28:17.947-04:00  INFO 10964 --- [discovery-server] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8761 (http) with context path '/'
-2026-07-08T23:28:17.949-04:00  INFO 10964 --- [discovery-server] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
-2026-07-08T23:28:18.976-04:00  INFO 10964 --- [discovery-server] [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-2026-07-08T23:28:18.987-04:00  INFO 10964 --- [discovery-server] [           main] c.t.d.DiscoveryServerApplication         : Started DiscoveryServerApplication in 9.938 seconds (process running for 11.449)
-2026-07-08T23:28:19.118-04:00  INFO 10964 --- [discovery-server] [nio-8761-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-07-08T23:28:19.118-04:00  INFO 10964 --- [discovery-server] [nio-8761-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-07-08T23:28:19.120-04:00  INFO 10964 --- [discovery-server] [nio-8761-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2026-07-08T23:28:19.522-04:00  INFO 10964 --- [discovery-server] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/localhost:api-gateway:8080 with status UP (replication=false)
-2026-07-08T23:28:26.473-04:00  INFO 10964 --- [discovery-server] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance REVIEWS-SERVICE/localhost:reviews-service:7773 with status UP (replication=false)
-2026-07-08T23:28:26.614-04:00  INFO 10964 --- [discovery-server] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MAINTENANCES-SERVICE/localhost:maintenances-service:7774 with status UP (replication=false)
-2026-07-08T23:28:26.635-04:00  INFO 10964 --- [discovery-server] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MANUFACTURERS-SERVICE/localhost:manufacturers-service:7775 with status UP (replication=false)
-2026-07-08T23:28:26.670-04:00  INFO 10964 --- [discovery-server] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ENGINES-SERVICE/localhost:engines-service:7771 with status UP (replication=false)
-2026-07-08T23:28:26.679-04:00  INFO 10964 --- [discovery-server] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance TRAINS-SERVICE/localhost:trains-service:7770 with status UP (replication=false)
-2026-07-08T23:28:26.793-04:00  INFO 10964 --- [discovery-server] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance TICKETS-SERVICE/localhost:tickets-service:7772 with status UP (replication=false)
-2026-07-08T23:29:17.912-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2026-07-08T23:30:17.922-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
-2026-07-08T23:31:17.925-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
-2026-07-08T23:32:17.927-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2026-07-08T23:33:17.933-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
-2026-07-08T23:34:17.936-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
-2026-07-08T23:35:17.939-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
-2026-07-08T23:36:17.953-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 14ms
-2026-07-08T23:37:17.968-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 14ms
-2026-07-08T23:38:17.763-04:00  WARN 10964 --- [discovery-server] [eerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
-2026-07-08T23:38:17.980-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 11ms
-2026-07-08T23:39:17.984-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
-2026-07-08T23:40:17.999-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 15ms
-2026-07-08T23:41:18.010-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 11ms
-2026-07-08T23:42:18.019-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
-2026-07-08T23:43:17.777-04:00  INFO 10964 --- [discovery-server] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 13
-2026-07-08T23:43:18.026-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
-2026-07-08T23:44:18.041-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 15ms
-2026-07-08T23:45:18.054-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 13ms
-2026-07-08T23:46:18.068-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 13ms
-2026-07-08T23:47:18.075-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
-2026-07-08T23:48:17.778-04:00  WARN 10964 --- [discovery-server] [eerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
-2026-07-08T23:48:18.089-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 14ms
-2026-07-08T23:49:18.090-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2026-07-08T23:50:18.097-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
-2026-07-08T23:51:18.100-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
-2026-07-08T23:52:18.109-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
-2026-07-08T23:53:18.124-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 14ms
-2026-07-08T23:54:18.128-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
-2026-07-08T23:55:18.130-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2026-07-08T23:56:18.138-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
-2026-07-08T23:57:18.149-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 11ms
-2026-07-08T23:58:17.783-04:00  WARN 10964 --- [discovery-server] [eerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
-2026-07-08T23:58:17.783-04:00  INFO 10964 --- [discovery-server] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 13
-2026-07-08T23:58:18.156-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
-2026-07-08T23:59:18.165-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
-2026-07-09T00:00:18.172-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
-2026-07-09T00:01:18.186-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 14ms
-2026-07-09T00:02:18.189-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
-2026-07-09T00:03:18.202-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 12ms
-2026-07-09T00:04:18.217-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 15ms
-2026-07-09T00:05:18.231-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 13ms
-2026-07-09T00:06:18.243-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 11ms
-2026-07-09T00:07:18.247-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
-2026-07-09T00:08:17.795-04:00  WARN 10964 --- [discovery-server] [eerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
-2026-07-09T00:08:18.248-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2026-07-09T00:09:18.261-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 13ms
-2026-07-09T00:10:18.276-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 14ms
-2026-07-09T00:11:18.279-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
-2026-07-09T00:12:18.280-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2026-07-09T00:13:17.797-04:00  INFO 10964 --- [discovery-server] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 13
-2026-07-09T00:13:18.280-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2026-07-09T00:14:18.295-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 14ms
-2026-07-09T00:15:18.298-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
-2026-07-09T00:16:18.311-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 12ms
-2026-07-09T00:17:18.321-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
-2026-07-09T00:18:17.800-04:00  WARN 10964 --- [discovery-server] [eerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
-2026-07-09T00:18:18.331-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
-2026-07-09T00:19:18.331-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2026-07-09T00:20:18.337-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
-2026-07-09T00:21:18.337-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2026-07-09T00:22:18.337-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2026-07-09T00:23:18.352-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 14ms
-2026-07-09T00:24:18.367-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 15ms
-2026-07-09T00:25:18.381-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 13ms
-2026-07-09T00:26:18.385-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
-2026-07-09T00:27:18.398-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 12ms
-2026-07-09T00:28:17.805-04:00  INFO 10964 --- [discovery-server] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 13
-2026-07-09T00:28:17.805-04:00  WARN 10964 --- [discovery-server] [eerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
-2026-07-09T00:28:18.412-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 14ms
-2026-07-09T00:29:18.423-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
-2026-07-09T00:30:18.426-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
-2026-07-09T00:31:18.435-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
-2026-07-09T00:32:18.450-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 15ms
-2026-07-09T00:33:18.460-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
-2026-07-09T00:34:18.467-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
-2026-07-09T00:35:18.469-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
-2026-07-09T00:36:18.475-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
-2026-07-09T00:37:18.490-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 14ms
-2026-07-09T00:38:17.811-04:00  WARN 10964 --- [discovery-server] [eerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
-2026-07-09T00:38:18.497-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
-2026-07-09T00:39:18.504-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
-2026-07-09T00:40:18.516-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 11ms
-2026-07-09T00:41:18.520-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
-2026-07-09T00:42:18.525-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
-2026-07-09T00:43:17.815-04:00  INFO 10964 --- [discovery-server] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 13
-2026-07-09T00:43:18.532-04:00  INFO 10964 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2026-07-09T03:20:34.350-04:00  INFO 34912 --- [discovery-server] [           main] c.t.d.DiscoveryServerApplication         : Starting DiscoveryServerApplication using Java 21.0.10 with PID 34912 (C:\Users\XznRh\Downloads\exam-release\exam-release\discovery\target\classes started by XznRh in c:\Users\XznRh\Downloads\exam-release\exam-release\discovery)
+2026-07-09T03:20:34.358-04:00  INFO 34912 --- [discovery-server] [           main] c.t.d.DiscoveryServerApplication         : No active profile set, falling back to 1 default profile: "default"
+2026-07-09T03:20:36.719-04:00  INFO 34912 --- [discovery-server] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=de401257-b535-36e1-a1fd-4816a61b6ac8
+2026-07-09T03:20:37.394-04:00  INFO 34912 --- [discovery-server] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8761 (http)
+2026-07-09T03:20:37.428-04:00  INFO 34912 --- [discovery-server] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-09T03:20:37.428-04:00  INFO 34912 --- [discovery-server] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-09T03:20:37.581-04:00  INFO 34912 --- [discovery-server] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3101 ms
+2026-07-09T03:20:39.617-04:00  INFO 34912 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-07-09T03:20:39.617-04:00  INFO 34912 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-07-09T03:20:39.964-04:00  INFO 34912 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-07-09T03:20:39.964-04:00  INFO 34912 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-07-09T03:20:40.267-04:00  INFO 34912 --- [discovery-server] [           main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-07-09T03:20:41.917-04:00  INFO 34912 --- [discovery-server] [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-07-09T03:20:43.212-04:00  INFO 34912 --- [discovery-server] [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-07-09T03:20:43.302-04:00  WARN 34912 --- [discovery-server] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-07-09T03:20:43.339-04:00  INFO 34912 --- [discovery-server] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-07-09T03:20:43.379-04:00  INFO 34912 --- [discovery-server] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-07-09T03:20:43.380-04:00  INFO 34912 --- [discovery-server] [           main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2026-07-09T03:20:43.384-04:00  INFO 34912 --- [discovery-server] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1783581643381 with initial instances count: 0
+2026-07-09T03:20:43.458-04:00  INFO 34912 --- [discovery-server] [           main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2026-07-09T03:20:43.460-04:00  WARN 34912 --- [discovery-server] [           main] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2026-07-09T03:20:43.479-04:00  INFO 34912 --- [discovery-server] [           main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2026-07-09T03:20:43.479-04:00  INFO 34912 --- [discovery-server] [           main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2026-07-09T03:20:43.499-04:00  INFO 34912 --- [discovery-server] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-07-09T03:20:43.593-04:00  INFO 34912 --- [discovery-server] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DISCOVERY-SERVER with eureka with status UP
+2026-07-09T03:20:43.615-04:00  INFO 34912 --- [discovery-server] [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2026-07-09T03:20:43.616-04:00  INFO 34912 --- [discovery-server] [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2026-07-09T03:20:43.616-04:00  INFO 34912 --- [discovery-server] [      Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2026-07-09T03:20:43.617-04:00  INFO 34912 --- [discovery-server] [      Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2026-07-09T03:20:43.617-04:00  INFO 34912 --- [discovery-server] [      Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2026-07-09T03:20:43.622-04:00  INFO 34912 --- [discovery-server] [      Thread-10] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2026-07-09T03:20:43.653-04:00  INFO 34912 --- [discovery-server] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8761 (http) with context path '/'
+2026-07-09T03:20:43.654-04:00  INFO 34912 --- [discovery-server] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+2026-07-09T03:20:44.544-04:00  INFO 34912 --- [discovery-server] [nio-8761-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-09T03:20:44.544-04:00  INFO 34912 --- [discovery-server] [nio-8761-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-09T03:20:44.548-04:00  INFO 34912 --- [discovery-server] [nio-8761-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2026-07-09T03:20:44.672-04:00  INFO 34912 --- [discovery-server] [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-07-09T03:20:44.684-04:00  INFO 34912 --- [discovery-server] [           main] c.t.d.DiscoveryServerApplication         : Started DiscoveryServerApplication in 12.287 seconds (process running for 13.803)
+2026-07-09T03:20:45.131-04:00  INFO 34912 --- [discovery-server] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/localhost:api-gateway:8080 with status UP (replication=false)
+2026-07-09T03:20:54.203-04:00  INFO 34912 --- [discovery-server] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance TICKETS-SERVICE/localhost:tickets-service:7772 with status UP (replication=false)
+2026-07-09T03:20:54.213-04:00  INFO 34912 --- [discovery-server] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ENGINES-SERVICE/localhost:engines-service:7771 with status UP (replication=false)
+2026-07-09T03:20:54.312-04:00  INFO 34912 --- [discovery-server] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance REVIEWS-SERVICE/localhost:reviews-service:7773 with status UP (replication=false)
+2026-07-09T03:20:54.325-04:00  INFO 34912 --- [discovery-server] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MANUFACTURERS-SERVICE/localhost:manufacturers-service:7775 with status UP (replication=false)
+2026-07-09T03:20:54.355-04:00  INFO 34912 --- [discovery-server] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MAINTENANCES-SERVICE/localhost:maintenances-service:7774 with status UP (replication=false)
+2026-07-09T03:20:54.453-04:00  INFO 34912 --- [discovery-server] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance TRAINS-SERVICE/localhost:trains-service:7770 with status UP (replication=false)
+2026-07-09T03:20:54.629-04:00  INFO 34912 --- [discovery-server] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance STATIONS-SERVICE/localhost:stations-service:7778 with status UP (replication=false)
+2026-07-09T03:20:54.637-04:00  INFO 34912 --- [discovery-server] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CITIES-SERVICE/localhost:cities-service:7776 with status UP (replication=false)
+2026-07-09T03:20:54.695-04:00  INFO 34912 --- [discovery-server] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance LINES-SERVICE/localhost:lines-service:7777 with status UP (replication=false)
+2026-07-09T03:21:43.621-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-07-09T03:22:43.631-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2026-07-09T03:23:43.635-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-07-09T03:24:43.648-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 12ms
+2026-07-09T03:25:43.649-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-07-09T03:26:43.649-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-07-09T03:27:43.651-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-07-09T03:28:43.654-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-07-09T03:29:43.661-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2026-07-09T03:30:43.488-04:00  WARN 34912 --- [discovery-server] [eerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2026-07-09T03:30:43.670-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2026-07-09T03:31:43.673-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-07-09T03:32:43.684-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 11ms
+2026-07-09T03:33:43.694-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2026-07-09T03:34:43.709-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 14ms
+2026-07-09T03:35:43.498-04:00  INFO 34912 --- [discovery-server] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 18
+2026-07-09T03:35:43.721-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 12ms
+2026-07-09T03:36:43.722-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-07-09T03:37:43.722-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-07-09T03:38:43.728-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2026-07-09T03:39:43.737-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2026-07-09T03:40:43.496-04:00  WARN 34912 --- [discovery-server] [eerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2026-07-09T03:40:43.747-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2026-07-09T03:41:43.761-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 14ms
+2026-07-09T03:42:43.765-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-07-09T03:43:43.779-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 14ms
+2026-07-09T03:44:43.785-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-07-09T03:45:43.794-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2026-07-09T03:46:43.794-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-07-09T03:47:43.794-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-07-09T03:48:43.794-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-07-09T03:49:43.803-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2026-07-09T03:50:43.495-04:00  INFO 34912 --- [discovery-server] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 18
+2026-07-09T03:50:43.507-04:00  WARN 34912 --- [discovery-server] [eerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2026-07-09T03:50:43.818-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 15ms
+2026-07-09T03:51:43.825-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2026-07-09T03:52:43.828-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-07-09T03:53:43.834-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2026-07-09T03:54:43.834-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-07-09T03:55:43.840-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2026-07-09T03:56:43.851-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2026-07-09T03:57:43.864-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 13ms
+2026-07-09T03:58:43.869-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-07-09T03:59:43.883-04:00  INFO 34912 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 13ms

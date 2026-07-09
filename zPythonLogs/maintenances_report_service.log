@@ -35,52 +35,52 @@
 
  :: Spring Boot ::                (v4.1.0)
 
-23:28:11 INFO  Starting MaintenancesApplication using Java 21.0.10 with PID 38500 (c:\Users\XznRh\Downloads\exam-release\exam-release\maintenances-service\target\classes started by XznRh in c:\Users\XznRh\Downloads\exam-release\exam-release\maintenances-service)
-23:28:11 INFO  No active profile set, falling back to 1 default profile: "default"
-23:28:11 DEBUG Loading source class com.transit.maintenances.MaintenancesApplication
-23:28:11 DEBUG Matching URLs for reloading : [file:/c:/Users/XznRh/Downloads/exam-release/exam-release/maintenances-service/target/classes/]
-23:28:11 DEBUG Included patterns for restart : []
-23:28:11 DEBUG Excluded patterns for restart : [/spring-boot-starter-[\w-]+/, /spring-boot/(bin|build|out)/, /spring-boot-starter/(bin|build|out)/, /spring-boot-devtools/(bin|build|out)/, /spring-boot-actuator/(bin|build|out)/, /spring-boot-autoconfigure/(bin|build|out)/]
-23:28:11 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-23:28:11 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-23:28:11 DEBUG Refreshing org.springframework.boot.web.server.servlet.context.AnnotationConfigServletWebServerApplicationContext@4834efbc
-23:28:13 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-23:28:13 DEBUG @EnableAutoConfiguration was declared on a class in the package 'com.transit.maintenances'. Automatic @Repository and @Entity scanning is enabled.
-23:28:13 INFO  Finished Spring Data repository scanning in 187 ms. Found 1 JPA repository interface.
-23:28:14 INFO  BeanFactory id=c50640d5-4271-3e88-8634-cce5674d62b6
-23:28:15 DEBUG Code archive: C:\Users\XznRh\.m2\repository\org\springframework\boot\spring-boot-web-server\4.1.0\spring-boot-web-server-4.1.0.jar
-23:28:15 DEBUG Code archive: C:\Users\XznRh\.m2\repository\org\springframework\boot\spring-boot-web-server\4.1.0\spring-boot-web-server-4.1.0.jar
-23:28:15 DEBUG None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
-23:28:15 INFO  Tomcat initialized with port 7774 (http)
-23:28:15 INFO  Starting service [Tomcat]
-23:28:15 INFO  Starting Servlet engine: [Apache Tomcat/11.0.22]
-23:28:15 DEBUG Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-23:28:15 INFO  Root WebApplicationContext: initialization completed in 4135 ms
-23:28:15 DEBUG Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
-23:28:15 DEBUG Mapping servlets: dispatcherServlet urls=[/]
-23:28:15 DEBUG Filter 'requestContextFilter' configured for use
-23:28:15 DEBUG Filter 'characterEncodingFilter' configured for use
-23:28:15 DEBUG Filter 'formContentFilter' configured for use
-23:28:15 INFO  HikariPool-1 - Starting...
-23:28:15 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2d7db5fc
-23:28:15 INFO  HikariPool-1 - Start completed.
-23:28:17 INFO  Reading from transport_db_maintenancesservice.databasechangelog
-23:28:18 INFO  Database is up to date, no changesets to execute
-23:28:18 INFO  Reading from transport_db_maintenancesservice.databasechangelog
-23:28:18 INFO  UPDATE SUMMARY
-23:28:18 INFO  Run:                          0
-23:28:18 INFO  Previously run:               1
-23:28:18 INFO  Filtered out:                 0
-23:28:18 INFO  -------------------------------
-23:28:18 INFO  Total change sets:            1
-23:28:18 INFO  Update summary generated
-23:28:18 INFO  Command execution complete
-23:28:18 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
-23:28:18 INFO  HHH000001: Hibernate ORM core version 7.4.1.Final
-23:28:19 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
-23:28:19 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
-23:28:19 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-23:28:19 INFO  HHH10001005: Database info:
+03:20:34 INFO  Starting MaintenancesApplication using Java 21.0.10 with PID 40516 (c:\Users\XznRh\Downloads\exam-release\exam-release\maintenances-service\target\classes started by XznRh in c:\Users\XznRh\Downloads\exam-release\exam-release\maintenances-service)
+03:20:34 INFO  No active profile set, falling back to 1 default profile: "default"
+03:20:34 DEBUG Loading source class com.transit.maintenances.MaintenancesApplication
+03:20:34 DEBUG Matching URLs for reloading : [file:/c:/Users/XznRh/Downloads/exam-release/exam-release/maintenances-service/target/classes/]
+03:20:34 DEBUG Included patterns for restart : []
+03:20:34 DEBUG Excluded patterns for restart : [/spring-boot-starter-[\w-]+/, /spring-boot/(bin|build|out)/, /spring-boot-starter/(bin|build|out)/, /spring-boot-devtools/(bin|build|out)/, /spring-boot-actuator/(bin|build|out)/, /spring-boot-autoconfigure/(bin|build|out)/]
+03:20:34 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+03:20:34 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+03:20:34 DEBUG Refreshing org.springframework.boot.web.server.servlet.context.AnnotationConfigServletWebServerApplicationContext@674ac301
+03:20:37 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03:20:37 DEBUG @EnableAutoConfiguration was declared on a class in the package 'com.transit.maintenances'. Automatic @Repository and @Entity scanning is enabled.
+03:20:38 INFO  Finished Spring Data repository scanning in 283 ms. Found 1 JPA repository interface.
+03:20:38 INFO  BeanFactory id=c50640d5-4271-3e88-8634-cce5674d62b6
+03:20:40 DEBUG Code archive: C:\Users\XznRh\.m2\repository\org\springframework\boot\spring-boot-web-server\4.1.0\spring-boot-web-server-4.1.0.jar
+03:20:40 DEBUG Code archive: C:\Users\XznRh\.m2\repository\org\springframework\boot\spring-boot-web-server\4.1.0\spring-boot-web-server-4.1.0.jar
+03:20:40 DEBUG None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+03:20:40 INFO  Tomcat initialized with port 7774 (http)
+03:20:40 INFO  Starting service [Tomcat]
+03:20:40 INFO  Starting Servlet engine: [Apache Tomcat/11.0.22]
+03:20:40 DEBUG Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+03:20:40 INFO  Root WebApplicationContext: initialization completed in 6299 ms
+03:20:41 DEBUG Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+03:20:41 DEBUG Mapping servlets: dispatcherServlet urls=[/]
+03:20:41 DEBUG Filter 'requestContextFilter' configured for use
+03:20:41 DEBUG Filter 'characterEncodingFilter' configured for use
+03:20:41 DEBUG Filter 'formContentFilter' configured for use
+03:20:41 INFO  HikariPool-1 - Starting...
+03:20:41 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@555cb48e
+03:20:41 INFO  HikariPool-1 - Start completed.
+03:20:43 INFO  Reading from transport_db_maintenancesservice.databasechangelog
+03:20:43 INFO  Database is up to date, no changesets to execute
+03:20:43 INFO  Reading from transport_db_maintenancesservice.databasechangelog
+03:20:43 INFO  UPDATE SUMMARY
+03:20:43 INFO  Run:                          0
+03:20:43 INFO  Previously run:               1
+03:20:43 INFO  Filtered out:                 0
+03:20:43 INFO  -------------------------------
+03:20:43 INFO  Total change sets:            1
+03:20:43 INFO  Update summary generated
+03:20:43 INFO  Command execution complete
+03:20:44 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
+03:20:44 INFO  HHH000001: Hibernate ORM core version 7.4.1.Final
+03:20:45 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+03:20:45 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+03:20:45 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+03:20:45 INFO  HHH10001005: Database info:
 	Database JDBC URL [jdbc:mysql://localhost:3306/transport_db_maintenancesservice?createDatabaseIfNotExists=true]
 	Database driver: MySQL Connector/J
 	Database dialect: MySQLDialect
@@ -92,42 +92,42 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-23:28:20 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-23:28:20 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
-23:28:20 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
-23:28:21 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-23:28:22 DEBUG 13 mappings in 'requestMappingHandlerMapping'
-23:28:22 DEBUG Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
-23:28:22 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 2 RequestBodyAdvice, 1 ResponseBodyAdvice
-23:28:22 DEBUG ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
-23:28:24 INFO  Cannot determine local hostname
-23:28:25 INFO  Cannot determine local hostname
-23:28:25 INFO  Eureka HTTP Client uses RestClient.
-23:28:26 WARN  Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-23:28:26 INFO  Setting initial instance status as: STARTING
-23:28:26 INFO  Initializing Eureka in region us-east-1
-23:28:26 INFO  Resolving eureka endpoints via configuration
-23:28:26 INFO  Disable delta property : false
-23:28:26 INFO  Single vip registry refresh property : null
-23:28:26 INFO  Force full registry fetch : false
-23:28:26 INFO  Application is null : false
-23:28:26 INFO  Registered Applications size is zero : true
-23:28:26 INFO  Application version is -1: true
-23:28:26 INFO  Getting all instance registry info from the eureka server
-23:28:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:28:26 INFO  The response status is 200
-23:28:26 INFO  Starting heartbeat executor: renew interval is: 30
-23:28:26 INFO  InstanceInfoReplicator onDemand update allowed rate per min is 4
-23:28:26 INFO  Discovery Client initialized at timestamp 1783567706550 with initial instances count: 0
-23:28:26 INFO  Registering application MAINTENANCES-SERVICE with eureka with status UP
-23:28:26 INFO  Saw local status change event StatusChangeEvent [timestamp=1783567706567, current=UP, previous=STARTING]
-23:28:26 INFO  DiscoveryClient_MAINTENANCES-SERVICE/localhost:maintenances-service:7774: registering service...
-23:28:26 DEBUG Writing [InstanceInfo [instanceId = localhost:maintenances-service:7774, appName = MAINTENANCES-SERVICE, hostName = localhost, status = UP, ipAddr = 192.168.56.1, port = 7774, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@28e27174] as "application/json" with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
-23:28:26 INFO  Tomcat started on port 7774 (http) with context path '/'
-23:28:26 INFO  Updating port to 7774
-23:28:26 INFO  DiscoveryClient_MAINTENANCES-SERVICE/localhost:maintenances-service:7774 - registration status: 204
-23:28:27 INFO  Cannot determine local hostname
-23:28:27 DEBUG 
+03:20:47 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+03:20:47 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+03:20:47 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+03:20:48 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03:20:49 DEBUG 13 mappings in 'requestMappingHandlerMapping'
+03:20:49 DEBUG Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+03:20:49 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 2 RequestBodyAdvice, 1 ResponseBodyAdvice
+03:20:49 DEBUG ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+03:20:52 INFO  Cannot determine local hostname
+03:20:53 INFO  Cannot determine local hostname
+03:20:53 INFO  Eureka HTTP Client uses RestClient.
+03:20:53 WARN  Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+03:20:53 INFO  Setting initial instance status as: STARTING
+03:20:53 INFO  Initializing Eureka in region us-east-1
+03:20:53 INFO  Resolving eureka endpoints via configuration
+03:20:53 INFO  Disable delta property : false
+03:20:53 INFO  Single vip registry refresh property : null
+03:20:53 INFO  Force full registry fetch : false
+03:20:53 INFO  Application is null : false
+03:20:53 INFO  Registered Applications size is zero : true
+03:20:53 INFO  Application version is -1: true
+03:20:53 INFO  Getting all instance registry info from the eureka server
+03:20:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:20:54 INFO  The response status is 200
+03:20:54 INFO  Starting heartbeat executor: renew interval is: 30
+03:20:54 INFO  InstanceInfoReplicator onDemand update allowed rate per min is 4
+03:20:54 INFO  Discovery Client initialized at timestamp 1783581654283 with initial instances count: 0
+03:20:54 INFO  Registering application MAINTENANCES-SERVICE with eureka with status UP
+03:20:54 INFO  Saw local status change event StatusChangeEvent [timestamp=1783581654313, current=UP, previous=STARTING]
+03:20:54 INFO  DiscoveryClient_MAINTENANCES-SERVICE/localhost:maintenances-service:7774: registering service...
+03:20:54 DEBUG Writing [InstanceInfo [instanceId = localhost:maintenances-service:7774, appName = MAINTENANCES-SERVICE, hostName = localhost, status = UP, ipAddr = 192.168.56.1, port = 7774, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@7f3020d5] as "application/json" with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+03:20:54 INFO  Tomcat started on port 7774 (http) with context path '/'
+03:20:54 INFO  Updating port to 7774
+03:20:54 INFO  DiscoveryClient_MAINTENANCES-SERVICE/localhost:maintenances-service:7774 - registration status: 204
+03:20:55 INFO  Cannot determine local hostname
+03:20:55 DEBUG 
 
 
 ============================
@@ -1879,9 +1879,350 @@ Unconditional classes:
 
 
 
-23:28:27 INFO  Started MaintenancesApplication in 18.081 seconds (process running for 19.357)
-23:28:27 DEBUG Application availability state LivenessState changed to CORRECT
-23:28:27 DEBUG Creating new Restarter for thread Thread[#1,main,5,main]
-23:28:27 DEBUG Immediately restarting application
-23:28:27 DEBUG Starting application com.transit.maintenances.MaintenancesApplication with URLs [file:/c:/Users/XznRh/Downloads/exam-release/exam-release/maintenances-service/target/classes/]
-23:28:27 DEBUG Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+03:20:55 INFO  Started MaintenancesApplication in 22.82 seconds (process running for 24.611)
+03:20:55 DEBUG Application availability state LivenessState changed to CORRECT
+03:20:55 DEBUG Creating new Restarter for thread Thread[#1,main,5,main]
+03:20:55 DEBUG Immediately restarting application
+03:20:55 DEBUG Starting application com.transit.maintenances.MaintenancesApplication with URLs [file:/c:/Users/XznRh/Downloads/exam-release/exam-release/maintenances-service/target/classes/]
+03:20:55 DEBUG Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+03:21:24 INFO  Disable delta property : false
+03:21:24 INFO  Single vip registry refresh property : null
+03:21:24 INFO  Force full registry fetch : false
+03:21:24 INFO  Application is null : false
+03:21:24 INFO  Registered Applications size is zero : true
+03:21:24 INFO  Application version is -1: false
+03:21:24 INFO  Getting all instance registry info from the eureka server
+03:21:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:21:24 INFO  The response status is 200
+03:21:48 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+03:21:48 INFO  Initializing Servlet 'dispatcherServlet'
+03:21:48 DEBUG Detected StandardServletMultipartResolver
+03:21:48 DEBUG Detected AcceptHeaderLocaleResolver
+03:21:48 DEBUG Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7b0af01b
+03:21:48 DEBUG Detected org.springframework.web.servlet.support.SessionFlashMapManager@b470832
+03:21:48 DEBUG enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:21:48 INFO  Completed initialization in 2 ms
+03:21:48 DEBUG GET "/api/maintenances", parameters={}
+03:21:48 DEBUG Mapped to com.transit.maintenances.controller.MaintenanceController#getAllMaintenances()
+03:21:48 DEBUG 
+    select
+        mm1_0.id,
+        mm1_0.engine_code,
+        mm1_0.maintenance_description,
+        mm1_0.maintenance_crew,
+        mm1_0.maintenance_end_date,
+        mm1_0.maintenance_entry_date,
+        mm1_0.maintenance_id,
+        mm1_0.maintenance_price,
+        mm1_0.maintenance_release_date,
+        mm1_0.train_id 
+    from
+        maintenance_reports mm1_0
+Hibernate: 
+    select
+        mm1_0.id,
+        mm1_0.engine_code,
+        mm1_0.maintenance_description,
+        mm1_0.maintenance_crew,
+        mm1_0.maintenance_end_date,
+        mm1_0.maintenance_entry_date,
+        mm1_0.maintenance_id,
+        mm1_0.maintenance_price,
+        mm1_0.maintenance_release_date,
+        mm1_0.train_id 
+    from
+        maintenance_reports mm1_0
+03:21:48 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
+03:21:48 DEBUG Writing [CollectionModel { content: [MaintenanceResponseDTO(id=1, maintenanceDescription=Maintenance #1 – sOJ (truncated)...]
+03:21:48 DEBUG Completed 200 OK
+03:21:48 DEBUG GET "/api/maintenances", parameters={}
+03:21:48 DEBUG Mapped to com.transit.maintenances.controller.MaintenanceController#getAllMaintenances()
+03:21:48 DEBUG 
+    select
+        mm1_0.id,
+        mm1_0.engine_code,
+        mm1_0.maintenance_description,
+        mm1_0.maintenance_crew,
+        mm1_0.maintenance_end_date,
+        mm1_0.maintenance_entry_date,
+        mm1_0.maintenance_id,
+        mm1_0.maintenance_price,
+        mm1_0.maintenance_release_date,
+        mm1_0.train_id 
+    from
+        maintenance_reports mm1_0
+Hibernate: 
+    select
+        mm1_0.id,
+        mm1_0.engine_code,
+        mm1_0.maintenance_description,
+        mm1_0.maintenance_crew,
+        mm1_0.maintenance_end_date,
+        mm1_0.maintenance_entry_date,
+        mm1_0.maintenance_id,
+        mm1_0.maintenance_price,
+        mm1_0.maintenance_release_date,
+        mm1_0.train_id 
+    from
+        maintenance_reports mm1_0
+03:21:48 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
+03:21:48 DEBUG Writing [CollectionModel { content: [MaintenanceResponseDTO(id=1, maintenanceDescription=Maintenance #1 – sOJ (truncated)...]
+03:21:48 DEBUG Completed 200 OK
+03:21:48 DEBUG GET "/api/maintenances/1", parameters={}
+03:21:48 DEBUG Mapped to com.transit.maintenances.controller.MaintenanceController#getMaintenanceById(Long)
+03:21:48 DEBUG 
+    select
+        mm1_0.id,
+        mm1_0.engine_code,
+        mm1_0.maintenance_description,
+        mm1_0.maintenance_crew,
+        mm1_0.maintenance_end_date,
+        mm1_0.maintenance_entry_date,
+        mm1_0.maintenance_id,
+        mm1_0.maintenance_price,
+        mm1_0.maintenance_release_date,
+        mm1_0.train_id 
+    from
+        maintenance_reports mm1_0 
+    where
+        mm1_0.id=?
+Hibernate: 
+    select
+        mm1_0.id,
+        mm1_0.engine_code,
+        mm1_0.maintenance_description,
+        mm1_0.maintenance_crew,
+        mm1_0.maintenance_end_date,
+        mm1_0.maintenance_entry_date,
+        mm1_0.maintenance_id,
+        mm1_0.maintenance_price,
+        mm1_0.maintenance_release_date,
+        mm1_0.train_id 
+    from
+        maintenance_reports mm1_0 
+    where
+        mm1_0.id=?
+03:21:48 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
+03:21:48 DEBUG Writing [MaintenanceResponseDTO(id=1, maintenanceDescription=Maintenance #1 – sOJyJnGDvRJSNGn, maintenanceEnt (truncated)...]
+03:21:48 DEBUG Completed 200 OK
+03:21:49 DEBUG GET "/api/maintenances/1", parameters={}
+03:21:49 DEBUG Mapped to com.transit.maintenances.controller.MaintenanceController#getMaintenanceById(Long)
+03:21:49 DEBUG 
+    select
+        mm1_0.id,
+        mm1_0.engine_code,
+        mm1_0.maintenance_description,
+        mm1_0.maintenance_crew,
+        mm1_0.maintenance_end_date,
+        mm1_0.maintenance_entry_date,
+        mm1_0.maintenance_id,
+        mm1_0.maintenance_price,
+        mm1_0.maintenance_release_date,
+        mm1_0.train_id 
+    from
+        maintenance_reports mm1_0 
+    where
+        mm1_0.id=?
+Hibernate: 
+    select
+        mm1_0.id,
+        mm1_0.engine_code,
+        mm1_0.maintenance_description,
+        mm1_0.maintenance_crew,
+        mm1_0.maintenance_end_date,
+        mm1_0.maintenance_entry_date,
+        mm1_0.maintenance_id,
+        mm1_0.maintenance_price,
+        mm1_0.maintenance_release_date,
+        mm1_0.train_id 
+    from
+        maintenance_reports mm1_0 
+    where
+        mm1_0.id=?
+03:21:49 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
+03:21:49 DEBUG Writing [MaintenanceResponseDTO(id=1, maintenanceDescription=Maintenance #1 – sOJyJnGDvRJSNGn, maintenanceEnt (truncated)...]
+03:21:49 DEBUG Completed 200 OK
+03:21:49 DEBUG GET "/api/maintenances/code/MNT-001", parameters={}
+03:21:49 DEBUG Mapped to com.transit.maintenances.controller.MaintenanceController#getMaintenanceByCode(String)
+03:21:49 DEBUG 
+    select
+        mm1_0.id,
+        mm1_0.engine_code,
+        mm1_0.maintenance_description,
+        mm1_0.maintenance_crew,
+        mm1_0.maintenance_end_date,
+        mm1_0.maintenance_entry_date,
+        mm1_0.maintenance_id,
+        mm1_0.maintenance_price,
+        mm1_0.maintenance_release_date,
+        mm1_0.train_id 
+    from
+        maintenance_reports mm1_0
+Hibernate: 
+    select
+        mm1_0.id,
+        mm1_0.engine_code,
+        mm1_0.maintenance_description,
+        mm1_0.maintenance_crew,
+        mm1_0.maintenance_end_date,
+        mm1_0.maintenance_entry_date,
+        mm1_0.maintenance_id,
+        mm1_0.maintenance_price,
+        mm1_0.maintenance_release_date,
+        mm1_0.train_id 
+    from
+        maintenance_reports mm1_0
+03:21:49 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
+03:21:49 DEBUG Writing [MaintenanceResponseDTO(id=1, maintenanceDescription=Maintenance #1 – sOJyJnGDvRJSNGn, maintenanceEnt (truncated)...]
+03:21:49 DEBUG Completed 200 OK
+03:21:49 DEBUG GET "/api/maintenances/code/MNT-001", parameters={}
+03:21:49 DEBUG Mapped to com.transit.maintenances.controller.MaintenanceController#getMaintenanceByCode(String)
+03:21:49 DEBUG 
+    select
+        mm1_0.id,
+        mm1_0.engine_code,
+        mm1_0.maintenance_description,
+        mm1_0.maintenance_crew,
+        mm1_0.maintenance_end_date,
+        mm1_0.maintenance_entry_date,
+        mm1_0.maintenance_id,
+        mm1_0.maintenance_price,
+        mm1_0.maintenance_release_date,
+        mm1_0.train_id 
+    from
+        maintenance_reports mm1_0
+Hibernate: 
+    select
+        mm1_0.id,
+        mm1_0.engine_code,
+        mm1_0.maintenance_description,
+        mm1_0.maintenance_crew,
+        mm1_0.maintenance_end_date,
+        mm1_0.maintenance_entry_date,
+        mm1_0.maintenance_id,
+        mm1_0.maintenance_price,
+        mm1_0.maintenance_release_date,
+        mm1_0.train_id 
+    from
+        maintenance_reports mm1_0
+03:21:49 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
+03:21:49 DEBUG Writing [MaintenanceResponseDTO(id=1, maintenanceDescription=Maintenance #1 – sOJyJnGDvRJSNGn, maintenanceEnt (truncated)...]
+03:21:49 DEBUG Completed 200 OK
+03:21:49 DEBUG GET "/api/maintenances/crew/CREW-A", parameters={}
+03:21:49 DEBUG Mapped to com.transit.maintenances.controller.MaintenanceController#getMaintenancesByCrewId(String)
+03:21:49 DEBUG Using @ExceptionHandler com.transit.maintenances.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+03:21:49 DEBUG Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json, application/yaml]
+03:21:49 DEBUG Writing ["Error: You have more that one fallback method that cover the same exception type java.lang.Throwable"]
+03:21:49 WARN  Resolved [java.lang.IllegalStateException: You have more that one fallback method that cover the same exception type java.lang.Throwable]
+03:21:49 DEBUG Completed 500 INTERNAL_SERVER_ERROR
+03:21:49 DEBUG GET "/api/maintenances/crew/CREW-A", parameters={}
+03:21:49 DEBUG Mapped to com.transit.maintenances.controller.MaintenanceController#getMaintenancesByCrewId(String)
+03:21:49 DEBUG Using @ExceptionHandler com.transit.maintenances.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+03:21:49 DEBUG Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json, application/yaml]
+03:21:49 DEBUG Writing ["Error: You have more that one fallback method that cover the same exception type java.lang.Throwable"]
+03:21:49 WARN  Resolved [java.lang.IllegalStateException: You have more that one fallback method that cover the same exception type java.lang.Throwable]
+03:21:49 DEBUG Completed 500 INTERNAL_SERVER_ERROR
+03:21:49 DEBUG POST "/api/maintenances", parameters={}
+03:21:49 DEBUG Mapped to com.transit.maintenances.controller.MaintenanceController#createMaintenance(MaintenanceRequestDTO)
+03:21:49 DEBUG Read "application/json;charset=UTF-8" to [MaintenanceRequestDTO(maintenanceDescription=null, maintenanceEntryDate=null, maintenanceEndDate=nul (truncated)...]
+03:21:49 WARN  Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.transit.maintenances.dto.response.MaintenanceResponseDTO> com.transit.maintenances.controller.MaintenanceController.createMaintenance(com.transit.maintenances.dto.request.MaintenanceRequestDTO) with 13 errors: [Field error in object 'maintenanceRequestDTO' on field 'engineCode': rejected value [null]; codes [NotNull.maintenanceRequestDTO.engineCode,NotNull.engineCode,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [maintenanceRequestDTO.engineCode,engineCode]; arguments []; default message [engineCode]]; default message [Engine code has to be specified]] [Field error in object 'maintenanceRequestDTO' on field 'maintenanceId': rejected value [null]; codes [NotBlank.maintenanceRequestDTO.maintenanceId,NotBlank.maintenanceId,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [maintenanceRequestDTO.maintenanceId,maintenanceId]; arguments []; default message [maintenanceId]]; default message [Maintenance ID cannot be blank]] [Field error in object 'maintenanceRequestDTO' on field 'maintenanceCrewGroup': rejected value [null]; codes [NotNull.maintenanceRequestDTO.maintenanceCrewGroup,NotNull.maintenanceCrewGroup,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [maintenanceRequestDTO.maintenanceCrewGroup,maintenanceCrewGroup]; arguments []; default message [maintenanceCrewGroup]]; default message [Crew group cannot be null]] [Field error in object 'maintenanceRequestDTO' on field 'maintenanceCrewGroup': rejected value [null]; codes [NotBlank.maintenanceRequestDTO.maintenanceCrewGroup,NotBlank.maintenanceCrewGroup,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [maintenanceRequestDTO.maintenanceCrewGroup,maintenanceCrewGroup]; arguments []; default message [maintenanceCrewGroup]]; default message [Crew group cannot be blank]] [Field error in object 'maintenanceRequestDTO' on field 'maintenanceDescription': rejected value [null]; codes [NotBlank.maintenanceRequestDTO.maintenanceDescription,NotBlank.maintenanceDescription,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [maintenanceRequestDTO.maintenanceDescription,maintenanceDescription]; arguments []; default message [maintenanceDescription]]; default message [Description can't be blank]] [Field error in object 'maintenanceRequestDTO' on field 'maintenanceDescription': rejected value [null]; codes [NotNull.maintenanceRequestDTO.maintenanceDescription,NotNull.maintenanceDescription,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [maintenanceRequestDTO.maintenanceDescription,maintenanceDescription]; arguments []; default message [maintenanceDescription]]; default message [Description can't be null]] [Field error in object 'maintenanceRequestDTO' on field 'maintenanceReleaseDate': rejected value [null]; codes [NotNull.maintenanceRequestDTO.maintenanceReleaseDate,NotNull.maintenanceReleaseDate,NotNull.java.sql.Date,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [maintenanceRequestDTO.maintenanceReleaseDate,maintenanceReleaseDate]; arguments []; default message [maintenanceReleaseDate]]; default message [Release date cannot be null]] [Field error in object 'maintenanceRequestDTO' on field 'maintenanceEntryDate': rejected value [null]; codes [NotNull.maintenanceRequestDTO.maintenanceEntryDate,NotNull.maintenanceEntryDate,NotNull.java.sql.Date,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [maintenanceRequestDTO.maintenanceEntryDate,maintenanceEntryDate]; arguments []; default message [maintenanceEntryDate]]; default message [Entry date cannot be null]] [Field error in object 'maintenanceRequestDTO' on field 'maintenanceId': rejected value [null]; codes [NotNull.maintenanceRequestDTO.maintenanceId,NotNull.maintenanceId,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [maintenanceRequestDTO.maintenanceId,maintenanceId]; arguments []; default message [maintenanceId]]; default message [Maintenance ID cannot be null]] [Field error in object 'maintenanceRequestDTO' on field 'engineCode': rejected value [null]; codes [NotBlank.maintenanceRequestDTO.engineCode,NotBlank.engineCode,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [maintenanceRequestDTO.engineCode,engineCode]; arguments []; default message [engineCode]]; default message [Engine code cannot be blank]] [Field error in object 'maintenanceRequestDTO' on field 'maintenancePrice': rejected value [null]; codes [NotNull.maintenanceRequestDTO.maintenancePrice,NotNull.maintenancePrice,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [maintenanceRequestDTO.maintenancePrice,maintenancePrice]; arguments []; default message [maintenancePrice]]; default message [Cost cannot be null]] [Field error in object 'maintenanceRequestDTO' on field 'trainId': rejected value [null]; codes [NotNull.maintenanceRequestDTO.trainId,NotNull.trainId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [maintenanceRequestDTO.trainId,trainId]; arguments []; default message [trainId]]; default message [Train ID cannot be null]] [Field error in object 'maintenanceRequestDTO' on field 'maintenanceEndDate': rejected value [null]; codes [NotNull.maintenanceRequestDTO.maintenanceEndDate,NotNull.maintenanceEndDate,NotNull.java.sql.Date,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [maintenanceRequestDTO.maintenanceEndDate,maintenanceEndDate]; arguments []; default message [maintenanceEndDate]]; default message [End date cannot be null]] ]
+03:21:49 DEBUG Completed 400 BAD_REQUEST
+03:21:49 DEBUG "ERROR" dispatch for GET "/error", parameters={}
+03:21:49 DEBUG Mapped to org.springframework.boot.webmvc.autoconfigure.error.BasicErrorController#error(HttpServletRequest)
+03:21:49 DEBUG Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+03:21:49 DEBUG Writing [{timestamp=Thu Jul 09 03:21:49 CLT 2026, status=400, error=Bad Request, trace=org.springframework.we (truncated)...]
+03:21:49 DEBUG Exiting from "ERROR" dispatch, status 400
+03:21:49 DEBUG POST "/api/maintenances", parameters={}
+03:21:49 DEBUG Mapped to com.transit.maintenances.controller.MaintenanceController#createMaintenance(MaintenanceRequestDTO)
+03:21:49 DEBUG Read "application/json;charset=UTF-8" to [MaintenanceRequestDTO(maintenanceDescription=null, maintenanceEntryDate=null, maintenanceEndDate=nul (truncated)...]
+03:21:49 WARN  Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.transit.maintenances.dto.response.MaintenanceResponseDTO> com.transit.maintenances.controller.MaintenanceController.createMaintenance(com.transit.maintenances.dto.request.MaintenanceRequestDTO) with 13 errors: [Field error in object 'maintenanceRequestDTO' on field 'maintenancePrice': rejected value [null]; codes [NotNull.maintenanceRequestDTO.maintenancePrice,NotNull.maintenancePrice,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [maintenanceRequestDTO.maintenancePrice,maintenancePrice]; arguments []; default message [maintenancePrice]]; default message [Cost cannot be null]] [Field error in object 'maintenanceRequestDTO' on field 'maintenanceDescription': rejected value [null]; codes [NotNull.maintenanceRequestDTO.maintenanceDescription,NotNull.maintenanceDescription,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [maintenanceRequestDTO.maintenanceDescription,maintenanceDescription]; arguments []; default message [maintenanceDescription]]; default message [Description can't be null]] [Field error in object 'maintenanceRequestDTO' on field 'maintenanceEndDate': rejected value [null]; codes [NotNull.maintenanceRequestDTO.maintenanceEndDate,NotNull.maintenanceEndDate,NotNull.java.sql.Date,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [maintenanceRequestDTO.maintenanceEndDate,maintenanceEndDate]; arguments []; default message [maintenanceEndDate]]; default message [End date cannot be null]] [Field error in object 'maintenanceRequestDTO' on field 'maintenanceId': rejected value [null]; codes [NotBlank.maintenanceRequestDTO.maintenanceId,NotBlank.maintenanceId,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [maintenanceRequestDTO.maintenanceId,maintenanceId]; arguments []; default message [maintenanceId]]; default message [Maintenance ID cannot be blank]] [Field error in object 'maintenanceRequestDTO' on field 'engineCode': rejected value [null]; codes [NotNull.maintenanceRequestDTO.engineCode,NotNull.engineCode,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [maintenanceRequestDTO.engineCode,engineCode]; arguments []; default message [engineCode]]; default message [Engine code has to be specified]] [Field error in object 'maintenanceRequestDTO' on field 'maintenanceCrewGroup': rejected value [null]; codes [NotNull.maintenanceRequestDTO.maintenanceCrewGroup,NotNull.maintenanceCrewGroup,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [maintenanceRequestDTO.maintenanceCrewGroup,maintenanceCrewGroup]; arguments []; default message [maintenanceCrewGroup]]; default message [Crew group cannot be null]] [Field error in object 'maintenanceRequestDTO' on field 'maintenanceDescription': rejected value [null]; codes [NotBlank.maintenanceRequestDTO.maintenanceDescription,NotBlank.maintenanceDescription,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [maintenanceRequestDTO.maintenanceDescription,maintenanceDescription]; arguments []; default message [maintenanceDescription]]; default message [Description can't be blank]] [Field error in object 'maintenanceRequestDTO' on field 'maintenanceReleaseDate': rejected value [null]; codes [NotNull.maintenanceRequestDTO.maintenanceReleaseDate,NotNull.maintenanceReleaseDate,NotNull.java.sql.Date,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [maintenanceRequestDTO.maintenanceReleaseDate,maintenanceReleaseDate]; arguments []; default message [maintenanceReleaseDate]]; default message [Release date cannot be null]] [Field error in object 'maintenanceRequestDTO' on field 'trainId': rejected value [null]; codes [NotNull.maintenanceRequestDTO.trainId,NotNull.trainId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [maintenanceRequestDTO.trainId,trainId]; arguments []; default message [trainId]]; default message [Train ID cannot be null]] [Field error in object 'maintenanceRequestDTO' on field 'maintenanceCrewGroup': rejected value [null]; codes [NotBlank.maintenanceRequestDTO.maintenanceCrewGroup,NotBlank.maintenanceCrewGroup,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [maintenanceRequestDTO.maintenanceCrewGroup,maintenanceCrewGroup]; arguments []; default message [maintenanceCrewGroup]]; default message [Crew group cannot be blank]] [Field error in object 'maintenanceRequestDTO' on field 'maintenanceEntryDate': rejected value [null]; codes [NotNull.maintenanceRequestDTO.maintenanceEntryDate,NotNull.maintenanceEntryDate,NotNull.java.sql.Date,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [maintenanceRequestDTO.maintenanceEntryDate,maintenanceEntryDate]; arguments []; default message [maintenanceEntryDate]]; default message [Entry date cannot be null]] [Field error in object 'maintenanceRequestDTO' on field 'maintenanceId': rejected value [null]; codes [NotNull.maintenanceRequestDTO.maintenanceId,NotNull.maintenanceId,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [maintenanceRequestDTO.maintenanceId,maintenanceId]; arguments []; default message [maintenanceId]]; default message [Maintenance ID cannot be null]] [Field error in object 'maintenanceRequestDTO' on field 'engineCode': rejected value [null]; codes [NotBlank.maintenanceRequestDTO.engineCode,NotBlank.engineCode,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [maintenanceRequestDTO.engineCode,engineCode]; arguments []; default message [engineCode]]; default message [Engine code cannot be blank]] ]
+03:21:49 DEBUG Completed 400 BAD_REQUEST
+03:21:49 DEBUG "ERROR" dispatch for GET "/error", parameters={}
+03:21:49 DEBUG Mapped to org.springframework.boot.webmvc.autoconfigure.error.BasicErrorController#error(HttpServletRequest)
+03:21:49 DEBUG Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+03:21:49 DEBUG Writing [{timestamp=Thu Jul 09 03:21:49 CLT 2026, status=400, error=Bad Request, trace=org.springframework.we (truncated)...]
+03:21:49 DEBUG Exiting from "ERROR" dispatch, status 400
+03:21:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:22:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:22:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:23:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:23:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:24:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:24:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:25:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:25:53 INFO  Resolving eureka endpoints via configuration
+03:25:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:26:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:26:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:27:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:27:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:28:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:28:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:29:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:29:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:30:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:30:53 INFO  Resolving eureka endpoints via configuration
+03:30:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:31:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:31:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:32:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:32:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:33:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:33:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:34:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:34:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:35:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:35:53 INFO  Resolving eureka endpoints via configuration
+03:35:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:36:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:36:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:37:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:37:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:38:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:38:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:39:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:39:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:40:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:40:53 INFO  Resolving eureka endpoints via configuration
+03:40:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:41:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:41:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:42:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:42:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:43:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:43:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:44:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:44:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:45:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:45:53 INFO  Resolving eureka endpoints via configuration
+03:45:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:46:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:46:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:47:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:47:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:48:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:48:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:49:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:49:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:50:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:50:53 INFO  Resolving eureka endpoints via configuration
+03:50:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:51:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:51:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:52:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:52:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:53:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:53:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:54:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:54:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:55:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:55:53 INFO  Resolving eureka endpoints via configuration
+03:55:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:56:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:56:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:57:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:57:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:58:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:58:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:59:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:59:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
