@@ -35,52 +35,52 @@
 
  :: Spring Boot ::                (v4.1.0)
 
-23:28:11 INFO  Starting TrainsApplication using Java 21.0.10 with PID 20696 (c:\Users\XznRh\Downloads\exam-release\exam-release\trains-service\target\classes started by XznRh in c:\Users\XznRh\Downloads\exam-release\exam-release\trains-service)
-23:28:11 INFO  No active profile set, falling back to 1 default profile: "default"
-23:28:11 DEBUG Loading source class com.transit.trains.TrainsApplication
-23:28:11 DEBUG Matching URLs for reloading : [file:/c:/Users/XznRh/Downloads/exam-release/exam-release/trains-service/target/classes/]
-23:28:11 DEBUG Included patterns for restart : []
-23:28:11 DEBUG Excluded patterns for restart : [/spring-boot-starter-[\w-]+/, /spring-boot/(bin|build|out)/, /spring-boot-starter/(bin|build|out)/, /spring-boot-devtools/(bin|build|out)/, /spring-boot-actuator/(bin|build|out)/, /spring-boot-autoconfigure/(bin|build|out)/]
-23:28:11 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-23:28:11 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-23:28:11 DEBUG Refreshing org.springframework.boot.web.server.servlet.context.AnnotationConfigServletWebServerApplicationContext@3eaebf3e
-23:28:13 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-23:28:13 DEBUG @EnableAutoConfiguration was declared on a class in the package 'com.transit.trains'. Automatic @Repository and @Entity scanning is enabled.
-23:28:13 INFO  Finished Spring Data repository scanning in 186 ms. Found 1 JPA repository interface.
-23:28:14 INFO  BeanFactory id=b47dc068-5c4a-398e-88f0-9e93bf38b5e6
-23:28:15 DEBUG Code archive: C:\Users\XznRh\.m2\repository\org\springframework\boot\spring-boot-web-server\4.1.0\spring-boot-web-server-4.1.0.jar
-23:28:15 DEBUG Code archive: C:\Users\XznRh\.m2\repository\org\springframework\boot\spring-boot-web-server\4.1.0\spring-boot-web-server-4.1.0.jar
-23:28:15 DEBUG None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
-23:28:15 INFO  Tomcat initialized with port 7770 (http)
-23:28:15 INFO  Starting service [Tomcat]
-23:28:15 INFO  Starting Servlet engine: [Apache Tomcat/11.0.22]
-23:28:15 DEBUG Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-23:28:15 INFO  Root WebApplicationContext: initialization completed in 4089 ms
-23:28:15 DEBUG Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
-23:28:15 DEBUG Mapping servlets: dispatcherServlet urls=[/]
-23:28:15 DEBUG Filter 'requestContextFilter' configured for use
-23:28:15 DEBUG Filter 'characterEncodingFilter' configured for use
-23:28:15 DEBUG Filter 'formContentFilter' configured for use
-23:28:15 INFO  HikariPool-1 - Starting...
-23:28:15 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4b315d37
-23:28:15 INFO  HikariPool-1 - Start completed.
-23:28:17 INFO  Reading from transport_db_trainsservice.databasechangelog
-23:28:18 INFO  Database is up to date, no changesets to execute
-23:28:18 INFO  Reading from transport_db_trainsservice.databasechangelog
-23:28:18 INFO  UPDATE SUMMARY
-23:28:18 INFO  Run:                          0
-23:28:18 INFO  Previously run:               1
-23:28:18 INFO  Filtered out:                 0
-23:28:18 INFO  -------------------------------
-23:28:18 INFO  Total change sets:            1
-23:28:18 INFO  Update summary generated
-23:28:18 INFO  Command execution complete
-23:28:18 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
-23:28:18 INFO  HHH000001: Hibernate ORM core version 7.4.1.Final
-23:28:19 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
-23:28:19 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
-23:28:19 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-23:28:19 INFO  HHH10001005: Database info:
+03:20:34 INFO  Starting TrainsApplication using Java 21.0.10 with PID 12740 (c:\Users\XznRh\Downloads\exam-release\exam-release\trains-service\target\classes started by XznRh in c:\Users\XznRh\Downloads\exam-release\exam-release\trains-service)
+03:20:34 INFO  No active profile set, falling back to 1 default profile: "default"
+03:20:34 DEBUG Loading source class com.transit.trains.TrainsApplication
+03:20:34 DEBUG Matching URLs for reloading : [file:/c:/Users/XznRh/Downloads/exam-release/exam-release/trains-service/target/classes/]
+03:20:34 DEBUG Included patterns for restart : []
+03:20:34 DEBUG Excluded patterns for restart : [/spring-boot-starter-[\w-]+/, /spring-boot/(bin|build|out)/, /spring-boot-starter/(bin|build|out)/, /spring-boot-devtools/(bin|build|out)/, /spring-boot-actuator/(bin|build|out)/, /spring-boot-autoconfigure/(bin|build|out)/]
+03:20:34 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+03:20:34 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+03:20:34 DEBUG Refreshing org.springframework.boot.web.server.servlet.context.AnnotationConfigServletWebServerApplicationContext@3eaebf3e
+03:20:37 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03:20:38 DEBUG @EnableAutoConfiguration was declared on a class in the package 'com.transit.trains'. Automatic @Repository and @Entity scanning is enabled.
+03:20:38 INFO  Finished Spring Data repository scanning in 249 ms. Found 1 JPA repository interface.
+03:20:39 INFO  BeanFactory id=b47dc068-5c4a-398e-88f0-9e93bf38b5e6
+03:20:40 DEBUG Code archive: C:\Users\XznRh\.m2\repository\org\springframework\boot\spring-boot-web-server\4.1.0\spring-boot-web-server-4.1.0.jar
+03:20:40 DEBUG Code archive: C:\Users\XznRh\.m2\repository\org\springframework\boot\spring-boot-web-server\4.1.0\spring-boot-web-server-4.1.0.jar
+03:20:40 DEBUG None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+03:20:40 INFO  Tomcat initialized with port 7770 (http)
+03:20:40 INFO  Starting service [Tomcat]
+03:20:40 INFO  Starting Servlet engine: [Apache Tomcat/11.0.22]
+03:20:41 DEBUG Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+03:20:41 INFO  Root WebApplicationContext: initialization completed in 6340 ms
+03:20:41 DEBUG Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+03:20:41 DEBUG Mapping servlets: dispatcherServlet urls=[/]
+03:20:41 DEBUG Filter 'requestContextFilter' configured for use
+03:20:41 DEBUG Filter 'characterEncodingFilter' configured for use
+03:20:41 DEBUG Filter 'formContentFilter' configured for use
+03:20:41 INFO  HikariPool-1 - Starting...
+03:20:41 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@63a2a42b
+03:20:41 INFO  HikariPool-1 - Start completed.
+03:20:43 INFO  Reading from transport_db_trainsservice.databasechangelog
+03:20:44 INFO  Database is up to date, no changesets to execute
+03:20:44 INFO  Reading from transport_db_trainsservice.databasechangelog
+03:20:44 INFO  UPDATE SUMMARY
+03:20:44 INFO  Run:                          0
+03:20:44 INFO  Previously run:               1
+03:20:44 INFO  Filtered out:                 0
+03:20:44 INFO  -------------------------------
+03:20:44 INFO  Total change sets:            1
+03:20:44 INFO  Update summary generated
+03:20:44 INFO  Command execution complete
+03:20:44 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
+03:20:44 INFO  HHH000001: Hibernate ORM core version 7.4.1.Final
+03:20:45 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+03:20:45 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+03:20:45 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+03:20:45 INFO  HHH10001005: Database info:
 	Database JDBC URL [jdbc:mysql://localhost:3306/transport_db_trainsservice?createDatabaseIfNotExists=true]
 	Database driver: MySQL Connector/J
 	Database dialect: MySQLDialect
@@ -92,42 +92,42 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-23:28:20 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-23:28:20 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
-23:28:20 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
-23:28:21 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-23:28:22 DEBUG 13 mappings in 'requestMappingHandlerMapping'
-23:28:22 DEBUG Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
-23:28:22 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 2 RequestBodyAdvice, 1 ResponseBodyAdvice
-23:28:22 DEBUG ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
-23:28:24 INFO  Cannot determine local hostname
-23:28:25 INFO  Cannot determine local hostname
-23:28:26 INFO  Eureka HTTP Client uses RestClient.
-23:28:26 WARN  Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-23:28:26 INFO  Setting initial instance status as: STARTING
-23:28:26 INFO  Initializing Eureka in region us-east-1
-23:28:26 INFO  Resolving eureka endpoints via configuration
-23:28:26 INFO  Disable delta property : false
-23:28:26 INFO  Single vip registry refresh property : null
-23:28:26 INFO  Force full registry fetch : false
-23:28:26 INFO  Application is null : false
-23:28:26 INFO  Registered Applications size is zero : true
-23:28:26 INFO  Application version is -1: true
-23:28:26 INFO  Getting all instance registry info from the eureka server
-23:28:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:28:26 INFO  The response status is 200
-23:28:26 INFO  Starting heartbeat executor: renew interval is: 30
-23:28:26 INFO  InstanceInfoReplicator onDemand update allowed rate per min is 4
-23:28:26 INFO  Discovery Client initialized at timestamp 1783567706623 with initial instances count: 0
-23:28:26 INFO  Registering application TRAINS-SERVICE with eureka with status UP
-23:28:26 INFO  Saw local status change event StatusChangeEvent [timestamp=1783567706643, current=UP, previous=STARTING]
-23:28:26 INFO  DiscoveryClient_TRAINS-SERVICE/localhost:trains-service:7770: registering service...
-23:28:26 DEBUG Writing [InstanceInfo [instanceId = localhost:trains-service:7770, appName = TRAINS-SERVICE, hostName = localhost, status = UP, ipAddr = 192.168.56.1, port = 7770, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@6f1c15f0] as "application/json" with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
-23:28:26 INFO  Tomcat started on port 7770 (http) with context path '/'
-23:28:26 INFO  Updating port to 7770
-23:28:26 INFO  DiscoveryClient_TRAINS-SERVICE/localhost:trains-service:7770 - registration status: 204
-23:28:27 INFO  Cannot determine local hostname
-23:28:27 DEBUG 
+03:20:47 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+03:20:47 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+03:20:47 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+03:20:48 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03:20:49 DEBUG 13 mappings in 'requestMappingHandlerMapping'
+03:20:49 DEBUG Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+03:20:49 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 2 RequestBodyAdvice, 1 ResponseBodyAdvice
+03:20:49 DEBUG ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+03:20:52 INFO  Cannot determine local hostname
+03:20:53 INFO  Cannot determine local hostname
+03:20:53 INFO  Eureka HTTP Client uses RestClient.
+03:20:53 WARN  Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+03:20:53 INFO  Setting initial instance status as: STARTING
+03:20:54 INFO  Initializing Eureka in region us-east-1
+03:20:54 INFO  Resolving eureka endpoints via configuration
+03:20:54 INFO  Disable delta property : false
+03:20:54 INFO  Single vip registry refresh property : null
+03:20:54 INFO  Force full registry fetch : false
+03:20:54 INFO  Application is null : false
+03:20:54 INFO  Registered Applications size is zero : true
+03:20:54 INFO  Application version is -1: true
+03:20:54 INFO  Getting all instance registry info from the eureka server
+03:20:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:20:54 INFO  The response status is 200
+03:20:54 INFO  Starting heartbeat executor: renew interval is: 30
+03:20:54 INFO  InstanceInfoReplicator onDemand update allowed rate per min is 4
+03:20:54 INFO  Discovery Client initialized at timestamp 1783581654400 with initial instances count: 0
+03:20:54 INFO  Registering application TRAINS-SERVICE with eureka with status UP
+03:20:54 INFO  Saw local status change event StatusChangeEvent [timestamp=1783581654417, current=UP, previous=STARTING]
+03:20:54 INFO  DiscoveryClient_TRAINS-SERVICE/localhost:trains-service:7770: registering service...
+03:20:54 DEBUG Writing [InstanceInfo [instanceId = localhost:trains-service:7770, appName = TRAINS-SERVICE, hostName = localhost, status = UP, ipAddr = 192.168.56.1, port = 7770, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@50687f66] as "application/json" with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+03:20:54 INFO  Tomcat started on port 7770 (http) with context path '/'
+03:20:54 INFO  Updating port to 7770
+03:20:54 INFO  DiscoveryClient_TRAINS-SERVICE/localhost:trains-service:7770 - registration status: 204
+03:20:55 INFO  Cannot determine local hostname
+03:20:55 DEBUG 
 
 
 ============================
@@ -1879,32 +1879,32 @@ Unconditional classes:
 
 
 
-23:28:27 INFO  Started TrainsApplication in 18.1 seconds (process running for 19.319)
-23:28:27 DEBUG Application availability state LivenessState changed to CORRECT
-23:28:27 DEBUG Creating new Restarter for thread Thread[#1,main,5,main]
-23:28:27 DEBUG Immediately restarting application
-23:28:27 DEBUG Starting application com.transit.trains.TrainsApplication with URLs [file:/c:/Users/XznRh/Downloads/exam-release/exam-release/trains-service/target/classes/]
-23:28:27 DEBUG Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
-23:28:56 INFO  Disable delta property : false
-23:28:56 INFO  Single vip registry refresh property : null
-23:28:56 INFO  Force full registry fetch : false
-23:28:56 INFO  Application is null : false
-23:28:56 INFO  Registered Applications size is zero : true
-23:28:56 INFO  Application version is -1: false
-23:28:56 INFO  Getting all instance registry info from the eureka server
-23:28:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:28:56 INFO  The response status is 200
-23:29:20 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
-23:29:20 INFO  Initializing Servlet 'dispatcherServlet'
-23:29:20 DEBUG Detected StandardServletMultipartResolver
-23:29:20 DEBUG Detected AcceptHeaderLocaleResolver
-23:29:20 DEBUG Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2cf02967
-23:29:20 DEBUG Detected org.springframework.web.servlet.support.SessionFlashMapManager@3728753f
-23:29:20 DEBUG enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-23:29:20 INFO  Completed initialization in 3 ms
-23:29:20 DEBUG GET "/api/trains/all", parameters={}
-23:29:20 DEBUG Mapped to com.transit.trains.controller.TrainController#getAllTrains()
-23:29:20 DEBUG 
+03:20:55 INFO  Started TrainsApplication in 22.936 seconds (process running for 24.726)
+03:20:55 DEBUG Application availability state LivenessState changed to CORRECT
+03:20:55 DEBUG Creating new Restarter for thread Thread[#1,main,5,main]
+03:20:55 DEBUG Immediately restarting application
+03:20:55 DEBUG Starting application com.transit.trains.TrainsApplication with URLs [file:/c:/Users/XznRh/Downloads/exam-release/exam-release/trains-service/target/classes/]
+03:20:55 DEBUG Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+03:21:24 INFO  Disable delta property : false
+03:21:24 INFO  Single vip registry refresh property : null
+03:21:24 INFO  Force full registry fetch : false
+03:21:24 INFO  Application is null : false
+03:21:24 INFO  Registered Applications size is zero : true
+03:21:24 INFO  Application version is -1: false
+03:21:24 INFO  Getting all instance registry info from the eureka server
+03:21:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:21:24 INFO  The response status is 200
+03:21:37 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+03:21:37 INFO  Initializing Servlet 'dispatcherServlet'
+03:21:37 DEBUG Detected StandardServletMultipartResolver
+03:21:37 DEBUG Detected AcceptHeaderLocaleResolver
+03:21:37 DEBUG Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@444a8320
+03:21:37 DEBUG Detected org.springframework.web.servlet.support.SessionFlashMapManager@35ce334
+03:21:37 DEBUG enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+03:21:37 INFO  Completed initialization in 2 ms
+03:21:37 DEBUG GET "/api/trains/all", parameters={}
+03:21:37 DEBUG Mapped to com.transit.trains.controller.TrainController#getAllTrains()
+03:21:37 DEBUG 
     select
         tm1_0.id,
         tm1_0.car_amount,
@@ -1926,12 +1926,12 @@ Hibernate:
         tm1_0.production_date 
     from
         trains tm1_0
-23:29:20 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-23:29:20 DEBUG Writing [CollectionModel { content: [TrainResponseDTO(id=1, code=V0LLZ, manufacturerId=Hitachi, engineId=6, c (truncated)...]
-23:29:20 DEBUG Completed 200 OK
-23:29:20 DEBUG GET "/api/trains/all", parameters={}
-23:29:20 DEBUG Mapped to com.transit.trains.controller.TrainController#getAllTrains()
-23:29:20 DEBUG 
+03:21:37 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
+03:21:37 DEBUG Writing [CollectionModel { content: [TrainResponseDTO(id=1, code=I50YY, manufacturerId=GE, engineId=7, carAmo (truncated)...]
+03:21:37 DEBUG Completed 200 OK
+03:21:38 DEBUG GET "/api/trains/all", parameters={}
+03:21:38 DEBUG Mapped to com.transit.trains.controller.TrainController#getAllTrains()
+03:21:38 DEBUG 
     select
         tm1_0.id,
         tm1_0.car_amount,
@@ -1953,12 +1953,12 @@ Hibernate:
         tm1_0.production_date 
     from
         trains tm1_0
-23:29:20 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-23:29:20 DEBUG Writing [CollectionModel { content: [TrainResponseDTO(id=1, code=V0LLZ, manufacturerId=Hitachi, engineId=6, c (truncated)...]
-23:29:20 DEBUG Completed 200 OK
-23:29:20 DEBUG GET "/api/trains/1", parameters={}
-23:29:20 DEBUG Mapped to com.transit.trains.controller.TrainController#getTrain(Long)
-23:29:20 DEBUG 
+03:21:38 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
+03:21:38 DEBUG Writing [CollectionModel { content: [TrainResponseDTO(id=1, code=I50YY, manufacturerId=GE, engineId=7, carAmo (truncated)...]
+03:21:38 DEBUG Completed 200 OK
+03:21:38 DEBUG GET "/api/trains/1", parameters={}
+03:21:38 DEBUG Mapped to com.transit.trains.controller.TrainController#getTrain(Long)
+03:21:38 DEBUG 
     select
         tm1_0.id,
         tm1_0.car_amount,
@@ -1984,12 +1984,12 @@ Hibernate:
         trains tm1_0 
     where
         tm1_0.id=?
-23:29:20 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-23:29:20 DEBUG Writing [TrainResponseDTO(id=1, code=V0LLZ, manufacturerId=Hitachi, engineId=6, carAmount=4, costPerCar=2783, (truncated)...]
-23:29:20 DEBUG Completed 200 OK
-23:29:20 DEBUG GET "/api/trains/1", parameters={}
-23:29:20 DEBUG Mapped to com.transit.trains.controller.TrainController#getTrain(Long)
-23:29:20 DEBUG 
+03:21:38 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
+03:21:38 DEBUG Writing [TrainResponseDTO(id=1, code=I50YY, manufacturerId=GE, engineId=7, carAmount=3, costPerCar=1682, prod (truncated)...]
+03:21:38 DEBUG Completed 200 OK
+03:21:38 DEBUG GET "/api/trains/1", parameters={}
+03:21:38 DEBUG Mapped to com.transit.trains.controller.TrainController#getTrain(Long)
+03:21:38 DEBUG 
     select
         tm1_0.id,
         tm1_0.car_amount,
@@ -2015,12 +2015,12 @@ Hibernate:
         trains tm1_0 
     where
         tm1_0.id=?
-23:29:20 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-23:29:20 DEBUG Writing [TrainResponseDTO(id=1, code=V0LLZ, manufacturerId=Hitachi, engineId=6, carAmount=4, costPerCar=2783, (truncated)...]
-23:29:20 DEBUG Completed 200 OK
-23:29:21 DEBUG GET "/api/trains/code/TRN01", parameters={}
-23:29:21 DEBUG Mapped to com.transit.trains.controller.TrainController#getTrainByCode(String)
-23:29:21 DEBUG 
+03:21:38 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
+03:21:38 DEBUG Writing [TrainResponseDTO(id=1, code=I50YY, manufacturerId=GE, engineId=7, carAmount=3, costPerCar=1682, prod (truncated)...]
+03:21:38 DEBUG Completed 200 OK
+03:21:38 DEBUG GET "/api/trains/code/TRN01", parameters={}
+03:21:38 DEBUG Mapped to com.transit.trains.controller.TrainController#getTrainByCode(String)
+03:21:38 DEBUG 
     select
         tm1_0.id,
         tm1_0.car_amount,
@@ -2047,12 +2047,12 @@ Hibernate:
     where
         tm1_0.code=?
 CircuitBreaker triggered for Train ID -1. Error: Train not found with code: TRN01
-23:29:21 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-23:29:21 DEBUG Writing [TrainResponseDTO(id=-1, code=ERROR, manufacturerId=Unavailable, engineId=0, carAmount=0, costPerCar= (truncated)...]
-23:29:21 DEBUG Completed 200 OK
-23:29:21 DEBUG GET "/api/trains/code/TRN01", parameters={}
-23:29:21 DEBUG Mapped to com.transit.trains.controller.TrainController#getTrainByCode(String)
-23:29:21 DEBUG 
+03:21:38 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
+03:21:38 DEBUG Writing [TrainResponseDTO(id=-1, code=ERROR, manufacturerId=Unavailable, engineId=0, carAmount=0, costPerCar= (truncated)...]
+03:21:38 DEBUG Completed 200 OK
+03:21:38 DEBUG GET "/api/trains/code/TRN01", parameters={}
+03:21:38 DEBUG Mapped to com.transit.trains.controller.TrainController#getTrainByCode(String)
+03:21:38 DEBUG 
     select
         tm1_0.id,
         tm1_0.car_amount,
@@ -2079,13 +2079,13 @@ Hibernate:
     where
         tm1_0.code=?
 CircuitBreaker triggered for Train ID -1. Error: Train not found with code: TRN01
-23:29:21 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-23:29:21 DEBUG Writing [TrainResponseDTO(id=-1, code=ERROR, manufacturerId=Unavailable, engineId=0, carAmount=0, costPerCar= (truncated)...]
-23:29:21 DEBUG Completed 200 OK
-23:29:21 DEBUG GET "/api/trains/manufacturer/Siemens", parameters={}
-23:29:21 DEBUG Mapped to com.transit.trains.controller.TrainController#getTrainsByManufacturerId(String)
-23:29:21 DEBUG Failed to complete request: java.lang.IllegalStateException: You have more that one fallback method that cover the same exception type java.lang.Throwable
-23:29:21 ERROR Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: You have more that one fallback method that cover the same exception type java.lang.Throwable] with root cause
+03:21:38 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
+03:21:38 DEBUG Writing [TrainResponseDTO(id=-1, code=ERROR, manufacturerId=Unavailable, engineId=0, carAmount=0, costPerCar= (truncated)...]
+03:21:38 DEBUG Completed 200 OK
+03:21:38 DEBUG GET "/api/trains/manufacturer/Siemens", parameters={}
+03:21:38 DEBUG Mapped to com.transit.trains.controller.TrainController#getTrainsByManufacturerId(String)
+03:21:38 DEBUG Failed to complete request: java.lang.IllegalStateException: You have more that one fallback method that cover the same exception type java.lang.Throwable
+03:21:38 ERROR Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: You have more that one fallback method that cover the same exception type java.lang.Throwable] with root cause
 java.lang.IllegalStateException: You have more that one fallback method that cover the same exception type java.lang.Throwable
 	at io.github.resilience4j.spring6.fallback.FallbackMethod.merge(FallbackMethod.java:128)
 	at io.github.resilience4j.spring6.fallback.FallbackMethod.lambda$extractMethods$0(FallbackMethod.java:112)
@@ -2152,15 +2152,15 @@ java.lang.IllegalStateException: You have more that one fallback method that cov
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-23:29:21 DEBUG "ERROR" dispatch for GET "/error", parameters={}
-23:29:21 DEBUG Mapped to org.springframework.boot.webmvc.autoconfigure.error.BasicErrorController#error(HttpServletRequest)
-23:29:21 DEBUG Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
-23:29:21 DEBUG Writing [{timestamp=Wed Jul 08 23:29:21 CLT 2026, status=500, error=Internal Server Error, trace=java.lang.Il (truncated)...]
-23:29:21 DEBUG Exiting from "ERROR" dispatch, status 500
-23:29:21 DEBUG GET "/api/trains/manufacturer/Siemens", parameters={}
-23:29:21 DEBUG Mapped to com.transit.trains.controller.TrainController#getTrainsByManufacturerId(String)
-23:29:21 DEBUG Failed to complete request: java.lang.IllegalStateException: You have more that one fallback method that cover the same exception type java.lang.Throwable
-23:29:21 ERROR Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: You have more that one fallback method that cover the same exception type java.lang.Throwable] with root cause
+03:21:39 DEBUG "ERROR" dispatch for GET "/error", parameters={}
+03:21:39 DEBUG Mapped to org.springframework.boot.webmvc.autoconfigure.error.BasicErrorController#error(HttpServletRequest)
+03:21:39 DEBUG Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+03:21:39 DEBUG Writing [{timestamp=Thu Jul 09 03:21:39 CLT 2026, status=500, error=Internal Server Error, trace=java.lang.Il (truncated)...]
+03:21:39 DEBUG Exiting from "ERROR" dispatch, status 500
+03:21:39 DEBUG GET "/api/trains/manufacturer/Siemens", parameters={}
+03:21:39 DEBUG Mapped to com.transit.trains.controller.TrainController#getTrainsByManufacturerId(String)
+03:21:39 DEBUG Failed to complete request: java.lang.IllegalStateException: You have more that one fallback method that cover the same exception type java.lang.Throwable
+03:21:39 ERROR Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: You have more that one fallback method that cover the same exception type java.lang.Throwable] with root cause
 java.lang.IllegalStateException: You have more that one fallback method that cover the same exception type java.lang.Throwable
 	at io.github.resilience4j.spring6.fallback.FallbackMethod.merge(FallbackMethod.java:128)
 	at io.github.resilience4j.spring6.fallback.FallbackMethod.lambda$extractMethods$0(FallbackMethod.java:112)
@@ -2227,14 +2227,14 @@ java.lang.IllegalStateException: You have more that one fallback method that cov
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-23:29:21 DEBUG "ERROR" dispatch for GET "/error", parameters={}
-23:29:21 DEBUG Mapped to org.springframework.boot.webmvc.autoconfigure.error.BasicErrorController#error(HttpServletRequest)
-23:29:21 DEBUG Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
-23:29:21 DEBUG Writing [{timestamp=Wed Jul 08 23:29:21 CLT 2026, status=500, error=Internal Server Error, trace=java.lang.Il (truncated)...]
-23:29:21 DEBUG Exiting from "ERROR" dispatch, status 500
-23:29:21 DEBUG GET "/api/trains/engine/1", parameters={}
-23:29:21 DEBUG Mapped to com.transit.trains.controller.TrainController#getTrainsByEngineId(Long)
-23:29:21 DEBUG 
+03:21:39 DEBUG "ERROR" dispatch for GET "/error", parameters={}
+03:21:39 DEBUG Mapped to org.springframework.boot.webmvc.autoconfigure.error.BasicErrorController#error(HttpServletRequest)
+03:21:39 DEBUG Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+03:21:39 DEBUG Writing [{timestamp=Thu Jul 09 03:21:39 CLT 2026, status=500, error=Internal Server Error, trace=java.lang.Il (truncated)...]
+03:21:39 DEBUG Exiting from "ERROR" dispatch, status 500
+03:21:39 DEBUG GET "/api/trains/engine/1", parameters={}
+03:21:39 DEBUG Mapped to com.transit.trains.controller.TrainController#getTrainsByEngineId(Long)
+03:21:39 DEBUG 
     select
         tm1_0.id,
         tm1_0.car_amount,
@@ -2260,12 +2260,12 @@ Hibernate:
         trains tm1_0 
     where
         tm1_0.engine_id=?
-23:29:21 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-23:29:21 DEBUG Writing [CollectionModel { content: [TrainResponseDTO(id=2, code=PR2PJ, manufacturerId=CAF, engineId=1, carAm (truncated)...]
-23:29:21 DEBUG Completed 200 OK
-23:29:21 DEBUG GET "/api/trains/engine/1", parameters={}
-23:29:21 DEBUG Mapped to com.transit.trains.controller.TrainController#getTrainsByEngineId(Long)
-23:29:21 DEBUG 
+03:21:39 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
+03:21:39 DEBUG Writing [CollectionModel { content: [], fallbackType: null, links: [<http://localhost:7770/api/trains/engine/ (truncated)...]
+03:21:39 DEBUG Completed 200 OK
+03:21:39 DEBUG GET "/api/trains/engine/1", parameters={}
+03:21:39 DEBUG Mapped to com.transit.trains.controller.TrainController#getTrainsByEngineId(Long)
+03:21:39 DEBUG 
     select
         tm1_0.id,
         tm1_0.car_amount,
@@ -2291,190 +2291,110 @@ Hibernate:
         trains tm1_0 
     where
         tm1_0.engine_id=?
-23:29:21 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-23:29:21 DEBUG Writing [CollectionModel { content: [TrainResponseDTO(id=2, code=PR2PJ, manufacturerId=CAF, engineId=1, carAm (truncated)...]
-23:29:21 DEBUG Completed 200 OK
-23:29:22 DEBUG POST "/api/trains/create", parameters={}
-23:29:22 DEBUG Mapped to com.transit.trains.controller.TrainController#createTrain(TrainRequestDTO)
-23:29:22 DEBUG Read "application/json;charset=UTF-8" to [TrainRequestDTO(code=null, manufacturerId=null, engineId=null, carAmount=null, costPerCar=null, prod (truncated)...]
-23:29:22 WARN  Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.transit.trains.dto.response.TrainResponseDTO> com.transit.trains.controller.TrainController.createTrain(com.transit.trains.dto.request.TrainRequestDTO) with 8 errors: [Field error in object 'trainRequestDTO' on field 'engineId': rejected value [null]; codes [NotNull.trainRequestDTO.engineId,NotNull.engineId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [trainRequestDTO.engineId,engineId]; arguments []; default message [engineId]]; default message [Engine id cannot be null]] [Field error in object 'trainRequestDTO' on field 'carAmount': rejected value [null]; codes [NotNull.trainRequestDTO.carAmount,NotNull.carAmount,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [trainRequestDTO.carAmount,carAmount]; arguments []; default message [carAmount]]; default message [Car amount can't be null]] [Field error in object 'trainRequestDTO' on field 'code': rejected value [null]; codes [NotBlank.trainRequestDTO.code,NotBlank.code,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [trainRequestDTO.code,code]; arguments []; default message [code]]; default message [Code cannot be blank]] [Field error in object 'trainRequestDTO' on field 'productionDate': rejected value [null]; codes [NotNull.trainRequestDTO.productionDate,NotNull.productionDate,NotNull.java.sql.Date,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [trainRequestDTO.productionDate,productionDate]; arguments []; default message [productionDate]]; default message [We need to know the date of production]] [Field error in object 'trainRequestDTO' on field 'costPerCar': rejected value [null]; codes [NotNull.trainRequestDTO.costPerCar,NotNull.costPerCar,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [trainRequestDTO.costPerCar,costPerCar]; arguments []; default message [costPerCar]]; default message [We need to know the costs]] [Field error in object 'trainRequestDTO' on field 'manufacturerId': rejected value [null]; codes [NotNull.trainRequestDTO.manufacturerId,NotNull.manufacturerId,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [trainRequestDTO.manufacturerId,manufacturerId]; arguments []; default message [manufacturerId]]; default message [Manufacturer has to be specified]] [Field error in object 'trainRequestDTO' on field 'code': rejected value [null]; codes [NotNull.trainRequestDTO.code,NotNull.code,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [trainRequestDTO.code,code]; arguments []; default message [code]]; default message [Code cannot be null]] [Field error in object 'trainRequestDTO' on field 'manufacturerId': rejected value [null]; codes [NotBlank.trainRequestDTO.manufacturerId,NotBlank.manufacturerId,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [trainRequestDTO.manufacturerId,manufacturerId]; arguments []; default message [manufacturerId]]; default message [Manufacturer cannot be blank]] ]
-23:29:22 DEBUG Completed 400 BAD_REQUEST
-23:29:22 DEBUG "ERROR" dispatch for GET "/error", parameters={}
-23:29:22 DEBUG Mapped to org.springframework.boot.webmvc.autoconfigure.error.BasicErrorController#error(HttpServletRequest)
-23:29:22 DEBUG Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
-23:29:22 DEBUG Writing [{timestamp=Wed Jul 08 23:29:22 CLT 2026, status=400, error=Bad Request, trace=org.springframework.we (truncated)...]
-23:29:22 DEBUG Exiting from "ERROR" dispatch, status 400
-23:29:22 DEBUG POST "/api/trains/create", parameters={}
-23:29:22 DEBUG Mapped to com.transit.trains.controller.TrainController#createTrain(TrainRequestDTO)
-23:29:22 DEBUG Read "application/json;charset=UTF-8" to [TrainRequestDTO(code=null, manufacturerId=null, engineId=null, carAmount=null, costPerCar=null, prod (truncated)...]
-23:29:22 WARN  Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.transit.trains.dto.response.TrainResponseDTO> com.transit.trains.controller.TrainController.createTrain(com.transit.trains.dto.request.TrainRequestDTO) with 8 errors: [Field error in object 'trainRequestDTO' on field 'code': rejected value [null]; codes [NotBlank.trainRequestDTO.code,NotBlank.code,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [trainRequestDTO.code,code]; arguments []; default message [code]]; default message [Code cannot be blank]] [Field error in object 'trainRequestDTO' on field 'carAmount': rejected value [null]; codes [NotNull.trainRequestDTO.carAmount,NotNull.carAmount,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [trainRequestDTO.carAmount,carAmount]; arguments []; default message [carAmount]]; default message [Car amount can't be null]] [Field error in object 'trainRequestDTO' on field 'engineId': rejected value [null]; codes [NotNull.trainRequestDTO.engineId,NotNull.engineId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [trainRequestDTO.engineId,engineId]; arguments []; default message [engineId]]; default message [Engine id cannot be null]] [Field error in object 'trainRequestDTO' on field 'costPerCar': rejected value [null]; codes [NotNull.trainRequestDTO.costPerCar,NotNull.costPerCar,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [trainRequestDTO.costPerCar,costPerCar]; arguments []; default message [costPerCar]]; default message [We need to know the costs]] [Field error in object 'trainRequestDTO' on field 'manufacturerId': rejected value [null]; codes [NotBlank.trainRequestDTO.manufacturerId,NotBlank.manufacturerId,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [trainRequestDTO.manufacturerId,manufacturerId]; arguments []; default message [manufacturerId]]; default message [Manufacturer cannot be blank]] [Field error in object 'trainRequestDTO' on field 'code': rejected value [null]; codes [NotNull.trainRequestDTO.code,NotNull.code,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [trainRequestDTO.code,code]; arguments []; default message [code]]; default message [Code cannot be null]] [Field error in object 'trainRequestDTO' on field 'productionDate': rejected value [null]; codes [NotNull.trainRequestDTO.productionDate,NotNull.productionDate,NotNull.java.sql.Date,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [trainRequestDTO.productionDate,productionDate]; arguments []; default message [productionDate]]; default message [We need to know the date of production]] [Field error in object 'trainRequestDTO' on field 'manufacturerId': rejected value [null]; codes [NotNull.trainRequestDTO.manufacturerId,NotNull.manufacturerId,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [trainRequestDTO.manufacturerId,manufacturerId]; arguments []; default message [manufacturerId]]; default message [Manufacturer has to be specified]] ]
-23:29:22 DEBUG Completed 400 BAD_REQUEST
-23:29:22 DEBUG "ERROR" dispatch for GET "/error", parameters={}
-23:29:22 DEBUG Mapped to org.springframework.boot.webmvc.autoconfigure.error.BasicErrorController#error(HttpServletRequest)
-23:29:22 DEBUG Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
-23:29:22 DEBUG Writing [{timestamp=Wed Jul 08 23:29:22 CLT 2026, status=400, error=Bad Request, trace=org.springframework.we (truncated)...]
-23:29:22 DEBUG Exiting from "ERROR" dispatch, status 400
-23:29:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:29:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:30:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:30:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:31:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:31:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:32:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:32:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:33:26 INFO  Resolving eureka endpoints via configuration
-23:33:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:33:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:34:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:34:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:35:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:35:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:36:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:36:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:37:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:37:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:38:26 INFO  Resolving eureka endpoints via configuration
-23:38:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:38:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:39:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:39:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:40:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:40:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:41:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:41:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:42:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:42:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:43:26 INFO  Resolving eureka endpoints via configuration
-23:43:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:43:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:44:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:44:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:45:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:45:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:46:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:46:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:47:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:47:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:48:26 INFO  Resolving eureka endpoints via configuration
-23:48:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:48:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:49:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:49:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:50:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:50:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:51:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:51:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:52:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:52:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:53:26 INFO  Resolving eureka endpoints via configuration
-23:53:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:53:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:54:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:54:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:55:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:55:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:56:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:56:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:57:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:57:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:58:26 INFO  Resolving eureka endpoints via configuration
-23:58:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:58:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:59:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-23:59:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:00:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:00:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:01:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:01:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:02:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:02:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:03:26 INFO  Resolving eureka endpoints via configuration
-00:03:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:03:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:04:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:04:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:05:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:05:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:06:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:06:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:07:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:07:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:08:26 INFO  Resolving eureka endpoints via configuration
-00:08:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:08:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:09:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:09:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:10:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:10:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:11:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:11:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:12:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:12:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:13:26 INFO  Resolving eureka endpoints via configuration
-00:13:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:13:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:14:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:14:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:15:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:15:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:16:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:16:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:17:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:17:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:18:26 INFO  Resolving eureka endpoints via configuration
-00:18:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:18:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:19:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:19:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:20:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:20:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:21:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:21:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:22:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:22:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:23:26 INFO  Resolving eureka endpoints via configuration
-00:23:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:23:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:24:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:24:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:25:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:25:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:26:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:26:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:27:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:27:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:28:26 INFO  Resolving eureka endpoints via configuration
-00:28:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:28:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:29:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:29:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:30:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:30:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:31:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:31:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:32:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:32:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:33:26 INFO  Resolving eureka endpoints via configuration
-00:33:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:34:00 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:34:30 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:35:00 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:35:30 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:36:00 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:36:30 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:37:00 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:37:30 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:38:00 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:38:26 INFO  Resolving eureka endpoints via configuration
-00:38:30 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:39:00 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:39:30 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:40:00 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:40:30 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:41:00 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:41:30 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:42:00 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:42:30 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:43:00 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-00:43:26 INFO  Resolving eureka endpoints via configuration
-00:43:30 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:21:39 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
+03:21:39 DEBUG Writing [CollectionModel { content: [], fallbackType: null, links: [<http://localhost:7770/api/trains/engine/ (truncated)...]
+03:21:39 DEBUG Completed 200 OK
+03:21:39 DEBUG POST "/api/trains/create", parameters={}
+03:21:39 DEBUG Mapped to com.transit.trains.controller.TrainController#createTrain(TrainRequestDTO)
+03:21:39 DEBUG Read "application/json;charset=UTF-8" to [TrainRequestDTO(code=null, manufacturerId=null, engineId=null, carAmount=null, costPerCar=null, prod (truncated)...]
+03:21:39 WARN  Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.transit.trains.dto.response.TrainResponseDTO> com.transit.trains.controller.TrainController.createTrain(com.transit.trains.dto.request.TrainRequestDTO) with 8 errors: [Field error in object 'trainRequestDTO' on field 'code': rejected value [null]; codes [NotBlank.trainRequestDTO.code,NotBlank.code,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [trainRequestDTO.code,code]; arguments []; default message [code]]; default message [Code cannot be blank]] [Field error in object 'trainRequestDTO' on field 'manufacturerId': rejected value [null]; codes [NotBlank.trainRequestDTO.manufacturerId,NotBlank.manufacturerId,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [trainRequestDTO.manufacturerId,manufacturerId]; arguments []; default message [manufacturerId]]; default message [Manufacturer cannot be blank]] [Field error in object 'trainRequestDTO' on field 'productionDate': rejected value [null]; codes [NotNull.trainRequestDTO.productionDate,NotNull.productionDate,NotNull.java.sql.Date,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [trainRequestDTO.productionDate,productionDate]; arguments []; default message [productionDate]]; default message [We need to know the date of production]] [Field error in object 'trainRequestDTO' on field 'carAmount': rejected value [null]; codes [NotNull.trainRequestDTO.carAmount,NotNull.carAmount,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [trainRequestDTO.carAmount,carAmount]; arguments []; default message [carAmount]]; default message [Car amount can't be null]] [Field error in object 'trainRequestDTO' on field 'manufacturerId': rejected value [null]; codes [NotNull.trainRequestDTO.manufacturerId,NotNull.manufacturerId,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [trainRequestDTO.manufacturerId,manufacturerId]; arguments []; default message [manufacturerId]]; default message [Manufacturer has to be specified]] [Field error in object 'trainRequestDTO' on field 'code': rejected value [null]; codes [NotNull.trainRequestDTO.code,NotNull.code,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [trainRequestDTO.code,code]; arguments []; default message [code]]; default message [Code cannot be null]] [Field error in object 'trainRequestDTO' on field 'costPerCar': rejected value [null]; codes [NotNull.trainRequestDTO.costPerCar,NotNull.costPerCar,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [trainRequestDTO.costPerCar,costPerCar]; arguments []; default message [costPerCar]]; default message [We need to know the costs]] [Field error in object 'trainRequestDTO' on field 'engineId': rejected value [null]; codes [NotNull.trainRequestDTO.engineId,NotNull.engineId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [trainRequestDTO.engineId,engineId]; arguments []; default message [engineId]]; default message [Engine id cannot be null]] ]
+03:21:39 DEBUG Completed 400 BAD_REQUEST
+03:21:39 DEBUG "ERROR" dispatch for GET "/error", parameters={}
+03:21:39 DEBUG Mapped to org.springframework.boot.webmvc.autoconfigure.error.BasicErrorController#error(HttpServletRequest)
+03:21:39 DEBUG Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+03:21:39 DEBUG Writing [{timestamp=Thu Jul 09 03:21:39 CLT 2026, status=400, error=Bad Request, trace=org.springframework.we (truncated)...]
+03:21:39 DEBUG Exiting from "ERROR" dispatch, status 400
+03:21:39 DEBUG POST "/api/trains/create", parameters={}
+03:21:39 DEBUG Mapped to com.transit.trains.controller.TrainController#createTrain(TrainRequestDTO)
+03:21:39 DEBUG Read "application/json;charset=UTF-8" to [TrainRequestDTO(code=null, manufacturerId=null, engineId=null, carAmount=null, costPerCar=null, prod (truncated)...]
+03:21:39 WARN  Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.transit.trains.dto.response.TrainResponseDTO> com.transit.trains.controller.TrainController.createTrain(com.transit.trains.dto.request.TrainRequestDTO) with 8 errors: [Field error in object 'trainRequestDTO' on field 'costPerCar': rejected value [null]; codes [NotNull.trainRequestDTO.costPerCar,NotNull.costPerCar,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [trainRequestDTO.costPerCar,costPerCar]; arguments []; default message [costPerCar]]; default message [We need to know the costs]] [Field error in object 'trainRequestDTO' on field 'manufacturerId': rejected value [null]; codes [NotBlank.trainRequestDTO.manufacturerId,NotBlank.manufacturerId,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [trainRequestDTO.manufacturerId,manufacturerId]; arguments []; default message [manufacturerId]]; default message [Manufacturer cannot be blank]] [Field error in object 'trainRequestDTO' on field 'code': rejected value [null]; codes [NotBlank.trainRequestDTO.code,NotBlank.code,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [trainRequestDTO.code,code]; arguments []; default message [code]]; default message [Code cannot be blank]] [Field error in object 'trainRequestDTO' on field 'productionDate': rejected value [null]; codes [NotNull.trainRequestDTO.productionDate,NotNull.productionDate,NotNull.java.sql.Date,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [trainRequestDTO.productionDate,productionDate]; arguments []; default message [productionDate]]; default message [We need to know the date of production]] [Field error in object 'trainRequestDTO' on field 'carAmount': rejected value [null]; codes [NotNull.trainRequestDTO.carAmount,NotNull.carAmount,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [trainRequestDTO.carAmount,carAmount]; arguments []; default message [carAmount]]; default message [Car amount can't be null]] [Field error in object 'trainRequestDTO' on field 'manufacturerId': rejected value [null]; codes [NotNull.trainRequestDTO.manufacturerId,NotNull.manufacturerId,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [trainRequestDTO.manufacturerId,manufacturerId]; arguments []; default message [manufacturerId]]; default message [Manufacturer has to be specified]] [Field error in object 'trainRequestDTO' on field 'engineId': rejected value [null]; codes [NotNull.trainRequestDTO.engineId,NotNull.engineId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [trainRequestDTO.engineId,engineId]; arguments []; default message [engineId]]; default message [Engine id cannot be null]] [Field error in object 'trainRequestDTO' on field 'code': rejected value [null]; codes [NotNull.trainRequestDTO.code,NotNull.code,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [trainRequestDTO.code,code]; arguments []; default message [code]]; default message [Code cannot be null]] ]
+03:21:39 DEBUG Completed 400 BAD_REQUEST
+03:21:39 DEBUG "ERROR" dispatch for GET "/error", parameters={}
+03:21:39 DEBUG Mapped to org.springframework.boot.webmvc.autoconfigure.error.BasicErrorController#error(HttpServletRequest)
+03:21:39 DEBUG Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+03:21:39 DEBUG Writing [{timestamp=Thu Jul 09 03:21:39 CLT 2026, status=400, error=Bad Request, trace=org.springframework.we (truncated)...]
+03:21:39 DEBUG Exiting from "ERROR" dispatch, status 400
+03:21:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:22:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:22:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:23:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:23:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:24:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:24:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:25:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:25:54 INFO  Resolving eureka endpoints via configuration
+03:25:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:26:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:26:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:27:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:27:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:28:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:28:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:29:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:29:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:30:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:30:54 INFO  Resolving eureka endpoints via configuration
+03:30:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:31:24 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:31:54 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:32:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:32:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:33:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:33:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:34:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:34:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:35:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:35:54 INFO  Resolving eureka endpoints via configuration
+03:35:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:36:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:36:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:37:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:37:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:38:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:38:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:39:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:39:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:40:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:40:54 INFO  Resolving eureka endpoints via configuration
+03:40:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:41:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:41:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:42:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:42:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:43:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:43:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:44:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:44:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:45:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:45:54 INFO  Resolving eureka endpoints via configuration
+03:45:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:46:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:46:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:47:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:47:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:48:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:48:55 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:49:25 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:49:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:50:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:50:54 INFO  Resolving eureka endpoints via configuration
+03:50:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:51:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:51:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:52:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:52:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:53:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:53:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:54:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:54:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:55:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:55:54 INFO  Resolving eureka endpoints via configuration
+03:55:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:56:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:56:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:57:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:57:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:58:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:58:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:59:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+03:59:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]

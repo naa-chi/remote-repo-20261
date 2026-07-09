@@ -267,6 +267,47 @@
           "method": "DELETE"
         }
       ]
+    },
+    {
+      "name": "City Service",
+      "base_url": "http://localhost:7776",
+      "route_prefix": "/cities-service",
+      "endpoints": [
+        { "gateway_path": "", "direct_path": "/api/cities", "method": "GET" },
+        { "gateway_path": "/{id}", "direct_path": "/api/cities/{id}", "method": "GET" },
+        { "gateway_path": "/code/{cityCode}", "direct_path": "/api/cities/code/{cityCode}", "method": "GET" },
+        { "gateway_path": "", "direct_path": "/api/cities", "method": "POST" },
+        { "gateway_path": "/{id}", "direct_path": "/api/cities/{id}", "method": "PUT" },
+        { "gateway_path": "/{id}", "direct_path": "/api/cities/{id}", "method": "DELETE" }
+      ]
+    },
+    {
+      "name": "Line Service",
+      "base_url": "http://localhost:7777",
+      "route_prefix": "/lines-service",
+      "endpoints": [
+        { "gateway_path": "", "direct_path": "/api/lines", "method": "GET" },
+        { "gateway_path": "/{id}", "direct_path": "/api/lines/{id}", "method": "GET" },
+        { "gateway_path": "/code/{lineCode}", "direct_path": "/api/lines/code/{lineCode}", "method": "GET" },
+        { "gateway_path": "", "direct_path": "/api/lines", "method": "POST" },
+        { "gateway_path": "/{id}", "direct_path": "/api/lines/{id}", "method": "PUT" },
+        { "gateway_path": "/{id}", "direct_path": "/api/lines/{id}", "method": "DELETE" }
+      ]
+    },
+    {
+      "name": "Station Service",
+      "base_url": "http://localhost:7778",
+      "route_prefix": "/stations-service",
+      "endpoints": [
+        { "gateway_path": "", "direct_path": "/api/stations", "method": "GET" },
+        { "gateway_path": "/{id}", "direct_path": "/api/stations/{id}", "method": "GET" },
+        { "gateway_path": "/code/{stationCode}", "direct_path": "/api/stations/code/{stationCode}", "method": "GET" },
+        { "gateway_path": "/city/{cityCode}", "direct_path": "/api/stations/city/{cityCode}", "method": "GET" },
+        { "gateway_path": "/line/{lineCode}", "direct_path": "/api/stations/line/{lineCode}", "method": "GET" },
+        { "gateway_path": "", "direct_path": "/api/stations", "method": "POST" },
+        { "gateway_path": "/{id}", "direct_path": "/api/stations/{id}", "method": "PUT" },
+        { "gateway_path": "/{id}", "direct_path": "/api/stations/{id}", "method": "DELETE" }
+      ]
     }
   ]
 }

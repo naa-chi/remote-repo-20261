@@ -1036,3 +1036,267 @@
 [CN] [2026-07-08 23:29:34] [失败] http://localhost:8080/manufacturers-service/1 -> N/A 错误: Unsupported method: PUT
 [CN] [2026-07-08 23:29:34] [失败] http://localhost:8080/manufacturers-service/1 -> N/A 错误: Unsupported method: DELETE
 
+=== Test run at 2026-07-09 03:16:18 ===
+[EN] [2026-07-09 03:15:33] [FAIL] http://localhost:8080/trains-service/all -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:33] [FAIL] http://localhost:8080/trains-service/1 -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:34] [FAIL] http://localhost:8080/trains-service/code/TRN01 -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:34] [FAIL] http://localhost:8080/trains-service/manufacturer/Siemens -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:34] [FAIL] http://localhost:8080/trains-service/engine/1 -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:35] [FAIL] http://localhost:8080/trains-service/create -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:35] [FAIL] http://localhost:8080/trains-service/1 -> N/A Error: Unsupported method: DELETE
+[EN] [2026-07-09 03:15:35] [FAIL] http://localhost:8080/engines-service/1 -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:36] [FAIL] http://localhost:8080/engines-service/manufacturer/M123 -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:36] [FAIL] http://localhost:8080/engines-service/engineCode/VLFDNK -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:37] [FAIL] http://localhost:8080/engines-service/horsepower/109.26 -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:37] [FAIL] http://localhost:8080/engines-service/price/7976.25 -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:37] [FAIL] http://localhost:8080/engines-service/weight/409.36 -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:37] [FAIL] http://localhost:8080/engines-service/all -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:38] [FAIL] http://localhost:8080/engines-service/create -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:38] [FAIL] http://localhost:8080/engines-service/1 -> N/A Error: Unsupported method: PUT
+[EN] [2026-07-09 03:15:38] [FAIL] http://localhost:8080/engines-service/1 -> N/A Error: Unsupported method: DELETE
+[EN] [2026-07-09 03:15:38] [FAIL] http://localhost:8080/tickets-service -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:39] [FAIL] http://localhost:8080/tickets-service/1 -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:39] [FAIL] http://localhost:8080/tickets-service/code/TICKET001 -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:40] [FAIL] http://localhost:8080/tickets-service/origin/LON -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:40] [FAIL] http://localhost:8080/tickets-service/destination/PAR -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:40] [FAIL] http://localhost:8080/tickets-service -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:41] [FAIL] http://localhost:8080/tickets-service/1 -> N/A Error: Unsupported method: PUT
+[EN] [2026-07-09 03:15:41] [FAIL] http://localhost:8080/tickets-service/1 -> N/A Error: Unsupported method: DELETE
+[EN] [2026-07-09 03:15:41] [FAIL] http://localhost:8080/reviews-service -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:42] [FAIL] http://localhost:8080/reviews-service/1 -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:42] [FAIL] http://localhost:8080/reviews-service/client/1 -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:42] [FAIL] http://localhost:8080/reviews-service/train/1 -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:43] [FAIL] http://localhost:8080/reviews-service/rating/5 -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:43] [FAIL] http://localhost:8080/reviews-service -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:43] [FAIL] http://localhost:8080/reviews-service/1 -> N/A Error: Unsupported method: DELETE
+[EN] [2026-07-09 03:15:43] [FAIL] http://localhost:8080/maintenances-service -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:44] [FAIL] http://localhost:8080/maintenances-service/1 -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:44] [FAIL] http://localhost:8080/maintenances-service/code/MNT-001 -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:45] [FAIL] http://localhost:8080/maintenances-service/crew/CREW-A -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:45] [FAIL] http://localhost:8080/maintenances-service -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:45] [FAIL] http://localhost:8080/maintenances-service/1 -> N/A Error: Unsupported method: PUT
+[EN] [2026-07-09 03:15:45] [FAIL] http://localhost:8080/maintenances-service/1 -> N/A Error: Unsupported method: DELETE
+[EN] [2026-07-09 03:15:46] [FAIL] http://localhost:8080/manufacturers-service -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:46] [FAIL] http://localhost:8080/manufacturers-service/1 -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:47] [FAIL] http://localhost:8080/manufacturers-service/code/M123 -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:47] [FAIL] http://localhost:8080/manufacturers-service -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:47] [FAIL] http://localhost:8080/manufacturers-service/1 -> N/A Error: Unsupported method: PUT
+[EN] [2026-07-09 03:15:48] [FAIL] http://localhost:8080/manufacturers-service/1 -> N/A Error: Unsupported method: DELETE
+[EN] [2026-07-09 03:15:48] [FAIL] http://localhost:8080/cities-service -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:49] [FAIL] http://localhost:8080/cities-service/{id} -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:49] [FAIL] http://localhost:8080/cities-service/code/{cityCode} -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:49] [FAIL] http://localhost:8080/cities-service -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:50] [FAIL] http://localhost:8080/cities-service/{id} -> N/A Error: Unsupported method: PUT
+[EN] [2026-07-09 03:15:50] [FAIL] http://localhost:8080/cities-service/{id} -> N/A Error: Unsupported method: DELETE
+[EN] [2026-07-09 03:15:50] [FAIL] http://localhost:8080/lines-service -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:51] [FAIL] http://localhost:8080/lines-service/{id} -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:51] [FAIL] http://localhost:8080/lines-service/code/{lineCode} -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:51] [FAIL] http://localhost:8080/lines-service -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:51] [FAIL] http://localhost:8080/lines-service/{id} -> N/A Error: Unsupported method: PUT
+[EN] [2026-07-09 03:15:52] [FAIL] http://localhost:8080/lines-service/{id} -> N/A Error: Unsupported method: DELETE
+[EN] [2026-07-09 03:15:52] [FAIL] http://localhost:8080/stations-service -> 503 Error: Unknown
+[EN] [2026-07-09 03:15:56] [FAIL] http://localhost:8080/stations-service/{id} -> 503 Error: Unknown
+[EN] [2026-07-09 03:16:01] [FAIL] http://localhost:8080/stations-service/code/{stationCode} -> 503 Error: Unknown
+[EN] [2026-07-09 03:16:05] [FAIL] http://localhost:8080/stations-service/city/{cityCode} -> 503 Error: Unknown
+[EN] [2026-07-09 03:16:09] [FAIL] http://localhost:8080/stations-service/line/{lineCode} -> 503 Error: Unknown
+[EN] [2026-07-09 03:16:13] [FAIL] http://localhost:8080/stations-service -> 503 Error: Unknown
+[EN] [2026-07-09 03:16:18] [FAIL] http://localhost:8080/stations-service/{id} -> N/A Error: Unsupported method: PUT
+[EN] [2026-07-09 03:16:18] [FAIL] http://localhost:8080/stations-service/{id} -> N/A Error: Unsupported method: DELETE
+[CN] [2026-07-09 03:15:33] [失败] http://localhost:8080/trains-service/all -> 503 错误: 未知
+[CN] [2026-07-09 03:15:33] [失败] http://localhost:8080/trains-service/1 -> 503 错误: 未知
+[CN] [2026-07-09 03:15:34] [失败] http://localhost:8080/trains-service/code/TRN01 -> 503 错误: 未知
+[CN] [2026-07-09 03:15:34] [失败] http://localhost:8080/trains-service/manufacturer/Siemens -> 503 错误: 未知
+[CN] [2026-07-09 03:15:34] [失败] http://localhost:8080/trains-service/engine/1 -> 503 错误: 未知
+[CN] [2026-07-09 03:15:35] [失败] http://localhost:8080/trains-service/create -> 503 错误: 未知
+[CN] [2026-07-09 03:15:35] [失败] http://localhost:8080/trains-service/1 -> N/A 错误: Unsupported method: DELETE
+[CN] [2026-07-09 03:15:35] [失败] http://localhost:8080/engines-service/1 -> 503 错误: 未知
+[CN] [2026-07-09 03:15:36] [失败] http://localhost:8080/engines-service/manufacturer/M123 -> 503 错误: 未知
+[CN] [2026-07-09 03:15:36] [失败] http://localhost:8080/engines-service/engineCode/VLFDNK -> 503 错误: 未知
+[CN] [2026-07-09 03:15:37] [失败] http://localhost:8080/engines-service/horsepower/109.26 -> 503 错误: 未知
+[CN] [2026-07-09 03:15:37] [失败] http://localhost:8080/engines-service/price/7976.25 -> 503 错误: 未知
+[CN] [2026-07-09 03:15:37] [失败] http://localhost:8080/engines-service/weight/409.36 -> 503 错误: 未知
+[CN] [2026-07-09 03:15:37] [失败] http://localhost:8080/engines-service/all -> 503 错误: 未知
+[CN] [2026-07-09 03:15:38] [失败] http://localhost:8080/engines-service/create -> 503 错误: 未知
+[CN] [2026-07-09 03:15:38] [失败] http://localhost:8080/engines-service/1 -> N/A 错误: Unsupported method: PUT
+[CN] [2026-07-09 03:15:38] [失败] http://localhost:8080/engines-service/1 -> N/A 错误: Unsupported method: DELETE
+[CN] [2026-07-09 03:15:38] [失败] http://localhost:8080/tickets-service -> 503 错误: 未知
+[CN] [2026-07-09 03:15:39] [失败] http://localhost:8080/tickets-service/1 -> 503 错误: 未知
+[CN] [2026-07-09 03:15:39] [失败] http://localhost:8080/tickets-service/code/TICKET001 -> 503 错误: 未知
+[CN] [2026-07-09 03:15:40] [失败] http://localhost:8080/tickets-service/origin/LON -> 503 错误: 未知
+[CN] [2026-07-09 03:15:40] [失败] http://localhost:8080/tickets-service/destination/PAR -> 503 错误: 未知
+[CN] [2026-07-09 03:15:40] [失败] http://localhost:8080/tickets-service -> 503 错误: 未知
+[CN] [2026-07-09 03:15:41] [失败] http://localhost:8080/tickets-service/1 -> N/A 错误: Unsupported method: PUT
+[CN] [2026-07-09 03:15:41] [失败] http://localhost:8080/tickets-service/1 -> N/A 错误: Unsupported method: DELETE
+[CN] [2026-07-09 03:15:41] [失败] http://localhost:8080/reviews-service -> 503 错误: 未知
+[CN] [2026-07-09 03:15:42] [失败] http://localhost:8080/reviews-service/1 -> 503 错误: 未知
+[CN] [2026-07-09 03:15:42] [失败] http://localhost:8080/reviews-service/client/1 -> 503 错误: 未知
+[CN] [2026-07-09 03:15:42] [失败] http://localhost:8080/reviews-service/train/1 -> 503 错误: 未知
+[CN] [2026-07-09 03:15:43] [失败] http://localhost:8080/reviews-service/rating/5 -> 503 错误: 未知
+[CN] [2026-07-09 03:15:43] [失败] http://localhost:8080/reviews-service -> 503 错误: 未知
+[CN] [2026-07-09 03:15:43] [失败] http://localhost:8080/reviews-service/1 -> N/A 错误: Unsupported method: DELETE
+[CN] [2026-07-09 03:15:43] [失败] http://localhost:8080/maintenances-service -> 503 错误: 未知
+[CN] [2026-07-09 03:15:44] [失败] http://localhost:8080/maintenances-service/1 -> 503 错误: 未知
+[CN] [2026-07-09 03:15:44] [失败] http://localhost:8080/maintenances-service/code/MNT-001 -> 503 错误: 未知
+[CN] [2026-07-09 03:15:45] [失败] http://localhost:8080/maintenances-service/crew/CREW-A -> 503 错误: 未知
+[CN] [2026-07-09 03:15:45] [失败] http://localhost:8080/maintenances-service -> 503 错误: 未知
+[CN] [2026-07-09 03:15:45] [失败] http://localhost:8080/maintenances-service/1 -> N/A 错误: Unsupported method: PUT
+[CN] [2026-07-09 03:15:45] [失败] http://localhost:8080/maintenances-service/1 -> N/A 错误: Unsupported method: DELETE
+[CN] [2026-07-09 03:15:46] [失败] http://localhost:8080/manufacturers-service -> 503 错误: 未知
+[CN] [2026-07-09 03:15:46] [失败] http://localhost:8080/manufacturers-service/1 -> 503 错误: 未知
+[CN] [2026-07-09 03:15:47] [失败] http://localhost:8080/manufacturers-service/code/M123 -> 503 错误: 未知
+[CN] [2026-07-09 03:15:47] [失败] http://localhost:8080/manufacturers-service -> 503 错误: 未知
+[CN] [2026-07-09 03:15:47] [失败] http://localhost:8080/manufacturers-service/1 -> N/A 错误: Unsupported method: PUT
+[CN] [2026-07-09 03:15:48] [失败] http://localhost:8080/manufacturers-service/1 -> N/A 错误: Unsupported method: DELETE
+[CN] [2026-07-09 03:15:48] [失败] http://localhost:8080/cities-service -> 503 错误: 未知
+[CN] [2026-07-09 03:15:49] [失败] http://localhost:8080/cities-service/{id} -> 503 错误: 未知
+[CN] [2026-07-09 03:15:49] [失败] http://localhost:8080/cities-service/code/{cityCode} -> 503 错误: 未知
+[CN] [2026-07-09 03:15:49] [失败] http://localhost:8080/cities-service -> 503 错误: 未知
+[CN] [2026-07-09 03:15:50] [失败] http://localhost:8080/cities-service/{id} -> N/A 错误: Unsupported method: PUT
+[CN] [2026-07-09 03:15:50] [失败] http://localhost:8080/cities-service/{id} -> N/A 错误: Unsupported method: DELETE
+[CN] [2026-07-09 03:15:50] [失败] http://localhost:8080/lines-service -> 503 错误: 未知
+[CN] [2026-07-09 03:15:51] [失败] http://localhost:8080/lines-service/{id} -> 503 错误: 未知
+[CN] [2026-07-09 03:15:51] [失败] http://localhost:8080/lines-service/code/{lineCode} -> 503 错误: 未知
+[CN] [2026-07-09 03:15:51] [失败] http://localhost:8080/lines-service -> 503 错误: 未知
+[CN] [2026-07-09 03:15:51] [失败] http://localhost:8080/lines-service/{id} -> N/A 错误: Unsupported method: PUT
+[CN] [2026-07-09 03:15:52] [失败] http://localhost:8080/lines-service/{id} -> N/A 错误: Unsupported method: DELETE
+[CN] [2026-07-09 03:15:52] [失败] http://localhost:8080/stations-service -> 503 错误: 未知
+[CN] [2026-07-09 03:15:56] [失败] http://localhost:8080/stations-service/{id} -> 503 错误: 未知
+[CN] [2026-07-09 03:16:01] [失败] http://localhost:8080/stations-service/code/{stationCode} -> 503 错误: 未知
+[CN] [2026-07-09 03:16:05] [失败] http://localhost:8080/stations-service/city/{cityCode} -> 503 错误: 未知
+[CN] [2026-07-09 03:16:09] [失败] http://localhost:8080/stations-service/line/{lineCode} -> 503 错误: 未知
+[CN] [2026-07-09 03:16:13] [失败] http://localhost:8080/stations-service -> 503 错误: 未知
+[CN] [2026-07-09 03:16:18] [失败] http://localhost:8080/stations-service/{id} -> N/A 错误: Unsupported method: PUT
+[CN] [2026-07-09 03:16:18] [失败] http://localhost:8080/stations-service/{id} -> N/A 错误: Unsupported method: DELETE
+
+=== Test run at 2026-07-09 03:21:58 ===
+[EN] [2026-07-09 03:21:38] [OK] http://localhost:8080/trains-service/all -> 200 {"_embedded":{"trainResponseDTOList":[{"id":1,"code":"I50YY","manufacturerId":"GE","engineId":7,"carAmount":3,"costPerCar":1682,"productionDate":"2021-11-25T03:00:00.000Z","_links":{"self":{"href":"ht
+[EN] [2026-07-09 03:21:38] [OK] http://localhost:8080/trains-service/1 -> 200 {"id":1,"code":"I50YY","manufacturerId":"GE","engineId":7,"carAmount":3,"costPerCar":1682,"productionDate":"2021-11-25T03:00:00.000Z","_links":{"self":{"href":"http://localhost:7770/api/trains/1"},"al
+[EN] [2026-07-09 03:21:38] [OK] http://localhost:8080/trains-service/code/TRN01 -> 200 {"id":-1,"code":"ERROR","manufacturerId":"Unavailable","engineId":0,"carAmount":0,"costPerCar":0,"productionDate":"2026-07-09T04:00:00.000Z","_links":{"self":{"href":"http://localhost:7770/api/trains/
+[EN] [2026-07-09 03:21:39] [FAIL] http://localhost:8080/trains-service/manufacturer/Siemens -> 500 Error: Unknown
+[EN] [2026-07-09 03:21:39] [OK] http://localhost:8080/trains-service/engine/1 -> 200 {"_links":{"self":{"href":"http://localhost:7770/api/trains/engine/1"},"all-trains":{"href":"http://localhost:7770/api/trains/all"}}}
+[EN] [2026-07-09 03:21:39] [FAIL] http://localhost:8080/trains-service/create -> 400 Error: Unknown
+[EN] [2026-07-09 03:21:39] [FAIL] http://localhost:8080/trains-service/1 -> N/A Error: Unsupported method: DELETE
+[EN] [2026-07-09 03:21:40] [OK] http://localhost:8080/engines-service/1 -> 200 {"id":1,"engineId":10001,"manufacturerId":"Bombardier","engineCode":"0JZSMZ","engineHorsepower":296.56,"engineWeight":307.76,"enginePrice":11234.0,"productionDate":"2025-04-19T04:00:00.000Z","_links":
+[EN] [2026-07-09 03:21:40] [OK] http://localhost:8080/engines-service/manufacturer/M123 -> 200 {"_links":{"self":{"href":"http://localhost:7771/api/engines/manufacturer/M123"},"all-engines":{"href":"http://localhost:7771/api/engines/all"}}}
+[EN] [2026-07-09 03:21:41] [OK] http://localhost:8080/engines-service/engineCode/VLFDNK -> 200 {"_links":{"self":{"href":"http://localhost:7771/api/engines/engineCode/VLFDNK"},"all-engines":{"href":"http://localhost:7771/api/engines/all"}}}
+[EN] [2026-07-09 03:21:41] [OK] http://localhost:8080/engines-service/horsepower/109.26 -> 200 {"_links":{"self":{"href":"http://localhost:7771/api/engines/horsepower/109.26"},"all-engines":{"href":"http://localhost:7771/api/engines/all"}}}
+[EN] [2026-07-09 03:21:41] [OK] http://localhost:8080/engines-service/price/7976.25 -> 200 {"_links":{"self":{"href":"http://localhost:7771/api/engines/price/7976.25"},"all-engines":{"href":"http://localhost:7771/api/engines/all"}}}
+[EN] [2026-07-09 03:21:42] [OK] http://localhost:8080/engines-service/weight/409.36 -> 200 {"_links":{"self":{"href":"http://localhost:7771/api/engines/weight/409.36"},"all-engines":{"href":"http://localhost:7771/api/engines/all"}}}
+[EN] [2026-07-09 03:21:42] [OK] http://localhost:8080/engines-service/all -> 200 {"_embedded":{"engineResponseDTOList":[{"id":1,"engineId":10001,"manufacturerId":"Bombardier","engineCode":"0JZSMZ","engineHorsepower":296.56,"engineWeight":307.76,"enginePrice":11234.0,"productionDat
+[EN] [2026-07-09 03:21:42] [FAIL] http://localhost:8080/engines-service/create -> 400 Error: Unknown
+[EN] [2026-07-09 03:21:42] [FAIL] http://localhost:8080/engines-service/1 -> N/A Error: Unsupported method: PUT
+[EN] [2026-07-09 03:21:43] [FAIL] http://localhost:8080/engines-service/1 -> N/A Error: Unsupported method: DELETE
+[EN] [2026-07-09 03:21:43] [OK] http://localhost:8080/tickets-service -> 200 {"_embedded":{"ticketResponseDTOList":[{"id":1,"code":"Y249WM23","cityCodeOrigin":"GVO","cityCodeDestination":"ISX","price":384.33,"clientId":18,"trainId":3,"departureDate":"2024-10-15T03:00:00.000Z",
+[EN] [2026-07-09 03:21:43] [OK] http://localhost:8080/tickets-service/1 -> 200 {"id":1,"code":"Y249WM23","cityCodeOrigin":"GVO","cityCodeDestination":"ISX","price":384.33,"clientId":18,"trainId":3,"departureDate":"2024-10-15T03:00:00.000Z","_links":{"self":{"href":"http://localh
+[EN] [2026-07-09 03:21:44] [OK] http://localhost:8080/tickets-service/code/TICKET001 -> 200 {"id":-1,"code":"ERROR","cityCodeOrigin":"ERR","cityCodeDestination":"ERR","price":0.0,"clientId":0,"trainId":0,"departureDate":"2026-07-09T04:00:00.000Z"}
+[EN] [2026-07-09 03:21:44] [FAIL] http://localhost:8080/tickets-service/origin/LON -> 500 Error: Unknown
+[EN] [2026-07-09 03:21:44] [FAIL] http://localhost:8080/tickets-service/destination/PAR -> 500 Error: Unknown
+[EN] [2026-07-09 03:21:45] [FAIL] http://localhost:8080/tickets-service -> 400 Error: Unknown
+[EN] [2026-07-09 03:21:45] [FAIL] http://localhost:8080/tickets-service/1 -> N/A Error: Unsupported method: PUT
+[EN] [2026-07-09 03:21:45] [FAIL] http://localhost:8080/tickets-service/1 -> N/A Error: Unsupported method: DELETE
+[EN] [2026-07-09 03:21:46] [OK] http://localhost:8080/reviews-service -> 200 {"_embedded":{"reviewResponseDTOList":[{"id":1,"clientId":5,"trainId":1,"ticketCode":"QZYLJ5PA","rating":1,"comment":"Review #1 – JZnCEvirLEALWAUjobcE","reviewDate":"2021-07-01T04:00:00.000Z","_links"
+[EN] [2026-07-09 03:21:46] [OK] http://localhost:8080/reviews-service/1 -> 200 {"id":1,"clientId":5,"trainId":1,"ticketCode":"QZYLJ5PA","rating":1,"comment":"Review #1 – JZnCEvirLEALWAUjobcE","reviewDate":"2021-07-01T04:00:00.000Z","_links":{"self":{"href":"http://localhost:7773
+[EN] [2026-07-09 03:21:47] [OK] http://localhost:8080/reviews-service/client/1 -> 200 {"_embedded":{"reviewResponseDTOList":[{"id":9,"clientId":1,"trainId":3,"ticketCode":"QZYLJ5PA","rating":1,"comment":"Review #9 – jvVnfKlzltgVmAgKIEgO","reviewDate":"2024-04-23T04:00:00.000Z","_links"
+[EN] [2026-07-09 03:21:47] [OK] http://localhost:8080/reviews-service/train/1 -> 200 {"_embedded":{"reviewResponseDTOList":[{"id":1,"clientId":5,"trainId":1,"ticketCode":"QZYLJ5PA","rating":1,"comment":"Review #1 – JZnCEvirLEALWAUjobcE","reviewDate":"2021-07-01T04:00:00.000Z","_links"
+[EN] [2026-07-09 03:21:47] [OK] http://localhost:8080/reviews-service/rating/5 -> 200 {"_embedded":{"reviewResponseDTOList":[{"id":3,"clientId":13,"trainId":10,"ticketCode":"9XVU8LOE","rating":5,"comment":"Review #3 – rXBYYvqQBaQOyRUCZYbI","reviewDate":"2025-10-31T03:00:00.000Z","_link
+[EN] [2026-07-09 03:21:47] [FAIL] http://localhost:8080/reviews-service -> 400 Error: Unknown
+[EN] [2026-07-09 03:21:48] [FAIL] http://localhost:8080/reviews-service/1 -> N/A Error: Unsupported method: DELETE
+[EN] [2026-07-09 03:21:48] [OK] http://localhost:8080/maintenances-service -> 200 {"_embedded":{"maintenanceResponseDTOList":[{"id":1,"maintenanceDescription":"Maintenance #1 – sOJyJnGDvRJSNGn","maintenanceEntryDate":"2020-10-09T03:00:00.000Z","maintenanceEndDate":"2020-10-11T03:00
+[EN] [2026-07-09 03:21:49] [OK] http://localhost:8080/maintenances-service/1 -> 200 {"id":1,"maintenanceDescription":"Maintenance #1 – sOJyJnGDvRJSNGn","maintenanceEntryDate":"2020-10-09T03:00:00.000Z","maintenanceEndDate":"2020-10-11T03:00:00.000Z","maintenanceReleaseDate":"2020-10-
+[EN] [2026-07-09 03:21:49] [OK] http://localhost:8080/maintenances-service/code/MNT-001 -> 200 {"id":1,"maintenanceDescription":"Maintenance #1 – sOJyJnGDvRJSNGn","maintenanceEntryDate":"2020-10-09T03:00:00.000Z","maintenanceEndDate":"2020-10-11T03:00:00.000Z","maintenanceReleaseDate":"2020-10-
+[EN] [2026-07-09 03:21:49] [FAIL] http://localhost:8080/maintenances-service/crew/CREW-A -> 500 Error: Unknown
+[EN] [2026-07-09 03:21:49] [FAIL] http://localhost:8080/maintenances-service -> 400 Error: Unknown
+[EN] [2026-07-09 03:21:50] [FAIL] http://localhost:8080/maintenances-service/1 -> N/A Error: Unsupported method: PUT
+[EN] [2026-07-09 03:21:50] [FAIL] http://localhost:8080/maintenances-service/1 -> N/A Error: Unsupported method: DELETE
+[EN] [2026-07-09 03:21:50] [OK] http://localhost:8080/manufacturers-service -> 200 {"_links":{"self":{"href":"http://localhost:7775/api/manufacturers"}}}
+[EN] [2026-07-09 03:21:51] [OK] http://localhost:8080/manufacturers-service/1 -> 200 {"id":-1,"manufacturerId":"ERROR","countryOfOrigin":"ERR","foundingDate":"2026-07-09T04:00:00.000Z","revenue":0}
+[EN] [2026-07-09 03:21:51] [OK] http://localhost:8080/manufacturers-service/code/M123 -> 200 {"id":-1,"manufacturerId":"ERROR","countryOfOrigin":"ERR","foundingDate":"2026-07-09T04:00:00.000Z","revenue":0}
+[EN] [2026-07-09 03:21:51] [FAIL] http://localhost:8080/manufacturers-service -> 400 Error: Unknown
+[EN] [2026-07-09 03:21:52] [FAIL] http://localhost:8080/manufacturers-service/1 -> N/A Error: Unsupported method: PUT
+[EN] [2026-07-09 03:21:52] [FAIL] http://localhost:8080/manufacturers-service/1 -> N/A Error: Unsupported method: DELETE
+[EN] [2026-07-09 03:21:52] [OK] http://localhost:8080/cities-service -> 200 {"_links":{"self":{"href":"http://localhost:7776/api/cities"}}}
+[EN] [2026-07-09 03:21:53] [FAIL] http://localhost:8080/cities-service/{id} -> 500 Error: Unknown
+[EN] [2026-07-09 03:21:53] [OK] http://localhost:8080/cities-service/code/{cityCode} -> 200 {"id":-1,"threeLetterCityCode":"ERR","fullCityName":"ERROR","foundingCityDate":"2026-07-09T04:00:00.000Z","cityPopulation":0,"countryCode":"ERR"}
+[EN] [2026-07-09 03:21:53] [FAIL] http://localhost:8080/cities-service -> 400 Error: Unknown
+[EN] [2026-07-09 03:21:54] [FAIL] http://localhost:8080/cities-service/{id} -> N/A Error: Unsupported method: PUT
+[EN] [2026-07-09 03:21:54] [FAIL] http://localhost:8080/cities-service/{id} -> N/A Error: Unsupported method: DELETE
+[EN] [2026-07-09 03:21:54] [OK] http://localhost:8080/lines-service -> 200 {"_embedded":{"lineResponseDTOList":[{"id":-1,"lineCode":-1,"lineLengthKM":0,"peopleServedMonthlyEstimate":0}]},"_links":{"self":{"href":"http://localhost:7777/api/lines"}}}
+[EN] [2026-07-09 03:21:55] [FAIL] http://localhost:8080/lines-service/{id} -> 500 Error: Unknown
+[EN] [2026-07-09 03:21:55] [FAIL] http://localhost:8080/lines-service/code/{lineCode} -> 500 Error: Unknown
+[EN] [2026-07-09 03:21:55] [FAIL] http://localhost:8080/lines-service -> 400 Error: Unknown
+[EN] [2026-07-09 03:21:55] [FAIL] http://localhost:8080/lines-service/{id} -> N/A Error: Unsupported method: PUT
+[EN] [2026-07-09 03:21:56] [FAIL] http://localhost:8080/lines-service/{id} -> N/A Error: Unsupported method: DELETE
+[EN] [2026-07-09 03:21:56] [OK] http://localhost:8080/stations-service -> 200 {"_links":{"self":{"href":"http://localhost:7778/api/stations"}}}
+[EN] [2026-07-09 03:21:56] [FAIL] http://localhost:8080/stations-service/{id} -> 500 Error: Unknown
+[EN] [2026-07-09 03:21:57] [OK] http://localhost:8080/stations-service/code/{stationCode} -> 200 {"id":-1,"stationCode":"ERROR","cityCode":"ERR","cityName":"ERROR","lineCode1":-1,"line1Length":0,"line1PeopleServed":0,"lineCode2":null,"line2Length":null,"line2PeopleServed":null,"lineCode3":null,"l
+[EN] [2026-07-09 03:21:57] [OK] http://localhost:8080/stations-service/city/{cityCode} -> 200 {"_links":{"self":{"href":"http://localhost:7778/api/stations/city/%7BcityCode%7D"}}}
+[EN] [2026-07-09 03:21:57] [FAIL] http://localhost:8080/stations-service/line/{lineCode} -> 500 Error: Unknown
+[EN] [2026-07-09 03:21:58] [FAIL] http://localhost:8080/stations-service -> 400 Error: Unknown
+[EN] [2026-07-09 03:21:58] [FAIL] http://localhost:8080/stations-service/{id} -> N/A Error: Unsupported method: PUT
+[EN] [2026-07-09 03:21:58] [FAIL] http://localhost:8080/stations-service/{id} -> N/A Error: Unsupported method: DELETE
+[CN] [2026-07-09 03:21:38] [成功] http://localhost:8080/trains-service/all -> 200 {"_embedded":{"trainResponseDTOList":[{"id":1,"code":"I50YY","manufacturerId":"GE","engineId":7,"carAmount":3,"costPerCar":1682,"productionDate":"2021-11-25T03:00:00.000Z","_links":{"self":{"href":"ht
+[CN] [2026-07-09 03:21:38] [成功] http://localhost:8080/trains-service/1 -> 200 {"id":1,"code":"I50YY","manufacturerId":"GE","engineId":7,"carAmount":3,"costPerCar":1682,"productionDate":"2021-11-25T03:00:00.000Z","_links":{"self":{"href":"http://localhost:7770/api/trains/1"},"al
+[CN] [2026-07-09 03:21:38] [成功] http://localhost:8080/trains-service/code/TRN01 -> 200 {"id":-1,"code":"ERROR","manufacturerId":"Unavailable","engineId":0,"carAmount":0,"costPerCar":0,"productionDate":"2026-07-09T04:00:00.000Z","_links":{"self":{"href":"http://localhost:7770/api/trains/
+[CN] [2026-07-09 03:21:39] [失败] http://localhost:8080/trains-service/manufacturer/Siemens -> 500 错误: 未知
+[CN] [2026-07-09 03:21:39] [成功] http://localhost:8080/trains-service/engine/1 -> 200 {"_links":{"self":{"href":"http://localhost:7770/api/trains/engine/1"},"all-trains":{"href":"http://localhost:7770/api/trains/all"}}}
+[CN] [2026-07-09 03:21:39] [失败] http://localhost:8080/trains-service/create -> 400 错误: 未知
+[CN] [2026-07-09 03:21:39] [失败] http://localhost:8080/trains-service/1 -> N/A 错误: Unsupported method: DELETE
+[CN] [2026-07-09 03:21:40] [成功] http://localhost:8080/engines-service/1 -> 200 {"id":1,"engineId":10001,"manufacturerId":"Bombardier","engineCode":"0JZSMZ","engineHorsepower":296.56,"engineWeight":307.76,"enginePrice":11234.0,"productionDate":"2025-04-19T04:00:00.000Z","_links":
+[CN] [2026-07-09 03:21:40] [成功] http://localhost:8080/engines-service/manufacturer/M123 -> 200 {"_links":{"self":{"href":"http://localhost:7771/api/engines/manufacturer/M123"},"all-engines":{"href":"http://localhost:7771/api/engines/all"}}}
+[CN] [2026-07-09 03:21:41] [成功] http://localhost:8080/engines-service/engineCode/VLFDNK -> 200 {"_links":{"self":{"href":"http://localhost:7771/api/engines/engineCode/VLFDNK"},"all-engines":{"href":"http://localhost:7771/api/engines/all"}}}
+[CN] [2026-07-09 03:21:41] [成功] http://localhost:8080/engines-service/horsepower/109.26 -> 200 {"_links":{"self":{"href":"http://localhost:7771/api/engines/horsepower/109.26"},"all-engines":{"href":"http://localhost:7771/api/engines/all"}}}
+[CN] [2026-07-09 03:21:41] [成功] http://localhost:8080/engines-service/price/7976.25 -> 200 {"_links":{"self":{"href":"http://localhost:7771/api/engines/price/7976.25"},"all-engines":{"href":"http://localhost:7771/api/engines/all"}}}
+[CN] [2026-07-09 03:21:42] [成功] http://localhost:8080/engines-service/weight/409.36 -> 200 {"_links":{"self":{"href":"http://localhost:7771/api/engines/weight/409.36"},"all-engines":{"href":"http://localhost:7771/api/engines/all"}}}
+[CN] [2026-07-09 03:21:42] [成功] http://localhost:8080/engines-service/all -> 200 {"_embedded":{"engineResponseDTOList":[{"id":1,"engineId":10001,"manufacturerId":"Bombardier","engineCode":"0JZSMZ","engineHorsepower":296.56,"engineWeight":307.76,"enginePrice":11234.0,"productionDat
+[CN] [2026-07-09 03:21:42] [失败] http://localhost:8080/engines-service/create -> 400 错误: 未知
+[CN] [2026-07-09 03:21:42] [失败] http://localhost:8080/engines-service/1 -> N/A 错误: Unsupported method: PUT
+[CN] [2026-07-09 03:21:43] [失败] http://localhost:8080/engines-service/1 -> N/A 错误: Unsupported method: DELETE
+[CN] [2026-07-09 03:21:43] [成功] http://localhost:8080/tickets-service -> 200 {"_embedded":{"ticketResponseDTOList":[{"id":1,"code":"Y249WM23","cityCodeOrigin":"GVO","cityCodeDestination":"ISX","price":384.33,"clientId":18,"trainId":3,"departureDate":"2024-10-15T03:00:00.000Z",
+[CN] [2026-07-09 03:21:43] [成功] http://localhost:8080/tickets-service/1 -> 200 {"id":1,"code":"Y249WM23","cityCodeOrigin":"GVO","cityCodeDestination":"ISX","price":384.33,"clientId":18,"trainId":3,"departureDate":"2024-10-15T03:00:00.000Z","_links":{"self":{"href":"http://localh
+[CN] [2026-07-09 03:21:44] [成功] http://localhost:8080/tickets-service/code/TICKET001 -> 200 {"id":-1,"code":"ERROR","cityCodeOrigin":"ERR","cityCodeDestination":"ERR","price":0.0,"clientId":0,"trainId":0,"departureDate":"2026-07-09T04:00:00.000Z"}
+[CN] [2026-07-09 03:21:44] [失败] http://localhost:8080/tickets-service/origin/LON -> 500 错误: 未知
+[CN] [2026-07-09 03:21:44] [失败] http://localhost:8080/tickets-service/destination/PAR -> 500 错误: 未知
+[CN] [2026-07-09 03:21:45] [失败] http://localhost:8080/tickets-service -> 400 错误: 未知
+[CN] [2026-07-09 03:21:45] [失败] http://localhost:8080/tickets-service/1 -> N/A 错误: Unsupported method: PUT
+[CN] [2026-07-09 03:21:45] [失败] http://localhost:8080/tickets-service/1 -> N/A 错误: Unsupported method: DELETE
+[CN] [2026-07-09 03:21:46] [成功] http://localhost:8080/reviews-service -> 200 {"_embedded":{"reviewResponseDTOList":[{"id":1,"clientId":5,"trainId":1,"ticketCode":"QZYLJ5PA","rating":1,"comment":"Review #1 – JZnCEvirLEALWAUjobcE","reviewDate":"2021-07-01T04:00:00.000Z","_links"
+[CN] [2026-07-09 03:21:46] [成功] http://localhost:8080/reviews-service/1 -> 200 {"id":1,"clientId":5,"trainId":1,"ticketCode":"QZYLJ5PA","rating":1,"comment":"Review #1 – JZnCEvirLEALWAUjobcE","reviewDate":"2021-07-01T04:00:00.000Z","_links":{"self":{"href":"http://localhost:7773
+[CN] [2026-07-09 03:21:47] [成功] http://localhost:8080/reviews-service/client/1 -> 200 {"_embedded":{"reviewResponseDTOList":[{"id":9,"clientId":1,"trainId":3,"ticketCode":"QZYLJ5PA","rating":1,"comment":"Review #9 – jvVnfKlzltgVmAgKIEgO","reviewDate":"2024-04-23T04:00:00.000Z","_links"
+[CN] [2026-07-09 03:21:47] [成功] http://localhost:8080/reviews-service/train/1 -> 200 {"_embedded":{"reviewResponseDTOList":[{"id":1,"clientId":5,"trainId":1,"ticketCode":"QZYLJ5PA","rating":1,"comment":"Review #1 – JZnCEvirLEALWAUjobcE","reviewDate":"2021-07-01T04:00:00.000Z","_links"
+[CN] [2026-07-09 03:21:47] [成功] http://localhost:8080/reviews-service/rating/5 -> 200 {"_embedded":{"reviewResponseDTOList":[{"id":3,"clientId":13,"trainId":10,"ticketCode":"9XVU8LOE","rating":5,"comment":"Review #3 – rXBYYvqQBaQOyRUCZYbI","reviewDate":"2025-10-31T03:00:00.000Z","_link
+[CN] [2026-07-09 03:21:47] [失败] http://localhost:8080/reviews-service -> 400 错误: 未知
+[CN] [2026-07-09 03:21:48] [失败] http://localhost:8080/reviews-service/1 -> N/A 错误: Unsupported method: DELETE
+[CN] [2026-07-09 03:21:48] [成功] http://localhost:8080/maintenances-service -> 200 {"_embedded":{"maintenanceResponseDTOList":[{"id":1,"maintenanceDescription":"Maintenance #1 – sOJyJnGDvRJSNGn","maintenanceEntryDate":"2020-10-09T03:00:00.000Z","maintenanceEndDate":"2020-10-11T03:00
+[CN] [2026-07-09 03:21:49] [成功] http://localhost:8080/maintenances-service/1 -> 200 {"id":1,"maintenanceDescription":"Maintenance #1 – sOJyJnGDvRJSNGn","maintenanceEntryDate":"2020-10-09T03:00:00.000Z","maintenanceEndDate":"2020-10-11T03:00:00.000Z","maintenanceReleaseDate":"2020-10-
+[CN] [2026-07-09 03:21:49] [成功] http://localhost:8080/maintenances-service/code/MNT-001 -> 200 {"id":1,"maintenanceDescription":"Maintenance #1 – sOJyJnGDvRJSNGn","maintenanceEntryDate":"2020-10-09T03:00:00.000Z","maintenanceEndDate":"2020-10-11T03:00:00.000Z","maintenanceReleaseDate":"2020-10-
+[CN] [2026-07-09 03:21:49] [失败] http://localhost:8080/maintenances-service/crew/CREW-A -> 500 错误: 未知
+[CN] [2026-07-09 03:21:49] [失败] http://localhost:8080/maintenances-service -> 400 错误: 未知
+[CN] [2026-07-09 03:21:50] [失败] http://localhost:8080/maintenances-service/1 -> N/A 错误: Unsupported method: PUT
+[CN] [2026-07-09 03:21:50] [失败] http://localhost:8080/maintenances-service/1 -> N/A 错误: Unsupported method: DELETE
+[CN] [2026-07-09 03:21:50] [成功] http://localhost:8080/manufacturers-service -> 200 {"_links":{"self":{"href":"http://localhost:7775/api/manufacturers"}}}
+[CN] [2026-07-09 03:21:51] [成功] http://localhost:8080/manufacturers-service/1 -> 200 {"id":-1,"manufacturerId":"ERROR","countryOfOrigin":"ERR","foundingDate":"2026-07-09T04:00:00.000Z","revenue":0}
+[CN] [2026-07-09 03:21:51] [成功] http://localhost:8080/manufacturers-service/code/M123 -> 200 {"id":-1,"manufacturerId":"ERROR","countryOfOrigin":"ERR","foundingDate":"2026-07-09T04:00:00.000Z","revenue":0}
+[CN] [2026-07-09 03:21:51] [失败] http://localhost:8080/manufacturers-service -> 400 错误: 未知
+[CN] [2026-07-09 03:21:52] [失败] http://localhost:8080/manufacturers-service/1 -> N/A 错误: Unsupported method: PUT
+[CN] [2026-07-09 03:21:52] [失败] http://localhost:8080/manufacturers-service/1 -> N/A 错误: Unsupported method: DELETE
+[CN] [2026-07-09 03:21:52] [成功] http://localhost:8080/cities-service -> 200 {"_links":{"self":{"href":"http://localhost:7776/api/cities"}}}
+[CN] [2026-07-09 03:21:53] [失败] http://localhost:8080/cities-service/{id} -> 500 错误: 未知
+[CN] [2026-07-09 03:21:53] [成功] http://localhost:8080/cities-service/code/{cityCode} -> 200 {"id":-1,"threeLetterCityCode":"ERR","fullCityName":"ERROR","foundingCityDate":"2026-07-09T04:00:00.000Z","cityPopulation":0,"countryCode":"ERR"}
+[CN] [2026-07-09 03:21:53] [失败] http://localhost:8080/cities-service -> 400 错误: 未知
+[CN] [2026-07-09 03:21:54] [失败] http://localhost:8080/cities-service/{id} -> N/A 错误: Unsupported method: PUT
+[CN] [2026-07-09 03:21:54] [失败] http://localhost:8080/cities-service/{id} -> N/A 错误: Unsupported method: DELETE
+[CN] [2026-07-09 03:21:54] [成功] http://localhost:8080/lines-service -> 200 {"_embedded":{"lineResponseDTOList":[{"id":-1,"lineCode":-1,"lineLengthKM":0,"peopleServedMonthlyEstimate":0}]},"_links":{"self":{"href":"http://localhost:7777/api/lines"}}}
+[CN] [2026-07-09 03:21:55] [失败] http://localhost:8080/lines-service/{id} -> 500 错误: 未知
+[CN] [2026-07-09 03:21:55] [失败] http://localhost:8080/lines-service/code/{lineCode} -> 500 错误: 未知
+[CN] [2026-07-09 03:21:55] [失败] http://localhost:8080/lines-service -> 400 错误: 未知
+[CN] [2026-07-09 03:21:55] [失败] http://localhost:8080/lines-service/{id} -> N/A 错误: Unsupported method: PUT
+[CN] [2026-07-09 03:21:56] [失败] http://localhost:8080/lines-service/{id} -> N/A 错误: Unsupported method: DELETE
+[CN] [2026-07-09 03:21:56] [成功] http://localhost:8080/stations-service -> 200 {"_links":{"self":{"href":"http://localhost:7778/api/stations"}}}
+[CN] [2026-07-09 03:21:56] [失败] http://localhost:8080/stations-service/{id} -> 500 错误: 未知
+[CN] [2026-07-09 03:21:57] [成功] http://localhost:8080/stations-service/code/{stationCode} -> 200 {"id":-1,"stationCode":"ERROR","cityCode":"ERR","cityName":"ERROR","lineCode1":-1,"line1Length":0,"line1PeopleServed":0,"lineCode2":null,"line2Length":null,"line2PeopleServed":null,"lineCode3":null,"l
+[CN] [2026-07-09 03:21:57] [成功] http://localhost:8080/stations-service/city/{cityCode} -> 200 {"_links":{"self":{"href":"http://localhost:7778/api/stations/city/%7BcityCode%7D"}}}
+[CN] [2026-07-09 03:21:57] [失败] http://localhost:8080/stations-service/line/{lineCode} -> 500 错误: 未知
+[CN] [2026-07-09 03:21:58] [失败] http://localhost:8080/stations-service -> 400 错误: 未知
+[CN] [2026-07-09 03:21:58] [失败] http://localhost:8080/stations-service/{id} -> N/A 错误: Unsupported method: PUT
+[CN] [2026-07-09 03:21:58] [失败] http://localhost:8080/stations-service/{id} -> N/A 错误: Unsupported method: DELETE
+
