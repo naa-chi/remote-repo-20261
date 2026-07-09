@@ -188,6 +188,85 @@
           "method": "DELETE"
         }
       ]
+    },
+    {
+      "name": "Maintenance Service",
+      "base_url": "http://localhost:7774",
+      "route_prefix": "/maintenances-service",
+      "endpoints": [
+        {
+          "gateway_path": "",
+          "direct_path": "/api/maintenances",
+          "method": "GET"
+        },
+        {
+          "gateway_path": "/1",
+          "direct_path": "/api/maintenances/1",
+          "method": "GET"
+        },
+        {
+          "gateway_path": "/code/MNT-001",
+          "direct_path": "/api/maintenances/code/MNT-001",
+          "method": "GET"
+        },
+        {
+          "gateway_path": "/crew/CREW-A",
+          "direct_path": "/api/maintenances/crew/CREW-A",
+          "method": "GET"
+        },
+        {
+          "gateway_path": "",
+          "direct_path": "/api/maintenances",
+          "method": "POST"
+        },
+        {
+          "gateway_path": "/1",
+          "direct_path": "/api/maintenances/1",
+          "method": "PUT"
+        },
+        {
+          "gateway_path": "/1",
+          "direct_path": "/api/maintenances/1",
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "name": "Manufacturer Service",
+      "base_url": "http://localhost:7775",
+      "route_prefix": "/manufacturers-service",
+      "endpoints": [
+        {
+          "gateway_path": "",
+          "direct_path": "/api/manufacturers",
+          "method": "GET"
+        },
+        {
+          "gateway_path": "/1",
+          "direct_path": "/api/manufacturers/1",
+          "method": "GET"
+        },
+        {
+          "gateway_path": "/code/M123",
+          "direct_path": "/api/manufacturers/code/M123",
+          "method": "GET"
+        },
+        {
+          "gateway_path": "",
+          "direct_path": "/api/manufacturers",
+          "method": "POST"
+        },
+        {
+          "gateway_path": "/1",
+          "direct_path": "/api/manufacturers/1",
+          "method": "PUT"
+        },
+        {
+          "gateway_path": "/1",
+          "direct_path": "/api/manufacturers/1",
+          "method": "DELETE"
+        }
+      ]
     }
   ]
 }

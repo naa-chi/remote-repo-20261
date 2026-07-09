@@ -49,7 +49,6 @@ public class TicketService {
 
     @CircuitBreaker(name = "ticketService", fallbackMethod = "handleGetTicketsFallbackList")
     public List<TicketResponseDTO> getTicketsByCityCodeOrigin(String cityCodeOrigin) {
-        // Return empty list
         return repository.findByCityCodeOrigin(cityCodeOrigin).stream()
                 .map(mapper::toResponse)
                 .collect(Collectors.toList());
@@ -57,7 +56,6 @@ public class TicketService {
 
     @CircuitBreaker(name = "ticketService", fallbackMethod = "handleGetTicketsFallbackList")
     public List<TicketResponseDTO> getTicketsByCityCodeDestination(String cityCodeDestination) {
-        // Return empty list
         return repository.findByCityCodeDestination(cityCodeDestination).stream()
                 .map(mapper::toResponse)
                 .collect(Collectors.toList());

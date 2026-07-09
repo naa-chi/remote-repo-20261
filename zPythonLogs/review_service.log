@@ -12,15 +12,13 @@
 [INFO] Copying 1 resource from src\main\resources to target\classes
 [INFO] 
 [INFO] --- compiler:3.15.0:compile (default-compile) @ reviews ---
-[INFO] Recompiling the module because of added or removed source files.
-[INFO] Compiling 15 source files with javac [debug parameters release 21] to target\classes
+[INFO] Nothing to compile - all classes are up to date.
 [INFO] 
 [INFO] --- resources:3.5.0:testResources (default-testResources) @ reviews ---
 [INFO] skip non existing resourceDirectory c:\Users\XznRh\Downloads\exam-release\exam-release\reviews-service\src\test\resources
 [INFO] 
 [INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ reviews ---
-[INFO] Recompiling the module because of changed dependency.
-[INFO] Compiling 1 source file with javac [debug parameters release 21] to target\test-classes
+[INFO] Nothing to compile - all classes are up to date.
 [INFO] 
 [INFO] <<< spring-boot:4.1.0:run (default-cli) < test-compile @ reviews <<<
 [INFO] 
@@ -37,52 +35,52 @@
 
  :: Spring Boot ::                (v4.1.0)
 
-04:51:29 INFO  Starting ReviewsApplication using Java 21.0.10 with PID 36448 (c:\Users\XznRh\Downloads\exam-release\exam-release\reviews-service\target\classes started by XznRh in c:\Users\XznRh\Downloads\exam-release\exam-release\reviews-service)
-04:51:29 INFO  No active profile set, falling back to 1 default profile: "default"
-04:51:29 DEBUG Loading source class com.transit.reviews.ReviewsApplication
-04:51:29 DEBUG Matching URLs for reloading : [file:/c:/Users/XznRh/Downloads/exam-release/exam-release/reviews-service/target/classes/]
-04:51:29 DEBUG Included patterns for restart : []
-04:51:29 DEBUG Excluded patterns for restart : [/spring-boot-starter-[\w-]+/, /spring-boot/(bin|build|out)/, /spring-boot-starter/(bin|build|out)/, /spring-boot-devtools/(bin|build|out)/, /spring-boot-actuator/(bin|build|out)/, /spring-boot-autoconfigure/(bin|build|out)/]
-04:51:29 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-04:51:29 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-04:51:29 DEBUG Refreshing org.springframework.boot.web.server.servlet.context.AnnotationConfigServletWebServerApplicationContext@3eaebf3e
-04:51:31 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-04:51:31 DEBUG @EnableAutoConfiguration was declared on a class in the package 'com.transit.reviews'. Automatic @Repository and @Entity scanning is enabled.
-04:51:31 INFO  Finished Spring Data repository scanning in 148 ms. Found 1 JPA repository interface.
-04:51:31 INFO  BeanFactory id=f3f606ce-d7b2-3d71-b066-9bb1f28be708
-04:51:32 DEBUG Code archive: C:\Users\XznRh\.m2\repository\org\springframework\boot\spring-boot-web-server\4.1.0\spring-boot-web-server-4.1.0.jar
-04:51:32 DEBUG Code archive: C:\Users\XznRh\.m2\repository\org\springframework\boot\spring-boot-web-server\4.1.0\spring-boot-web-server-4.1.0.jar
-04:51:32 DEBUG None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
-04:51:32 INFO  Tomcat initialized with port 7773 (http)
-04:51:32 INFO  Starting service [Tomcat]
-04:51:32 INFO  Starting Servlet engine: [Apache Tomcat/11.0.22]
-04:51:32 DEBUG Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-04:51:32 INFO  Root WebApplicationContext: initialization completed in 2516 ms
-04:51:32 DEBUG Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
-04:51:32 DEBUG Mapping servlets: dispatcherServlet urls=[/]
-04:51:32 DEBUG Filter 'requestContextFilter' configured for use
-04:51:32 DEBUG Filter 'characterEncodingFilter' configured for use
-04:51:32 DEBUG Filter 'formContentFilter' configured for use
-04:51:32 INFO  HikariPool-1 - Starting...
-04:51:32 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e04cd23
-04:51:32 INFO  HikariPool-1 - Start completed.
-04:51:34 INFO  Reading from transport_db_reviewsservice.databasechangelog
-04:51:34 INFO  Database is up to date, no changesets to execute
-04:51:34 INFO  Reading from transport_db_reviewsservice.databasechangelog
-04:51:34 INFO  UPDATE SUMMARY
-04:51:34 INFO  Run:                          0
-04:51:34 INFO  Previously run:               1
-04:51:34 INFO  Filtered out:                 0
-04:51:34 INFO  -------------------------------
-04:51:34 INFO  Total change sets:            1
-04:51:34 INFO  Update summary generated
-04:51:34 INFO  Command execution complete
-04:51:34 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
-04:51:34 INFO  HHH000001: Hibernate ORM core version 7.4.1.Final
-04:51:35 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
-04:51:35 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
-04:51:35 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-04:51:35 INFO  HHH10001005: Database info:
+23:28:11 INFO  Starting ReviewsApplication using Java 21.0.10 with PID 34608 (c:\Users\XznRh\Downloads\exam-release\exam-release\reviews-service\target\classes started by XznRh in c:\Users\XznRh\Downloads\exam-release\exam-release\reviews-service)
+23:28:11 INFO  No active profile set, falling back to 1 default profile: "default"
+23:28:11 DEBUG Loading source class com.transit.reviews.ReviewsApplication
+23:28:11 DEBUG Matching URLs for reloading : [file:/c:/Users/XznRh/Downloads/exam-release/exam-release/reviews-service/target/classes/]
+23:28:11 DEBUG Included patterns for restart : []
+23:28:11 DEBUG Excluded patterns for restart : [/spring-boot-starter-[\w-]+/, /spring-boot/(bin|build|out)/, /spring-boot-starter/(bin|build|out)/, /spring-boot-devtools/(bin|build|out)/, /spring-boot-actuator/(bin|build|out)/, /spring-boot-autoconfigure/(bin|build|out)/]
+23:28:11 INFO  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+23:28:11 INFO  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+23:28:11 DEBUG Refreshing org.springframework.boot.web.server.servlet.context.AnnotationConfigServletWebServerApplicationContext@3eaebf3e
+23:28:13 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:28:13 DEBUG @EnableAutoConfiguration was declared on a class in the package 'com.transit.reviews'. Automatic @Repository and @Entity scanning is enabled.
+23:28:13 INFO  Finished Spring Data repository scanning in 188 ms. Found 1 JPA repository interface.
+23:28:14 INFO  BeanFactory id=f9270c68-6041-31da-99de-6505dc393448
+23:28:15 DEBUG Code archive: C:\Users\XznRh\.m2\repository\org\springframework\boot\spring-boot-web-server\4.1.0\spring-boot-web-server-4.1.0.jar
+23:28:15 DEBUG Code archive: C:\Users\XznRh\.m2\repository\org\springframework\boot\spring-boot-web-server\4.1.0\spring-boot-web-server-4.1.0.jar
+23:28:15 DEBUG None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+23:28:15 INFO  Tomcat initialized with port 7773 (http)
+23:28:15 INFO  Starting service [Tomcat]
+23:28:15 INFO  Starting Servlet engine: [Apache Tomcat/11.0.22]
+23:28:15 DEBUG Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+23:28:15 INFO  Root WebApplicationContext: initialization completed in 4053 ms
+23:28:15 DEBUG Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+23:28:15 DEBUG Mapping servlets: dispatcherServlet urls=[/]
+23:28:15 DEBUG Filter 'requestContextFilter' configured for use
+23:28:15 DEBUG Filter 'characterEncodingFilter' configured for use
+23:28:15 DEBUG Filter 'formContentFilter' configured for use
+23:28:15 INFO  HikariPool-1 - Starting...
+23:28:16 INFO  HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@43277597
+23:28:16 INFO  HikariPool-1 - Start completed.
+23:28:17 INFO  Reading from transport_db_reviewsservice.databasechangelog
+23:28:18 INFO  Database is up to date, no changesets to execute
+23:28:18 INFO  Reading from transport_db_reviewsservice.databasechangelog
+23:28:18 INFO  UPDATE SUMMARY
+23:28:18 INFO  Run:                          0
+23:28:18 INFO  Previously run:               1
+23:28:18 INFO  Filtered out:                 0
+23:28:18 INFO  -------------------------------
+23:28:18 INFO  Total change sets:            1
+23:28:18 INFO  Update summary generated
+23:28:18 INFO  Command execution complete
+23:28:18 INFO  HHH008540: Processing PersistenceUnitInfo [name: default]
+23:28:18 INFO  HHH000001: Hibernate ORM core version 7.4.1.Final
+23:28:19 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+23:28:19 WARN  HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+23:28:19 WARN  HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+23:28:19 INFO  HHH10001005: Database info:
 	Database JDBC URL [jdbc:mysql://localhost:3306/transport_db_reviewsservice?createDatabaseIfNotExists=true]
 	Database driver: MySQL Connector/J
 	Database dialect: MySQLDialect
@@ -94,42 +92,42 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-04:51:36 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-04:51:36 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
-04:51:36 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
-04:51:36 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-04:51:38 INFO  Cannot determine local hostname
-04:51:38 DEBUG 13 mappings in 'requestMappingHandlerMapping'
-04:51:38 DEBUG Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
-04:51:38 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 2 RequestBodyAdvice, 1 ResponseBodyAdvice
-04:51:38 DEBUG ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
-04:51:40 INFO  Cannot determine local hostname
-04:51:40 INFO  Eureka HTTP Client uses RestClient.
-04:51:40 WARN  Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-04:51:40 INFO  Setting initial instance status as: STARTING
-04:51:40 INFO  Initializing Eureka in region us-east-1
-04:51:40 INFO  Resolving eureka endpoints via configuration
-04:51:40 INFO  Disable delta property : false
-04:51:40 INFO  Single vip registry refresh property : null
-04:51:40 INFO  Force full registry fetch : false
-04:51:40 INFO  Application is null : false
-04:51:40 INFO  Registered Applications size is zero : true
-04:51:40 INFO  Application version is -1: true
-04:51:40 INFO  Getting all instance registry info from the eureka server
-04:51:41 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-04:51:41 INFO  The response status is 200
-04:51:41 INFO  Starting heartbeat executor: renew interval is: 30
-04:51:41 INFO  InstanceInfoReplicator onDemand update allowed rate per min is 4
-04:51:41 INFO  Discovery Client initialized at timestamp 1783500701112 with initial instances count: 0
-04:51:41 INFO  Registering application REVIEWS-SERVICE with eureka with status UP
-04:51:41 INFO  Saw local status change event StatusChangeEvent [timestamp=1783500701125, current=UP, previous=STARTING]
-04:51:41 INFO  DiscoveryClient_REVIEWS-SERVICE/localhost:reviews-service:7773: registering service...
-04:51:41 DEBUG Writing [InstanceInfo [instanceId = localhost:reviews-service:7773, appName = REVIEWS-SERVICE, hostName = localhost, status = UP, ipAddr = 192.168.56.1, port = 7773, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@7a72e5bf] as "application/json" with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
-04:51:41 INFO  Tomcat started on port 7773 (http) with context path '/'
-04:51:41 INFO  Updating port to 7773
-04:51:41 INFO  DiscoveryClient_REVIEWS-SERVICE/localhost:reviews-service:7773 - registration status: 204
-04:51:42 INFO  Cannot determine local hostname
-04:51:42 DEBUG 
+23:28:20 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+23:28:20 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:28:20 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+23:28:21 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:28:23 INFO  Cannot determine local hostname
+23:28:23 DEBUG 13 mappings in 'requestMappingHandlerMapping'
+23:28:23 DEBUG Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+23:28:23 DEBUG ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 2 RequestBodyAdvice, 1 ResponseBodyAdvice
+23:28:23 DEBUG ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+23:28:25 INFO  Cannot determine local hostname
+23:28:25 INFO  Eureka HTTP Client uses RestClient.
+23:28:25 WARN  Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+23:28:26 INFO  Setting initial instance status as: STARTING
+23:28:26 INFO  Initializing Eureka in region us-east-1
+23:28:26 INFO  Resolving eureka endpoints via configuration
+23:28:26 INFO  Disable delta property : false
+23:28:26 INFO  Single vip registry refresh property : null
+23:28:26 INFO  Force full registry fetch : false
+23:28:26 INFO  Application is null : false
+23:28:26 INFO  Registered Applications size is zero : true
+23:28:26 INFO  Application version is -1: true
+23:28:26 INFO  Getting all instance registry info from the eureka server
+23:28:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:28:26 INFO  The response status is 200
+23:28:26 INFO  Starting heartbeat executor: renew interval is: 30
+23:28:26 INFO  InstanceInfoReplicator onDemand update allowed rate per min is 4
+23:28:26 INFO  Discovery Client initialized at timestamp 1783567706416 with initial instances count: 0
+23:28:26 INFO  Registering application REVIEWS-SERVICE with eureka with status UP
+23:28:26 INFO  Saw local status change event StatusChangeEvent [timestamp=1783567706432, current=UP, previous=STARTING]
+23:28:26 INFO  DiscoveryClient_REVIEWS-SERVICE/localhost:reviews-service:7773: registering service...
+23:28:26 DEBUG Writing [InstanceInfo [instanceId = localhost:reviews-service:7773, appName = REVIEWS-SERVICE, hostName = localhost, status = UP, ipAddr = 192.168.56.1, port = 7773, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@61c9a184] as "application/json" with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+23:28:26 INFO  Tomcat started on port 7773 (http) with context path '/'
+23:28:26 INFO  Updating port to 7773
+23:28:26 INFO  DiscoveryClient_REVIEWS-SERVICE/localhost:reviews-service:7773 - registration status: 204
+23:28:27 INFO  Cannot determine local hostname
+23:28:27 DEBUG 
 
 
 ============================
@@ -598,13 +596,6 @@ Positive matches:
 
    LiquibaseAutoConfiguration.CustomizerConfiguration matched:
       - @ConditionalOnClass found required class 'liquibase.integration.spring.Customizer' (OnClassCondition)
-
-   LiquibaseAutoConfiguration.LiquibaseConfiguration matched:
-      - @ConditionalOnClass found required class 'org.springframework.jdbc.core.ConnectionCallback' (OnClassCondition)
-      - @ConditionalOnMissingBean (types: liquibase.integration.spring.SpringLiquibase; SearchStrategy: all) did not find any beans (OnBeanCondition)
-
-   LiquibaseAutoConfiguration.LiquibaseConfiguration#liquibaseConnectionDetails matched:
-      - @ConditionalOnMissingBean (types: org.springframework.boot.liquibase.autoconfigure.LiquibaseConnectionDetails; SearchStrategy: all) did not find any beans (OnBeanCondition)
 
    org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration matched:
       - AnyNestedCondition 2 matched 0 did not; NestedCondition on BlockingRestClassesPresentCondition.RestClientPresent @ConditionalOnClass found required class 'org.springframework.web.client.RestClient'; NestedCondition on BlockingRestClassesPresentCondition.RestTemplatePresent @ConditionalOnClass found required class 'org.springframework.web.client.RestTemplate' (BlockingRestClassesPresentCondition)
@@ -1459,6 +1450,12 @@ Negative matches:
       Did not match:
          - @ConditionalOnBean (types: liquibase.integration.spring.Customizer; SearchStrategy: all) did not find any beans of type liquibase.integration.spring.Customizer (OnBeanCondition)
 
+   LiquibaseAutoConfiguration.LiquibaseConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (types: liquibase.integration.spring.SpringLiquibase; SearchStrategy: all) found beans of type 'liquibase.integration.spring.SpringLiquibase' liquibase (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.jdbc.core.ConnectionCallback' (OnClassCondition)
+
    LiquibaseEndpointAutoConfiguration:
       Did not match:
          - @ConditionalOnClass did not find required class 'org.springframework.boot.actuate.autoconfigure.endpoint.condition.ConditionalOnAvailableEndpoint' (OnClassCondition)
@@ -1882,42 +1879,33 @@ Unconditional classes:
 
 
 
-04:51:42 INFO  Started ReviewsApplication in 13.716 seconds (process running for 14.564)
-04:51:42 DEBUG Application availability state LivenessState changed to CORRECT
-04:51:42 DEBUG Creating new Restarter for thread Thread[#1,main,5,main]
-04:51:42 DEBUG Immediately restarting application
-04:51:42 DEBUG Starting application com.transit.reviews.ReviewsApplication with URLs [file:/c:/Users/XznRh/Downloads/exam-release/exam-release/reviews-service/target/classes/]
-04:51:42 DEBUG Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
-04:52:11 INFO  Disable delta property : false
-04:52:11 INFO  Single vip registry refresh property : null
-04:52:11 INFO  Force full registry fetch : false
-04:52:11 INFO  Application is null : false
-04:52:11 INFO  Registered Applications size is zero : true
-04:52:11 INFO  Application version is -1: false
-04:52:11 INFO  Getting all instance registry info from the eureka server
-04:52:11 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-04:52:11 INFO  The response status is 200
-04:52:34 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
-04:52:34 INFO  Initializing Servlet 'dispatcherServlet'
-04:52:34 DEBUG Detected StandardServletMultipartResolver
-04:52:34 DEBUG Detected AcceptHeaderLocaleResolver
-04:52:34 DEBUG Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7788ce37
-04:52:34 DEBUG Detected org.springframework.web.servlet.support.SessionFlashMapManager@58a0d039
-04:52:34 DEBUG enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-04:52:34 INFO  Completed initialization in 1 ms
-04:52:34 DEBUG GET "/reviews-service", parameters={}
-04:52:34 DEBUG Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-04:52:34 DEBUG Resource not found for path [reviews-service]
-04:52:34 DEBUG Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource reviews-service for request '/reviews-service'.]
-04:52:34 DEBUG Completed 404 NOT_FOUND
-04:52:34 DEBUG "ERROR" dispatch for GET "/error", parameters={}
-04:52:34 DEBUG Mapped to org.springframework.boot.webmvc.autoconfigure.error.BasicErrorController#error(HttpServletRequest)
-04:52:34 DEBUG Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
-04:52:34 DEBUG Writing [{timestamp=Wed Jul 08 04:52:34 CLT 2026, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
-04:52:34 DEBUG Exiting from "ERROR" dispatch, status 404
-04:52:34 DEBUG GET "/api/reviews", parameters={}
-04:52:34 DEBUG Mapped to com.transit.reviews.controller.ReviewController#getAllReviews()
-04:52:35 DEBUG 
+23:28:27 INFO  Started ReviewsApplication in 17.788 seconds (process running for 18.913)
+23:28:27 DEBUG Application availability state LivenessState changed to CORRECT
+23:28:27 DEBUG Creating new Restarter for thread Thread[#1,main,5,main]
+23:28:27 DEBUG Immediately restarting application
+23:28:27 DEBUG Starting application com.transit.reviews.ReviewsApplication with URLs [file:/c:/Users/XznRh/Downloads/exam-release/exam-release/reviews-service/target/classes/]
+23:28:27 DEBUG Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+23:28:56 INFO  Disable delta property : false
+23:28:56 INFO  Single vip registry refresh property : null
+23:28:56 INFO  Force full registry fetch : false
+23:28:56 INFO  Application is null : false
+23:28:56 INFO  Registered Applications size is zero : true
+23:28:56 INFO  Application version is -1: false
+23:28:56 INFO  Getting all instance registry info from the eureka server
+23:28:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:28:56 INFO  The response status is 200
+23:29:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:29:28 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:29:28 INFO  Initializing Servlet 'dispatcherServlet'
+23:29:28 DEBUG Detected StandardServletMultipartResolver
+23:29:28 DEBUG Detected AcceptHeaderLocaleResolver
+23:29:28 DEBUG Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@b6d55c2
+23:29:28 DEBUG Detected org.springframework.web.servlet.support.SessionFlashMapManager@59eb427d
+23:29:28 DEBUG enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+23:29:28 INFO  Completed initialization in 2 ms
+23:29:28 DEBUG GET "/api/reviews", parameters={}
+23:29:28 DEBUG Mapped to com.transit.reviews.controller.ReviewController#getAllReviews()
+23:29:28 DEBUG 
     select
         rm1_0.id,
         rm1_0.client_id,
@@ -1939,12 +1927,39 @@ Hibernate:
         rm1_0.train_id 
     from
         reviews rm1_0
-04:52:35 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-04:52:35 DEBUG Writing [CollectionModel { content: [ReviewResponseDTO(id=1, clientId=8, trainId=2, ticketCode=DS2N1IXU, rati (truncated)...]
-04:52:35 DEBUG Completed 200 OK
-04:52:35 DEBUG GET "/api/reviews/1", parameters={}
-04:52:35 DEBUG Mapped to com.transit.reviews.controller.ReviewController#getReviewById(Long)
-04:52:35 DEBUG 
+23:29:28 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
+23:29:28 DEBUG Writing [CollectionModel { content: [ReviewResponseDTO(id=1, clientId=9, trainId=3, ticketCode=N998HF1Y, rati (truncated)...]
+23:29:28 DEBUG Completed 200 OK
+23:29:28 DEBUG GET "/api/reviews", parameters={}
+23:29:28 DEBUG Mapped to com.transit.reviews.controller.ReviewController#getAllReviews()
+23:29:28 DEBUG 
+    select
+        rm1_0.id,
+        rm1_0.client_id,
+        rm1_0.comment,
+        rm1_0.rating,
+        rm1_0.review_date,
+        rm1_0.ticket_code,
+        rm1_0.train_id 
+    from
+        reviews rm1_0
+Hibernate: 
+    select
+        rm1_0.id,
+        rm1_0.client_id,
+        rm1_0.comment,
+        rm1_0.rating,
+        rm1_0.review_date,
+        rm1_0.ticket_code,
+        rm1_0.train_id 
+    from
+        reviews rm1_0
+23:29:28 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
+23:29:28 DEBUG Writing [CollectionModel { content: [ReviewResponseDTO(id=1, clientId=9, trainId=3, ticketCode=N998HF1Y, rati (truncated)...]
+23:29:28 DEBUG Completed 200 OK
+23:29:29 DEBUG GET "/api/reviews/1", parameters={}
+23:29:29 DEBUG Mapped to com.transit.reviews.controller.ReviewController#getReviewById(Long)
+23:29:29 DEBUG 
     select
         rm1_0.id,
         rm1_0.client_id,
@@ -1970,12 +1985,12 @@ Hibernate:
         reviews rm1_0 
     where
         rm1_0.id=?
-04:52:35 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-04:52:35 DEBUG Writing [ReviewResponseDTO(id=1, clientId=8, trainId=2, ticketCode=DS2N1IXU, rating=3, comment=Review #1 – sw (truncated)...]
-04:52:35 DEBUG Completed 200 OK
-04:52:35 DEBUG GET "/api/reviews/1", parameters={}
-04:52:35 DEBUG Mapped to com.transit.reviews.controller.ReviewController#getReviewById(Long)
-04:52:35 DEBUG 
+23:29:29 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
+23:29:29 DEBUG Writing [ReviewResponseDTO(id=1, clientId=9, trainId=3, ticketCode=N998HF1Y, rating=4, comment=Review #1 – iS (truncated)...]
+23:29:29 DEBUG Completed 200 OK
+23:29:29 DEBUG GET "/api/reviews/1", parameters={}
+23:29:29 DEBUG Mapped to com.transit.reviews.controller.ReviewController#getReviewById(Long)
+23:29:29 DEBUG 
     select
         rm1_0.id,
         rm1_0.client_id,
@@ -2001,12 +2016,12 @@ Hibernate:
         reviews rm1_0 
     where
         rm1_0.id=?
-04:52:35 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-04:52:35 DEBUG Writing [ReviewResponseDTO(id=1, clientId=8, trainId=2, ticketCode=DS2N1IXU, rating=3, comment=Review #1 – sw (truncated)...]
-04:52:35 DEBUG Completed 200 OK
-04:52:35 DEBUG GET "/api/reviews/client/1", parameters={}
-04:52:35 DEBUG Mapped to com.transit.reviews.controller.ReviewController#getReviewsByClientId(Long)
-04:52:35 DEBUG 
+23:29:29 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
+23:29:29 DEBUG Writing [ReviewResponseDTO(id=1, clientId=9, trainId=3, ticketCode=N998HF1Y, rating=4, comment=Review #1 – iS (truncated)...]
+23:29:29 DEBUG Completed 200 OK
+23:29:29 DEBUG GET "/api/reviews/client/1", parameters={}
+23:29:29 DEBUG Mapped to com.transit.reviews.controller.ReviewController#getReviewsByClientId(Long)
+23:29:29 DEBUG 
     select
         rm1_0.id,
         rm1_0.client_id,
@@ -2033,12 +2048,12 @@ Hibernate:
     where
         rm1_0.client_id=?
 CircuitBreaker triggered for Client ID 1. Error: No reviews found for client ID: 1
-04:52:35 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-04:52:35 DEBUG Writing [CollectionModel { content: [ReviewResponseDTO(id=-1, clientId=0, trainId=0, ticketCode=null, rating= (truncated)...]
-04:52:35 DEBUG Completed 200 OK
-04:52:35 DEBUG GET "/api/reviews/client/1", parameters={}
-04:52:36 DEBUG Mapped to com.transit.reviews.controller.ReviewController#getReviewsByClientId(Long)
-04:52:36 DEBUG 
+23:29:29 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
+23:29:29 DEBUG Writing [CollectionModel { content: [ReviewResponseDTO(id=-1, clientId=0, trainId=0, ticketCode=null, rating= (truncated)...]
+23:29:29 DEBUG Completed 200 OK
+23:29:29 DEBUG GET "/api/reviews/client/1", parameters={}
+23:29:29 DEBUG Mapped to com.transit.reviews.controller.ReviewController#getReviewsByClientId(Long)
+23:29:29 DEBUG 
     select
         rm1_0.id,
         rm1_0.client_id,
@@ -2065,12 +2080,12 @@ Hibernate:
     where
         rm1_0.client_id=?
 CircuitBreaker triggered for Client ID 1. Error: No reviews found for client ID: 1
-04:52:36 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-04:52:36 DEBUG Writing [CollectionModel { content: [ReviewResponseDTO(id=-1, clientId=0, trainId=0, ticketCode=null, rating= (truncated)...]
-04:52:36 DEBUG Completed 200 OK
-04:52:36 DEBUG GET "/api/reviews/train/1", parameters={}
-04:52:36 DEBUG Mapped to com.transit.reviews.controller.ReviewController#getReviewsByTrainId(Long)
-04:52:36 DEBUG 
+23:29:29 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
+23:29:29 DEBUG Writing [CollectionModel { content: [ReviewResponseDTO(id=-1, clientId=0, trainId=0, ticketCode=null, rating= (truncated)...]
+23:29:29 DEBUG Completed 200 OK
+23:29:29 DEBUG GET "/api/reviews/train/1", parameters={}
+23:29:29 DEBUG Mapped to com.transit.reviews.controller.ReviewController#getReviewsByTrainId(Long)
+23:29:29 DEBUG 
     select
         rm1_0.id,
         rm1_0.client_id,
@@ -2097,12 +2112,12 @@ Hibernate:
     where
         rm1_0.train_id=?
 CircuitBreaker triggered for Train ID 1. Error: No reviews found for train ID: 1
-04:52:36 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-04:52:36 DEBUG Writing [CollectionModel { content: [ReviewResponseDTO(id=-1, clientId=0, trainId=0, ticketCode=null, rating= (truncated)...]
-04:52:36 DEBUG Completed 200 OK
-04:52:36 DEBUG GET "/api/reviews/train/1", parameters={}
-04:52:36 DEBUG Mapped to com.transit.reviews.controller.ReviewController#getReviewsByTrainId(Long)
-04:52:36 DEBUG 
+23:29:29 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
+23:29:29 DEBUG Writing [CollectionModel { content: [ReviewResponseDTO(id=-1, clientId=0, trainId=0, ticketCode=null, rating= (truncated)...]
+23:29:29 DEBUG Completed 200 OK
+23:29:29 DEBUG GET "/api/reviews/train/1", parameters={}
+23:29:29 DEBUG Mapped to com.transit.reviews.controller.ReviewController#getReviewsByTrainId(Long)
+23:29:29 DEBUG 
     select
         rm1_0.id,
         rm1_0.client_id,
@@ -2129,12 +2144,12 @@ Hibernate:
     where
         rm1_0.train_id=?
 CircuitBreaker triggered for Train ID 1. Error: No reviews found for train ID: 1
-04:52:36 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-04:52:36 DEBUG Writing [CollectionModel { content: [ReviewResponseDTO(id=-1, clientId=0, trainId=0, ticketCode=null, rating= (truncated)...]
-04:52:36 DEBUG Completed 200 OK
-04:52:36 DEBUG GET "/api/reviews/rating/5", parameters={}
-04:52:36 DEBUG Mapped to com.transit.reviews.controller.ReviewController#getReviewsByRating(Integer)
-04:52:36 DEBUG 
+23:29:29 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
+23:29:29 DEBUG Writing [CollectionModel { content: [ReviewResponseDTO(id=-1, clientId=0, trainId=0, ticketCode=null, rating= (truncated)...]
+23:29:29 DEBUG Completed 200 OK
+23:29:30 DEBUG GET "/api/reviews/rating/5", parameters={}
+23:29:30 DEBUG Mapped to com.transit.reviews.controller.ReviewController#getReviewsByRating(Integer)
+23:29:30 DEBUG 
     select
         rm1_0.id,
         rm1_0.client_id,
@@ -2160,12 +2175,12 @@ Hibernate:
         reviews rm1_0 
     where
         rm1_0.rating=?
-04:52:36 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-04:52:36 DEBUG Writing [CollectionModel { content: [ReviewResponseDTO(id=2, clientId=13, trainId=4, ticketCode=ASB5DWD1, rat (truncated)...]
-04:52:36 DEBUG Completed 200 OK
-04:52:36 DEBUG GET "/api/reviews/rating/5", parameters={}
-04:52:36 DEBUG Mapped to com.transit.reviews.controller.ReviewController#getReviewsByRating(Integer)
-04:52:36 DEBUG 
+23:29:30 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
+23:29:30 DEBUG Writing [CollectionModel { content: [ReviewResponseDTO(id=9, clientId=16, trainId=10, ticketCode=68RCSSXA, ra (truncated)...]
+23:29:30 DEBUG Completed 200 OK
+23:29:30 DEBUG GET "/api/reviews/rating/5", parameters={}
+23:29:30 DEBUG Mapped to com.transit.reviews.controller.ReviewController#getReviewsByRating(Integer)
+23:29:30 DEBUG 
     select
         rm1_0.id,
         rm1_0.client_id,
@@ -2191,616 +2206,189 @@ Hibernate:
         reviews rm1_0 
     where
         rm1_0.rating=?
-04:52:36 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-04:52:36 DEBUG Writing [CollectionModel { content: [ReviewResponseDTO(id=2, clientId=13, trainId=4, ticketCode=ASB5DWD1, rat (truncated)...]
-04:52:36 DEBUG Completed 200 OK
-04:52:41 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-04:53:11 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-04:53:41 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-04:54:11 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-04:54:41 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-04:55:11 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-04:55:28 DEBUG GET "/reviews-service", parameters={}
-04:55:28 DEBUG Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-04:55:28 DEBUG Resource not found for path [reviews-service]
-04:55:28 DEBUG Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource reviews-service for request '/reviews-service'.]
-04:55:28 DEBUG Completed 404 NOT_FOUND
-04:55:28 DEBUG "ERROR" dispatch for GET "/error", parameters={}
-04:55:28 DEBUG Mapped to org.springframework.boot.webmvc.autoconfigure.error.BasicErrorController#error(HttpServletRequest)
-04:55:28 DEBUG Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
-04:55:28 DEBUG Writing [{timestamp=Wed Jul 08 04:55:28 CLT 2026, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
-04:55:28 DEBUG Exiting from "ERROR" dispatch, status 404
-04:55:28 DEBUG GET "/api/reviews", parameters={}
-04:55:28 DEBUG Mapped to com.transit.reviews.controller.ReviewController#getAllReviews()
-04:55:28 DEBUG 
-    select
-        rm1_0.id,
-        rm1_0.client_id,
-        rm1_0.comment,
-        rm1_0.rating,
-        rm1_0.review_date,
-        rm1_0.ticket_code,
-        rm1_0.train_id 
-    from
-        reviews rm1_0
-Hibernate: 
-    select
-        rm1_0.id,
-        rm1_0.client_id,
-        rm1_0.comment,
-        rm1_0.rating,
-        rm1_0.review_date,
-        rm1_0.ticket_code,
-        rm1_0.train_id 
-    from
-        reviews rm1_0
-04:55:28 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-04:55:28 DEBUG Writing [CollectionModel { content: [ReviewResponseDTO(id=1, clientId=8, trainId=2, ticketCode=DS2N1IXU, rati (truncated)...]
-04:55:28 DEBUG Completed 200 OK
-04:55:28 DEBUG GET "/api/reviews/1", parameters={}
-04:55:28 DEBUG Mapped to com.transit.reviews.controller.ReviewController#getReviewById(Long)
-04:55:28 DEBUG 
-    select
-        rm1_0.id,
-        rm1_0.client_id,
-        rm1_0.comment,
-        rm1_0.rating,
-        rm1_0.review_date,
-        rm1_0.ticket_code,
-        rm1_0.train_id 
-    from
-        reviews rm1_0 
-    where
-        rm1_0.id=?
-Hibernate: 
-    select
-        rm1_0.id,
-        rm1_0.client_id,
-        rm1_0.comment,
-        rm1_0.rating,
-        rm1_0.review_date,
-        rm1_0.ticket_code,
-        rm1_0.train_id 
-    from
-        reviews rm1_0 
-    where
-        rm1_0.id=?
-04:55:28 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-04:55:28 DEBUG Writing [ReviewResponseDTO(id=1, clientId=8, trainId=2, ticketCode=DS2N1IXU, rating=3, comment=Review #1 – sw (truncated)...]
-04:55:28 DEBUG Completed 200 OK
-04:55:28 DEBUG GET "/api/reviews/1", parameters={}
-04:55:28 DEBUG Mapped to com.transit.reviews.controller.ReviewController#getReviewById(Long)
-04:55:28 DEBUG 
-    select
-        rm1_0.id,
-        rm1_0.client_id,
-        rm1_0.comment,
-        rm1_0.rating,
-        rm1_0.review_date,
-        rm1_0.ticket_code,
-        rm1_0.train_id 
-    from
-        reviews rm1_0 
-    where
-        rm1_0.id=?
-Hibernate: 
-    select
-        rm1_0.id,
-        rm1_0.client_id,
-        rm1_0.comment,
-        rm1_0.rating,
-        rm1_0.review_date,
-        rm1_0.ticket_code,
-        rm1_0.train_id 
-    from
-        reviews rm1_0 
-    where
-        rm1_0.id=?
-04:55:28 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-04:55:28 DEBUG Writing [ReviewResponseDTO(id=1, clientId=8, trainId=2, ticketCode=DS2N1IXU, rating=3, comment=Review #1 – sw (truncated)...]
-04:55:28 DEBUG Completed 200 OK
-04:55:28 DEBUG GET "/api/reviews/client/1", parameters={}
-04:55:28 DEBUG Mapped to com.transit.reviews.controller.ReviewController#getReviewsByClientId(Long)
-04:55:28 DEBUG 
-    select
-        rm1_0.id,
-        rm1_0.client_id,
-        rm1_0.comment,
-        rm1_0.rating,
-        rm1_0.review_date,
-        rm1_0.ticket_code,
-        rm1_0.train_id 
-    from
-        reviews rm1_0 
-    where
-        rm1_0.client_id=?
-Hibernate: 
-    select
-        rm1_0.id,
-        rm1_0.client_id,
-        rm1_0.comment,
-        rm1_0.rating,
-        rm1_0.review_date,
-        rm1_0.ticket_code,
-        rm1_0.train_id 
-    from
-        reviews rm1_0 
-    where
-        rm1_0.client_id=?
-CircuitBreaker triggered for Client ID 1. Error: No reviews found for client ID: 1
-04:55:28 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-04:55:28 DEBUG Writing [CollectionModel { content: [ReviewResponseDTO(id=-1, clientId=0, trainId=0, ticketCode=null, rating= (truncated)...]
-04:55:28 DEBUG Completed 200 OK
-04:55:28 DEBUG GET "/api/reviews/client/1", parameters={}
-04:55:28 DEBUG Mapped to com.transit.reviews.controller.ReviewController#getReviewsByClientId(Long)
-04:55:28 DEBUG 
-    select
-        rm1_0.id,
-        rm1_0.client_id,
-        rm1_0.comment,
-        rm1_0.rating,
-        rm1_0.review_date,
-        rm1_0.ticket_code,
-        rm1_0.train_id 
-    from
-        reviews rm1_0 
-    where
-        rm1_0.client_id=?
-Hibernate: 
-    select
-        rm1_0.id,
-        rm1_0.client_id,
-        rm1_0.comment,
-        rm1_0.rating,
-        rm1_0.review_date,
-        rm1_0.ticket_code,
-        rm1_0.train_id 
-    from
-        reviews rm1_0 
-    where
-        rm1_0.client_id=?
-CircuitBreaker triggered for Client ID 1. Error: No reviews found for client ID: 1
-04:55:28 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-04:55:28 DEBUG Writing [CollectionModel { content: [ReviewResponseDTO(id=-1, clientId=0, trainId=0, ticketCode=null, rating= (truncated)...]
-04:55:28 DEBUG Completed 200 OK
-04:55:28 DEBUG GET "/api/reviews/train/1", parameters={}
-04:55:28 DEBUG Mapped to com.transit.reviews.controller.ReviewController#getReviewsByTrainId(Long)
-04:55:28 DEBUG 
-    select
-        rm1_0.id,
-        rm1_0.client_id,
-        rm1_0.comment,
-        rm1_0.rating,
-        rm1_0.review_date,
-        rm1_0.ticket_code,
-        rm1_0.train_id 
-    from
-        reviews rm1_0 
-    where
-        rm1_0.train_id=?
-Hibernate: 
-    select
-        rm1_0.id,
-        rm1_0.client_id,
-        rm1_0.comment,
-        rm1_0.rating,
-        rm1_0.review_date,
-        rm1_0.ticket_code,
-        rm1_0.train_id 
-    from
-        reviews rm1_0 
-    where
-        rm1_0.train_id=?
-CircuitBreaker triggered for Train ID 1. Error: No reviews found for train ID: 1
-04:55:28 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-04:55:28 DEBUG Writing [CollectionModel { content: [ReviewResponseDTO(id=-1, clientId=0, trainId=0, ticketCode=null, rating= (truncated)...]
-04:55:28 DEBUG Completed 200 OK
-04:55:28 DEBUG GET "/api/reviews/train/1", parameters={}
-04:55:28 DEBUG Mapped to com.transit.reviews.controller.ReviewController#getReviewsByTrainId(Long)
-04:55:28 DEBUG 
-    select
-        rm1_0.id,
-        rm1_0.client_id,
-        rm1_0.comment,
-        rm1_0.rating,
-        rm1_0.review_date,
-        rm1_0.ticket_code,
-        rm1_0.train_id 
-    from
-        reviews rm1_0 
-    where
-        rm1_0.train_id=?
-Hibernate: 
-    select
-        rm1_0.id,
-        rm1_0.client_id,
-        rm1_0.comment,
-        rm1_0.rating,
-        rm1_0.review_date,
-        rm1_0.ticket_code,
-        rm1_0.train_id 
-    from
-        reviews rm1_0 
-    where
-        rm1_0.train_id=?
-CircuitBreaker triggered for Train ID 1. Error: No reviews found for train ID: 1
-04:55:28 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-04:55:28 DEBUG Writing [CollectionModel { content: [ReviewResponseDTO(id=-1, clientId=0, trainId=0, ticketCode=null, rating= (truncated)...]
-04:55:28 DEBUG Completed 200 OK
-04:55:29 DEBUG GET "/api/reviews/rating/5", parameters={}
-04:55:29 DEBUG Mapped to com.transit.reviews.controller.ReviewController#getReviewsByRating(Integer)
-04:55:29 DEBUG 
-    select
-        rm1_0.id,
-        rm1_0.client_id,
-        rm1_0.comment,
-        rm1_0.rating,
-        rm1_0.review_date,
-        rm1_0.ticket_code,
-        rm1_0.train_id 
-    from
-        reviews rm1_0 
-    where
-        rm1_0.rating=?
-Hibernate: 
-    select
-        rm1_0.id,
-        rm1_0.client_id,
-        rm1_0.comment,
-        rm1_0.rating,
-        rm1_0.review_date,
-        rm1_0.ticket_code,
-        rm1_0.train_id 
-    from
-        reviews rm1_0 
-    where
-        rm1_0.rating=?
-04:55:29 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-04:55:29 DEBUG Writing [CollectionModel { content: [ReviewResponseDTO(id=2, clientId=13, trainId=4, ticketCode=ASB5DWD1, rat (truncated)...]
-04:55:29 DEBUG Completed 200 OK
-04:55:29 DEBUG GET "/api/reviews/rating/5", parameters={}
-04:55:29 DEBUG Mapped to com.transit.reviews.controller.ReviewController#getReviewsByRating(Integer)
-04:55:29 DEBUG 
-    select
-        rm1_0.id,
-        rm1_0.client_id,
-        rm1_0.comment,
-        rm1_0.rating,
-        rm1_0.review_date,
-        rm1_0.ticket_code,
-        rm1_0.train_id 
-    from
-        reviews rm1_0 
-    where
-        rm1_0.rating=?
-Hibernate: 
-    select
-        rm1_0.id,
-        rm1_0.client_id,
-        rm1_0.comment,
-        rm1_0.rating,
-        rm1_0.review_date,
-        rm1_0.ticket_code,
-        rm1_0.train_id 
-    from
-        reviews rm1_0 
-    where
-        rm1_0.rating=?
-04:55:29 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-04:55:29 DEBUG Writing [CollectionModel { content: [ReviewResponseDTO(id=2, clientId=13, trainId=4, ticketCode=ASB5DWD1, rat (truncated)...]
-04:55:29 DEBUG Completed 200 OK
-04:55:41 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-04:56:11 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-04:56:40 INFO  Resolving eureka endpoints via configuration
-04:56:41 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-04:57:11 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-04:57:41 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-04:58:11 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-04:58:41 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-04:59:11 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-04:59:22 DEBUG GET "/reviews-service", parameters={}
-04:59:22 DEBUG Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-04:59:22 DEBUG Resource not found for path [reviews-service]
-04:59:22 DEBUG Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource reviews-service for request '/reviews-service'.]
-04:59:22 DEBUG Completed 404 NOT_FOUND
-04:59:22 DEBUG "ERROR" dispatch for GET "/error", parameters={}
-04:59:22 DEBUG Mapped to org.springframework.boot.webmvc.autoconfigure.error.BasicErrorController#error(HttpServletRequest)
-04:59:22 DEBUG Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
-04:59:22 DEBUG Writing [{timestamp=Wed Jul 08 04:59:22 CLT 2026, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
-04:59:22 DEBUG Exiting from "ERROR" dispatch, status 404
-04:59:22 DEBUG GET "/api/reviews", parameters={}
-04:59:22 DEBUG Mapped to com.transit.reviews.controller.ReviewController#getAllReviews()
-04:59:22 DEBUG 
-    select
-        rm1_0.id,
-        rm1_0.client_id,
-        rm1_0.comment,
-        rm1_0.rating,
-        rm1_0.review_date,
-        rm1_0.ticket_code,
-        rm1_0.train_id 
-    from
-        reviews rm1_0
-Hibernate: 
-    select
-        rm1_0.id,
-        rm1_0.client_id,
-        rm1_0.comment,
-        rm1_0.rating,
-        rm1_0.review_date,
-        rm1_0.ticket_code,
-        rm1_0.train_id 
-    from
-        reviews rm1_0
-04:59:22 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-04:59:22 DEBUG Writing [CollectionModel { content: [ReviewResponseDTO(id=1, clientId=8, trainId=2, ticketCode=DS2N1IXU, rati (truncated)...]
-04:59:22 DEBUG Completed 200 OK
-04:59:22 DEBUG GET "/api/reviews/1", parameters={}
-04:59:22 DEBUG Mapped to com.transit.reviews.controller.ReviewController#getReviewById(Long)
-04:59:22 DEBUG 
-    select
-        rm1_0.id,
-        rm1_0.client_id,
-        rm1_0.comment,
-        rm1_0.rating,
-        rm1_0.review_date,
-        rm1_0.ticket_code,
-        rm1_0.train_id 
-    from
-        reviews rm1_0 
-    where
-        rm1_0.id=?
-Hibernate: 
-    select
-        rm1_0.id,
-        rm1_0.client_id,
-        rm1_0.comment,
-        rm1_0.rating,
-        rm1_0.review_date,
-        rm1_0.ticket_code,
-        rm1_0.train_id 
-    from
-        reviews rm1_0 
-    where
-        rm1_0.id=?
-04:59:22 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-04:59:22 DEBUG Writing [ReviewResponseDTO(id=1, clientId=8, trainId=2, ticketCode=DS2N1IXU, rating=3, comment=Review #1 – sw (truncated)...]
-04:59:22 DEBUG Completed 200 OK
-04:59:22 DEBUG GET "/api/reviews/1", parameters={}
-04:59:22 DEBUG Mapped to com.transit.reviews.controller.ReviewController#getReviewById(Long)
-04:59:22 DEBUG 
-    select
-        rm1_0.id,
-        rm1_0.client_id,
-        rm1_0.comment,
-        rm1_0.rating,
-        rm1_0.review_date,
-        rm1_0.ticket_code,
-        rm1_0.train_id 
-    from
-        reviews rm1_0 
-    where
-        rm1_0.id=?
-Hibernate: 
-    select
-        rm1_0.id,
-        rm1_0.client_id,
-        rm1_0.comment,
-        rm1_0.rating,
-        rm1_0.review_date,
-        rm1_0.ticket_code,
-        rm1_0.train_id 
-    from
-        reviews rm1_0 
-    where
-        rm1_0.id=?
-04:59:22 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-04:59:22 DEBUG Writing [ReviewResponseDTO(id=1, clientId=8, trainId=2, ticketCode=DS2N1IXU, rating=3, comment=Review #1 – sw (truncated)...]
-04:59:22 DEBUG Completed 200 OK
-04:59:22 DEBUG GET "/api/reviews/client/1", parameters={}
-04:59:22 DEBUG Mapped to com.transit.reviews.controller.ReviewController#getReviewsByClientId(Long)
-04:59:22 DEBUG 
-    select
-        rm1_0.id,
-        rm1_0.client_id,
-        rm1_0.comment,
-        rm1_0.rating,
-        rm1_0.review_date,
-        rm1_0.ticket_code,
-        rm1_0.train_id 
-    from
-        reviews rm1_0 
-    where
-        rm1_0.client_id=?
-Hibernate: 
-    select
-        rm1_0.id,
-        rm1_0.client_id,
-        rm1_0.comment,
-        rm1_0.rating,
-        rm1_0.review_date,
-        rm1_0.ticket_code,
-        rm1_0.train_id 
-    from
-        reviews rm1_0 
-    where
-        rm1_0.client_id=?
-CircuitBreaker triggered for Client ID 1. Error: No reviews found for client ID: 1
-04:59:22 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-04:59:22 DEBUG Writing [CollectionModel { content: [ReviewResponseDTO(id=-1, clientId=0, trainId=0, ticketCode=null, rating= (truncated)...]
-04:59:22 DEBUG Completed 200 OK
-04:59:22 DEBUG GET "/api/reviews/client/1", parameters={}
-04:59:22 DEBUG Mapped to com.transit.reviews.controller.ReviewController#getReviewsByClientId(Long)
-04:59:22 DEBUG 
-    select
-        rm1_0.id,
-        rm1_0.client_id,
-        rm1_0.comment,
-        rm1_0.rating,
-        rm1_0.review_date,
-        rm1_0.ticket_code,
-        rm1_0.train_id 
-    from
-        reviews rm1_0 
-    where
-        rm1_0.client_id=?
-Hibernate: 
-    select
-        rm1_0.id,
-        rm1_0.client_id,
-        rm1_0.comment,
-        rm1_0.rating,
-        rm1_0.review_date,
-        rm1_0.ticket_code,
-        rm1_0.train_id 
-    from
-        reviews rm1_0 
-    where
-        rm1_0.client_id=?
-CircuitBreaker triggered for Client ID 1. Error: No reviews found for client ID: 1
-04:59:22 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-04:59:22 DEBUG Writing [CollectionModel { content: [ReviewResponseDTO(id=-1, clientId=0, trainId=0, ticketCode=null, rating= (truncated)...]
-04:59:22 DEBUG Completed 200 OK
-04:59:23 DEBUG GET "/api/reviews/train/1", parameters={}
-04:59:23 DEBUG Mapped to com.transit.reviews.controller.ReviewController#getReviewsByTrainId(Long)
-04:59:23 DEBUG 
-    select
-        rm1_0.id,
-        rm1_0.client_id,
-        rm1_0.comment,
-        rm1_0.rating,
-        rm1_0.review_date,
-        rm1_0.ticket_code,
-        rm1_0.train_id 
-    from
-        reviews rm1_0 
-    where
-        rm1_0.train_id=?
-Hibernate: 
-    select
-        rm1_0.id,
-        rm1_0.client_id,
-        rm1_0.comment,
-        rm1_0.rating,
-        rm1_0.review_date,
-        rm1_0.ticket_code,
-        rm1_0.train_id 
-    from
-        reviews rm1_0 
-    where
-        rm1_0.train_id=?
-CircuitBreaker triggered for Train ID 1. Error: No reviews found for train ID: 1
-04:59:23 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-04:59:23 DEBUG Writing [CollectionModel { content: [ReviewResponseDTO(id=-1, clientId=0, trainId=0, ticketCode=null, rating= (truncated)...]
-04:59:23 DEBUG Completed 200 OK
-04:59:23 DEBUG GET "/api/reviews/train/1", parameters={}
-04:59:23 DEBUG Mapped to com.transit.reviews.controller.ReviewController#getReviewsByTrainId(Long)
-04:59:23 DEBUG 
-    select
-        rm1_0.id,
-        rm1_0.client_id,
-        rm1_0.comment,
-        rm1_0.rating,
-        rm1_0.review_date,
-        rm1_0.ticket_code,
-        rm1_0.train_id 
-    from
-        reviews rm1_0 
-    where
-        rm1_0.train_id=?
-Hibernate: 
-    select
-        rm1_0.id,
-        rm1_0.client_id,
-        rm1_0.comment,
-        rm1_0.rating,
-        rm1_0.review_date,
-        rm1_0.ticket_code,
-        rm1_0.train_id 
-    from
-        reviews rm1_0 
-    where
-        rm1_0.train_id=?
-CircuitBreaker triggered for Train ID 1. Error: No reviews found for train ID: 1
-04:59:23 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-04:59:23 DEBUG Writing [CollectionModel { content: [ReviewResponseDTO(id=-1, clientId=0, trainId=0, ticketCode=null, rating= (truncated)...]
-04:59:23 DEBUG Completed 200 OK
-04:59:23 DEBUG GET "/api/reviews/rating/5", parameters={}
-04:59:23 DEBUG Mapped to com.transit.reviews.controller.ReviewController#getReviewsByRating(Integer)
-04:59:23 DEBUG 
-    select
-        rm1_0.id,
-        rm1_0.client_id,
-        rm1_0.comment,
-        rm1_0.rating,
-        rm1_0.review_date,
-        rm1_0.ticket_code,
-        rm1_0.train_id 
-    from
-        reviews rm1_0 
-    where
-        rm1_0.rating=?
-Hibernate: 
-    select
-        rm1_0.id,
-        rm1_0.client_id,
-        rm1_0.comment,
-        rm1_0.rating,
-        rm1_0.review_date,
-        rm1_0.ticket_code,
-        rm1_0.train_id 
-    from
-        reviews rm1_0 
-    where
-        rm1_0.rating=?
-04:59:23 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-04:59:23 DEBUG Writing [CollectionModel { content: [ReviewResponseDTO(id=2, clientId=13, trainId=4, ticketCode=ASB5DWD1, rat (truncated)...]
-04:59:23 DEBUG Completed 200 OK
-04:59:23 DEBUG GET "/api/reviews/rating/5", parameters={}
-04:59:23 DEBUG Mapped to com.transit.reviews.controller.ReviewController#getReviewsByRating(Integer)
-04:59:23 DEBUG 
-    select
-        rm1_0.id,
-        rm1_0.client_id,
-        rm1_0.comment,
-        rm1_0.rating,
-        rm1_0.review_date,
-        rm1_0.ticket_code,
-        rm1_0.train_id 
-    from
-        reviews rm1_0 
-    where
-        rm1_0.rating=?
-Hibernate: 
-    select
-        rm1_0.id,
-        rm1_0.client_id,
-        rm1_0.comment,
-        rm1_0.rating,
-        rm1_0.review_date,
-        rm1_0.ticket_code,
-        rm1_0.train_id 
-    from
-        reviews rm1_0 
-    where
-        rm1_0.rating=?
-04:59:23 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
-04:59:23 DEBUG Writing [CollectionModel { content: [ReviewResponseDTO(id=2, clientId=13, trainId=4, ticketCode=ASB5DWD1, rat (truncated)...]
-04:59:23 DEBUG Completed 200 OK
-04:59:41 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-05:00:11 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-05:00:41 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-05:01:11 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-05:01:40 INFO  Resolving eureka endpoints via configuration
-05:01:41 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-05:02:11 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-05:02:41 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-05:03:11 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-05:03:41 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-05:04:11 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-05:04:41 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-05:05:11 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-05:05:41 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-05:06:11 DEBUG Reading to [com.netflix.discovery.shared.Applications]
-05:06:40 INFO  Resolving eureka endpoints via configuration
-05:06:41 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:29:30 DEBUG Using 'application/hal+json', given [*/*] and supported [application/hal+json, application/vnd.hal+json, application/json, application/yaml]
+23:29:30 DEBUG Writing [CollectionModel { content: [ReviewResponseDTO(id=9, clientId=16, trainId=10, ticketCode=68RCSSXA, ra (truncated)...]
+23:29:30 DEBUG Completed 200 OK
+23:29:30 DEBUG POST "/api/reviews", parameters={}
+23:29:30 DEBUG Mapped to com.transit.reviews.controller.ReviewController#createReview(ReviewRequestDTO)
+23:29:30 DEBUG Read "application/json;charset=UTF-8" to [ReviewRequestDTO(clientId=null, trainId=null, ticketCode=null, rating=null, comment=null, reviewDate (truncated)...]
+23:29:30 WARN  Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.transit.reviews.dto.response.ReviewResponseDTO> com.transit.reviews.controller.ReviewController.createReview(com.transit.reviews.dto.request.ReviewRequestDTO) with 6 errors: [Field error in object 'reviewRequestDTO' on field 'rating': rejected value [null]; codes [NotNull.reviewRequestDTO.rating,NotNull.rating,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [reviewRequestDTO.rating,rating]; arguments []; default message [rating]]; default message [Rating cannot be null]] [Field error in object 'reviewRequestDTO' on field 'trainId': rejected value [null]; codes [NotNull.reviewRequestDTO.trainId,NotNull.trainId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [reviewRequestDTO.trainId,trainId]; arguments []; default message [trainId]]; default message [Train ID cannot be null]] [Field error in object 'reviewRequestDTO' on field 'reviewDate': rejected value [null]; codes [NotNull.reviewRequestDTO.reviewDate,NotNull.reviewDate,NotNull.java.sql.Date,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [reviewRequestDTO.reviewDate,reviewDate]; arguments []; default message [reviewDate]]; default message [Review date cannot be null]] [Field error in object 'reviewRequestDTO' on field 'ticketCode': rejected value [null]; codes [NotBlank.reviewRequestDTO.ticketCode,NotBlank.ticketCode,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [reviewRequestDTO.ticketCode,ticketCode]; arguments []; default message [ticketCode]]; default message [Ticket code cannot be blank]] [Field error in object 'reviewRequestDTO' on field 'comment': rejected value [null]; codes [NotBlank.reviewRequestDTO.comment,NotBlank.comment,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [reviewRequestDTO.comment,comment]; arguments []; default message [comment]]; default message [Comment cannot be blank]] [Field error in object 'reviewRequestDTO' on field 'clientId': rejected value [null]; codes [NotNull.reviewRequestDTO.clientId,NotNull.clientId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [reviewRequestDTO.clientId,clientId]; arguments []; default message [clientId]]; default message [Client ID cannot be null]] ]
+23:29:30 DEBUG Completed 400 BAD_REQUEST
+23:29:30 DEBUG "ERROR" dispatch for GET "/error", parameters={}
+23:29:30 DEBUG Mapped to org.springframework.boot.webmvc.autoconfigure.error.BasicErrorController#error(HttpServletRequest)
+23:29:30 DEBUG Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+23:29:30 DEBUG Writing [{timestamp=Wed Jul 08 23:29:30 CLT 2026, status=400, error=Bad Request, trace=org.springframework.we (truncated)...]
+23:29:30 DEBUG Exiting from "ERROR" dispatch, status 400
+23:29:30 DEBUG POST "/api/reviews", parameters={}
+23:29:30 DEBUG Mapped to com.transit.reviews.controller.ReviewController#createReview(ReviewRequestDTO)
+23:29:30 DEBUG Read "application/json;charset=UTF-8" to [ReviewRequestDTO(clientId=null, trainId=null, ticketCode=null, rating=null, comment=null, reviewDate (truncated)...]
+23:29:30 WARN  Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.transit.reviews.dto.response.ReviewResponseDTO> com.transit.reviews.controller.ReviewController.createReview(com.transit.reviews.dto.request.ReviewRequestDTO) with 6 errors: [Field error in object 'reviewRequestDTO' on field 'trainId': rejected value [null]; codes [NotNull.reviewRequestDTO.trainId,NotNull.trainId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [reviewRequestDTO.trainId,trainId]; arguments []; default message [trainId]]; default message [Train ID cannot be null]] [Field error in object 'reviewRequestDTO' on field 'ticketCode': rejected value [null]; codes [NotBlank.reviewRequestDTO.ticketCode,NotBlank.ticketCode,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [reviewRequestDTO.ticketCode,ticketCode]; arguments []; default message [ticketCode]]; default message [Ticket code cannot be blank]] [Field error in object 'reviewRequestDTO' on field 'rating': rejected value [null]; codes [NotNull.reviewRequestDTO.rating,NotNull.rating,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [reviewRequestDTO.rating,rating]; arguments []; default message [rating]]; default message [Rating cannot be null]] [Field error in object 'reviewRequestDTO' on field 'reviewDate': rejected value [null]; codes [NotNull.reviewRequestDTO.reviewDate,NotNull.reviewDate,NotNull.java.sql.Date,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [reviewRequestDTO.reviewDate,reviewDate]; arguments []; default message [reviewDate]]; default message [Review date cannot be null]] [Field error in object 'reviewRequestDTO' on field 'comment': rejected value [null]; codes [NotBlank.reviewRequestDTO.comment,NotBlank.comment,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [reviewRequestDTO.comment,comment]; arguments []; default message [comment]]; default message [Comment cannot be blank]] [Field error in object 'reviewRequestDTO' on field 'clientId': rejected value [null]; codes [NotNull.reviewRequestDTO.clientId,NotNull.clientId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [reviewRequestDTO.clientId,clientId]; arguments []; default message [clientId]]; default message [Client ID cannot be null]] ]
+23:29:30 DEBUG Completed 400 BAD_REQUEST
+23:29:30 DEBUG "ERROR" dispatch for GET "/error", parameters={}
+23:29:30 DEBUG Mapped to org.springframework.boot.webmvc.autoconfigure.error.BasicErrorController#error(HttpServletRequest)
+23:29:30 DEBUG Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+23:29:30 DEBUG Writing [{timestamp=Wed Jul 08 23:29:30 CLT 2026, status=400, error=Bad Request, trace=org.springframework.we (truncated)...]
+23:29:30 DEBUG Exiting from "ERROR" dispatch, status 400
+23:29:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:30:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:30:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:31:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:31:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:32:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:32:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:33:26 INFO  Resolving eureka endpoints via configuration
+23:33:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:33:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:34:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:34:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:35:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:35:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:36:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:36:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:37:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:37:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:38:26 INFO  Resolving eureka endpoints via configuration
+23:38:26 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:38:56 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:39:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:39:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:40:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:40:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:41:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:41:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:42:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:42:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:43:26 INFO  Resolving eureka endpoints via configuration
+23:43:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:43:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:44:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:44:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:45:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:45:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:46:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:46:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:47:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:47:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:48:26 INFO  Resolving eureka endpoints via configuration
+23:48:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:48:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:49:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:49:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:50:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:50:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:51:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:51:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:52:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:52:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:53:26 INFO  Resolving eureka endpoints via configuration
+23:53:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:53:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:54:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:54:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:55:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:55:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:56:27 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:56:57 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:57:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:57:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:58:26 INFO  Resolving eureka endpoints via configuration
+23:58:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:58:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:59:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+23:59:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:00:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:00:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:01:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:01:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:02:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:02:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:03:26 INFO  Resolving eureka endpoints via configuration
+00:03:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:03:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:04:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:04:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:05:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:05:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:06:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:06:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:07:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:07:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:08:26 INFO  Resolving eureka endpoints via configuration
+00:08:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:08:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:09:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:09:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:10:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:10:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:11:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:11:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:12:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:12:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:13:26 INFO  Resolving eureka endpoints via configuration
+00:13:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:13:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:14:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:14:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:15:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:15:58 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:16:28 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:16:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:17:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:17:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:18:26 INFO  Resolving eureka endpoints via configuration
+00:18:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:18:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:19:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:19:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:20:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:20:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:21:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:21:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:22:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:22:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:23:26 INFO  Resolving eureka endpoints via configuration
+00:23:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:23:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:24:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:24:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:25:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:25:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:26:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:26:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:27:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:27:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:28:26 INFO  Resolving eureka endpoints via configuration
+00:28:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:28:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:29:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:29:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:30:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:30:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:31:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:31:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:32:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:32:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:33:26 INFO  Resolving eureka endpoints via configuration
+00:33:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:33:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:34:29 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:34:59 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:35:30 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:36:00 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:36:30 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:37:00 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:37:30 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:38:00 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:38:26 INFO  Resolving eureka endpoints via configuration
+00:38:30 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:39:00 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:39:30 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:40:00 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:40:30 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:41:00 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:41:30 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:42:00 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:42:30 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:43:00 DEBUG Reading to [com.netflix.discovery.shared.Applications]
+00:43:26 INFO  Resolving eureka endpoints via configuration
+00:43:30 DEBUG Reading to [com.netflix.discovery.shared.Applications]
