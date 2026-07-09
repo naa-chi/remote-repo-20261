@@ -42,7 +42,6 @@ public class TrainService {
 
     @CircuitBreaker(name = "trainService", fallbackMethod = "handleGetTrainsFallbackList")
     public List<TrainResponseDTO> getTrainsByManufacturerId(String manufacturerId) {
-        // Return empty list instead of throwing
         return repository.findByManufacturerId(manufacturerId).stream()
                 .map(mapper::toResponse)
                 .collect(Collectors.toList());

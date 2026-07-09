@@ -30,7 +30,9 @@ SERVICES: List[Dict[str, str]] = [
     {"name": "Train Service", "dir": "trains-service"},
     {"name": "API Gateway", "dir": "api-gateway"},
     {"name": "Ticket Service", "dir": "tickets-service"},
-    {"name": "Review Service", "dir": "reviews-service"}
+    {"name": "Review Service", "dir": "reviews-service"},
+    {"name": "Maintenances Report Service", "dir": "maintenances-service"},
+    {"name": "Manufacturers Service", "dir": "manufacturers-service"}
     # Add more services here
 ]
 

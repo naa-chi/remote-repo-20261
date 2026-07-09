@@ -17,6 +17,7 @@ DB_ENGINES = {**DB_CONFIG, 'database': 'transport_db_enginesservice'}
 DB_TRAINS = {**DB_CONFIG, 'database': 'transport_db_trainsservice'}
 DB_TICKETS = {**DB_CONFIG, 'database': 'transport_db_ticketsservice'}
 DB_REVIEWS = {**DB_CONFIG, 'database': 'transport_db_reviewsservice'}
+DB_MAINTENANCES = {**DB_CONFIG, 'database': 'transport_db_maintenancesservice'}
 
 def random_string(length, chars=string.ascii_uppercase + string.digits):
     return ''.join(random.choices(chars, k=length))
@@ -55,7 +56,7 @@ def populate_engines(conn):
                 VALUES (%s, %s, %s, %s, %s, %s, %s)
             """, (engine_id, manufacturer, engine_code, horsepower, weight, price, prod_date))
         conn.commit()
-    print("populated")
+    print("✅ Engines populated")
 
 def populate_trains(conn_engines, conn_trains):
     truncate_table(conn_trains, 'trains')
@@ -63,7 +64,7 @@ def populate_trains(conn_engines, conn_trains):
         cursor.execute("SELECT id FROM engines")
         engine_ids = [row[0] for row in cursor.fetchall()]
     if not engine_ids:
-        print("No engines found – run engines first")
+        print("❌ No engines found – run engines first")
         return
     with conn_trains.cursor() as cursor:
         for i in range(1, 11):
@@ -79,7 +80,7 @@ def populate_trains(conn_engines, conn_trains):
                 VALUES (%s, %s, %s, %s, %s, %s)
             """, (code, manufacturer, engine_id, car_amount, cost_per_car, prod_date))
         conn_trains.commit()
-    print("populated")
+    print("✅ Trains populated")
 
 def populate_tickets(conn_trains, conn_tickets):
     truncate_table(conn_tickets, 'tickets')
@@ -87,7 +88,7 @@ def populate_tickets(conn_trains, conn_tickets):
         cursor.execute("SELECT id FROM trains")
         train_ids = [row[0] for row in cursor.fetchall()]
     if not train_ids:
-        print("No trains found – run trains first")
+        print("❌ No trains found – run trains first")
         return
     with conn_tickets.cursor() as cursor:
         for i in range(1, 11):
@@ -104,7 +105,7 @@ def populate_tickets(conn_trains, conn_tickets):
                 VALUES (%s, %s, %s, %s, %s, %s, %s)
             """, (code, origin, dest, price, client_id, train_id, departure))
         conn_tickets.commit()
-    print("populated")
+    print("✅ Tickets populated")
 
 def populate_reviews(conn_trains, conn_tickets, conn_reviews):
     truncate_table(conn_reviews, 'reviews')
@@ -131,7 +132,41 @@ def populate_reviews(conn_trains, conn_tickets, conn_reviews):
                 VALUES (%s, %s, %s, %s, %s, %s)
             """, (client_id, train_id, ticket_code, rating, comment, review_date))
         conn_reviews.commit()
-    print("populated")
+    print("✅ Reviews populated")
+
+def populate_maintenances(conn_trains, conn_engines, conn_maintenances):
+    truncate_table(conn_maintenances, 'maintenance_reports')
+    with conn_trains.cursor() as cursor:
+        cursor.execute("SELECT id FROM trains")
+        train_ids = [row[0] for row in cursor.fetchall()]
+    with conn_engines.cursor() as cursor:
+        cursor.execute("SELECT engine_code FROM engines")
+        engine_codes = [row[0] for row in cursor.fetchall()]
+    if not train_ids or not engine_codes:
+        print("❌ Missing train or engine data for maintenance")
+        return
+    with conn_maintenances.cursor() as cursor:
+        for i in range(1, 11):
+            maintenance_id = f"MNT-{i:03d}"
+            description = f"Maintenance #{i} – " + random_string(15, string.ascii_letters + ' ')
+            entry_date = random_date()
+            end_date = entry_date + timedelta(days=random.randint(1, 14))
+            release_date = end_date + timedelta(days=random.randint(1, 5))
+            crew = f"CREW-{random.choice(string.ascii_uppercase)}"
+            price = random.randint(1000, 15000)
+            engine_code = random.choice(engine_codes)
+            train_id = random.choice(train_ids)
+            cursor.execute("""
+                INSERT INTO maintenance_reports (
+                    maintenance_description, maintenance_entry_date,
+                    maintenance_end_date, maintenance_release_date,
+                    maintenance_crew, maintenance_price,
+                    engine_code, train_id, maintenance_id
+                ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+            """, (description, entry_date, end_date, release_date,
+                  crew, price, engine_code, train_id, maintenance_id))
+        conn_maintenances.commit()
+    print("✅ Maintenances populated")
 
 def main():
     print("Connecting to databases...")
@@ -139,20 +174,23 @@ def main():
     conn_trains = pymysql.connect(**DB_TRAINS)
     conn_tickets = pymysql.connect(**DB_TICKETS)
     conn_reviews = pymysql.connect(**DB_REVIEWS)
+    conn_maintenances = pymysql.connect(**DB_MAINTENANCES)
 
     try:
         populate_engines(conn_engines)
         populate_trains(conn_engines, conn_trains)
         populate_tickets(conn_trains, conn_tickets)
         populate_reviews(conn_trains, conn_tickets, conn_reviews)
-        print("All data inserted successfully.")
+        populate_maintenances(conn_trains, conn_engines, conn_maintenances)
+        print("🎉 All data inserted successfully.")
     except Exception as e:
-        print(f"Error: {e}")
+        print(f"❌ Error: {e}")
     finally:
         conn_engines.close()
         conn_trains.close()
         conn_tickets.close()
         conn_reviews.close()
+        conn_maintenances.close()
 
 if __name__ == "__main__":
     main()

@@ -18,7 +18,8 @@ DATABASES = [
     "transport_db_linesservice",
     "transport_db_driversservice",
     "transport_db_clientsservice",
-    "transport_db_citiesservice"
+    "transport_db_citiesservice",
+    "transport_db_manufacturersservice"
     # add more as your microservices grow
     # "transport_db_ticketservice",
     # "transport_db_userservice",
