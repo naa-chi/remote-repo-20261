@@ -28,7 +28,7 @@ public class StationController {
     }
 
     @Operation(summary = "Get all stations")
-    @GetMapping
+    @GetMapping("/all")
     public ResponseEntity<CollectionModel<StationResponseDTO>> getAll() {
         List<StationResponseDTO> stations = service.getAllStations();
         stations.forEach(this::addLinks);

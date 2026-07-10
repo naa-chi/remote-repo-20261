@@ -27,7 +27,7 @@ public class ClientController {
     }
 
     @Operation(summary = "Get all clients")
-    @GetMapping
+    @GetMapping("/all")
     public ResponseEntity<CollectionModel<ClientResponseDTO>> getAll() {
         List<ClientResponseDTO> clients = service.getAllClients();
         clients.forEach(this::addLinks);

@@ -27,7 +27,7 @@ public class DriverController {
     }
 
     @Operation(summary = "Get all drivers")
-    @GetMapping
+    @GetMapping("/all")
     public ResponseEntity<CollectionModel<DriverResponseDTO>> getAll() {
         List<DriverResponseDTO> drivers = service.getAllDrivers();
         drivers.forEach(this::addLinks);

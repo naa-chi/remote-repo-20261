@@ -27,7 +27,7 @@ public class ManagerController {
     }
 
     @Operation(summary = "Get all managers")
-    @GetMapping
+    @GetMapping("/all")
     public ResponseEntity<CollectionModel<ManagerResponseDTO>> getAll() {
         List<ManagerResponseDTO> managers = service.getAllManagers();
         managers.forEach(this::addLinks);

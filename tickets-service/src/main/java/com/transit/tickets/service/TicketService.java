@@ -27,7 +27,6 @@ public class TicketService {
 
     @CircuitBreaker(name = "ticketService", fallbackMethod = "handleGetTicketsFallbackList")
     public List<TicketResponseDTO> getAllTickets() {
-        // Return empty list if none
         return repository.findAll().stream()
                 .map(mapper::toResponse)
                 .collect(Collectors.toList());
@@ -87,28 +86,29 @@ public class TicketService {
         repository.deleteById(id);
     }
 
-    // Fallbacks
-    private TicketResponseDTO handleGetTicketFallback(Long id, Throwable t) {
+    // ========== Fallback methods – package‑private (no modifier) ==========
+
+    TicketResponseDTO handleGetTicketFallback(Long id, Throwable t) {
         return fallback.getTicketFallback(id, t);
     }
 
-    private TicketResponseDTO handleGetTicketByCodeFallback(String code, Throwable t) {
+    TicketResponseDTO handleGetTicketByCodeFallback(String code, Throwable t) {
         return fallback.getTicketByCodeFallback(code, t);
     }
 
-    private List<TicketResponseDTO> handleGetTicketsFallbackList(Throwable t) {
+    List<TicketResponseDTO> handleGetTicketsFallbackList(Throwable t) {
         return fallback.getTicketsFallbackList(t);
     }
 
-    private List<TicketResponseDTO> handleGetTicketsFallbackList(String param, Throwable t) {
+    List<TicketResponseDTO> handleGetTicketsFallbackList(String param, Throwable t) {
         return fallback.getTicketsFallbackList(t);
     }
 
-    private TicketResponseDTO handleGetTicketFallback(TicketRequestDTO request, Throwable t) {
+    TicketResponseDTO handleGetTicketFallback(TicketRequestDTO request, Throwable t) {
         return fallback.getTicketFallback(-1L, t);
     }
 
-    private TicketResponseDTO handleGetTicketFallback(Long id, TicketRequestDTO request, Throwable t) {
+    TicketResponseDTO handleGetTicketFallback(Long id, TicketRequestDTO request, Throwable t) {
         return fallback.getTicketFallback(id, t);
     }
 }

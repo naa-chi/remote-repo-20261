@@ -28,7 +28,7 @@ public class LineController {
     }
 
     @Operation(summary = "Get all lines")
-    @GetMapping
+    @GetMapping("/all")
     public ResponseEntity<CollectionModel<LineResponseDTO>> getAll() {
         List<LineResponseDTO> lines = service.getAllLines();
         lines.forEach(this::addLinks);

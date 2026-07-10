@@ -1,4 +1,26 @@
 [INFO] Scanning for projects...
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/org/flywaydb/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/io/github/git-commit-id/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/org/cyclonedx/maven-metadata.xml
+Progress (1): 255 BProgress (2): 255 B | 243 BProgress (3): 255 B | 243 B | 249 BProgress (4): 255 B | 243 B | 249 B | 234 B                                           Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/maven-metadata.xml (249 B at 102 B/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/cyclonedx/maven-metadata.xml (243 B at 99 B/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/jooq/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/maven-metadata.xml
+Progress (3): 255 B | 234 B | 375 BProgress (4): 255 B | 234 B | 375 B | 398 B                                           Downloaded from central: https://repo.maven.apache.org/maven2/io/github/git-commit-id/maven-metadata.xml (255 B at 102 B/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jooq/maven-metadata.xml (398 B at 6.4 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/graalvm/buildtools/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/org/liquibase/maven-metadata.xml
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/maven-metadata.xml (375 B at 497 B/s)
+Downloading from central: https://repo.maven.apache.org/maven2/io/github/ascopes/maven-metadata.xml
+Progress (2): 234 B | 242 BProgress (3): 234 B | 242 B | 394 B                                   Downloaded from central: https://repo.maven.apache.org/maven2/org/graalvm/buildtools/maven-metadata.xml (242 B at 329 B/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml
+Downloaded from central: https://repo.maven.apache.org/maven2/org/flywaydb/maven-metadata.xml (234 B at 72 B/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml
+Progress (2): 394 B | 240 B                           Downloaded from central: https://repo.maven.apache.org/maven2/org/liquibase/maven-metadata.xml (394 B at 530 B/s)
+Progress (2): 240 B | 3.1 kBProgress (3): 240 B | 3.1 kB | 4.6 kBProgress (3): 240 B | 7.7 kB | 4.6 kBProgress (3): 240 B | 7.7 kB | 9.7 kBProgress (3): 240 B | 12 kB | 9.7 kB Progress (3): 240 B | 12 kB | 14 kB Progress (3): 240 B | 17 kB | 14 kBProgress (3): 240 B | 20 kB | 14 kBProgress (3): 240 B | 21 kB | 14 kB                                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml (14 kB at 20 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/io/github/ascopes/maven-metadata.xml (240 B at 320 B/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml (21 kB at 24 kB/s)
 [INFO] 
 [INFO] -----------------------< com.transit:discovery >------------------------
 [INFO] Building  0.0.1-SNAPSHOT
@@ -35,137 +57,113 @@
 
  :: Spring Boot ::                (v4.1.0)
 
-2026-07-09T21:54:47.090-04:00  INFO 42080 --- [discovery-server] [           main] c.t.d.DiscoveryServerApplication         : Starting DiscoveryServerApplication using Java 21.0.10 with PID 42080 (C:\Users\XznRh\Downloads\exam-release\exam-release\discovery\target\classes started by XznRh in c:\Users\XznRh\Downloads\exam-release\exam-release\discovery)
-2026-07-09T21:54:47.095-04:00  INFO 42080 --- [discovery-server] [           main] c.t.d.DiscoveryServerApplication         : No active profile set, falling back to 1 default profile: "default"
-2026-07-09T21:54:50.575-04:00  INFO 42080 --- [discovery-server] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=de401257-b535-36e1-a1fd-4816a61b6ac8
-2026-07-09T21:54:51.267-04:00  INFO 42080 --- [discovery-server] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8761 (http)
-2026-07-09T21:54:51.307-04:00  INFO 42080 --- [discovery-server] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-07-09T21:54:51.308-04:00  INFO 42080 --- [discovery-server] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
-2026-07-09T21:54:51.478-04:00  INFO 42080 --- [discovery-server] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 4305 ms
-2026-07-09T21:54:53.627-04:00  INFO 42080 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2026-07-09T21:54:53.628-04:00  INFO 42080 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2026-07-09T21:54:53.972-04:00  INFO 42080 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2026-07-09T21:54:53.972-04:00  INFO 42080 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2026-07-09T21:54:54.293-04:00  INFO 42080 --- [discovery-server] [           main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2026-07-09T21:54:56.197-04:00  INFO 42080 --- [discovery-server] [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-2026-07-09T21:54:57.705-04:00  INFO 42080 --- [discovery-server] [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-2026-07-09T21:54:57.772-04:00  WARN 42080 --- [discovery-server] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2026-07-09T21:54:57.818-04:00  INFO 42080 --- [discovery-server] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2026-07-09T21:54:57.852-04:00  INFO 42080 --- [discovery-server] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2026-07-09T21:54:57.852-04:00  INFO 42080 --- [discovery-server] [           main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
-2026-07-09T21:54:57.855-04:00  INFO 42080 --- [discovery-server] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1783648497854 with initial instances count: 0
-2026-07-09T21:54:57.930-04:00  INFO 42080 --- [discovery-server] [           main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
-2026-07-09T21:54:57.933-04:00  WARN 42080 --- [discovery-server] [           main] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
-2026-07-09T21:54:57.957-04:00  INFO 42080 --- [discovery-server] [           main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
-2026-07-09T21:54:57.957-04:00  INFO 42080 --- [discovery-server] [           main] c.n.eureka.DefaultEurekaServerContext    : Initialized
-2026-07-09T21:54:57.981-04:00  INFO 42080 --- [discovery-server] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
-2026-07-09T21:54:58.089-04:00  INFO 42080 --- [discovery-server] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DISCOVERY-SERVER with eureka with status UP
-2026-07-09T21:54:58.116-04:00  INFO 42080 --- [discovery-server] [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
-2026-07-09T21:54:58.117-04:00  INFO 42080 --- [discovery-server] [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
-2026-07-09T21:54:58.117-04:00  INFO 42080 --- [discovery-server] [      Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
-2026-07-09T21:54:58.117-04:00  INFO 42080 --- [discovery-server] [      Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
-2026-07-09T21:54:58.117-04:00  INFO 42080 --- [discovery-server] [      Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
-2026-07-09T21:54:58.120-04:00  INFO 42080 --- [discovery-server] [      Thread-10] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
-2026-07-09T21:54:58.147-04:00  INFO 42080 --- [discovery-server] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8761 (http) with context path '/'
-2026-07-09T21:54:58.148-04:00  INFO 42080 --- [discovery-server] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
-2026-07-09T21:54:59.206-04:00  INFO 42080 --- [discovery-server] [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-2026-07-09T21:54:59.222-04:00  INFO 42080 --- [discovery-server] [           main] c.t.d.DiscoveryServerApplication         : Started DiscoveryServerApplication in 14.598 seconds (process running for 16.94)
-2026-07-09T21:54:59.834-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-07-09T21:54:59.835-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-07-09T21:54:59.837-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2026-07-09T21:55:00.480-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/localhost:api-gateway:8080 with status UP (replication=false)
-2026-07-09T21:55:08.952-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ENGINES-SERVICE/localhost:engines-service:7771 with status UP (replication=false)
-2026-07-09T21:55:10.593-04:00  INFO 42080 --- [discovery-server] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MAINTENANCES-SERVICE/localhost:maintenances-service:7774 with status UP (replication=false)
-2026-07-09T21:55:11.637-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CLIENTS-SERVICE/localhost:clients-service:7781 with status UP (replication=false)
-2026-07-09T21:55:12.010-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance REVIEWS-SERVICE/localhost:reviews-service:7773 with status UP (replication=false)
-2026-07-09T21:55:12.168-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MANAGERS-SERVICE/localhost:managers-service:7779 with status UP (replication=false)
-2026-07-09T21:55:12.183-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance STATIONS-SERVICE/localhost:stations-service:7778 with status UP (replication=false)
-2026-07-09T21:55:12.217-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DRIVERS-SERVICE/localhost:drivers-service:7780 with status UP (replication=false)
-2026-07-09T21:55:12.229-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance TRAINS-SERVICE/localhost:trains-service:7770 with status UP (replication=false)
-2026-07-09T21:55:12.230-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MANUFACTURERS-SERVICE/localhost:manufacturers-service:7775 with status UP (replication=false)
-2026-07-09T21:55:12.235-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance TICKETS-SERVICE/localhost:tickets-service:7772 with status UP (replication=false)
-2026-07-09T21:55:12.246-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance LINES-SERVICE/localhost:lines-service:7777 with status UP (replication=false)
-2026-07-09T21:55:12.254-04:00  INFO 42080 --- [discovery-server] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CITIES-SERVICE/localhost:cities-service:7776 with status UP (replication=false)
-2026-07-09T21:55:58.132-04:00  INFO 42080 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2026-07-09T21:56:58.136-04:00  INFO 42080 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
-2026-07-09T21:57:58.138-04:00  INFO 42080 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2026-07-09T21:58:58.141-04:00  INFO 42080 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
-2026-07-09T21:59:58.155-04:00  INFO 42080 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 13ms
-2026-07-09T22:00:58.158-04:00  INFO 42080 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
-2026-07-09T22:01:58.160-04:00  INFO 42080 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
-2026-07-09T22:02:58.166-04:00  INFO 42080 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
-2026-07-09T22:03:58.171-04:00  INFO 42080 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
-2026-07-09T22:04:57.941-04:00  WARN 42080 --- [discovery-server] [eerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
-2026-07-09T22:04:58.174-04:00  INFO 42080 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
-2026-07-09T22:05:49.691-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance TRAINS-SERVICE/localhost:trains-service:7770 with status DOWN (replication=false)
-2026-07-09T22:05:52.737-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance TRAINS-SERVICE/localhost:trains-service:7770 (replication=false)
-2026-07-09T22:05:58.174-04:00  INFO 42080 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2026-07-09T22:05:58.812-04:00  INFO 42080 --- [discovery-server] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance TRAINS-SERVICE/localhost:trains-service:7770 with status UP (replication=false)
-2026-07-09T22:06:58.176-04:00  INFO 42080 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
-2026-07-09T22:07:02.762-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance TICKETS-SERVICE/localhost:tickets-service:7772 with status DOWN (replication=false)
-2026-07-09T22:07:05.800-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance TICKETS-SERVICE/localhost:tickets-service:7772 (replication=false)
-2026-07-09T22:07:17.743-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance TICKETS-SERVICE/localhost:tickets-service:7772 with status UP (replication=false)
-2026-07-09T22:07:19.123-04:00  INFO 42080 --- [discovery-server] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance STATIONS-SERVICE/localhost:stations-service:7778 with status DOWN (replication=false)
-2026-07-09T22:07:22.177-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance STATIONS-SERVICE/localhost:stations-service:7778 (replication=false)
-2026-07-09T22:07:32.468-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance REVIEWS-SERVICE/localhost:reviews-service:7773 with status DOWN (replication=false)
-2026-07-09T22:07:32.514-04:00  INFO 42080 --- [discovery-server] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance STATIONS-SERVICE/localhost:stations-service:7778 with status UP (replication=false)
-2026-07-09T22:07:35.523-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance REVIEWS-SERVICE/localhost:reviews-service:7773 (replication=false)
-2026-07-09T22:07:41.847-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance REVIEWS-SERVICE/localhost:reviews-service:7773 with status UP (replication=false)
-2026-07-09T22:07:42.866-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance REVIEWS-SERVICE/localhost:reviews-service:7773 with status DOWN (replication=false)
-2026-07-09T22:07:45.898-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance REVIEWS-SERVICE/localhost:reviews-service:7773 (replication=false)
-2026-07-09T22:07:48.115-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MANUFACTURERS-SERVICE/localhost:manufacturers-service:7775 with status DOWN (replication=false)
-2026-07-09T22:07:51.220-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance MANUFACTURERS-SERVICE/localhost:manufacturers-service:7775 (replication=false)
-2026-07-09T22:07:52.431-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance REVIEWS-SERVICE/localhost:reviews-service:7773 with status UP (replication=false)
-2026-07-09T22:07:58.177-04:00  INFO 42080 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2026-07-09T22:07:59.118-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MANUFACTURERS-SERVICE/localhost:manufacturers-service:7775 with status UP (replication=false)
-2026-07-09T22:08:00.145-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MANUFACTURERS-SERVICE/localhost:manufacturers-service:7775 with status DOWN (replication=false)
-2026-07-09T22:08:03.194-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance MANUFACTURERS-SERVICE/localhost:manufacturers-service:7775 (replication=false)
-2026-07-09T22:08:10.565-04:00  INFO 42080 --- [discovery-server] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MANUFACTURERS-SERVICE/localhost:manufacturers-service:7775 with status UP (replication=false)
-2026-07-09T22:08:58.178-04:00  INFO 42080 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2026-07-09T22:09:57.962-04:00  INFO 42080 --- [discovery-server] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 23
-2026-07-09T22:09:58.190-04:00  INFO 42080 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 11ms
-2026-07-09T22:10:58.202-04:00  INFO 42080 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 11ms
-2026-07-09T22:11:58.206-04:00  INFO 42080 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
-2026-07-09T22:12:58.213-04:00  INFO 42080 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
-2026-07-09T22:13:58.215-04:00  INFO 42080 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2026-07-09T22:14:57.948-04:00  WARN 42080 --- [discovery-server] [eerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
-2026-07-09T22:14:58.224-04:00  INFO 42080 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
-2026-07-09T22:15:16.948-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MANAGERS-SERVICE/localhost:managers-service:7779 with status DOWN (replication=false)
-2026-07-09T22:15:20.549-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance MANAGERS-SERVICE/localhost:managers-service:7779 (replication=false)
-2026-07-09T22:15:32.277-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MANAGERS-SERVICE/localhost:managers-service:7779 with status UP (replication=false)
-2026-07-09T22:15:58.235-04:00  INFO 42080 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 11ms
-2026-07-09T22:16:05.553-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MAINTENANCES-SERVICE/localhost:maintenances-service:7774 with status DOWN (replication=false)
-2026-07-09T22:16:08.636-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance MAINTENANCES-SERVICE/localhost:maintenances-service:7774 (replication=false)
-2026-07-09T22:16:15.228-04:00  INFO 42080 --- [discovery-server] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MAINTENANCES-SERVICE/localhost:maintenances-service:7774 with status UP (replication=false)
-2026-07-09T22:16:16.248-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MAINTENANCES-SERVICE/localhost:maintenances-service:7774 with status DOWN (replication=false)
-2026-07-09T22:16:19.282-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance MAINTENANCES-SERVICE/localhost:maintenances-service:7774 (replication=false)
-2026-07-09T22:16:25.043-04:00  INFO 42080 --- [discovery-server] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MAINTENANCES-SERVICE/localhost:maintenances-service:7774 with status UP (replication=false)
-2026-07-09T22:16:29.517-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance LINES-SERVICE/localhost:lines-service:7777 with status DOWN (replication=false)
-2026-07-09T22:16:32.759-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance LINES-SERVICE/localhost:lines-service:7777 (replication=false)
-2026-07-09T22:16:39.214-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance LINES-SERVICE/localhost:lines-service:7777 with status UP (replication=false)
-2026-07-09T22:16:40.230-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance LINES-SERVICE/localhost:lines-service:7777 with status DOWN (replication=false)
-2026-07-09T22:16:43.272-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance LINES-SERVICE/localhost:lines-service:7777 (replication=false)
-2026-07-09T22:16:48.991-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance LINES-SERVICE/localhost:lines-service:7777 with status UP (replication=false)
-2026-07-09T22:16:49.690-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ENGINES-SERVICE/localhost:engines-service:7771 with status DOWN (replication=false)
-2026-07-09T22:16:52.796-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance ENGINES-SERVICE/localhost:engines-service:7771 (replication=false)
-2026-07-09T22:16:58.236-04:00  INFO 42080 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2026-07-09T22:16:59.271-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ENGINES-SERVICE/localhost:engines-service:7771 with status UP (replication=false)
-2026-07-09T22:17:00.292-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ENGINES-SERVICE/localhost:engines-service:7771 with status DOWN (replication=false)
-2026-07-09T22:17:03.327-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance ENGINES-SERVICE/localhost:engines-service:7771 (replication=false)
-2026-07-09T22:17:09.106-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ENGINES-SERVICE/localhost:engines-service:7771 with status UP (replication=false)
-2026-07-09T22:17:18.281-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DRIVERS-SERVICE/localhost:drivers-service:7780 with status DOWN (replication=false)
-2026-07-09T22:17:21.983-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance DRIVERS-SERVICE/localhost:drivers-service:7780 (replication=false)
-2026-07-09T22:17:29.540-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CLIENTS-SERVICE/localhost:clients-service:7781 with status DOWN (replication=false)
-2026-07-09T22:17:30.023-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DRIVERS-SERVICE/localhost:drivers-service:7780 with status UP (replication=false)
-2026-07-09T22:17:32.771-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance CLIENTS-SERVICE/localhost:clients-service:7781 (replication=false)
-2026-07-09T22:17:39.662-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CLIENTS-SERVICE/localhost:clients-service:7781 with status UP (replication=false)
-2026-07-09T22:17:40.680-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CLIENTS-SERVICE/localhost:clients-service:7781 with status DOWN (replication=false)
-2026-07-09T22:17:43.712-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance CLIENTS-SERVICE/localhost:clients-service:7781 (replication=false)
-2026-07-09T22:17:45.152-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CITIES-SERVICE/localhost:cities-service:7776 with status DOWN (replication=false)
-2026-07-09T22:17:48.308-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance CITIES-SERVICE/localhost:cities-service:7776 (replication=false)
-2026-07-09T22:17:49.826-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CLIENTS-SERVICE/localhost:clients-service:7781 with status UP (replication=false)
-2026-07-09T22:17:55.782-04:00  INFO 42080 --- [discovery-server] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CITIES-SERVICE/localhost:cities-service:7776 with status UP (replication=false)
-2026-07-09T22:17:56.796-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CITIES-SERVICE/localhost:cities-service:7776 with status DOWN (replication=false)
-2026-07-09T22:17:58.236-04:00  INFO 42080 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2026-07-09T22:17:59.838-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance CITIES-SERVICE/localhost:cities-service:7776 (replication=false)
-2026-07-09T22:18:06.305-04:00  INFO 42080 --- [discovery-server] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CITIES-SERVICE/localhost:cities-service:7776 with status UP (replication=false)
+2026-07-10T00:59:41.963-04:00  INFO 17776 --- [discovery-server] [           main] c.t.d.DiscoveryServerApplication         : Starting DiscoveryServerApplication using Java 21.0.10 with PID 17776 (C:\Users\XznRh\Downloads\exam-release\exam-release\discovery\target\classes started by XznRh in c:\Users\XznRh\Downloads\exam-release\exam-release\discovery)
+2026-07-10T00:59:41.975-04:00  INFO 17776 --- [discovery-server] [           main] c.t.d.DiscoveryServerApplication         : No active profile set, falling back to 1 default profile: "default"
+2026-07-10T01:00:01.575-04:00  INFO 17776 --- [discovery-server] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=de401257-b535-36e1-a1fd-4816a61b6ac8
+2026-07-10T01:00:04.859-04:00  INFO 17776 --- [discovery-server] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8761 (http)
+2026-07-10T01:00:05.008-04:00  INFO 17776 --- [discovery-server] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-10T01:00:05.009-04:00  INFO 17776 --- [discovery-server] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-10T01:00:06.102-04:00  INFO 17776 --- [discovery-server] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 23458 ms
+2026-07-10T01:00:21.114-04:00  INFO 17776 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-07-10T01:00:21.115-04:00  INFO 17776 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-07-10T01:00:21.938-04:00  INFO 17776 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-07-10T01:00:21.938-04:00  INFO 17776 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-07-10T01:00:22.865-04:00  INFO 17776 --- [discovery-server] [           main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-07-10T01:00:26.802-04:00  WARN 17776 --- [discovery-server] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-07-10T01:00:26.881-04:00  INFO 17776 --- [discovery-server] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-07-10T01:00:26.946-04:00  INFO 17776 --- [discovery-server] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-07-10T01:00:26.948-04:00  INFO 17776 --- [discovery-server] [           main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2026-07-10T01:00:26.952-04:00  INFO 17776 --- [discovery-server] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1783659626950 with initial instances count: 0
+2026-07-10T01:00:27.287-04:00  INFO 17776 --- [discovery-server] [           main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2026-07-10T01:00:27.291-04:00  INFO 17776 --- [discovery-server] [           main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/]
+2026-07-10T01:00:27.828-04:00  INFO 17776 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-07-10T01:00:27.829-04:00  INFO 17776 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-07-10T01:00:27.829-04:00  INFO 17776 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-07-10T01:00:27.830-04:00  INFO 17776 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-07-10T01:00:27.953-04:00  INFO 17776 --- [discovery-server] [           main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/
+2026-07-10T01:00:27.998-04:00  INFO 17776 --- [discovery-server] [           main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2026-07-10T01:00:27.998-04:00  INFO 17776 --- [discovery-server] [           main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2026-07-10T01:00:28.028-04:00  INFO 17776 --- [discovery-server] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-07-10T01:00:28.148-04:00  INFO 17776 --- [discovery-server] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DISCOVERY-SERVER with eureka with status UP
+2026-07-10T01:00:28.255-04:00  INFO 17776 --- [discovery-server] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8761 (http) with context path '/'
+2026-07-10T01:00:28.258-04:00  INFO 17776 --- [discovery-server] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+2026-07-10T01:00:28.260-04:00  INFO 17776 --- [discovery-server] [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2026-07-10T01:00:28.261-04:00  INFO 17776 --- [discovery-server] [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2026-07-10T01:00:28.262-04:00  INFO 17776 --- [discovery-server] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2026-07-10T01:00:28.262-04:00  INFO 17776 --- [discovery-server] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2026-07-10T01:00:28.262-04:00  INFO 17776 --- [discovery-server] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2026-07-10T01:00:28.268-04:00  INFO 17776 --- [discovery-server] [       Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2026-07-10T01:00:28.328-04:00  INFO 17776 --- [discovery-server] [           main] c.t.d.DiscoveryServerApplication         : Started DiscoveryServerApplication in 51.871 seconds (process running for 59.512)
+2026-07-10T01:00:41.629-04:00  INFO 17776 --- [discovery-server] [nio-8761-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-10T01:00:41.630-04:00  INFO 17776 --- [discovery-server] [nio-8761-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-10T01:00:41.634-04:00  INFO 17776 --- [discovery-server] [nio-8761-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-07-10T01:00:41.935-04:00  WARN 17776 --- [discovery-server] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: API-GATEWAY - DawnsPC:api-gateway:8080
+2026-07-10T01:00:41.936-04:00  WARN 17776 --- [discovery-server] [nio-8761-exec-1] c.n.eureka.resources.InstanceResource    : Not Found (Renew): API-GATEWAY - DawnsPC:api-gateway:8080
+2026-07-10T01:00:42.276-04:00  INFO 17776 --- [discovery-server] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/DawnsPC:api-gateway:8080 with status UP (replication=false)
+2026-07-10T01:00:42.293-04:00  INFO 17776 --- [discovery-server] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/DawnsPC:api-gateway:8080 with status UP (replication=false)
+2026-07-10T01:00:43.299-04:00 ERROR 17776 --- [discovery-server] [get_localhost-1] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 404; discarding 1 replication tasks
+2026-07-10T01:00:43.301-04:00  WARN 17776 --- [discovery-server] [get_localhost-1] c.n.eureka.util.batcher.TaskExecutors    : Discarding 1 tasks of TaskBatchingWorker-target_localhost-1 due to permanent error
+2026-07-10T01:01:06.111-04:00  INFO 17776 --- [discovery-server] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CLIENTS-SERVICE/DawnsPC:clients-service:7781 with status UP (replication=false)
+2026-07-10T01:01:06.173-04:00  INFO 17776 --- [discovery-server] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ENGINES-SERVICE/DawnsPC:engines-service:7771 with status UP (replication=false)
+2026-07-10T01:01:06.197-04:00  INFO 17776 --- [discovery-server] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance TICKETS-SERVICE/DawnsPC:tickets-service:7772 with status UP (replication=false)
+2026-07-10T01:01:06.204-04:00  INFO 17776 --- [discovery-server] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance LINES-SERVICE/DawnsPC:lines-service:7777 with status UP (replication=false)
+2026-07-10T01:01:06.223-04:00  INFO 17776 --- [discovery-server] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DRIVERS-SERVICE/DawnsPC:drivers-service:7780 with status UP (replication=false)
+2026-07-10T01:01:06.295-04:00  INFO 17776 --- [discovery-server] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MAINTENANCES-SERVICE/DawnsPC:maintenances-service:7774 with status UP (replication=false)
+2026-07-10T01:01:06.635-04:00 ERROR 17776 --- [discovery-server] [get_localhost-2] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 404; discarding 6 replication tasks
+2026-07-10T01:01:06.636-04:00  WARN 17776 --- [discovery-server] [get_localhost-2] c.n.eureka.util.batcher.TaskExecutors    : Discarding 6 tasks of TaskBatchingWorker-target_localhost-2 due to permanent error
+2026-07-10T01:01:06.636-04:00  INFO 17776 --- [discovery-server] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance REVIEWS-SERVICE/DawnsPC:reviews-service:7773 with status UP (replication=false)
+2026-07-10T01:01:06.949-04:00  INFO 17776 --- [discovery-server] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CITIES-SERVICE/DawnsPC:cities-service:7776 with status UP (replication=false)
+2026-07-10T01:01:07.146-04:00  INFO 17776 --- [discovery-server] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance TRAINS-SERVICE/DawnsPC:trains-service:7770 with status UP (replication=false)
+2026-07-10T01:01:07.154-04:00 ERROR 17776 --- [discovery-server] [et_localhost-10] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 404; discarding 2 replication tasks
+2026-07-10T01:01:07.154-04:00  WARN 17776 --- [discovery-server] [et_localhost-10] c.n.eureka.util.batcher.TaskExecutors    : Discarding 2 tasks of TaskBatchingWorker-target_localhost-10 due to permanent error
+2026-07-10T01:01:07.194-04:00  INFO 17776 --- [discovery-server] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MANAGERS-SERVICE/DawnsPC:managers-service:7779 with status UP (replication=false)
+2026-07-10T01:01:07.224-04:00  INFO 17776 --- [discovery-server] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MANUFACTURERS-SERVICE/DawnsPC:manufacturers-service:7775 with status UP (replication=false)
+2026-07-10T01:01:07.669-04:00 ERROR 17776 --- [discovery-server] [et_localhost-10] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 404; discarding 3 replication tasks
+2026-07-10T01:01:07.670-04:00  WARN 17776 --- [discovery-server] [et_localhost-10] c.n.eureka.util.batcher.TaskExecutors    : Discarding 3 tasks of TaskBatchingWorker-target_localhost-10 due to permanent error
+2026-07-10T01:01:08.455-04:00  INFO 17776 --- [discovery-server] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance STATIONS-SERVICE/DawnsPC:stations-service:7778 with status UP (replication=false)
+2026-07-10T01:01:08.974-04:00 ERROR 17776 --- [discovery-server] [get_localhost-9] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 404; discarding 1 replication tasks
+2026-07-10T01:01:08.974-04:00  WARN 17776 --- [discovery-server] [get_localhost-9] c.n.eureka.util.batcher.TaskExecutors    : Discarding 1 tasks of TaskBatchingWorker-target_localhost-9 due to permanent error
+2026-07-10T01:01:12.849-04:00 ERROR 17776 --- [discovery-server] [get_localhost-9] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 404; discarding 1 replication tasks
+2026-07-10T01:01:12.849-04:00  WARN 17776 --- [discovery-server] [get_localhost-9] c.n.eureka.util.batcher.TaskExecutors    : Discarding 1 tasks of TaskBatchingWorker-target_localhost-9 due to permanent error
+2026-07-10T01:01:28.265-04:00  INFO 17776 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-07-10T01:01:36.462-04:00 ERROR 17776 --- [discovery-server] [et_localhost-19] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 404; discarding 6 replication tasks
+2026-07-10T01:01:36.462-04:00  WARN 17776 --- [discovery-server] [et_localhost-19] c.n.eureka.util.batcher.TaskExecutors    : Discarding 6 tasks of TaskBatchingWorker-target_localhost-19 due to permanent error
+2026-07-10T01:01:37.055-04:00 ERROR 17776 --- [discovery-server] [get_localhost-9] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 404; discarding 2 replication tasks
+2026-07-10T01:01:37.055-04:00  WARN 17776 --- [discovery-server] [get_localhost-9] c.n.eureka.util.batcher.TaskExecutors    : Discarding 2 tasks of TaskBatchingWorker-target_localhost-9 due to permanent error
+2026-07-10T01:01:37.586-04:00 ERROR 17776 --- [discovery-server] [et_localhost-17] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 404; discarding 3 replication tasks
+2026-07-10T01:01:37.586-04:00  WARN 17776 --- [discovery-server] [et_localhost-17] c.n.eureka.util.batcher.TaskExecutors    : Discarding 3 tasks of TaskBatchingWorker-target_localhost-17 due to permanent error
+2026-07-10T01:01:38.907-04:00 ERROR 17776 --- [discovery-server] [get_localhost-2] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 404; discarding 1 replication tasks
+2026-07-10T01:01:38.907-04:00  WARN 17776 --- [discovery-server] [get_localhost-2] c.n.eureka.util.batcher.TaskExecutors    : Discarding 1 tasks of TaskBatchingWorker-target_localhost-2 due to permanent error
+2026-07-10T01:01:42.873-04:00 ERROR 17776 --- [discovery-server] [get_localhost-1] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 404; discarding 1 replication tasks
+2026-07-10T01:01:42.874-04:00  WARN 17776 --- [discovery-server] [get_localhost-1] c.n.eureka.util.batcher.TaskExecutors    : Discarding 1 tasks of TaskBatchingWorker-target_localhost-1 due to permanent error
+2026-07-10T01:02:06.496-04:00 ERROR 17776 --- [discovery-server] [et_localhost-19] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 404; discarding 6 replication tasks
+2026-07-10T01:02:06.496-04:00  WARN 17776 --- [discovery-server] [et_localhost-19] c.n.eureka.util.batcher.TaskExecutors    : Discarding 6 tasks of TaskBatchingWorker-target_localhost-19 due to permanent error
+2026-07-10T01:02:07.088-04:00 ERROR 17776 --- [discovery-server] [get_localhost-1] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 404; discarding 2 replication tasks
+2026-07-10T01:02:07.088-04:00  WARN 17776 --- [discovery-server] [get_localhost-1] c.n.eureka.util.batcher.TaskExecutors    : Discarding 2 tasks of TaskBatchingWorker-target_localhost-1 due to permanent error
+2026-07-10T01:02:07.618-04:00 ERROR 17776 --- [discovery-server] [et_localhost-17] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 404; discarding 3 replication tasks
+2026-07-10T01:02:07.618-04:00  WARN 17776 --- [discovery-server] [et_localhost-17] c.n.eureka.util.batcher.TaskExecutors    : Discarding 3 tasks of TaskBatchingWorker-target_localhost-17 due to permanent error
+2026-07-10T01:02:08.939-04:00 ERROR 17776 --- [discovery-server] [et_localhost-18] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 404; discarding 1 replication tasks
+2026-07-10T01:02:08.939-04:00  WARN 17776 --- [discovery-server] [et_localhost-18] c.n.eureka.util.batcher.TaskExecutors    : Discarding 1 tasks of TaskBatchingWorker-target_localhost-18 due to permanent error
+2026-07-10T01:02:12.904-04:00 ERROR 17776 --- [discovery-server] [et_localhost-18] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 404; discarding 1 replication tasks
+2026-07-10T01:02:12.904-04:00  WARN 17776 --- [discovery-server] [et_localhost-18] c.n.eureka.util.batcher.TaskExecutors    : Discarding 1 tasks of TaskBatchingWorker-target_localhost-18 due to permanent error
+2026-07-10T01:02:28.279-04:00  INFO 17776 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 13ms
+2026-07-10T01:02:36.530-04:00 ERROR 17776 --- [discovery-server] [get_localhost-2] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 404; discarding 6 replication tasks
+2026-07-10T01:02:36.530-04:00  WARN 17776 --- [discovery-server] [get_localhost-2] c.n.eureka.util.batcher.TaskExecutors    : Discarding 6 tasks of TaskBatchingWorker-target_localhost-2 due to permanent error
+2026-07-10T01:02:37.122-04:00 ERROR 17776 --- [discovery-server] [et_localhost-18] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 404; discarding 2 replication tasks
+2026-07-10T01:02:37.122-04:00  WARN 17776 --- [discovery-server] [et_localhost-18] c.n.eureka.util.batcher.TaskExecutors    : Discarding 2 tasks of TaskBatchingWorker-target_localhost-18 due to permanent error
+2026-07-10T01:02:37.634-04:00 ERROR 17776 --- [discovery-server] [get_localhost-9] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 404; discarding 3 replication tasks
+2026-07-10T01:02:37.634-04:00  WARN 17776 --- [discovery-server] [get_localhost-9] c.n.eureka.util.batcher.TaskExecutors    : Discarding 3 tasks of TaskBatchingWorker-target_localhost-9 due to permanent error
+2026-07-10T01:02:38.970-04:00 ERROR 17776 --- [discovery-server] [et_localhost-18] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 404; discarding 1 replication tasks
+2026-07-10T01:02:38.970-04:00  WARN 17776 --- [discovery-server] [et_localhost-18] c.n.eureka.util.batcher.TaskExecutors    : Discarding 1 tasks of TaskBatchingWorker-target_localhost-18 due to permanent error
+2026-07-10T01:02:42.922-04:00 ERROR 17776 --- [discovery-server] [et_localhost-17] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 404; discarding 1 replication tasks
+2026-07-10T01:02:42.922-04:00  WARN 17776 --- [discovery-server] [et_localhost-17] c.n.eureka.util.batcher.TaskExecutors    : Discarding 1 tasks of TaskBatchingWorker-target_localhost-17 due to permanent error
+2026-07-10T01:03:06.558-04:00 ERROR 17776 --- [discovery-server] [get_localhost-6] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 404; discarding 6 replication tasks
+2026-07-10T01:03:06.559-04:00  WARN 17776 --- [discovery-server] [get_localhost-6] c.n.eureka.util.batcher.TaskExecutors    : Discarding 6 tasks of TaskBatchingWorker-target_localhost-6 due to permanent error
+2026-07-10T01:03:07.148-04:00 ERROR 17776 --- [discovery-server] [get_localhost-6] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 404; discarding 2 replication tasks
+2026-07-10T01:03:07.149-04:00  WARN 17776 --- [discovery-server] [get_localhost-6] c.n.eureka.util.batcher.TaskExecutors    : Discarding 2 tasks of TaskBatchingWorker-target_localhost-6 due to permanent error
+2026-07-10T01:03:07.656-04:00 ERROR 17776 --- [discovery-server] [get_localhost-2] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 404; discarding 3 replication tasks
+2026-07-10T01:03:07.656-04:00  WARN 17776 --- [discovery-server] [get_localhost-2] c.n.eureka.util.batcher.TaskExecutors    : Discarding 3 tasks of TaskBatchingWorker-target_localhost-2 due to permanent error
+2026-07-10T01:03:08.994-04:00 ERROR 17776 --- [discovery-server] [et_localhost-17] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 404; discarding 1 replication tasks
+2026-07-10T01:03:08.995-04:00  WARN 17776 --- [discovery-server] [et_localhost-17] c.n.eureka.util.batcher.TaskExecutors    : Discarding 1 tasks of TaskBatchingWorker-target_localhost-17 due to permanent error
+2026-07-10T01:03:12.936-04:00 ERROR 17776 --- [discovery-server] [et_localhost-19] c.n.e.cluster.ReplicationTaskProcessor   : Batch update failure with HTTP status code 404; discarding 1 replication tasks
+2026-07-10T01:03:12.937-04:00  WARN 17776 --- [discovery-server] [et_localhost-19] c.n.eureka.util.batcher.TaskExecutors    : Discarding 1 tasks of TaskBatchingWorker-target_localhost-19 due to permanent error
