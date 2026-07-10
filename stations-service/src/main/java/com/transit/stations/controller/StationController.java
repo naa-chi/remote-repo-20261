@@ -16,6 +16,8 @@ import java.util.List;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
+@SuppressWarnings("all")
+
 @RestController
 @RequestMapping("/api/stations")
 @Tag(name = "Stations", description = "Station management")

@@ -20,6 +20,8 @@ import java.util.List;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
+@SuppressWarnings("all")
+
 @RestController
 @RequestMapping("/api/manufacturers")
 @Tag(name = "Manufacturers", description = "Operations pertaining to manufacturer management")
