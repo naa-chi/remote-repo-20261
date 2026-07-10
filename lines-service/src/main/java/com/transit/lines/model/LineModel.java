@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 @Entity
-@Table(name = "lines", schema = "transport_db_linesservice")
+@Table(name = "line", schema = "transport_db_linesservice")
 public class LineModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
