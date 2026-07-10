@@ -33,7 +33,7 @@ public class ManufacturerController {
 
     @Operation(summary = "Get all manufacturers")
     @ApiResponses(@ApiResponse(responseCode = "200", description = "Successfully retrieved list"))
-    @GetMapping
+    @GetMapping("/all")
     public ResponseEntity<CollectionModel<ManufacturerResponseDTO>> getAll() {
         List<ManufacturerResponseDTO> manufacturers = service.getAllManufacturers();
         manufacturers.forEach(this::addLinks);

@@ -107,27 +107,27 @@ public class ReviewService {
     }
 
     // --- Fallbacks ---
-    private ReviewResponseDTO handleGetReviewFallback(Long id, Throwable t) {
+    public ReviewResponseDTO handleGetReviewFallback(Long id, Throwable t) {
         return serviceFallback.getReviewFallback(id, t);
     }
 
-    private List<ReviewResponseDTO> handleGetReviewsByClientIdFallback(Long clientId, Throwable t) {
+    public List<ReviewResponseDTO> handleGetReviewsByClientIdFallback(Long clientId, Throwable t) {
         return serviceFallback.getReviewsByClientIdFallback(clientId, t);
     }
 
-    private List<ReviewResponseDTO> handleGetReviewsByTrainIdFallback(Long trainId, Throwable t) {
+    public List<ReviewResponseDTO> handleGetReviewsByTrainIdFallback(Long trainId, Throwable t) {
         return serviceFallback.getReviewsByTrainIdFallback(trainId, t);
     }
 
-    private List<ReviewResponseDTO> handleGetReviewsByRatingFallback(Integer rating, Throwable t) {
+    public List<ReviewResponseDTO> handleGetReviewsByRatingFallback(Integer rating, Throwable t) {
         return serviceFallback.getReviewsByRatingFallback(rating, t);
     }
 
-    private List<ReviewResponseDTO> handleGetAllReviewsFallback(Throwable t) {
+    public List<ReviewResponseDTO> handleGetAllReviewsFallback(Throwable t) {
         return serviceFallback.getAllReviewsFallback(t);
     }
 
-    private ReviewResponseDTO handleCreateReviewFallback(ReviewRequestDTO request, Throwable t) {
+    public ReviewResponseDTO handleCreateReviewFallback(ReviewRequestDTO request, Throwable t) {
         return serviceFallback.getReviewFallback(-1L, t);
     }
 }

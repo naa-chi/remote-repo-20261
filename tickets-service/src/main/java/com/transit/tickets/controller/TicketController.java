@@ -36,7 +36,7 @@ public class TicketController {
         @ApiResponse(responseCode = "200", description = "Successfully retrieved all tickets"),
         @ApiResponse(responseCode = "404", description = "No tickets found")
     })
-    @GetMapping
+    @GetMapping("/all")
     public ResponseEntity<CollectionModel<TicketResponseDTO>> getAllTickets() {
         List<TicketResponseDTO> tickets = service.getAllTickets();
         tickets.forEach(this::addLinks);

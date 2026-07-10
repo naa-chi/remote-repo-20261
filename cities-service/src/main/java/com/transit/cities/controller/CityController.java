@@ -66,6 +66,16 @@ public class CityController {
         return ResponseEntity.noContent().build();
     }
 
+    @GetMapping("/all")
+    @Operation(summary = "Get all cities with HATEOAS links")
+    public ResponseEntity<CollectionModel<CityResponseDTO>> getAllCitiesWithLinks() {
+        List<CityResponseDTO> cities = service.getAllCities();
+        cities.forEach(this::addLinks);
+        CollectionModel<CityResponseDTO> collectionModel = CollectionModel.of(cities);
+        collectionModel.add(linkTo(methodOn(CityController.class).getAllCitiesWithLinks()).withSelfRel());
+        return ResponseEntity.ok(collectionModel);
+    }
+
     private void addLinks(CityResponseDTO dto) {
         if (dto.getId() != null && dto.getId() > 0) {
             dto.add(linkTo(methodOn(CityController.class).getById(dto.getId())).withSelfRel());

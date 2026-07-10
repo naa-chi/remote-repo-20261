@@ -36,7 +36,7 @@ public class ReviewController {
         @ApiResponse(responseCode = "200", description = "Successfully retrieved all reviews"),
         @ApiResponse(responseCode = "404", description = "No reviews found")
     })
-    @GetMapping
+    @GetMapping("/all")
     public ResponseEntity<CollectionModel<ReviewResponseDTO>> getAllReviews() {
         List<ReviewResponseDTO> reviews = reviewService.getAllReviews();
         reviews.forEach(this::addLinks);

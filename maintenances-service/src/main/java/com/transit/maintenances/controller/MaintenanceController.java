@@ -36,7 +36,7 @@ public class MaintenanceController {
         @ApiResponse(responseCode = "200", description = "Successfully retrieved all maintenance reports"),
         @ApiResponse(responseCode = "404", description = "No maintenance reports found")
     })
-    @GetMapping
+    @GetMapping("/all")
     public ResponseEntity<CollectionModel<MaintenanceResponseDTO>> getAllMaintenances() {
         List<MaintenanceResponseDTO> maintenances = maintenanceService.getAllMaintenances();
         maintenances.forEach(this::addLinks);
