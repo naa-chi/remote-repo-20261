@@ -308,6 +308,45 @@
         { "gateway_path": "/{id}", "direct_path": "/api/stations/{id}", "method": "PUT" },
         { "gateway_path": "/{id}", "direct_path": "/api/stations/{id}", "method": "DELETE" }
       ]
+    },
+    {
+      "name": "Manager Service",
+      "base_url": "http://localhost:7779",
+      "route_prefix": "/managers-service",
+      "endpoints": [
+        { "gateway_path": "", "direct_path": "/api/managers", "method": "GET" },
+        { "gateway_path": "/{id}", "direct_path": "/api/managers/{id}", "method": "GET" },
+        { "gateway_path": "/code/{code}", "direct_path": "/api/managers/code/{code}", "method": "GET" },
+        { "gateway_path": "", "direct_path": "/api/managers", "method": "POST" },
+        { "gateway_path": "/{id}", "direct_path": "/api/managers/{id}", "method": "PUT" },
+        { "gateway_path": "/{id}", "direct_path": "/api/managers/{id}", "method": "DELETE" }
+      ]
+    },
+    {
+      "name": "Driver Service",
+      "base_url": "http://localhost:7780",
+      "route_prefix": "/drivers-service",
+      "endpoints": [
+        { "gateway_path": "", "direct_path": "/api/drivers", "method": "GET" },
+        { "gateway_path": "/{id}", "direct_path": "/api/drivers/{id}", "method": "GET" },
+        { "gateway_path": "/code/{code}", "direct_path": "/api/drivers/code/{code}", "method": "GET" },
+        { "gateway_path": "", "direct_path": "/api/drivers", "method": "POST" },
+        { "gateway_path": "/{id}", "direct_path": "/api/drivers/{id}", "method": "PUT" },
+        { "gateway_path": "/{id}", "direct_path": "/api/drivers/{id}", "method": "DELETE" }
+      ]
+    },
+    {
+      "name": "Client Service",
+      "base_url": "http://localhost:7781",
+      "route_prefix": "/clients-service",
+      "endpoints": [
+        { "gateway_path": "", "direct_path": "/api/clients", "method": "GET" },
+        { "gateway_path": "/{id}", "direct_path": "/api/clients/{id}", "method": "GET" },
+        { "gateway_path": "/code/{code}", "direct_path": "/api/clients/code/{code}", "method": "GET" },
+        { "gateway_path": "", "direct_path": "/api/clients", "method": "POST" },
+        { "gateway_path": "/{id}", "direct_path": "/api/clients/{id}", "method": "PUT" },
+        { "gateway_path": "/{id}", "direct_path": "/api/clients/{id}", "method": "DELETE" }
+      ]
     }
   ]
 }
