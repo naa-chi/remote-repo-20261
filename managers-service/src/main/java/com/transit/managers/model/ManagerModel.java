@@ -11,6 +11,8 @@ import lombok.NoArgsConstructor;
 
 import java.sql.Date;
 
+@SuppressWarnings("all")
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Data

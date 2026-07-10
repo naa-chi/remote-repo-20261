@@ -13,6 +13,7 @@ DB_CONFIG = {
     'charset': 'utf8mb4'
 }
 
+# Database names
 DB_ENGINES = {**DB_CONFIG, 'database': 'transport_db_enginesservice'}
 DB_TRAINS = {**DB_CONFIG, 'database': 'transport_db_trainsservice'}
 DB_TICKETS = {**DB_CONFIG, 'database': 'transport_db_ticketsservice'}
@@ -24,6 +25,8 @@ DB_STATIONS = {**DB_CONFIG, 'database': 'transport_db_stationsservice'}
 DB_MANAGERS = {**DB_CONFIG, 'database': 'transport_db_managersservice'}
 DB_DRIVERS = {**DB_CONFIG, 'database': 'transport_db_driversservice'}
 DB_CLIENTS = {**DB_CONFIG, 'database': 'transport_db_clientsservice'}
+
+# ========== Utility functions ==========
 
 def random_string(length, chars=string.ascii_uppercase + string.digits):
     return ''.join(random.choices(chars, k=length))
@@ -40,15 +43,16 @@ def random_date(start_year=2020, end_year=2025):
     return start + timedelta(days=random_days)
 
 def clear_table(conn, table_name):
-    """Truncate table safely with backticks."""
-    with conn.cursor() as cursor:
-        cursor.execute("SET FOREIGN_KEY_CHECKS = 0")
-        cursor.execute(f"TRUNCATE TABLE `{table_name}`")
-        cursor.execute("SET FOREIGN_KEY_CHECKS = 1")
-    conn.commit()
-    print(f"  Cleared {table_name}")
+    try:
+        with conn.cursor() as cursor:
+            cursor.execute("SET FOREIGN_KEY_CHECKS = 0")
+            cursor.execute(f"TRUNCATE TABLE `{table_name}`")
+            cursor.execute("SET FOREIGN_KEY_CHECKS = 1")
+        conn.commit()
+        print(f"  Cleared {table_name}")
+    except pymysql.Error as e:
+        print(f"  Could not clear {table_name}: {e}")
 
-# ---------- Clear all tables in dependency order ----------
 def clear_all(conns):
     clear_table(conns['reviews'], 'reviews')
     clear_table(conns['tickets'], 'tickets')
@@ -62,11 +66,85 @@ def clear_all(conns):
     clear_table(conns['managers'], 'managers')
     clear_table(conns['drivers'], 'drivers')
 
-# ---------- Populate functions ----------
+# ========== Population functions ==========
 
-def populate_engines(conn):
+def populate_cities(conn, count=30):
+    city_data = [
+        ("LON", "London", "2020-01-01", 8982000, "GB"),
+        ("PAR", "Paris", "2020-02-01", 11060000, "FR"),
+        ("BER", "Berlin", "2020-03-01", 3645000, "DE"),
+        ("MAD", "Madrid", "2020-04-01", 3223000, "ES"),
+        ("ROM", "Rome", "2020-05-01", 2873000, "IT"),
+        ("AMS", "Amsterdam", "2020-06-01", 1149000, "NL"),
+        ("BRU", "Brussels", "2020-07-01", 1208000, "BE"),
+        ("VIE", "Vienna", "2020-08-01", 1911000, "AT"),
+        ("ZUR", "Zurich", "2020-09-01", 434000, "CH"),
+        ("STO", "Stockholm", "2020-10-01", 1608000, "SE"),
+        ("OSL", "Oslo", "2020-11-01", 697000, "NO"),
+        ("HEL", "Helsinki", "2020-12-01", 658000, "FI"),
+        ("COP", "Copenhagen", "2021-01-01", 1362000, "DK"),
+        ("DUB", "Dublin", "2021-02-01", 1400000, "IE"),
+        ("LIS", "Lisbon", "2021-03-01", 3018000, "PT"),
+        ("ATH", "Athens", "2021-04-01", 3120000, "GR"),
+        ("PRA", "Prague", "2021-05-01", 1309000, "CZ"),
+        ("BUD", "Budapest", "2021-06-01", 1763000, "HU"),
+        ("WAR", "Warsaw", "2021-07-01", 1797000, "PL"),
+        ("BUC", "Bucharest", "2021-08-01", 1839000, "RO"),
+        ("SOF", "Sofia", "2021-09-01", 1281000, "BG"),
+        ("BEL", "Belgrade", "2021-10-01", 1380000, "RS"),
+        ("ZAG", "Zagreb", "2021-11-01", 769000, "HR"),
+        ("LJU", "Ljubljana", "2021-12-01", 295000, "SI"),
+        ("BRA", "Bratislava", "2022-01-01", 432000, "SK"),
+        ("TAL", "Tallinn", "2022-02-01", 446000, "EE"),
+        ("RIG", "Riga", "2022-03-01", 632000, "LV"),
+        ("VIL", "Vilnius", "2022-04-01", 540000, "LT"),
+        ("REY", "Reykjavik", "2022-05-01", 131000, "IS"),
+        ("BRN", "Bern", "2022-06-01", 134000, "CH")
+    ]
+    city_data = city_data[:count]
     with conn.cursor() as cursor:
-        for i in range(1, 11):
+        cursor.execute("SET FOREIGN_KEY_CHECKS = 0")
+        cursor.execute("SET UNIQUE_CHECKS = 0")
+        for code, name, founding, pop, country in city_data:
+            if len(code) != 3:
+                print(f"  Skipping city {code} – code must be 3 characters")
+                continue
+            cursor.execute("SELECT COUNT(*) FROM cities WHERE city_code = %s", (code,))
+            if cursor.fetchone()[0] > 0:
+                print(f"  City {code} already exists, skipping")
+                continue
+            try:
+                cursor.execute("""
+                    INSERT INTO cities (city_code, city_name, founding_date, city_population, population_number, country_code)
+                    VALUES (%s, %s, %s, %s, %s, %s)
+                """, (code, name, founding, pop, pop, country))
+            except pymysql.Error as e:
+                print(f"  Failed to insert city {code}: {e}")
+        cursor.execute("SET UNIQUE_CHECKS = 1")
+        cursor.execute("SET FOREIGN_KEY_CHECKS = 1")
+    conn.commit()
+    print(f"[OK] Cities populated ({len(city_data)})")
+
+def populate_lines(conn, count=30):
+    with conn.cursor() as cursor:
+        cursor.execute("SET FOREIGN_KEY_CHECKS = 0")
+        for i in range(1, count + 1):
+            length = random.randint(10, 200)
+            people = random.randint(10000, 5000000)
+            try:
+                cursor.execute("""
+                    INSERT INTO line (line_code, line_length, line_people_served)
+                    VALUES (%s, %s, %s)
+                """, (i, length, people))
+            except pymysql.Error as e:
+                print(f"  Failed to insert line {i}: {e}")
+        cursor.execute("SET FOREIGN_KEY_CHECKS = 1")
+    conn.commit()
+    print(f"[OK] Lines populated ({count})")
+
+def populate_engines(conn, count=30):
+    with conn.cursor() as cursor:
+        for i in range(1, count + 1):
             engine_id = 10000 + i
             manufacturer = random_manufacturer()
             engine_code = random_string(6)
@@ -80,17 +158,17 @@ def populate_engines(conn):
                 VALUES (%s, %s, %s, %s, %s, %s, %s)
             """, (engine_id, manufacturer, engine_code, horsepower, weight, price, prod_date))
     conn.commit()
-    print("✅ Engines populated")
+    print(f"[OK] Engines populated ({count})")
 
-def populate_trains(conn_engines, conn_trains):
+def populate_trains(conn_engines, conn_trains, count=30):
     with conn_engines.cursor() as cursor:
         cursor.execute("SELECT id FROM engines")
         engine_ids = [row[0] for row in cursor.fetchall()]
     if not engine_ids:
-        print("❌ No engines found – run engines first")
+        print("[ERROR] No engines found – cannot populate trains")
         return
     with conn_trains.cursor() as cursor:
-        for i in range(1, 11):
+        for i in range(1, count + 1):
             code = random_string(5)
             manufacturer = random_manufacturer()
             engine_id = random.choice(engine_ids)
@@ -103,28 +181,25 @@ def populate_trains(conn_engines, conn_trains):
                 VALUES (%s, %s, %s, %s, %s, %s)
             """, (code, manufacturer, engine_id, car_amount, cost_per_car, prod_date))
     conn_trains.commit()
-    print("✅ Trains populated")
+    print(f"[OK] Trains populated ({count})")
 
-def populate_clients(conn):
-    clients = []
-    for i in range(1, 21):
-        code = f"CL-{i:03d}"
-        first_name = random_string(8, string.ascii_uppercase)
-        last_name = random_string(10, string.ascii_uppercase)
-        email = f"{first_name.lower()}.{last_name.lower()}@example.com"
-        phone = f"+1-{random.randint(100,999)}-{random.randint(100,999)}-{random.randint(1000,9999)}"
-        reg_date = random_date(2018, 2025)
-        clients.append((code, first_name, last_name, email, phone, reg_date))
+def populate_clients(conn, count=30):
     with conn.cursor() as cursor:
-        for cl in clients:
+        for i in range(1, count + 1):
+            code = f"CL-{i:03d}"
+            first_name = random_string(8, string.ascii_uppercase)
+            last_name = random_string(10, string.ascii_uppercase)
+            email = f"{first_name.lower()}.{last_name.lower()}@example.com"
+            phone = f"+1-{random.randint(100,999)}-{random.randint(100,999)}-{random.randint(1000,9999)}"
+            reg_date = random_date(2018, 2025)
             cursor.execute("""
                 INSERT INTO clients (code, first_name, last_name, email, phone_number, registration_date)
                 VALUES (%s, %s, %s, %s, %s, %s)
-            """, cl)
+            """, (code, first_name, last_name, email, phone, reg_date))
     conn.commit()
-    print("✅ Clients populated (20)")
+    print(f"[OK] Clients populated ({count})")
 
-def populate_tickets(conn_trains, conn_clients, conn_tickets):
+def populate_tickets(conn_trains, conn_clients, conn_tickets, count=30):
     with conn_trains.cursor() as cursor:
         cursor.execute("SELECT id FROM trains")
         train_ids = [row[0] for row in cursor.fetchall()]
@@ -132,10 +207,10 @@ def populate_tickets(conn_trains, conn_clients, conn_tickets):
         cursor.execute("SELECT id FROM clients")
         client_ids = [row[0] for row in cursor.fetchall()]
     if not train_ids or not client_ids:
-        print("❌ Missing train or client data")
+        print("[ERROR] Missing train or client data for tickets")
         return
     with conn_tickets.cursor() as cursor:
-        for i in range(1, 11):
+        for i in range(1, count + 1):
             code = random_string(8, string.ascii_uppercase + string.digits)
             origin = random_string(3, string.ascii_uppercase)
             dest = random_string(3, string.ascii_uppercase)
@@ -149,9 +224,9 @@ def populate_tickets(conn_trains, conn_clients, conn_tickets):
                 VALUES (%s, %s, %s, %s, %s, %s, %s)
             """, (code, origin, dest, price, client_id, train_id, departure))
     conn_tickets.commit()
-    print("✅ Tickets populated")
+    print(f"[OK] Tickets populated ({count})")
 
-def populate_reviews(conn_trains, conn_tickets, conn_reviews):
+def populate_reviews(conn_trains, conn_tickets, conn_reviews, count=30):
     with conn_trains.cursor() as cursor:
         cursor.execute("SELECT id FROM trains")
         train_ids = [row[0] for row in cursor.fetchall()]
@@ -159,11 +234,11 @@ def populate_reviews(conn_trains, conn_tickets, conn_reviews):
         cursor.execute("SELECT code FROM tickets")
         ticket_codes = [row[0] for row in cursor.fetchall()]
     if not train_ids or not ticket_codes:
-        print("❌ Missing train or ticket data")
+        print("[ERROR] Missing train or ticket data for reviews")
         return
     with conn_reviews.cursor() as cursor:
-        for i in range(1, 11):
-            client_id = random.randint(1, 20)
+        for i in range(1, count + 1):
+            client_id = random.randint(1, count)
             train_id = random.choice(train_ids)
             ticket_code = random.choice(ticket_codes)
             rating = random.randint(1, 5)
@@ -175,9 +250,9 @@ def populate_reviews(conn_trains, conn_tickets, conn_reviews):
                 VALUES (%s, %s, %s, %s, %s, %s)
             """, (client_id, train_id, ticket_code, rating, comment, review_date))
     conn_reviews.commit()
-    print("✅ Reviews populated")
+    print(f"[OK] Reviews populated ({count})")
 
-def populate_maintenances(conn_trains, conn_engines, conn_maintenances):
+def populate_maintenances(conn_trains, conn_engines, conn_maintenances, count=30):
     with conn_trains.cursor() as cursor:
         cursor.execute("SELECT id FROM trains")
         train_ids = [row[0] for row in cursor.fetchall()]
@@ -185,10 +260,10 @@ def populate_maintenances(conn_trains, conn_engines, conn_maintenances):
         cursor.execute("SELECT engine_code FROM engines")
         engine_codes = [row[0] for row in cursor.fetchall()]
     if not train_ids or not engine_codes:
-        print("❌ Missing train or engine data for maintenance")
+        print("[ERROR] Missing train or engine data for maintenance")
         return
     with conn_maintenances.cursor() as cursor:
-        for i in range(1, 11):
+        for i in range(1, count + 1):
             maintenance_id = f"MNT-{i:03d}"
             description = f"Maintenance #{i} – " + random_string(15, string.ascii_letters + ' ')
             entry_date = random_date()
@@ -208,56 +283,9 @@ def populate_maintenances(conn_trains, conn_engines, conn_maintenances):
             """, (description, entry_date, end_date, release_date,
                   crew, price, engine_code, train_id, maintenance_id))
     conn_maintenances.commit()
-    print("✅ Maintenances populated")
+    print(f"[OK] Maintenances populated ({count})")
 
-def populate_cities(conn):
-    cities = [
-        ("LON", "London", "2020-01-01", 9000000, "GB"),
-        ("PAR", "Paris", "2020-02-01", 11000000, "FR"),
-        ("BER", "Berlin", "2020-03-01", 3600000, "DE"),
-        ("MAD", "Madrid", "2020-04-01", 3200000, "ES"),
-        ("ROM", "Rome", "2020-05-01", 2800000, "IT"),
-        ("AMS", "Amsterdam", "2020-06-01", 1100000, "NL"),
-        ("BRU", "Brussels", "2020-07-01", 1200000, "BE"),
-        ("VIE", "Vienna", "2020-08-01", 1900000, "AT"),
-        ("ZUR", "Zurich", "2020-09-01", 400000, "CH"),
-        ("STO", "Stockholm", "2020-10-01", 1600000, "SE")
-    ]
-    with conn.cursor() as cursor:
-        cursor.execute("SET FOREIGN_KEY_CHECKS = 0")
-        cursor.execute("SET UNIQUE_CHECKS = 0")
-        for city_code, name, founding, pop, country in cities:
-            try:
-                cursor.execute("""
-                    INSERT IGNORE INTO cities (city_code, city_name, founding_date, city_population, country_code)
-                    VALUES (%s, %s, %s, %s, %s)
-                """, (city_code, name, founding, pop, country))
-            except pymysql.Error as e:
-                print(f"⚠️ Failed to insert city {city_code}: {e}")
-        cursor.execute("SET UNIQUE_CHECKS = 1")
-        cursor.execute("SET FOREIGN_KEY_CHECKS = 1")
-    conn.commit()
-    print("✅ Cities populated (10)")
-
-def populate_lines(conn):
-    lines = []
-    for i in range(1, 16):
-        line_code = i
-        length = random.randint(10, 200)
-        people = random.randint(10000, 5000000)
-        lines.append((line_code, length, people))
-    with conn.cursor() as cursor:
-        cursor.execute("SET FOREIGN_KEY_CHECKS = 0")
-        for code, length, people in lines:
-            cursor.execute("""
-                INSERT INTO line (line_code, line_length, line_people_served)
-                VALUES (%s, %s, %s)
-            """, (code, length, people))
-        cursor.execute("SET FOREIGN_KEY_CHECKS = 1")
-    conn.commit()
-    print("✅ Lines populated (15)")
-
-def populate_stations(conn_cities, conn_lines, conn_stations):
+def populate_stations(conn_cities, conn_lines, conn_stations, count=30):
     with conn_cities.cursor() as cursor:
         cursor.execute("SELECT city_code FROM cities")
         city_codes = [row[0] for row in cursor.fetchall()]
@@ -265,69 +293,61 @@ def populate_stations(conn_cities, conn_lines, conn_stations):
         cursor.execute("SELECT line_code FROM line")
         line_codes = [row[0] for row in cursor.fetchall()]
     if not city_codes or not line_codes:
-        print("❌ Missing city or line data")
+        print("[ERROR] Missing city or line data for stations")
         return
-    stations = []
-    for i in range(1, 21):
-        station_code = f"ST{i:03d}"
-        city = random.choice(city_codes)
-        chosen_lines = random.sample(line_codes, min(random.randint(1, 4), len(line_codes)))
-        l1 = chosen_lines[0] if len(chosen_lines) > 0 else None
-        l2 = chosen_lines[1] if len(chosen_lines) > 1 else None
-        l3 = chosen_lines[2] if len(chosen_lines) > 2 else None
-        l4 = chosen_lines[3] if len(chosen_lines) > 3 else None
-        stations.append((station_code, city, l1, l2, l3, l4))
     with conn_stations.cursor() as cursor:
-        cursor.execute("SET FOREIGN_KEY_CHECKS = 0")
-        for st in stations:
+        for i in range(1, count + 1):
+            station_code = f"ST{i:03d}"
+            city = random.choice(city_codes)
+            chosen = random.sample(line_codes, min(random.randint(1, 4), len(line_codes)))
+            l1 = chosen[0] if len(chosen) > 0 else None
+            l2 = chosen[1] if len(chosen) > 1 else None
+            l3 = chosen[2] if len(chosen) > 2 else None
+            l4 = chosen[3] if len(chosen) > 3 else None
+            # Use backticks for column names with dashes
             cursor.execute("""
-                INSERT INTO stations (station_code, city_code, line_1, line_2, line_3, line_4)
+                INSERT INTO stations (station_code, city_code, `line-1`, `line-2`, `line-3`, `line-4`)
                 VALUES (%s, %s, %s, %s, %s, %s)
-            """, st)
-        cursor.execute("SET FOREIGN_KEY_CHECKS = 1")
+            """, (station_code, city, l1, l2, l3, l4))
     conn_stations.commit()
-    print("✅ Stations populated (20)")
+    print(f"[OK] Stations populated ({count})")
 
-def populate_managers(conn):
-    managers = []
+def populate_managers(conn, count=30):
     groups = ['A', 'B', 'C', 'D', 'E', 'F', 'G']
-    for i in range(1, 16):
-        code = f"MGR-{i:03d}"
-        salary = random.randint(40000, 200000)
-        contract_date = random_date(2015, 2025)
-        first_name = random_string(8, string.ascii_uppercase)
-        second_name = random_string(10, string.ascii_uppercase)
-        group = random.choice(groups)
-        managers.append((code, salary, contract_date, first_name, second_name, group))
     with conn.cursor() as cursor:
-        for mgr in managers:
+        for i in range(1, count + 1):
+            code = f"MGR-{i:03d}"
+            salary = random.randint(40000, 200000)
+            contract_date = random_date(2015, 2025)
+            first_name = random_string(8, string.ascii_uppercase)
+            second_name = random_string(10, string.ascii_uppercase)
+            group = random.choice(groups)
             cursor.execute("""
                 INSERT INTO managers (code, salary, contract_date, first_name, second_name, manager_group)
                 VALUES (%s, %s, %s, %s, %s, %s)
-            """, mgr)
+            """, (code, salary, contract_date, first_name, second_name, group))
     conn.commit()
-    print("✅ Managers populated (15)")
+    print(f"[OK] Managers populated ({count})")
 
-def populate_drivers(conn):
-    drivers = []
+def populate_drivers(conn, count=30):
     capacitated_codes = ['A', 'B', 'C', 'D', 'E']
-    for i in range(1, 16):
-        code = f"DRV-{i:03d}"
-        salary = random.randint(30000, 150000)
-        contract_date = random_date(2018, 2025)
-        birth_date = random_date(1980, 2005)
-        first_name = random_string(8, string.ascii_uppercase)
-        second_name = random_string(10, string.ascii_uppercase)
-        cap_code = random.choice(capacitated_codes)
-        drivers.append((code, salary, contract_date, birth_date, first_name, second_name, cap_code))
     with conn.cursor() as cursor:
-        for drv in drivers:
+        for i in range(1, count + 1):
+            code = f"DRV-{i:03d}"
+            salary = random.randint(30000, 150000)
+            contract_date = random_date(2018, 2025)
+            birth_date = random_date(1980, 2005)
+            first_name = random_string(8, string.ascii_uppercase)
+            second_name = random_string(10, string.ascii_uppercase)
+            cap_code = random.choice(capacitated_codes)
             cursor.execute("""
                 INSERT INTO drivers (code, salary, contract_date, birth_date, first_name, second_name, trained_on_type_trains)
                 VALUES (%s, %s, %s, %s, %s, %s, %s)
-            """, drv)
+            """, (code, salary, contract_date, birth_date, first_name, second_name, cap_code))
     conn.commit()
-    print("✅ Drivers populated (15)")
+    print(f"[OK] Drivers populated ({count})")
+
+# ========== Main ==========
 
 def main():
     print("Connecting to databases...")
@@ -358,21 +378,25 @@ def main():
     }
 
     try:
+        print("Clearing existing data...")
         clear_all(conns)
-        populate_engines(conn_engines)
-        populate_trains(conn_engines, conn_trains)
-        populate_clients(conn_clients)
-        populate_tickets(conn_trains, conn_clients, conn_tickets)
-        populate_reviews(conn_trains, conn_tickets, conn_reviews)
-        populate_maintenances(conn_trains, conn_engines, conn_maintenances)
-        populate_cities(conn_cities)
-        populate_lines(conn_lines)
-        populate_stations(conn_cities, conn_lines, conn_stations)
-        populate_managers(conn_managers)
-        populate_drivers(conn_drivers)
-        print("🎉 All data inserted successfully.")
+
+        print("Populating tables with 30 records each...")
+        populate_engines(conn_engines, 30)
+        populate_trains(conn_engines, conn_trains, 30)
+        populate_clients(conn_clients, 30)
+        populate_tickets(conn_trains, conn_clients, conn_tickets, 30)
+        populate_reviews(conn_trains, conn_tickets, conn_reviews, 30)
+        populate_maintenances(conn_trains, conn_engines, conn_maintenances, 30)
+        populate_cities(conn_cities, 30)
+        populate_lines(conn_lines, 30)
+        populate_stations(conn_cities, conn_lines, conn_stations, 30)
+        populate_managers(conn_managers, 30)
+        populate_drivers(conn_drivers, 30)
+
+        print("[SUCCESS] All data inserted successfully.")
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(f"[ERROR] {e}")
     finally:
         for conn in conns.values():
             conn.close()
