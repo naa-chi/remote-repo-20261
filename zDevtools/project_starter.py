@@ -19,6 +19,7 @@ import time
 import argparse
 import platform
 from typing import List, Dict
+import webbrowser
 
 # ============================================
 # CONFIGURATION – add/remove services here
@@ -55,24 +56,22 @@ def get_project_root(script_dir: str, cli_root: str = None) -> str:
     return os.path.abspath(os.path.join(script_dir, ".."))
 
 def ensure_log_dir(project_root: str) -> str:
-    """Create zPythonLogs directory inside project root if it doesn't exist."""
     log_dir = os.path.join(project_root, "zPythonLogs")
     os.makedirs(log_dir, exist_ok=True)
     return log_dir
 
 def start_service(service_name: str, service_dir: str, project_root: str, log_dir: str) -> subprocess.Popen:
-    """Start a single microservice and return the Popen object."""
     full_path = os.path.join(project_root, service_dir)
     log_file_name = f"{service_name.lower().replace(' ', '_')}.log"
     log_path = os.path.join(log_dir, log_file_name)
 
     if not os.path.exists(full_path):
-        print(f"❌ Service directory not found: {full_path}")
+        print(f"Service directory not found: {full_path}")
         return None
 
     # Open log file in write mode (overwrites on each run)
     log_fd = open(log_path, "w")
-    print(f"🚀 Starting {service_name}... (logs -> zPythonLogs/{log_file_name})")
+    print(f"Starting {service_name} (logs -> zPythonLogs/{log_file_name})")
 
     # On Windows, use mvn.cmd; on Unix, use mvn
     mvn_cmd = "mvn.cmd" if platform.system() == "Windows" else "mvn"
@@ -90,14 +89,14 @@ def start_service(service_name: str, service_dir: str, project_root: str, log_di
 def stop_all_processes(processes: Dict[subprocess.Popen, str]):
     for proc, name in processes.items():
         try:
-            print(f"⏹️ Stopping {name} (PID: {proc.pid})...")
+            print(f"Stopping {name} (PID: {proc.pid})...")
             proc.terminate()
             try:
                 proc.wait(timeout=5)
             except subprocess.TimeoutExpired:
                 proc.kill()
         except Exception as e:
-            print(f"⚠️ Error stopping {name}: {e}")
+            print(f"Error stopping {name}: {e}")
 
 def main():
     parser = argparse.ArgumentParser(description="Start all microservices.")
@@ -108,14 +107,14 @@ def main():
     project_root = get_project_root(script_dir, args.root)
     log_dir = ensure_log_dir(project_root)
 
-    print(f"📂 Project root: {project_root}")
-    print(f"📝 Log directory: {log_dir}")
-    print(f"🚀 Starting microservices...\n")
+    print(f"Project root: {project_root}")
+    print(f"Log directory: {log_dir}")
+    print(f"Starting microservices\n")
 
     processes = {}
 
     def signal_handler(sig, frame):
-        print("\n🛑 Received interrupt. Shutting down all services...")
+        print("\nReceived interrupt. Shutting down all services...")
         stop_all_processes(processes)
         sys.exit(0)
 
@@ -132,21 +131,23 @@ def main():
         print("❌ No services were started. Exiting.")
         return
 
-    print(f"\n✅ All services started. Running {len(processes)} processes.")
+    print(f"\nAll services started. Running {len(processes)} processes.")
     print("Press Ctrl+C to stop all services and exit.\n")
+
+    print("docs are here: \n http://localhost:8080/swagger-ui/index.html?urls.primaryName=Drivers+Service")
 
     try:
         while True:
             for proc in list(processes.keys()):
                 if proc.poll() is not None:
                     name = processes.pop(proc)
-                    print(f"⚠️ {name} (PID: {proc.pid}) exited unexpectedly.")
+                    print(f"{name} (PID: {proc.pid}) exited unexpectedly.")
             time.sleep(1)
     except KeyboardInterrupt:
         pass
     finally:
         stop_all_processes(processes)
-        print("👋 Goodbye.")
+        print("Goodbye.")
 
 if __name__ == "__main__":
     main()
